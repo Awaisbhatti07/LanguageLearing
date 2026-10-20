@@ -2,9 +2,9 @@
 
 Native Android language learning: English, Modern Standard Arabic and a separate verified Quranic Arabic track. English interface, Roman Urdu explanations, offline learning and local progress. This is an active development project, not a complete A0–B1 release.
 
-Current development preview includes 11 English A0 lessons and 55 deterministic practice activities, reading, vocabulary and optional installed offline device-TTS examples. Answers, resumable practice sessions and progress are stored locally. English content is pending qualified language review; Fusha/Quranic lessons, assessed listening, complete revision and both online AI modes remain unfinished. See the progress files for exact test/build evidence and remaining work.
+Current development preview includes 11 English A0 lessons and 66 deterministic practice activities, including 11 listening questions, reading, vocabulary and optional installed offline device-TTS examples. Listening keeps transcripts hidden until the learner chooses reading or saves an answer; reading alternatives remain separately recorded after reopening. Answers, resumable practice sessions and progress are stored locally through versioned content/database upgrades.
 
-Local implementation checkpoint: source pack v3 adds one listening assessment per lesson (66 activities total), with hidden transcripts, offline playback and durable reading alternatives. New migration/regression tests are written, but this change has not been compiled or executed under the user's current implementation-only instructions. The last verified APK/source remains pack v2 at d9b6800; the new listening work is not yet published as verified.
+The latest authorized run passed 37 core/40 app unit tests, debug build and lint. Physical-device audio/appearance and qualified English review remain pending. This is a partial course: English A1–B1, Fusha/Quranic lessons, complete revision and both online AI modes remain unfinished. See the progress files for exact verification evidence and remaining work.
 
 Start with [project status](docs/PROJECT_STATUS.md), [task queue](docs/TASK_QUEUE.md) and [resume instructions](docs/RESUME_INSTRUCTIONS.md). The complete user specification is preserved in [product requirements](docs/PRODUCT_REQUIREMENTS.md).
 
