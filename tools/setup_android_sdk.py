@@ -15,6 +15,7 @@ import tempfile
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from xml.dom import minidom
 import zipfile
 
 
@@ -34,7 +35,8 @@ def main():
 
     base = "https://dl.google.com/android/repository/"
     with urllib.request.urlopen(base + "repository2-3.xml", timeout=30) as response:
-        root = ET.fromstring(response.read())
+        metadata = response.read()
+    root = ET.fromstring(metadata)
     package = next(item for item in root.findall("{*}remotePackage")
                    if item.attrib["path"] == "platforms;android-37.0")
     if package.find("{*}channelRef").attrib["ref"] != "channel-0":
@@ -80,6 +82,31 @@ def main():
             platform = next(path.parent for path in unpacked.glob("*/android.jar"))
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.move(str(platform), target)
+
+    # SDK archives omit the installed-package manifest. Preserve official type metadata,
+    # including minor API levels, rather than editing source.properties or platform jars.
+    remote_document = minidom.parseString(metadata)
+    document = minidom.Document()
+    repository = document.createElementNS(
+        "http://schemas.android.com/repository/android/common/02", "localRepo:repository",
+    )
+    repository.setAttribute("xmlns:localRepo", "http://schemas.android.com/repository/android/common/02")
+    for name, value in remote_document.documentElement.attributes.items():
+        if name.startswith("xmlns"):
+            repository.setAttribute(name, value)
+    document.appendChild(repository)
+    remote_package = next(item for item in remote_document.getElementsByTagName("remotePackage")
+                          if item.getAttribute("path") == "platforms;android-37.0")
+    local_package = document.importNode(remote_package, deep=True)
+    document.renameNode(local_package, None, "localPackage")
+    for child in list(local_package.childNodes):
+        if child.nodeType == child.ELEMENT_NODE and child.localName in {"archives", "channelRef"}:
+            local_package.removeChild(child)
+    license_node = next(item for item in remote_document.getElementsByTagName("license")
+                        if item.getAttribute("id") == license_id)
+    repository.appendChild(document.importNode(license_node, deep=True))
+    repository.appendChild(local_package)
+    (target / "package.xml").write_bytes(document.toxml(encoding="utf-8"))
 
     (sdk / "licenses").mkdir(parents=True, exist_ok=True)
     accepted.add(license_hash)

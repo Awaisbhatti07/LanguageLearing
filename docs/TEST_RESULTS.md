@@ -20,3 +20,10 @@ Record commands, exact outcomes, counts and remaining limits below after each wo
 - Static parsing passed for 10 Android XML files and the TOML version catalog. Eleven JVM test methods are written; none reached execution. No APK produced; no emulator/device run, paid API, deployment or remote push.
 - `tools/setup_android_sdk.py` preserves the isolated setup procedure. Default invocation inspects only. Installation rejects a missing accepted license unless the caller supplies the exact reviewed hash after human consent; existing global SDK is not modified.
 - SDK helper passed Python AST syntax parsing only. `git diff --cached --check` passed for the complete staged checkpoint; source saved as `b4968ba`. These checks do not replace the pending application tests/build/lint.
+
+## Foundation attempt 2 — SDK consent received and installation completed
+- User explicitly approved the exact SDK license and isolated installation. `python3 tools/setup_android_sdk.py --install --accept-license-hash 9002c006f4b8d9a16e715a9fa4df30ddb8abf9d9` **completed**: official stable `platform-37.0_r02.zip`, archive checksum verified, installed at `/private/tmp/lingomate-android-sdk`; existing global SDK unchanged.
+- Ignored `local.properties` now points to the isolated SDK. Acceptance is recorded only in that SDK's own license directory.
+- Attempt 2 failed after 10 seconds before compilation: SDK archive lacked installed `package.xml`, so the loader could not recognize `android-37.0`. Fixed the installer to preserve the official remote package's type/revision/license metadata as a local package manifest; platform/source properties and jars were not altered. The repair completed without another archive download.
+- Attempt 3 re-runs `GRADLE_USER_HOME=/private/tmp/lingomate-gradle ./gradlew --no-daemon :app:testDebugUnitTest :app:assembleDebug :app:lintDebug`; result pending. No emulator/device or paid API is involved.
+- During attempt 3, `:app:checkDebugAarMetadata` and `:app:compileDebugKotlin` **passed** after the SDK metadata repair. This verifies the SDK provisioning fix; the broader run remains pending and no test/APK/lint success is inferred.
