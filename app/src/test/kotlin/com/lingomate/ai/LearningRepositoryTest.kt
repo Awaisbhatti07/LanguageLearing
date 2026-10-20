@@ -35,11 +35,11 @@ class LearningRepositoryTest {
 
     @Test fun bundledInstallIsIdempotentAndNeverDowngradesContent() = runBlocking {
         repository.installBundledContent()
-        val v2 = pack.copy(version = 2, title = "Updated pack")
+        val v2 = pack.copy(version = pack.version + 1, title = "Updated pack")
         repository.importPack(ContentCodec.json.encodeToString(v2))
         repository.installBundledContent()
-        assertEquals(2, database.learningDao().pack(pack.id)?.version)
-        assertEquals(3, database.learningDao().packLessons(pack.id).size)
+        assertEquals(v2.version, database.learningDao().pack(pack.id)?.version)
+        assertEquals(11, database.learningDao().packLessons(pack.id).size)
     }
 
     @Test fun allBundlesValidateBeforeAnyPackIsWritten() = runBlocking {
@@ -59,16 +59,16 @@ class LearningRepositoryTest {
 
     @Test fun packUpdateCannotStrandAnExistingLesson() = runBlocking {
         repository.installBundledContent()
-        val partial = pack.copy(version = 2, units = pack.units.map { it.copy(lessons = it.lessons.drop(1)) })
+        val partial = pack.copy(version = pack.version + 1, units = pack.units.map { it.copy(lessons = it.lessons.drop(1)) })
         try { repository.importPack(ContentCodec.json.encodeToString(partial)); fail("Expected refusal") } catch (_: IllegalArgumentException) { }
-        assertEquals(1, database.learningDao().pack(pack.id)?.version)
-        assertEquals(3, database.learningDao().packLessons(pack.id).size)
+        assertEquals(pack.version, database.learningDao().pack(pack.id)?.version)
+        assertEquals(11, database.learningDao().packLessons(pack.id).size)
     }
 
     @Test fun activeSessionUsesAnImmutableContentSnapshotThroughUpdates() = runBlocking {
         repository.installBundledContent()
         val first = repository.beginOrResume("en-a0-greetings")
-        val updated = pack.copy(version = 2, units = pack.units.map { unit -> unit.copy(lessons = unit.lessons.map { it.copy(title = "Updated ${it.title}") }) })
+        val updated = pack.copy(version = pack.version + 1, units = pack.units.map { unit -> unit.copy(lessons = unit.lessons.map { it.copy(title = "Updated ${it.title}") }) })
         repository.importPack(ContentCodec.json.encodeToString(updated))
         assertEquals(first.content, repository.beginOrResume("en-a0-greetings").content)
         assertTrue(repository.lesson("en-a0-greetings").title.startsWith("Updated"))
@@ -141,6 +141,25 @@ class LearningRepositoryTest {
         val progress = requireNotNull(database.learningDao().progress(first.session.lessonId))
         assertEquals(5, progress.bestCorrect)
         assertEquals(2, progress.completedRuns)
+    }
+
+    @Test fun actualVersionOneToTwoExpansionPreservesActiveAndCompletedLearning() = runBlocking {
+        val versionOne = requireNotNull(javaClass.getResource("/content/english-a0-v1.json")).readText()
+        repository.importPack(versionOne)
+        val active = repository.beginOrResume("en-a0-greetings")
+        repository.submit(active.session.id, active.content.exercises.first().id, correctAnswer(active.content.exercises.first()))
+        val finished = repository.beginOrResume("en-a0-pronouns-be")
+        finished.content.exercises.forEach { repository.submit(finished.session.id, it.id, correctAnswer(it)) }
+        val oldProgress = database.learningDao().progress(finished.session.lessonId)
+        repository.installBundledContent()
+        val resumed = repository.beginOrResume(active.session.lessonId)
+        assertEquals(11, database.learningDao().packLessons(pack.id).size)
+        assertEquals(2, database.learningDao().pack(pack.id)?.version)
+        assertEquals(active.session.id, resumed.session.id)
+        assertEquals(1, resumed.session.packVersion)
+        assertEquals(active.content, resumed.content)
+        assertEquals(1, resumed.attempts.size)
+        assertEquals(oldProgress, database.learningDao().progress(finished.session.lessonId))
     }
 
     private fun correctAnswer(exercise: Exercise): ExerciseAnswer = when (exercise) {

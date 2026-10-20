@@ -23,3 +23,5 @@ No milestone is complete until its acceptance evidence exists. Later milestone p
 2026-10-20 checkpoint: M1 and M2 foundation acceptance passed (11 JVM/Robolectric tests, debug APK and lint). Device/runtime appearance remains separate M11/M12 evidence. M3 is now in progress; M4–M12 remain incomplete.
 
 2026-10-20 M3 checkpoint: 29 core and 25 app tests pass, including pack validation/grading, safe imports, explicit v1→v2 migration, concurrency/idempotence and two complete Compose lesson flows. APK/lint pass. Offline device TTS is implemented with honest failure states; physical audio/runtime quality is not verified. M4 A0 expansion is next; the full course remains unfinished.
+
+2026-10-20 M4 work: A0 pack v2 now contains 11 lessons/55 activities and passes topic-tag/structural checks, compatibility flows and the actual v1→v2 update regression. Across full/focused runs, 30 core/26 distinct app tests pass with APK/lint. M4 remains incomplete: qualified language review, dedicated listening assessment/audio verification and A1–B1 content remain outstanding. GitHub push is authorized but rejected for missing collaborator write access.

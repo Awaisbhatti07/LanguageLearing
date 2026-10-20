@@ -29,7 +29,7 @@ fun CourseScreen(track: LearningTrack, learning: LearningUiState, onRetry: () ->
             learning.failed -> InfoCard("Lessons could not be loaded", "Your saved data has not been reset.", "Try again", onRetry)
             learning.loading -> Text("Loading offline content…")
             lessons.isNotEmpty() -> {
-                InfoCard("About this content", "${lessons.size} starter lessons are installed. This is partial curriculum coverage. Language review is pending; no complete A0–B1 course or certification is claimed.")
+                InfoCard("About this content", "${lessons.size} lessons are installed. Curriculum development and language review are in progress; no complete A0–B1 course or certification is claimed.")
                 val next = lessons.firstOrNull { lesson -> learning.catalog.progress.none { it.lessonId == lesson.id && it.completedAt != null } } ?: lessons.first()
                 Button(onClick = { onLesson(next.id) }) { Text("Continue: ${next.title}") }
                 lessons.groupBy { it.level to it.unitId }.forEach { (group, unit) ->
@@ -42,7 +42,7 @@ fun CourseScreen(track: LearningTrack, learning: LearningUiState, onRetry: () ->
                             progress?.completedAt != null -> "Completed · Best practice result ${progress.bestCorrect}/${progress.questionCount}"
                             else -> "Ready to learn · Explanation, examples and practice."
                         }
-                        InfoCard(lesson.title, "$status\nLanguage review pending.", if (active) "Resume lesson" else "Open lesson", { onLesson(lesson.id) })
+                        InfoCard(lesson.title, "$status\nLanguage review pending.", if (active) "Resume: ${lesson.title}" else "Open: ${lesson.title}", { onLesson(lesson.id) })
                     }
                 }
             }

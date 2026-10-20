@@ -1,7 +1,7 @@
 # Content sources and licensing
 
 ## Educational content
-- The three-lesson English A0 starter pack is original project material authored with AI assistance. It covers greetings, basic be/pronouns and a/an, with 15 activities, readings, vocabulary and device-TTS references. It is explicitly `PENDING_REVIEW`; no qualified language/CEFR review is claimed. It contains no copied third-party curriculum or religious dataset.
+- English A0 pack v2 (stable ID `english-a0-starter`) is original project material authored with AI assistance: 11 foundation lessons/55 activities, readings, vocabulary, examples and device-TTS references. It is explicitly `PENDING_REVIEW`; no qualified language/CEFR review is claimed. Existing lesson IDs survive the expansion from v1's three lessons. No third-party curriculum or religious dataset was copied.
 - Future original English/Fusha lessons must identify authorship, content version and pending/complete review status. Do not call generated authoring qualified linguistic review.
 - Quranic text candidates: [Tanzil](https://tanzil.net/docs/text_license), [Quranic Arabic Corpus](https://corpus.quran.com/download/). These are candidates only: license/attribution/redistribution and exact source verification have **not** yet been completed. No text, frequency or translation is approved for redistribution.
 - Store original Quran text verbatim; source annotations and derived frequency methods separately. No unsourced translation, recitation audio or tafsir.

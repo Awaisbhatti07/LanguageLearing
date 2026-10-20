@@ -24,10 +24,19 @@ class ContentEngineTest {
     @Test fun bundledPackHasRealLessonsAndAllFiveDeterministicActivityTypes() {
         val pack = pack()
         val lessons = pack.units.flatMap { it.lessons }
-        assertEquals(3, lessons.size)
+        assertEquals(11, lessons.size)
         assertTrue(lessons.all { it.exercises.size >= 5 && it.reading != null })
         assertEquals(5, lessons.flatMap { it.exercises }.map { it::class }.toSet().size)
         assertEquals(ReviewStatus.PENDING_REVIEW, pack.provenance.reviewStatus)
+    }
+    @Test fun a0PackCoversEveryPlannedFoundationSkillWithoutEmptyLessons() {
+        val lessons = pack().units.flatMap { it.lessons }
+        val tags = lessons.flatMap { it.reviewTags }.toSet()
+        val required = setOf("alphabet", "pronunciation-basics", "basic-vocabulary", "greetings", "introductions",
+            "subject-pronouns", "be-verb", "indefinite-articles", "singular-plural", "basic-sentences", "numbers", "time", "dates", "everyday-expressions")
+        assertTrue("Missing A0 coverage: ${required - tags}", tags.containsAll(required))
+        assertEquals(55, lessons.sumOf { it.exercises.size })
+        assertTrue(lessons.all { it.examples.size >= 3 && it.vocabulary.size >= 3 })
     }
     @Test fun packRoundTripPreservesDisplayTextAndHarakat() {
         val original = pack().let { pack -> pack.copy(track = LearningTrack.FUSHA, units = pack.units.map { unit ->

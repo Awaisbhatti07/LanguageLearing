@@ -56,7 +56,7 @@ class LessonFlowTest {
 
     @Test fun allFiveActivityTypesSaveAnswersShowFeedbackAndUpdateCourseProgress() {
         click("Continue English")
-        click("Continue: Hello and introductions")
+        click("Open: Hello and introductions")
         click("Start practice")
         click("Hello")
         click("Check answer")
@@ -90,13 +90,13 @@ class LessonFlowTest {
 
     @Test fun leavingTheLessonResumesItsPersistedAnswerAndFeedback() {
         click("Continue English")
-        click("Continue: Hello and introductions")
+        click("Open: Hello and introductions")
         click("Start practice")
         click("Goodbye")
         click("Check answer")
         waitFor("Keep practising")
         compose.onNodeWithContentDescription("Back").performClick()
-        click("Continue: Hello and introductions")
+        click("Resume: Hello and introductions")
         waitFor("Keep practising")
         click("Next activity")
         waitFor("My name ___ Ali.")
