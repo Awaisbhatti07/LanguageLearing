@@ -1,7 +1,7 @@
 # LingoMate AI master plan
 
 Source requirements: `PRODUCT_REQUIREMENTS.md` (user-provided, preserved verbatim).
-Started: 2026-10-20, Asia/Karachi. Remote: https://github.com/Awaisbhatti07/LanguageLearing.git. Normal pushes to `develop/lingomate` are authorized; verified source through `d9b6800` is published on that branch. Main remains unchanged.
+Started: 2026-10-20, Asia/Karachi. Remote: https://github.com/Awaisbhatti07/LanguageLearing.git. Normal pushes to `develop/lingomate` are authorized; verified listening source f31126f and schema/results checkpoint 80e26e1 are published on that branch. Main remains unchanged.
 
 | Milestone | Deliverables and acceptance gate |
 | --- | --- |

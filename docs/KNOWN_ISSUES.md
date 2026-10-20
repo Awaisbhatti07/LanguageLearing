@@ -3,7 +3,7 @@
 | ID | State | Issue | Impact / next action |
 | --- | --- | --- | --- |
 | ENV-01 | Open | Sandbox DNS/network restrictions require approved network execution for Git/dependency downloads | Use scoped network access; preserve exact failures if downloads are unavailable |
-| GIT-01 | Resolved | Initial push failed HTTP 403; user switched authentication and the retry succeeded on 2026-10-20 | Source checkpoint d9b6800 and all preceding commits are published on origin/develop/lingomate; remote hash confirmed with git ls-remote. Normal development-branch pushes are authorized; no force push or main-branch change |
+| GIT-01 | Resolved | Initial push failed HTTP 403; user switched authentication and authorized development-branch pushes now succeed | Verified listening source f31126f and schema/results checkpoint 80e26e1 are published on origin/develop/lingomate; remote hash confirmed. Normal verified pushes remain authorized; no force push or main-branch change |
 | VERIFY-01 | Resolved for M4-01L automated scope | Authorized listening command passed in 55s: 37 core/40 app tests, generated schema, APK and lint | Schema v3 adds only presentation records; v1/v2 migrations and old pack upgrades passed. Physical audio/qualified language review remain CONTENT-01/DEVICE-01; new development scopes need their own test/build authorization |
 | CONTENT-01 | Pending | No qualified language review yet | Mark authored learning material pending review; do not claim certified A0–B1 coverage |
 | QURAN-01 | Pending M6 | Quranic datasets, redistribution rights and linguistic/religious review not acquired | Do not fabricate or bundle religious material; evaluate sources before import |
