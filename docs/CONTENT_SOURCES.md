@@ -11,5 +11,6 @@
 - [AndroidX stable versions](https://developer.android.com/jetpack/androidx/versions).
 - [Compose BOM](https://developer.android.com/develop/ui/compose/bom) and [Compose compiler](https://developer.android.com/jetpack/androidx/releases/compose-kotlin).
 - [Kotlin releases](https://kotlinlang.org/docs/releases.html), [serialization](https://kotlinlang.org/docs/serialization-get-started.html), [Room](https://developer.android.com/jetpack/androidx/releases/room).
+- [Robolectric 4.17 release](https://github.com/robolectric/robolectric/releases/tag/robolectric-4.17): current stable test framework, including SDK 37 support; the project's focused JVM UI/persistence tests currently use SDK 35.
 
 These sources document tooling, not endorsement or review of educational content.

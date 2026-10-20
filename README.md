@@ -6,7 +6,7 @@ Start with [project status](docs/PROJECT_STATUS.md), [task queue](docs/TASK_QUEU
 
 ## Development
 
-- Open this folder in Android Studio. Use JDK 17+, Android SDK Platform 37.0 and Build Tools 36.0.0. The app targets API 36 and supports API 26+. SDK location belongs in ignored `local.properties` or `ANDROID_HOME`.
+- Open this folder in Android Studio. Use JDK 17+, Android SDK Platform 37.0 and Build Tools 36.0.0. The app targets API 37 and supports API 26+. SDK location belongs in ignored `local.properties` or `ANDROID_HOME`.
 - Use the committed, checksum-pinned Gradle wrapper. Dependencies are pinned in `gradle/libs.versions.toml`.
 - `app` contains Android UI/platform/persistence code; `core/learning` contains Android-independent learning logic.
 

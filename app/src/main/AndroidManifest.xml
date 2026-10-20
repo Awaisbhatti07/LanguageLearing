@@ -8,6 +8,8 @@
     <application
         android:name=".LingoMateApplication"
         android:allowBackup="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:dataExtractionRules="@xml/data_extraction_rules"
         android:label="@string/app_name"
         android:icon="@drawable/ic_lingomate"
         android:roundIcon="@drawable/ic_lingomate"

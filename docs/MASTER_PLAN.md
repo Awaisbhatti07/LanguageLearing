@@ -19,3 +19,5 @@ Started: 2026-10-20, Asia/Karachi. Remote: https://github.com/Awaisbhatti07/Lang
 | M12 Delivery | Available tests/lint/build, debug APK, installation/provider setup and honest verification report; open blockers explicitly listed. |
 
 No milestone is complete until its acceptance evidence exists. Later milestone planning may occur early, but implementation must not bypass unfinished predecessors. Safe persistence and deterministic grading are foundational to M3; full revision/reminder UX remains M7.
+
+2026-10-20 checkpoint: M1 and M2 foundation acceptance passed (11 JVM/Robolectric tests, debug APK and lint). Device/runtime appearance remains separate M11/M12 evidence. M3 is now in progress; M4–M12 remain incomplete.

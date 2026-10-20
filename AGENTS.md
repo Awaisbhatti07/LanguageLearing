@@ -19,7 +19,7 @@
 ## Working style
 - Inspect relevant files and diffs, keep changes narrow, handle errors and process recreation, honor accessibility/font scaling. Prefer simple maintainable code.
 - Each logical work unit updates status, task queue, test results and issues. Update decisions/sources when they change. Record actual commands and results, including environment blockers.
-- Use local `develop/lingomate` branch. Commit completed verified changes; checkpoint incomplete work only with an explicit WIP description and accurate verification state. Do not push.
+- Use `develop/lingomate`. Commit completed verified changes; checkpoint incomplete work only with an explicit WIP description and accurate verification state. The user explicitly authorized pushing verified code to the development branch on 2026-10-20. Normal pushes to `origin develop/lingomate` are now allowed; no force push, main-branch update, deployment or paid API use is authorized.
 - Do not install SDKs or dependencies outside authorized scope. Use an isolated Gradle user home if the execution sandbox cannot write the default cache.
 
 ## Verification commands (when authorized)
