@@ -21,3 +21,5 @@ Started: 2026-10-20, Asia/Karachi. Remote: https://github.com/Awaisbhatti07/Lang
 No milestone is complete until its acceptance evidence exists. Later milestone planning may occur early, but implementation must not bypass unfinished predecessors. Safe persistence and deterministic grading are foundational to M3; full revision/reminder UX remains M7.
 
 2026-10-20 checkpoint: M1 and M2 foundation acceptance passed (11 JVM/Robolectric tests, debug APK and lint). Device/runtime appearance remains separate M11/M12 evidence. M3 is now in progress; M4–M12 remain incomplete.
+
+2026-10-20 M3 checkpoint: 29 core and 25 app tests pass, including pack validation/grading, safe imports, explicit v1→v2 migration, concurrency/idempotence and two complete Compose lesson flows. APK/lint pass. Offline device TTS is implemented with honest failure states; physical audio/runtime quality is not verified. M4 A0 expansion is next; the full course remains unfinished.

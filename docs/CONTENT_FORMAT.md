@@ -1,0 +1,15 @@
+# Content and practice format
+
+Content packs are UTF-8 JSON in `app/src/main/assets/content/`. Schema v1 has a stable pack ID, monotonically increasing version, one track/level, source/review provenance, ordered units and complete lesson records. The engine rejects unsupported schema/types, invalid/duplicate IDs, missing teaching fields, oversized/deep JSON, malformed Unicode and unsourced Quranic packs. Original Arabic display text and harakat are preserved.
+
+Each lesson includes objectives, Roman Urdu explanations/rules, examples, vocabulary meanings/word classes/pronunciation guidance, speaking prompts, review tags and at least two real exercises; starter lessons also include reading. Device-TTS references must exactly match the displayed example and track language. Pending language review is distinct from structural validation.
+
+Activity kinds: `single_choice`, `multi_choice`, `fill_blank`, `sentence_order`, `match_pairs`. Grading awards one point for a wholly correct activity; no partial scores are implied. Fill blanks normalize NFC/whitespace and optionally case, preserving Arabic diacritics and punctuation. Choice IDs must exist; ordering/matching must use each item exactly once. Identical repeated words are interchangeable in ordering.
+
+Imports validate all bundled packs before an atomic write. Same/older pack versions do not downgrade stored content. Updates preserve existing learner records, cannot remove old lesson IDs, cannot steal another pack's lesson IDs and cannot move an old ID to a different track/level. Content replacement uses Room upsert; no destructive database reset is permitted.
+
+Opening a lesson creates or resumes a unique active practice session with an immutable copy of that lesson. Answers save by session/exercise/position. Each successful submission persists exactly once; retries return the original result. On the final answer a single transaction finishes the session, stores completion and updates the best ratio and run count. A completed lesson means an assessment was finished; it does not imply mastery or CEFR proficiency. Repeated runs are separate assessments; the daily goal counts distinct completed lessons for the local device day.
+
+Sessions allow resumption after navigation/process recreation and remain tied to the original snapshot through a content update. The Review tab currently lists completed lessons for voluntary repeat practice; scheduled SRS remains M7. Speaking prompts are self-practice; no automatic pronunciation score or AI teacher is claimed.
+
+Religious content is intentionally rejected by this general starter-pack pipeline until M6 adds licensed original text, separate morphology/annotations, reference/word alignment, reproducible frequency methods and release-critical integrity checks.

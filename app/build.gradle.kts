@@ -28,6 +28,10 @@ android {
 
 room { schemaDirectory("$projectDir/schemas") }
 
+tasks.withType<org.gradle.api.tasks.testing.Test>().configureEach {
+    systemProperty("lingomate.schemas", file("schemas").absolutePath)
+}
+
 dependencies {
     implementation(project(":core:learning"))
     implementation(platform(libs.compose.bom))

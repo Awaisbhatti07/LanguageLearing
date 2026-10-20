@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
             })
             val state by model.state.collectAsStateWithLifecycle()
             LingoMateTheme(mode = state.settings?.theme ?: com.lingomate.ai.core.preferences.ThemeMode.DARK) {
-                LingoMateRoot(state, model)
+                LingoMateRoot(state, model, container.learning)
             }
         }
     }

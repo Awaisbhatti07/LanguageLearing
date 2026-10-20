@@ -24,6 +24,10 @@ import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.createSavedStateHandle
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.lifecycle.viewmodel.initializer
+import androidx.lifecycle.viewmodel.viewModelFactory
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -37,6 +41,11 @@ import com.lingomate.ai.core.designsystem.ScreenColumn
 import com.lingomate.ai.core.designsystem.SectionTitle
 import com.lingomate.ai.feature.courses.CourseScreen
 import com.lingomate.ai.feature.courses.LearnScreen
+import com.lingomate.ai.feature.courses.LearningViewModel
+import com.lingomate.ai.feature.lessons.LessonScreen
+import com.lingomate.ai.feature.lessons.LessonViewModel
+import com.lingomate.ai.feature.revision.ReviewScreen
+import com.lingomate.ai.data.LearningRepository
 import com.lingomate.ai.feature.home.HomeScreen
 import com.lingomate.ai.feature.onboarding.OnboardingScreen
 import com.lingomate.ai.feature.settings.AppState
@@ -53,7 +62,7 @@ enum class MainDestination(val route: String, val label: String, @DrawableRes va
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun LingoMateRoot(state: AppState, model: AppViewModel) {
+fun LingoMateRoot(state: AppState, model: AppViewModel, repository: LearningRepository) {
     val saving by model.saving.collectAsStateWithLifecycle()
     val writeError by model.writeError.collectAsStateWithLifecycle()
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Ltr) {
@@ -75,11 +84,14 @@ fun LingoMateRoot(state: AppState, model: AppViewModel) {
                 Box(Modifier.padding(padding)) { OnboardingScreen(saving, model::finishOnboarding) }
             }
         } else {
+            val learningModel: LearningViewModel = viewModel(factory = viewModelFactory { initializer { LearningViewModel(repository) } })
+            val learning by learningModel.state.collectAsStateWithLifecycle()
             val nav = rememberNavController()
             val entry by nav.currentBackStackEntryAsState()
             val currentRoute = entry?.destination?.route ?: "home"
             val main = MainDestination.entries.firstOrNull { it.route == currentRoute }
-            val onTrack: (LearningTrack) -> Unit = { nav.navigate("course/${it.name}") }
+            val onTrack: (LearningTrack) -> Unit = { nav.navigate("course/${it.name}") { launchSingleTop = true } }
+            val onLesson: (String) -> Unit = { nav.navigate("lesson/$it") { launchSingleTop = true } }
             Scaffold(
                 topBar = {
                     TopAppBar(
@@ -117,8 +129,8 @@ fun LingoMateRoot(state: AppState, model: AppViewModel) {
             ) { padding ->
                 Box(Modifier.fillMaxSize().padding(padding)) {
                     NavHost(navController = nav, startDestination = "home") {
-                        composable("home") { HomeScreen(settings, onTrack) }
-                        composable("learn") { LearnScreen(onTrack) }
+                        composable("home") { HomeScreen(settings, learning, learningModel::retry, onTrack) }
+                        composable("learn") { LearnScreen(learning, learningModel::retry, onTrack) }
                         composable("speak") {
                             ScreenColumn {
                                 SectionTitle("Build your speaking confidence", "Listen, repeat, and take your time.")
@@ -126,17 +138,19 @@ fun LingoMateRoot(state: AppState, model: AppViewModel) {
                                 InfoCard("Start with a lesson", "Build vocabulary and practise examples before a conversation.", "Explore lessons", { nav.navigate("learn") { launchSingleTop = true } })
                             }
                         }
-                        composable("review") {
-                            ScreenColumn {
-                                SectionTitle("A little revision goes a long way")
-                                InfoCard("Your review list starts here", "Complete a lesson to build your learning history. Spaced revision will become available as development progresses.", "Find a lesson", { nav.navigate("learn") { launchSingleTop = true } })
-                            }
-                        }
+                        composable("review") { ReviewScreen(learning, learningModel::retry, { nav.navigate("learn") { launchSingleTop = true } }, onLesson) }
                         composable("settings") { SettingsScreen(settings, saving, model::setTheme, model::setGoal) }
                         composable("course/{track}", arguments = listOf(navArgument("track") { type = NavType.StringType })) { backStack ->
                             val track = LearningTrack.entries.firstOrNull { it.name == backStack.arguments?.getString("track") }
-                            if (track != null) CourseScreen(track)
+                            if (track != null) CourseScreen(track, learning, learningModel::retry, onLesson)
                             else ScreenColumn { InfoCard("Course unavailable", "Return to Learn and choose a learning track.") }
+                        }
+                        composable("lesson/{lessonId}", arguments = listOf(navArgument("lessonId") { type = NavType.StringType })) { backStack ->
+                            val lessonId = requireNotNull(backStack.arguments?.getString("lessonId"))
+                            val lessonModel: LessonViewModel = viewModel(factory = viewModelFactory {
+                                initializer { LessonViewModel(repository, lessonId, createSavedStateHandle()) }
+                            })
+                            LessonScreen(lessonModel, onBackToCourse = { nav.popBackStack() })
                         }
                     }
                 }

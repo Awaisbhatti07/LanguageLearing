@@ -7,6 +7,11 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.datastore.preferences.core.PreferenceDataStoreFactory
+import android.content.Context
+import androidx.test.core.app.ApplicationProvider
+import androidx.room.Room
+import com.lingomate.ai.core.database.LingoMateDatabase
+import com.lingomate.ai.data.LearningRepository
 import com.lingomate.ai.core.designsystem.LingoMateTheme
 import com.lingomate.ai.core.navigation.LingoMateRoot
 import com.lingomate.ai.core.preferences.UserPreferences
@@ -19,6 +24,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancel
 import org.junit.After
+import org.junit.Before
 import org.junit.Assert.assertEquals
 import org.junit.Rule
 import org.junit.Test
@@ -33,8 +39,16 @@ class NavigationTest {
     @get:Rule val compose = createComposeRule()
     @get:Rule val temporary = TemporaryFolder()
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+    private lateinit var database: LingoMateDatabase
+    private lateinit var repository: LearningRepository
 
-    @After fun close() { scope.cancel() }
+    @Before fun openDatabase() {
+        val context = ApplicationProvider.getApplicationContext<Context>()
+        database = Room.inMemoryDatabaseBuilder(context, LingoMateDatabase::class.java).build()
+        repository = LearningRepository(database, { emptyList() })
+    }
+
+    @After fun close() { scope.cancel(); database.close() }
 
     @Test fun allTabsAreReachableAndDescribeUnavailableFeaturesHonestly() {
         showRoot()
@@ -73,7 +87,7 @@ class NavigationTest {
         val model = AppViewModel(preferences)
         compose.setContent {
             LingoMateTheme {
-                LingoMateRoot(AppState(settings = UserSettings(onboardingComplete = true)), model)
+                LingoMateRoot(AppState(settings = UserSettings(onboardingComplete = true)), model, repository)
             }
         }
     }
