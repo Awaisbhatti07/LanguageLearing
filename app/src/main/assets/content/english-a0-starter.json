@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 1,
+  "id": "english-a0-starter",
+  "version": 1,
+  "title": "English first steps",
+  "track": "ENGLISH",
+  "level": "A0",
+  "provenance": {
+    "author": "Original LingoMate AI project material, AI-assisted draft",
+    "rightsNotice": "Original project-authored educational material; no third-party curriculum copied. Distribution permission follows the project owner’s decision.",
+    "reviewStatus": "PENDING_REVIEW"
+  },
+  "units": [
+    {
+      "id": "en-a0-first-sentences",
+      "title": "Your first sentences",
+      "lessons": [
+        {
+          "id": "en-a0-greetings",
+          "title": "Hello and introductions",
+          "objectives": [
+            "Greet someone politely.",
+            "Say your name in a short sentence."
+          ],
+          "explanationRomanUrdu": "Kisi se milte waqt Hello keh sakte hain. Apna naam batane ke liye My name is ... bolain. Yeh jumla har naam ke saath isi tarah istemal hota hai. Good morning subah ki mulaqat mein aur Goodbye rukhsat hote waqt kehte hain.",
+          "rulesRomanUrdu": [
+            "My name is ke baad apna naam likhain: My name is Sara.",
+            "Hello aam greeting hai; Goodbye alvida kehne ke liye hai.",
+            "Naam ka pehla harf capital hota hai. Jumlay ke aakhir mein full stop lagta hai."
+          ],
+          "examples": [
+            {
+              "text": "Hello. My name is Sara.",
+              "meaningRomanUrdu": "Salam. Mera naam Sara hai.",
+              "speech": {
+                "text": "Hello. My name is Sara.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Good morning, Ali.",
+              "meaningRomanUrdu": "Subah bakhair, Ali.",
+              "speech": {
+                "text": "Good morning, Ali.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Goodbye, Sara.",
+              "meaningRomanUrdu": "Alvida, Sara.",
+              "speech": {
+                "text": "Goodbye, Sara.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-word-hello",
+              "word": "hello",
+              "meaningRomanUrdu": "salam / mulaqat ki greeting",
+              "partOfSpeech": "greeting",
+              "pronunciationGuide": "huh-LOH"
+            },
+            {
+              "id": "en-word-name",
+              "word": "name",
+              "meaningRomanUrdu": "naam",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "naym"
+            },
+            {
+              "id": "en-word-goodbye",
+              "word": "goodbye",
+              "meaningRomanUrdu": "alvida",
+              "partOfSpeech": "greeting",
+              "pronunciationGuide": "good-BYE"
+            }
+          ],
+          "reading": {
+            "text": "Hello. My name is Ali. My friend is Sara.",
+            "meaningRomanUrdu": "Salam. Mera naam Ali hai. Meri dost Sara hai."
+          },
+          "speakingPrompts": [
+            "Say Hello, then introduce yourself using My name is and your own name."
+          ],
+          "reviewTags": [
+            "greetings",
+            "introductions"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-greet-choice",
+              "prompt": "Which word greets someone?",
+              "explanationRomanUrdu": "Hello mulaqat ki greeting hai. Goodbye rukhsat hone ke liye hai.",
+              "options": [
+                {
+                  "id": "greet-hello",
+                  "text": "Hello"
+                },
+                {
+                  "id": "greet-bye",
+                  "text": "Goodbye"
+                },
+                {
+                  "id": "greet-name",
+                  "text": "Name"
+                }
+              ],
+              "correctOptionId": "greet-hello"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-greet-fill",
+              "prompt": "My name ___ Ali.",
+              "explanationRomanUrdu": "My name is ... apna naam batane ka jumla hai.",
+              "acceptedAnswers": [
+                "is"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-greet-order",
+              "prompt": "Build: Mera naam Sara hai.",
+              "explanationRomanUrdu": "Durust tartib My name is Sara. hai.",
+              "tokens": [
+                {
+                  "id": "name-sara",
+                  "text": "Sara."
+                },
+                {
+                  "id": "name-is",
+                  "text": "is"
+                },
+                {
+                  "id": "name-my",
+                  "text": "My"
+                },
+                {
+                  "id": "name-name",
+                  "text": "name"
+                }
+              ],
+              "correctOrder": [
+                "name-my",
+                "name-name",
+                "name-is",
+                "name-sara"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-greet-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Hello mulaqat, Goodbye alvida, aur My name is Ali. naam batane ke liye hai.",
+              "pairs": [
+                {
+                  "id": "greet-pair-hello",
+                  "left": "Hello",
+                  "right": "Mulaqat ki greeting"
+                },
+                {
+                  "id": "greet-pair-bye",
+                  "left": "Goodbye",
+                  "right": "Alvida"
+                },
+                {
+                  "id": "greet-pair-name",
+                  "left": "My name is Ali.",
+                  "right": "Mera naam Ali hai."
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-greet-multi",
+              "prompt": "Choose both expressions used when meeting someone.",
+              "explanationRomanUrdu": "Hello aur Good morning mulaqat ke waqt kehte hain. Goodbye rukhsat ke waqt hai.",
+              "options": [
+                {
+                  "id": "meet-hello",
+                  "text": "Hello"
+                },
+                {
+                  "id": "meet-morning",
+                  "text": "Good morning"
+                },
+                {
+                  "id": "meet-bye",
+                  "text": "Goodbye"
+                }
+              ],
+              "correctOptionIds": [
+                "meet-hello",
+                "meet-morning"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "en-a0-pronouns-be",
+          "title": "I am, you are, she is",
+          "objectives": [
+            "Choose am, is or are with a subject.",
+            "Understand basic subject pronouns."
+          ],
+          "explanationRomanUrdu": "Pronoun naam ki jagah aata hai. I ka matlab main, you ka aap ya tum, he ka woh mard aur she ka woh aurat hai. Be verb ki soorat subject ke mutabiq badalti hai. I ke saath am; he, she, it ke saath is; you, we, they ke saath are aata hai.",
+          "rulesRomanUrdu": [
+            "I am; he is; she is; it is.",
+            "You are; we are; they are. You aik ya zyada logon ke liye ho, dono mein are aata hai.",
+            "Subject aur be verb ke baad naam, pehchan ya halat aati hai: I am happy."
+          ],
+          "examples": [
+            {
+              "text": "I am a student.",
+              "meaningRomanUrdu": "Main talib-e-ilm hoon.",
+              "speech": {
+                "text": "I am a student.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She is happy.",
+              "meaningRomanUrdu": "Woh khush hai.",
+              "speech": {
+                "text": "She is happy.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "They are here.",
+              "meaningRomanUrdu": "Woh log yahan hain.",
+              "speech": {
+                "text": "They are here.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-word-student",
+              "word": "student",
+              "meaningRomanUrdu": "talib-e-ilm",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "STOO-duhnt"
+            },
+            {
+              "id": "en-word-happy",
+              "word": "happy",
+              "meaningRomanUrdu": "khush",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "HAP-ee"
+            },
+            {
+              "id": "en-word-here",
+              "word": "here",
+              "meaningRomanUrdu": "yahan",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "heer"
+            }
+          ],
+          "reading": {
+            "text": "I am Ali. She is Sara. We are students. They are here.",
+            "meaningRomanUrdu": "Main Ali hoon. Woh Sara hai. Hum talib-e-ilm hain. Woh log yahan hain."
+          },
+          "speakingPrompts": [
+            "Say one sentence beginning I am and one beginning We are."
+          ],
+          "reviewTags": [
+            "subject-pronouns",
+            "be-verb"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-be-choice",
+              "prompt": "She ___ happy.",
+              "explanationRomanUrdu": "She ke saath is aata hai: She is happy.",
+              "options": [
+                {
+                  "id": "be-am",
+                  "text": "am"
+                },
+                {
+                  "id": "be-is",
+                  "text": "is"
+                },
+                {
+                  "id": "be-are",
+                  "text": "are"
+                }
+              ],
+              "correctOptionId": "be-is"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-be-fill",
+              "prompt": "I ___ a student.",
+              "explanationRomanUrdu": "I ke saath am aata hai: I am a student.",
+              "acceptedAnswers": [
+                "am"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-be-order",
+              "prompt": "Build: Hum yahan hain.",
+              "explanationRomanUrdu": "We ke saath are: We are here.",
+              "tokens": [
+                {
+                  "id": "we-here",
+                  "text": "here."
+                },
+                {
+                  "id": "we-are",
+                  "text": "are"
+                },
+                {
+                  "id": "we-we",
+                  "text": "We"
+                }
+              ],
+              "correctOrder": [
+                "we-we",
+                "we-are",
+                "we-here"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-be-match",
+              "prompt": "Match the pronoun with its be verb.",
+              "explanationRomanUrdu": "I am, She is aur They are yaad rakhain.",
+              "pairs": [
+                {
+                  "id": "be-pair-i",
+                  "left": "I",
+                  "right": "am"
+                },
+                {
+                  "id": "be-pair-she",
+                  "left": "She",
+                  "right": "is"
+                },
+                {
+                  "id": "be-pair-they",
+                  "left": "They",
+                  "right": "are"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-be-multi",
+              "prompt": "Choose both correct sentences.",
+              "explanationRomanUrdu": "I ke saath am, you ke saath are, aur she ke saath is aata hai.",
+              "options": [
+                {
+                  "id": "correct-i",
+                  "text": "I am happy."
+                },
+                {
+                  "id": "correct-you",
+                  "text": "You are here."
+                },
+                {
+                  "id": "wrong-she",
+                  "text": "She are a student."
+                }
+              ],
+              "correctOptionIds": [
+                "correct-i",
+                "correct-you"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "en-a0-articles",
+          "title": "A book, an apple",
+          "objectives": [
+            "Use a and an with singular countable nouns.",
+            "Choose the article from the next spoken sound."
+          ],
+          "explanationRomanUrdu": "A aur an kisi aik ghair-muayyan, ginay ja sakne walay naam ke saath lagte hain. Agla lafz consonant sound se shuru ho to a, aur vowel sound se shuru ho to an lagta hai. Faisla awaaz se hota hai, sirf pehle likhay harf se nahin. Misal: a book, an apple.",
+          "rulesRomanUrdu": [
+            "Consonant sound se pehle a: a book, a pen.",
+            "Vowel sound se pehle an: an apple, an egg.",
+            "A/an sirf singular countable noun ke saath lagta hai. Books ke saath a/an nahin aata.",
+            "Awaaz dekhein: a university mein pehli awaaz yoo hai; an hour mein h ki awaaz nahin aati."
+          ],
+          "examples": [
+            {
+              "text": "This is a book.",
+              "meaningRomanUrdu": "Yeh aik kitab hai.",
+              "speech": {
+                "text": "This is a book.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "It is an apple.",
+              "meaningRomanUrdu": "Yeh aik saib hai.",
+              "speech": {
+                "text": "It is an apple.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She is a student.",
+              "meaningRomanUrdu": "Woh aik talib-e-ilm hai.",
+              "speech": {
+                "text": "She is a student.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-word-book",
+              "word": "book",
+              "meaningRomanUrdu": "kitab",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "book"
+            },
+            {
+              "id": "en-word-apple",
+              "word": "apple",
+              "meaningRomanUrdu": "saib",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "AP-uhl"
+            },
+            {
+              "id": "en-word-egg",
+              "word": "egg",
+              "meaningRomanUrdu": "anda",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "eg"
+            }
+          ],
+          "reading": {
+            "text": "This is a book. This is an apple. Ali is a student.",
+            "meaningRomanUrdu": "Yeh aik kitab hai. Yeh aik saib hai. Ali aik talib-e-ilm hai."
+          },
+          "speakingPrompts": [
+            "Name one thing with a and one thing with an. Say a book and an apple aloud."
+          ],
+          "reviewTags": [
+            "indefinite-articles",
+            "countable-nouns"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-article-choice",
+              "prompt": "Choose the correct phrase.",
+              "explanationRomanUrdu": "Book consonant sound se shuru hota hai: a book. Books plural hai, is liye a books durust nahin.",
+              "options": [
+                {
+                  "id": "article-book",
+                  "text": "a book"
+                },
+                {
+                  "id": "article-wrong",
+                  "text": "an book"
+                },
+                {
+                  "id": "article-plural",
+                  "text": "a books"
+                }
+              ],
+              "correctOptionId": "article-book"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-article-fill",
+              "prompt": "It is ___ apple.",
+              "explanationRomanUrdu": "Apple vowel sound se shuru hota hai, is liye an apple.",
+              "acceptedAnswers": [
+                "an"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-article-order",
+              "prompt": "Build: Yeh aik anda hai.",
+              "explanationRomanUrdu": "Durust jumla It is an egg. hai. Egg se pehle an aata hai.",
+              "tokens": [
+                {
+                  "id": "egg-an",
+                  "text": "an"
+                },
+                {
+                  "id": "egg-it",
+                  "text": "It"
+                },
+                {
+                  "id": "egg-egg",
+                  "text": "egg."
+                },
+                {
+                  "id": "egg-is",
+                  "text": "is"
+                }
+              ],
+              "correctOrder": [
+                "egg-it",
+                "egg-is",
+                "egg-an",
+                "egg-egg"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-article-match",
+              "prompt": "Match each phrase with its meaning.",
+              "explanationRomanUrdu": "A book aik kitab, an apple aik saib aur an egg aik anda hai.",
+              "pairs": [
+                {
+                  "id": "article-pair-book",
+                  "left": "a book",
+                  "right": "aik kitab"
+                },
+                {
+                  "id": "article-pair-apple",
+                  "left": "an apple",
+                  "right": "aik saib"
+                },
+                {
+                  "id": "article-pair-egg",
+                  "left": "an egg",
+                  "right": "aik anda"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-article-multi",
+              "prompt": "Choose both correct phrases.",
+              "explanationRomanUrdu": "Egg vowel sound se aur student consonant sound se shuru hota hai: an egg, a student.",
+              "options": [
+                {
+                  "id": "phrase-egg",
+                  "text": "an egg"
+                },
+                {
+                  "id": "phrase-student",
+                  "text": "a student"
+                },
+                {
+                  "id": "phrase-apple",
+                  "text": "a apple"
+                }
+              ],
+              "correctOptionIds": [
+                "phrase-egg",
+                "phrase-student"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
