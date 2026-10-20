@@ -6,7 +6,7 @@
 4. Active SDK: `/private/tmp/lingomate-android-sdk`; Gradle cache: `/private/tmp/lingomate-gradle`. Ignored `local.properties` points to that SDK. **User already approved** the exact SDK license hash below and isolated setup on 2026-10-20; do not request the same consent again.
 5. Tests, static analysis, builds and local commits are authorized for this project. On 2026-10-20 the user additionally authorized normal pushes of verified code to `origin develop/lingomate`; do not ask again for this same push scope. Main-branch updates, force pushes, device/emulator launches, paid APIs, deployment and destructive actions remain separate. Do not enable a paid provider or fabricate religious content.
 6. After meaningful work units update persistent status/queue/test/issues and relevant decisions/sources; commit verified logical changes. Document any WIP and exact next action before interruption. Keep source/static, JVM, APK/lint and device/backend evidence separate.
-7. Push authorization exists, but GitHub rejected the first push (HTTP 403, authenticated `aslamm14` lacks write access). The human was asked to grant/accept collaborator access or authenticate an authorized account. Wait for that access correction before retrying; continue local work meanwhile. Never force push or change accounts automatically.
+7. GitHub publication succeeded after the user switched authentication. Source checkpoint `d9b6800` and all preceding commits are on `origin/develop/lingomate`; `git ls-remote` confirmed the remote hash. The branch now tracks its upstream. The prior HTTP 403 blocker is resolved; do not ask for the same access correction again. Inspect Git status before further work and use normal pushes within the existing authorization; never force push or change accounts automatically. Main remains unchanged.
 
 ## Commands
 If the temporary SDK is still present, do not reinstall it. If it was cleaned, recreate using the already approved hash:
@@ -22,4 +22,4 @@ GRADLE_USER_HOME=/private/tmp/lingomate-gradle ./gradlew --no-daemon :app:testDe
 ```
 The first Robolectric runtime download can take several minutes; do not mistake it for an app/test hang or start duplicate Gradle runs. No test has passed unless its result was actually inspected.
 
-Suggested resumption: “Continue LingoMate AI from the saved checkpoint. Read the progress files, reconcile Git state and continue the earliest unfinished task. Tests/builds/local commits authorized; no paid calls, deployment or external push.”
+Suggested resumption: “Continue LingoMate AI from the saved checkpoint. Read the progress files, reconcile Git state and continue the earliest unfinished task. Tests/builds/local commits and normal pushes to origin develop/lingomate are authorized; no paid calls, deployment, force pushes or main-branch changes.”

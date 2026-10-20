@@ -2,6 +2,8 @@
 
 Status values: TODO / IN_PROGRESS / BLOCKED / DONE. DONE requires recorded acceptance evidence. See milestone gates in `MASTER_PLAN.md`.
 
+Publication checkpoint (2026-10-20): source through `d9b6800` is pushed to `origin/develop/lingomate`, with the remote hash confirmed. GIT-01 is resolved after the user's authentication switch. Next implementation remains M4-01; publication does not complete any pending curriculum or device acceptance gate.
+
 | ID | Milestone | Status | Task | Dependencies | Acceptance / remaining | Files | Test evidence / commit | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | M1-01 | M1 | DONE | Repository, instructions, requirements and checkpoint system | None | Remote history preserved; required planning files and verbatim product specification captured | AGENTS.md, docs/*, .gitignore | Planning checkpoint 92f1041; initial remote c06f3ab | Continue M1-02 |

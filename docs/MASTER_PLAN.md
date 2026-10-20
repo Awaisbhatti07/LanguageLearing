@@ -1,7 +1,7 @@
 # LingoMate AI master plan
 
 Source requirements: `PRODUCT_REQUIREMENTS.md` (user-provided, preserved verbatim).
-Started: 2026-10-20, Asia/Karachi. Remote: https://github.com/Awaisbhatti07/LanguageLearing.git. All checkpoints remain local until a push is authorized.
+Started: 2026-10-20, Asia/Karachi. Remote: https://github.com/Awaisbhatti07/LanguageLearing.git. Normal pushes to `develop/lingomate` are authorized; verified source through `d9b6800` is published on that branch. Main remains unchanged.
 
 | Milestone | Deliverables and acceptance gate |
 | --- | --- |
@@ -24,4 +24,4 @@ No milestone is complete until its acceptance evidence exists. Later milestone p
 
 2026-10-20 M3 checkpoint: 29 core and 25 app tests pass, including pack validation/grading, safe imports, explicit v1→v2 migration, concurrency/idempotence and two complete Compose lesson flows. APK/lint pass. Offline device TTS is implemented with honest failure states; physical audio/runtime quality is not verified. M4 A0 expansion is next; the full course remains unfinished.
 
-2026-10-20 M4 work: A0 pack v2 now contains 11 lessons/55 activities and passes topic-tag/structural checks, compatibility flows and the actual v1→v2 update regression. Across full/focused runs, 30 core/26 distinct app tests pass with APK/lint. M4 remains incomplete: qualified language review, dedicated listening assessment/audio verification and A1–B1 content remain outstanding. GitHub push is authorized but rejected for missing collaborator write access.
+2026-10-20 M4 work: A0 pack v2 now contains 11 lessons/55 activities and passes topic-tag/structural checks, compatibility flows and the actual v1→v2 update regression. Across full/focused runs, 30 core/26 distinct app tests pass with APK/lint. M4 remains incomplete: qualified language review, dedicated listening assessment/audio verification and A1–B1 content remain outstanding. GitHub publication succeeded after the user switched authentication; remote development-branch source hash `d9b6800` was confirmed.
