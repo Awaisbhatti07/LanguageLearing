@@ -1,0 +1,2280 @@
+{
+  "schemaVersion": 1,
+  "id": "english-a0-starter",
+  "version": 2,
+  "title": "English A0 foundations",
+  "track": "ENGLISH",
+  "level": "A0",
+  "provenance": {
+    "author": "Original LingoMate AI project material, AI-assisted draft",
+    "rightsNotice": "Original project-authored educational material; no third-party curriculum copied. Distribution permission follows the project owner’s decision.",
+    "reviewStatus": "PENDING_REVIEW"
+  },
+  "units": [
+    {
+      "id": "en-a0-letters-sounds",
+      "title": "Letters and clear sounds",
+      "lessons": [
+        {
+          "id": "en-a0-alphabet",
+          "title": "Letters and the alphabet",
+          "objectives": [
+            "Recognize all 26 English letters.",
+            "Distinguish letter names from sounds in words."
+          ],
+          "explanationRomanUrdu": "English mein 26 letters hain. Har letter ki capital aur small shakal hoti hai, jaise A aur a. Alphabet ki tartib A se Z tak hai. A, E, I, O, U vowel letters hain. Letter ka naam aur lafz mein uski awaaz hamesha aik nahin hoti: A ka naam ay hai lekin apple mein awaaz mukhtalif hai.",
+          "rulesRomanUrdu": [
+            "Capital: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z.",
+            "Small: a b c d e f g h i j k l m n o p q r s t u v w x y z.",
+            "Naam ka pehla letter capital hota hai. I jab main ke maani mein ho to hamesha capital hai.",
+            "Alphabet ki practice mein letter names sunain; lafzon ki pronunciation alag practice karain."
+          ],
+          "examples": [
+            {
+              "text": "A, B, C",
+              "meaningRomanUrdu": "Alphabet ke pehle teen letters.",
+              "speech": {
+                "text": "A, B, C",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "My name is Ali.",
+              "meaningRomanUrdu": "Mera naam Ali hai; Ali ka A capital hai.",
+              "speech": {
+                "text": "My name is Ali.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "a, e, i, o, u",
+              "meaningRomanUrdu": "Vowel letters ki small shaklain.",
+              "speech": {
+                "text": "a, e, i, o, u",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a0-alphabet-word-00",
+              "word": "letter",
+              "meaningRomanUrdu": "harf",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "LET-er"
+            },
+            {
+              "id": "en-a0-alphabet-word-01",
+              "word": "capital",
+              "meaningRomanUrdu": "bara harf / uppercase",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "KAP-i-tuhl"
+            },
+            {
+              "id": "en-a0-alphabet-word-02",
+              "word": "small",
+              "meaningRomanUrdu": "chhota",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "smawl"
+            },
+            {
+              "id": "en-a0-alphabet-word-03",
+              "word": "alphabet",
+              "meaningRomanUrdu": "huroof ki tartib",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "AL-fuh-bet"
+            }
+          ],
+          "reading": {
+            "text": "A and a are the same letter. My name is Sara. I am a student.",
+            "meaningRomanUrdu": "A aur a aik hi harf ki do shaklain hain. Mera naam Sara hai. Main talib-e-ilm hoon."
+          },
+          "speakingPrompts": [
+            "Say the alphabet slowly. Then spell your name letter by letter."
+          ],
+          "reviewTags": [
+            "alphabet",
+            "capital-letters",
+            "letter-sounds"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-alpha-choice",
+              "prompt": "What comes after B in the alphabet?",
+              "explanationRomanUrdu": "Alphabet ki tartib A, B, C hai; B ke baad C aata hai.",
+              "options": [
+                {
+                  "id": "alpha-c",
+                  "text": "C"
+                },
+                {
+                  "id": "alpha-a",
+                  "text": "A"
+                },
+                {
+                  "id": "alpha-z",
+                  "text": "Z"
+                }
+              ],
+              "correctOptionId": "alpha-c"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-alpha-fill",
+              "prompt": "Write the small form of the capital letter M.",
+              "explanationRomanUrdu": "M ki small shakal m hai.",
+              "acceptedAnswers": [
+                "m"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-alpha-match",
+              "prompt": "Match each item with its meaning.",
+              "explanationRomanUrdu": "Capital aur small shaklain aik hi letter ko zahir karti hain: A/a, B/b, C/c.",
+              "pairs": [
+                {
+                  "id": "alpha-pair-a",
+                  "left": "A",
+                  "right": "a"
+                },
+                {
+                  "id": "alpha-pair-b",
+                  "left": "B",
+                  "right": "b"
+                },
+                {
+                  "id": "alpha-pair-c",
+                  "left": "C",
+                  "right": "c"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-alpha-multi",
+              "prompt": "Choose both vowel letters.",
+              "explanationRomanUrdu": "A aur E vowel letters hain. B consonant letter hai.",
+              "options": [
+                {
+                  "id": "alpha-v-a",
+                  "text": "A"
+                },
+                {
+                  "id": "alpha-v-e",
+                  "text": "E"
+                },
+                {
+                  "id": "alpha-v-b",
+                  "text": "B"
+                }
+              ],
+              "correctOptionIds": [
+                "alpha-v-a",
+                "alpha-v-e"
+              ]
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-alpha-order",
+              "prompt": "Put these letters in alphabet order.",
+              "explanationRomanUrdu": "Pehle A, phir B, phir C aata hai.",
+              "tokens": [
+                {
+                  "id": "alpha-t-c",
+                  "text": "C"
+                },
+                {
+                  "id": "alpha-t-a",
+                  "text": "A"
+                },
+                {
+                  "id": "alpha-t-b",
+                  "text": "B"
+                }
+              ],
+              "correctOrder": [
+                "alpha-t-a",
+                "alpha-t-b",
+                "alpha-t-c"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "en-a0-sounds",
+          "title": "Sounds, syllables and word stress",
+          "objectives": [
+            "Notice that English spelling does not always predict sound.",
+            "Practise a stressed syllable and the th sounds without an automatic score."
+          ],
+          "explanationRomanUrdu": "English pronunciation mein sirf spelling par bharosa nahin karna chahiye. Ship aur sheep mein vowel ki awaaz farq hai; sirf lafz ko lamba kheenchna kaafi nahin. Lafz ke hissay syllables kehlate hain. TA-ble mein pehle hissay par zor hai. Think ka th be-awaaz aur this ka th awaaz ke saath bola jata hai. Roman Urdu guides sirf qareebi madad hain, exact English sounds ka badal nahin.",
+          "rulesRomanUrdu": [
+            "Word stress mein aik syllable doosray se zyada numayan hota hai: TA-ble, STU-dent.",
+            "Ship aur sheep alag alfaz hain; device voice sun kar unki vowel quality aur lambai dono par tawajjoh dein.",
+            "Th ke liye zaban ki nok aglay daanton ke qareeb rakhein aur hawa nikalain; this mein vocal cords ki vibration hoti hai.",
+            "Accent ka farq khud-ba-khud grammar ya pronunciation ki ghalti nahin. Is lesson mein koi automatic pronunciation score nahin."
+          ],
+          "examples": [
+            {
+              "text": "ship, sheep",
+              "meaningRomanUrdu": "Ship kashti / jahaz; sheep bher. Dono ki vowel mukhtalif hai.",
+              "speech": {
+                "text": "ship, sheep",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "table",
+              "meaningRomanUrdu": "Mez; pehle syllable par zor hai.",
+              "speech": {
+                "text": "table",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "think, this",
+              "meaningRomanUrdu": "Think sochna; this yeh. Th ki awaaz mukhtalif hai.",
+              "speech": {
+                "text": "think, this",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a0-sounds-word-00",
+              "word": "ship",
+              "meaningRomanUrdu": "kashti / jahaz",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "ship"
+            },
+            {
+              "id": "en-a0-sounds-word-01",
+              "word": "sheep",
+              "meaningRomanUrdu": "bher",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "sheep"
+            },
+            {
+              "id": "en-a0-sounds-word-02",
+              "word": "table",
+              "meaningRomanUrdu": "mez",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "TAY-buhl"
+            },
+            {
+              "id": "en-a0-sounds-word-03",
+              "word": "think",
+              "meaningRomanUrdu": "sochna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "think"
+            }
+          ],
+          "reading": {
+            "text": "This is a table. The ship is here. I see a sheep.",
+            "meaningRomanUrdu": "Yeh aik mez hai. Jahaz yahan hai. Mujhe aik bher nazar aati hai."
+          },
+          "speakingPrompts": [
+            "Listen to ship and sheep, then repeat slowly. Say TA-ble with stress on the first syllable."
+          ],
+          "reviewTags": [
+            "pronunciation-basics",
+            "word-stress",
+            "letter-sounds"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-sound-choice",
+              "prompt": "In TA-ble, which syllable is stressed?",
+              "explanationRomanUrdu": "TA-ble mein pehle hissay par zor hota hai.",
+              "options": [
+                {
+                  "id": "sound-first",
+                  "text": "First"
+                },
+                {
+                  "id": "sound-second",
+                  "text": "Second"
+                }
+              ],
+              "correctOptionId": "sound-first"
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-sound-match",
+              "prompt": "Match each item with its meaning.",
+              "explanationRomanUrdu": "Ship jahaz hai, sheep bher hai aur table mez hai. Vowel ka farq maani badal sakta hai.",
+              "pairs": [
+                {
+                  "id": "sound-pair-ship",
+                  "left": "ship",
+                  "right": "jahaz"
+                },
+                {
+                  "id": "sound-pair-sheep",
+                  "left": "sheep",
+                  "right": "bher"
+                },
+                {
+                  "id": "sound-pair-table",
+                  "left": "table",
+                  "right": "mez"
+                }
+              ]
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-sound-fill",
+              "prompt": "Which word means bher: ship or sheep?",
+              "explanationRomanUrdu": "Sheep bher hai; ship jahaz hai.",
+              "acceptedAnswers": [
+                "sheep"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-sound-multi",
+              "prompt": "Choose both statements taught in this lesson.",
+              "explanationRomanUrdu": "Spelling aur qareebi guides madad hain. App is lesson mein pronunciation ko measure nahin karta.",
+              "options": [
+                {
+                  "id": "sound-spelling",
+                  "text": "Spelling does not always predict sound."
+                },
+                {
+                  "id": "sound-guide",
+                  "text": "Roman Urdu sound guides are approximate."
+                },
+                {
+                  "id": "sound-score",
+                  "text": "This lesson measures your pronunciation precisely."
+                }
+              ],
+              "correctOptionIds": [
+                "sound-spelling",
+                "sound-guide"
+              ]
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-sound-order",
+              "prompt": "Build: Yeh aik mez hai.",
+              "explanationRomanUrdu": "This is a table. Aik aam cheez ki pehchan ka jumla hai.",
+              "tokens": [
+                {
+                  "id": "sound-t-table",
+                  "text": "table."
+                },
+                {
+                  "id": "sound-t-is",
+                  "text": "is"
+                },
+                {
+                  "id": "sound-t-this",
+                  "text": "This"
+                },
+                {
+                  "id": "sound-t-a",
+                  "text": "a"
+                }
+              ],
+              "correctOrder": [
+                "sound-t-this",
+                "sound-t-is",
+                "sound-t-a",
+                "sound-t-table"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "en-a0-first-sentences",
+      "title": "Your first sentences",
+      "lessons": [
+        {
+          "id": "en-a0-greetings",
+          "title": "Hello and introductions",
+          "objectives": [
+            "Greet someone politely.",
+            "Say your name in a short sentence."
+          ],
+          "explanationRomanUrdu": "Kisi se milte waqt Hello keh sakte hain. Apna naam batane ke liye My name is ... bolain. Yeh jumla har naam ke saath isi tarah istemal hota hai. Good morning subah ki mulaqat mein aur Goodbye rukhsat hote waqt kehte hain.",
+          "rulesRomanUrdu": [
+            "My name is ke baad apna naam likhain: My name is Sara.",
+            "Hello aam greeting hai; Goodbye alvida kehne ke liye hai.",
+            "Naam ka pehla harf capital hota hai. Jumlay ke aakhir mein full stop lagta hai."
+          ],
+          "examples": [
+            {
+              "text": "Hello. My name is Sara.",
+              "meaningRomanUrdu": "Salam. Mera naam Sara hai.",
+              "speech": {
+                "text": "Hello. My name is Sara.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Good morning, Ali.",
+              "meaningRomanUrdu": "Subah bakhair, Ali.",
+              "speech": {
+                "text": "Good morning, Ali.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Goodbye, Sara.",
+              "meaningRomanUrdu": "Alvida, Sara.",
+              "speech": {
+                "text": "Goodbye, Sara.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-word-hello",
+              "word": "hello",
+              "meaningRomanUrdu": "salam / mulaqat ki greeting",
+              "partOfSpeech": "greeting",
+              "pronunciationGuide": "huh-LOH"
+            },
+            {
+              "id": "en-word-name",
+              "word": "name",
+              "meaningRomanUrdu": "naam",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "naym"
+            },
+            {
+              "id": "en-word-goodbye",
+              "word": "goodbye",
+              "meaningRomanUrdu": "alvida",
+              "partOfSpeech": "greeting",
+              "pronunciationGuide": "good-BYE"
+            }
+          ],
+          "reading": {
+            "text": "Hello. My name is Ali. My friend is Sara.",
+            "meaningRomanUrdu": "Salam. Mera naam Ali hai. Meri dost Sara hai."
+          },
+          "speakingPrompts": [
+            "Say Hello, then introduce yourself using My name is and your own name."
+          ],
+          "reviewTags": [
+            "greetings",
+            "introductions"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-greet-choice",
+              "prompt": "Which word greets someone?",
+              "explanationRomanUrdu": "Hello mulaqat ki greeting hai. Goodbye rukhsat hone ke liye hai.",
+              "options": [
+                {
+                  "id": "greet-hello",
+                  "text": "Hello"
+                },
+                {
+                  "id": "greet-bye",
+                  "text": "Goodbye"
+                },
+                {
+                  "id": "greet-name",
+                  "text": "Name"
+                }
+              ],
+              "correctOptionId": "greet-hello"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-greet-fill",
+              "prompt": "My name ___ Ali.",
+              "explanationRomanUrdu": "My name is ... apna naam batane ka jumla hai.",
+              "acceptedAnswers": [
+                "is"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-greet-order",
+              "prompt": "Build: Mera naam Sara hai.",
+              "explanationRomanUrdu": "Durust tartib My name is Sara. hai.",
+              "tokens": [
+                {
+                  "id": "name-sara",
+                  "text": "Sara."
+                },
+                {
+                  "id": "name-is",
+                  "text": "is"
+                },
+                {
+                  "id": "name-my",
+                  "text": "My"
+                },
+                {
+                  "id": "name-name",
+                  "text": "name"
+                }
+              ],
+              "correctOrder": [
+                "name-my",
+                "name-name",
+                "name-is",
+                "name-sara"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-greet-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Hello mulaqat, Goodbye alvida, aur My name is Ali. naam batane ke liye hai.",
+              "pairs": [
+                {
+                  "id": "greet-pair-hello",
+                  "left": "Hello",
+                  "right": "Mulaqat ki greeting"
+                },
+                {
+                  "id": "greet-pair-bye",
+                  "left": "Goodbye",
+                  "right": "Alvida"
+                },
+                {
+                  "id": "greet-pair-name",
+                  "left": "My name is Ali.",
+                  "right": "Mera naam Ali hai."
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-greet-multi",
+              "prompt": "Choose both expressions used when meeting someone.",
+              "explanationRomanUrdu": "Hello aur Good morning mulaqat ke waqt kehte hain. Goodbye rukhsat ke waqt hai.",
+              "options": [
+                {
+                  "id": "meet-hello",
+                  "text": "Hello"
+                },
+                {
+                  "id": "meet-morning",
+                  "text": "Good morning"
+                },
+                {
+                  "id": "meet-bye",
+                  "text": "Goodbye"
+                }
+              ],
+              "correctOptionIds": [
+                "meet-hello",
+                "meet-morning"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "en-a0-pronouns-be",
+          "title": "I am, you are, she is",
+          "objectives": [
+            "Choose am, is or are with a subject.",
+            "Understand basic subject pronouns."
+          ],
+          "explanationRomanUrdu": "Pronoun naam ki jagah aata hai. I ka matlab main, you ka aap ya tum, he ka woh mard aur she ka woh aurat hai. Be verb ki soorat subject ke mutabiq badalti hai. I ke saath am; he, she, it ke saath is; you, we, they ke saath are aata hai.",
+          "rulesRomanUrdu": [
+            "I am; he is; she is; it is.",
+            "You are; we are; they are. You aik ya zyada logon ke liye ho, dono mein are aata hai.",
+            "Subject aur be verb ke baad naam, pehchan ya halat aati hai: I am happy."
+          ],
+          "examples": [
+            {
+              "text": "I am a student.",
+              "meaningRomanUrdu": "Main talib-e-ilm hoon.",
+              "speech": {
+                "text": "I am a student.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She is happy.",
+              "meaningRomanUrdu": "Woh khush hai.",
+              "speech": {
+                "text": "She is happy.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "They are here.",
+              "meaningRomanUrdu": "Woh log yahan hain.",
+              "speech": {
+                "text": "They are here.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-word-student",
+              "word": "student",
+              "meaningRomanUrdu": "talib-e-ilm",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "STOO-duhnt"
+            },
+            {
+              "id": "en-word-happy",
+              "word": "happy",
+              "meaningRomanUrdu": "khush",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "HAP-ee"
+            },
+            {
+              "id": "en-word-here",
+              "word": "here",
+              "meaningRomanUrdu": "yahan",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "heer"
+            }
+          ],
+          "reading": {
+            "text": "I am Ali. She is Sara. We are students. They are here.",
+            "meaningRomanUrdu": "Main Ali hoon. Woh Sara hai. Hum talib-e-ilm hain. Woh log yahan hain."
+          },
+          "speakingPrompts": [
+            "Say one sentence beginning I am and one beginning We are."
+          ],
+          "reviewTags": [
+            "subject-pronouns",
+            "be-verb"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-be-choice",
+              "prompt": "She ___ happy.",
+              "explanationRomanUrdu": "She ke saath is aata hai: She is happy.",
+              "options": [
+                {
+                  "id": "be-am",
+                  "text": "am"
+                },
+                {
+                  "id": "be-is",
+                  "text": "is"
+                },
+                {
+                  "id": "be-are",
+                  "text": "are"
+                }
+              ],
+              "correctOptionId": "be-is"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-be-fill",
+              "prompt": "I ___ a student.",
+              "explanationRomanUrdu": "I ke saath am aata hai: I am a student.",
+              "acceptedAnswers": [
+                "am"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-be-order",
+              "prompt": "Build: Hum yahan hain.",
+              "explanationRomanUrdu": "We ke saath are: We are here.",
+              "tokens": [
+                {
+                  "id": "we-here",
+                  "text": "here."
+                },
+                {
+                  "id": "we-are",
+                  "text": "are"
+                },
+                {
+                  "id": "we-we",
+                  "text": "We"
+                }
+              ],
+              "correctOrder": [
+                "we-we",
+                "we-are",
+                "we-here"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-be-match",
+              "prompt": "Match the pronoun with its be verb.",
+              "explanationRomanUrdu": "I am, She is aur They are yaad rakhain.",
+              "pairs": [
+                {
+                  "id": "be-pair-i",
+                  "left": "I",
+                  "right": "am"
+                },
+                {
+                  "id": "be-pair-she",
+                  "left": "She",
+                  "right": "is"
+                },
+                {
+                  "id": "be-pair-they",
+                  "left": "They",
+                  "right": "are"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-be-multi",
+              "prompt": "Choose both correct sentences.",
+              "explanationRomanUrdu": "I ke saath am, you ke saath are, aur she ke saath is aata hai.",
+              "options": [
+                {
+                  "id": "correct-i",
+                  "text": "I am happy."
+                },
+                {
+                  "id": "correct-you",
+                  "text": "You are here."
+                },
+                {
+                  "id": "wrong-she",
+                  "text": "She are a student."
+                }
+              ],
+              "correctOptionIds": [
+                "correct-i",
+                "correct-you"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "en-a0-articles",
+          "title": "A book, an apple",
+          "objectives": [
+            "Use a and an with singular countable nouns.",
+            "Choose the article from the next spoken sound."
+          ],
+          "explanationRomanUrdu": "A aur an kisi aik ghair-muayyan, ginay ja sakne walay naam ke saath lagte hain. Agla lafz consonant sound se shuru ho to a, aur vowel sound se shuru ho to an lagta hai. Faisla awaaz se hota hai, sirf pehle likhay harf se nahin. Misal: a book, an apple.",
+          "rulesRomanUrdu": [
+            "Consonant sound se pehle a: a book, a pen.",
+            "Vowel sound se pehle an: an apple, an egg.",
+            "A/an sirf singular countable noun ke saath lagta hai. Books ke saath a/an nahin aata.",
+            "Awaaz dekhein: a university mein pehli awaaz yoo hai; an hour mein h ki awaaz nahin aati."
+          ],
+          "examples": [
+            {
+              "text": "This is a book.",
+              "meaningRomanUrdu": "Yeh aik kitab hai.",
+              "speech": {
+                "text": "This is a book.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "It is an apple.",
+              "meaningRomanUrdu": "Yeh aik saib hai.",
+              "speech": {
+                "text": "It is an apple.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She is a student.",
+              "meaningRomanUrdu": "Woh aik talib-e-ilm hai.",
+              "speech": {
+                "text": "She is a student.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-word-book",
+              "word": "book",
+              "meaningRomanUrdu": "kitab",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "book"
+            },
+            {
+              "id": "en-word-apple",
+              "word": "apple",
+              "meaningRomanUrdu": "saib",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "AP-uhl"
+            },
+            {
+              "id": "en-word-egg",
+              "word": "egg",
+              "meaningRomanUrdu": "anda",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "eg"
+            }
+          ],
+          "reading": {
+            "text": "This is a book. This is an apple. Ali is a student.",
+            "meaningRomanUrdu": "Yeh aik kitab hai. Yeh aik saib hai. Ali aik talib-e-ilm hai."
+          },
+          "speakingPrompts": [
+            "Name one thing with a and one thing with an. Say a book and an apple aloud."
+          ],
+          "reviewTags": [
+            "indefinite-articles",
+            "countable-nouns"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-article-choice",
+              "prompt": "Choose the correct phrase.",
+              "explanationRomanUrdu": "Book consonant sound se shuru hota hai: a book. Books plural hai, is liye a books durust nahin.",
+              "options": [
+                {
+                  "id": "article-book",
+                  "text": "a book"
+                },
+                {
+                  "id": "article-wrong",
+                  "text": "an book"
+                },
+                {
+                  "id": "article-plural",
+                  "text": "a books"
+                }
+              ],
+              "correctOptionId": "article-book"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-article-fill",
+              "prompt": "It is ___ apple.",
+              "explanationRomanUrdu": "Apple vowel sound se shuru hota hai, is liye an apple.",
+              "acceptedAnswers": [
+                "an"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-article-order",
+              "prompt": "Build: Yeh aik anda hai.",
+              "explanationRomanUrdu": "Durust jumla It is an egg. hai. Egg se pehle an aata hai.",
+              "tokens": [
+                {
+                  "id": "egg-an",
+                  "text": "an"
+                },
+                {
+                  "id": "egg-it",
+                  "text": "It"
+                },
+                {
+                  "id": "egg-egg",
+                  "text": "egg."
+                },
+                {
+                  "id": "egg-is",
+                  "text": "is"
+                }
+              ],
+              "correctOrder": [
+                "egg-it",
+                "egg-is",
+                "egg-an",
+                "egg-egg"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-article-match",
+              "prompt": "Match each phrase with its meaning.",
+              "explanationRomanUrdu": "A book aik kitab, an apple aik saib aur an egg aik anda hai.",
+              "pairs": [
+                {
+                  "id": "article-pair-book",
+                  "left": "a book",
+                  "right": "aik kitab"
+                },
+                {
+                  "id": "article-pair-apple",
+                  "left": "an apple",
+                  "right": "aik saib"
+                },
+                {
+                  "id": "article-pair-egg",
+                  "left": "an egg",
+                  "right": "aik anda"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-article-multi",
+              "prompt": "Choose both correct phrases.",
+              "explanationRomanUrdu": "Egg vowel sound se aur student consonant sound se shuru hota hai: an egg, a student.",
+              "options": [
+                {
+                  "id": "phrase-egg",
+                  "text": "an egg"
+                },
+                {
+                  "id": "phrase-student",
+                  "text": "a student"
+                },
+                {
+                  "id": "phrase-apple",
+                  "text": "a apple"
+                }
+              ],
+              "correctOptionIds": [
+                "phrase-egg",
+                "phrase-student"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "en-a0-everyday-words",
+          "title": "People and things around you",
+          "objectives": [
+            "Recognize everyday people, place and object words.",
+            "Use this and that to identify things."
+          ],
+          "explanationRomanUrdu": "Noun kisi shakhs, jagah ya cheez ka naam hota hai. Teacher shakhs, school jagah aur book cheez hai. This qareeb ki aik cheez ke liye aur that door ki aik cheez ke liye aata hai. Is lesson mein this aur that ke saath is lagta hai.",
+          "rulesRomanUrdu": [
+            "Qareeb: This is a pen. Door: That is a school.",
+            "Shakhs: teacher, student. Jagah: school, home. Cheez: book, pen, bag.",
+            "A teacher ka matlab aik ustad hai. A school aik school ko kehte hain."
+          ],
+          "examples": [
+            {
+              "text": "This is a pen.",
+              "meaningRomanUrdu": "Yeh aik qalam hai.",
+              "speech": {
+                "text": "This is a pen.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "That is a school.",
+              "meaningRomanUrdu": "Woh aik school hai.",
+              "speech": {
+                "text": "That is a school.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She is a teacher.",
+              "meaningRomanUrdu": "Woh ustad hai.",
+              "speech": {
+                "text": "She is a teacher.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a0-everyday-words-word-00",
+              "word": "teacher",
+              "meaningRomanUrdu": "ustad",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "TEE-cher"
+            },
+            {
+              "id": "en-a0-everyday-words-word-01",
+              "word": "school",
+              "meaningRomanUrdu": "school / taleemi idara",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "skool"
+            },
+            {
+              "id": "en-a0-everyday-words-word-02",
+              "word": "home",
+              "meaningRomanUrdu": "ghar",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "hohm"
+            },
+            {
+              "id": "en-a0-everyday-words-word-03",
+              "word": "pen",
+              "meaningRomanUrdu": "qalam",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "pen"
+            },
+            {
+              "id": "en-a0-everyday-words-word-04",
+              "word": "bag",
+              "meaningRomanUrdu": "basta / bag",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "bag"
+            }
+          ],
+          "reading": {
+            "text": "This is a bag. A book and a pen are in the bag. That is my school.",
+            "meaningRomanUrdu": "Yeh aik basta hai. Aik kitab aur aik qalam bastay mein hain. Woh mera school hai."
+          },
+          "speakingPrompts": [
+            "Point to a nearby object and say This is a followed by its English name."
+          ],
+          "reviewTags": [
+            "basic-vocabulary",
+            "demonstratives",
+            "nouns"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-words-choice",
+              "prompt": "Which word names a person?",
+              "explanationRomanUrdu": "Teacher aik shakhs yani ustad hai. School jagah aur pen cheez hai.",
+              "options": [
+                {
+                  "id": "words-teacher",
+                  "text": "teacher"
+                },
+                {
+                  "id": "words-school",
+                  "text": "school"
+                },
+                {
+                  "id": "words-pen",
+                  "text": "pen"
+                }
+              ],
+              "correctOptionId": "words-teacher"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-words-fill",
+              "prompt": "This ___ a pen.",
+              "explanationRomanUrdu": "This ke saath is aata hai: This is a pen.",
+              "acceptedAnswers": [
+                "is"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-words-match",
+              "prompt": "Match each item with its meaning.",
+              "explanationRomanUrdu": "Home ghar, pen qalam aur bag basta hai.",
+              "pairs": [
+                {
+                  "id": "words-pair-home",
+                  "left": "home",
+                  "right": "ghar"
+                },
+                {
+                  "id": "words-pair-pen",
+                  "left": "pen",
+                  "right": "qalam"
+                },
+                {
+                  "id": "words-pair-bag",
+                  "left": "bag",
+                  "right": "basta"
+                }
+              ]
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-words-order",
+              "prompt": "Build: Woh aik school hai.",
+              "explanationRomanUrdu": "That is a school. Door ki jagah ki pehchan hai.",
+              "tokens": [
+                {
+                  "id": "words-t-a",
+                  "text": "a"
+                },
+                {
+                  "id": "words-t-school",
+                  "text": "school."
+                },
+                {
+                  "id": "words-t-that",
+                  "text": "That"
+                },
+                {
+                  "id": "words-t-is",
+                  "text": "is"
+                }
+              ],
+              "correctOrder": [
+                "words-t-that",
+                "words-t-is",
+                "words-t-a",
+                "words-t-school"
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-words-multi",
+              "prompt": "Choose both words for objects.",
+              "explanationRomanUrdu": "Book aur bag cheezon ke naam hain. Teacher shakhs hai.",
+              "options": [
+                {
+                  "id": "words-o-book",
+                  "text": "book"
+                },
+                {
+                  "id": "words-o-bag",
+                  "text": "bag"
+                },
+                {
+                  "id": "words-o-teacher",
+                  "text": "teacher"
+                }
+              ],
+              "correctOptionIds": [
+                "words-o-book",
+                "words-o-bag"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "en-a0-plurals",
+          "title": "One book, two books",
+          "objectives": [
+            "Make common regular plurals.",
+            "Recognize a few important irregular plurals."
+          ],
+          "explanationRomanUrdu": "Singular aik cheez aur plural aik se zyada cheezon ke liye hai. Aksar nouns ke aakhir mein s lagta hai: book se books. Kuch endings ke baad es lagta hai: bus se buses. Kuch words qaidah nahin mante: child se children aur person se people. Har plural s se nahin banta.",
+          "rulesRomanUrdu": [
+            "Aksar noun + s: pen/pens, book/books.",
+            "S, sh, ch ya x jaisi endings ke baad aam tor par es: bus/buses, box/boxes.",
+            "Consonant + y mein y ko ies: city/cities. Vowel + y mein s: boy/boys.",
+            "Irregular: child/children, person/people. A/an ko plural ke saath na lagain."
+          ],
+          "examples": [
+            {
+              "text": "One book, two books.",
+              "meaningRomanUrdu": "Aik kitab, do kitabein.",
+              "speech": {
+                "text": "One book, two books.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "One child, two children.",
+              "meaningRomanUrdu": "Aik bacha, do bachay.",
+              "speech": {
+                "text": "One child, two children.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "The boxes are here.",
+              "meaningRomanUrdu": "Dabbay yahan hain.",
+              "speech": {
+                "text": "The boxes are here.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a0-plurals-word-00",
+              "word": "book",
+              "meaningRomanUrdu": "kitab",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "book"
+            },
+            {
+              "id": "en-a0-plurals-word-01",
+              "word": "box",
+              "meaningRomanUrdu": "dabba",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "boks"
+            },
+            {
+              "id": "en-a0-plurals-word-02",
+              "word": "child",
+              "meaningRomanUrdu": "bacha",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "chyld"
+            },
+            {
+              "id": "en-a0-plurals-word-03",
+              "word": "children",
+              "meaningRomanUrdu": "bachay",
+              "partOfSpeech": "plural noun",
+              "pronunciationGuide": "CHIL-druhn"
+            },
+            {
+              "id": "en-a0-plurals-word-04",
+              "word": "city",
+              "meaningRomanUrdu": "shehar",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "SIT-ee"
+            }
+          ],
+          "reading": {
+            "text": "One child has a book. Two children have books. The boxes are here.",
+            "meaningRomanUrdu": "Aik bachay ke paas kitab hai. Do bachon ke paas kitabein hain. Dabbay yahan hain."
+          },
+          "speakingPrompts": [
+            "Say one pen and two pens. Then say one child and two children."
+          ],
+          "reviewTags": [
+            "singular-plural",
+            "irregular-plurals"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-plural-choice",
+              "prompt": "Choose the plural of child.",
+              "explanationRomanUrdu": "Child ka irregular plural children hai, childs nahin.",
+              "options": [
+                {
+                  "id": "plural-children",
+                  "text": "children"
+                },
+                {
+                  "id": "plural-childs",
+                  "text": "childs"
+                },
+                {
+                  "id": "plural-child",
+                  "text": "child"
+                }
+              ],
+              "correctOptionId": "plural-children"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-plural-fill",
+              "prompt": "One book, two ___.",
+              "explanationRomanUrdu": "Regular plural ke liye book ke aakhir mein s: books.",
+              "acceptedAnswers": [
+                "books"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-plural-match",
+              "prompt": "Match each item with its meaning.",
+              "explanationRomanUrdu": "Box/boxes aur city/cities qawaid se bante hain. Person/people irregular hai.",
+              "pairs": [
+                {
+                  "id": "plural-pair-box",
+                  "left": "box",
+                  "right": "boxes"
+                },
+                {
+                  "id": "plural-pair-city",
+                  "left": "city",
+                  "right": "cities"
+                },
+                {
+                  "id": "plural-pair-person",
+                  "left": "person",
+                  "right": "people"
+                }
+              ]
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-plural-order",
+              "prompt": "Build: Dabbay yahan hain.",
+              "explanationRomanUrdu": "Boxes plural hai, is liye The boxes are here.",
+              "tokens": [
+                {
+                  "id": "plural-t-here",
+                  "text": "here."
+                },
+                {
+                  "id": "plural-t-boxes",
+                  "text": "boxes"
+                },
+                {
+                  "id": "plural-t-the",
+                  "text": "The"
+                },
+                {
+                  "id": "plural-t-are",
+                  "text": "are"
+                }
+              ],
+              "correctOrder": [
+                "plural-t-the",
+                "plural-t-boxes",
+                "plural-t-are",
+                "plural-t-here"
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-plural-multi",
+              "prompt": "Choose both correct plural phrases.",
+              "explanationRomanUrdu": "Two books aur three children durust hain. A singular ke liye hai, a pens nahin.",
+              "options": [
+                {
+                  "id": "plural-two",
+                  "text": "two books"
+                },
+                {
+                  "id": "plural-children-p",
+                  "text": "three children"
+                },
+                {
+                  "id": "plural-an",
+                  "text": "a pens"
+                }
+              ],
+              "correctOptionIds": [
+                "plural-two",
+                "plural-children-p"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "en-a0-sentence-building",
+          "title": "Build a clear sentence",
+          "objectives": [
+            "Place a subject before its verb in a basic statement.",
+            "Use not with am, is and are."
+          ],
+          "explanationRomanUrdu": "Aam English statement mein pehle subject aata hai, phir verb, phir baqi maloomat. I am happy. mein I subject, am verb aur happy halat hai. She is not here. mein not se nafi banti hai. Har English jumla Urdu ki lafzi tartib se nahin banta.",
+          "rulesRomanUrdu": [
+            "Basic statement: subject + be verb + baqi maloomat. Misal: We are students.",
+            "Nafi ke liye am/is/are ke baad not: I am not tired.",
+            "Naam aur I ko capital likhain. Aam statement ka aakhir full stop hai.",
+            "Article noun ke saath rehna chahiye: She is a teacher."
+          ],
+          "examples": [
+            {
+              "text": "We are students.",
+              "meaningRomanUrdu": "Hum talib-e-ilm hain.",
+              "speech": {
+                "text": "We are students.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She is not here.",
+              "meaningRomanUrdu": "Woh yahan nahin hai.",
+              "speech": {
+                "text": "She is not here.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "I am happy.",
+              "meaningRomanUrdu": "Main khush hoon.",
+              "speech": {
+                "text": "I am happy.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a0-sentence-building-word-00",
+              "word": "sentence",
+              "meaningRomanUrdu": "jumla",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "SEN-tuhns"
+            },
+            {
+              "id": "en-a0-sentence-building-word-01",
+              "word": "not",
+              "meaningRomanUrdu": "nahin",
+              "partOfSpeech": "negative word",
+              "pronunciationGuide": "not"
+            },
+            {
+              "id": "en-a0-sentence-building-word-02",
+              "word": "tired",
+              "meaningRomanUrdu": "thaka hua",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "tyerd"
+            },
+            {
+              "id": "en-a0-sentence-building-word-03",
+              "word": "we",
+              "meaningRomanUrdu": "hum",
+              "partOfSpeech": "pronoun",
+              "pronunciationGuide": "wee"
+            }
+          ],
+          "reading": {
+            "text": "I am a student. I am not tired. My friends are here. We are happy.",
+            "meaningRomanUrdu": "Main talib-e-ilm hoon. Main thaka hua nahin hoon. Mere dost yahan hain. Hum khush hain."
+          },
+          "speakingPrompts": [
+            "Say one true sentence about yourself with I am and one with I am not."
+          ],
+          "reviewTags": [
+            "basic-sentences",
+            "be-negatives"
+          ],
+          "exercises": [
+            {
+              "type": "sentence_order",
+              "id": "en-sentence-order",
+              "prompt": "Build: Woh yahan nahin hai.",
+              "explanationRomanUrdu": "Nafi mein not, is ke baad aata hai: She is not here.",
+              "tokens": [
+                {
+                  "id": "sentence-t-here",
+                  "text": "here."
+                },
+                {
+                  "id": "sentence-t-is",
+                  "text": "is"
+                },
+                {
+                  "id": "sentence-t-not",
+                  "text": "not"
+                },
+                {
+                  "id": "sentence-t-she",
+                  "text": "She"
+                }
+              ],
+              "correctOrder": [
+                "sentence-t-she",
+                "sentence-t-is",
+                "sentence-t-not",
+                "sentence-t-here"
+              ]
+            },
+            {
+              "type": "single_choice",
+              "id": "en-sentence-choice",
+              "prompt": "Choose the correct English statement.",
+              "explanationRomanUrdu": "Aam statement mein subject We, verb are aur phir students aata hai.",
+              "options": [
+                {
+                  "id": "sentence-good",
+                  "text": "We are students."
+                },
+                {
+                  "id": "sentence-bad",
+                  "text": "We students are."
+                },
+                {
+                  "id": "sentence-wrong",
+                  "text": "We is students."
+                }
+              ],
+              "correctOptionId": "sentence-good"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-sentence-fill",
+              "prompt": "I am ___ tired. (Main thaka hua nahin hoon.)",
+              "explanationRomanUrdu": "Am ke baad not lagane se nafi banti hai.",
+              "acceptedAnswers": [
+                "not"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-sentence-match",
+              "prompt": "Match each item with its meaning.",
+              "explanationRomanUrdu": "Be verb subject ke mutabiq badalta hai aur not nafi banata hai.",
+              "pairs": [
+                {
+                  "id": "sentence-pair-i",
+                  "left": "I am happy.",
+                  "right": "Main khush hoon."
+                },
+                {
+                  "id": "sentence-pair-she",
+                  "left": "She is here.",
+                  "right": "Woh yahan hai."
+                },
+                {
+                  "id": "sentence-pair-we",
+                  "left": "We are not tired.",
+                  "right": "Hum thakay huay nahin hain."
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-sentence-multi",
+              "prompt": "Choose both correct negative statements.",
+              "explanationRomanUrdu": "Not ko am/is/are ke baad rakhein. She is not happy. durust tartib hai.",
+              "options": [
+                {
+                  "id": "sentence-neg-i",
+                  "text": "I am not tired."
+                },
+                {
+                  "id": "sentence-neg-they",
+                  "text": "They are not here."
+                },
+                {
+                  "id": "sentence-neg-bad",
+                  "text": "She not is happy."
+                }
+              ],
+              "correctOptionIds": [
+                "sentence-neg-i",
+                "sentence-neg-they"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "en-a0-everyday-foundations",
+      "title": "Numbers and everyday communication",
+      "lessons": [
+        {
+          "id": "en-a0-numbers",
+          "title": "Count from zero to twenty",
+          "objectives": [
+            "Read and say numbers 0–20.",
+            "Use a plural noun after two or more."
+          ],
+          "explanationRomanUrdu": "Numbers ginati ke liye istemal hotay hain. Zero 0 aur twenty 20 hai. Thirteen 13 aur thirty 30 alag numbers hain; is lesson ki asal ginati zero se twenty tak hai. One book singular hai, lekin two books plural hai.",
+          "rulesRomanUrdu": [
+            "0–10: zero, one, two, three, four, five, six, seven, eight, nine, ten.",
+            "11–20: eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty.",
+            "One ke saath singular noun; do ya zyada ke saath plural noun: one pen, five pens.",
+            "Teen endings par sun kar tawajjoh dein; thirteen aur thirty ko aik na samjhein."
+          ],
+          "examples": [
+            {
+              "text": "I have two books.",
+              "meaningRomanUrdu": "Mere paas do kitabein hain.",
+              "speech": {
+                "text": "I have two books.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "There are ten pens.",
+              "meaningRomanUrdu": "Das qalam hain.",
+              "speech": {
+                "text": "There are ten pens.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "The number is twenty.",
+              "meaningRomanUrdu": "Number bees hai.",
+              "speech": {
+                "text": "The number is twenty.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a0-numbers-word-00",
+              "word": "zero",
+              "meaningRomanUrdu": "sifar",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "ZEER-oh"
+            },
+            {
+              "id": "en-a0-numbers-word-01",
+              "word": "one",
+              "meaningRomanUrdu": "aik",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "wun"
+            },
+            {
+              "id": "en-a0-numbers-word-02",
+              "word": "two",
+              "meaningRomanUrdu": "do",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "too"
+            },
+            {
+              "id": "en-a0-numbers-word-03",
+              "word": "three",
+              "meaningRomanUrdu": "teen",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "three"
+            },
+            {
+              "id": "en-a0-numbers-word-04",
+              "word": "four",
+              "meaningRomanUrdu": "chaar",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "for"
+            },
+            {
+              "id": "en-a0-numbers-word-05",
+              "word": "five",
+              "meaningRomanUrdu": "paanch",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "fyv"
+            },
+            {
+              "id": "en-a0-numbers-word-06",
+              "word": "six",
+              "meaningRomanUrdu": "chhay",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "siks"
+            },
+            {
+              "id": "en-a0-numbers-word-07",
+              "word": "seven",
+              "meaningRomanUrdu": "saat",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "sev-uhn"
+            },
+            {
+              "id": "en-a0-numbers-word-08",
+              "word": "eight",
+              "meaningRomanUrdu": "aath",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "ayt"
+            },
+            {
+              "id": "en-a0-numbers-word-09",
+              "word": "nine",
+              "meaningRomanUrdu": "nau",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "nyn"
+            },
+            {
+              "id": "en-a0-numbers-word-10",
+              "word": "ten",
+              "meaningRomanUrdu": "das",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "ten"
+            },
+            {
+              "id": "en-a0-numbers-word-11",
+              "word": "eleven",
+              "meaningRomanUrdu": "gyarah",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "ih-LEV-uhn"
+            },
+            {
+              "id": "en-a0-numbers-word-12",
+              "word": "twelve",
+              "meaningRomanUrdu": "barah",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "twelv"
+            },
+            {
+              "id": "en-a0-numbers-word-13",
+              "word": "thirteen",
+              "meaningRomanUrdu": "terah",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "thur-TEEN"
+            },
+            {
+              "id": "en-a0-numbers-word-14",
+              "word": "fourteen",
+              "meaningRomanUrdu": "chaudah",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "for-TEEN"
+            },
+            {
+              "id": "en-a0-numbers-word-15",
+              "word": "fifteen",
+              "meaningRomanUrdu": "pandrah",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "fif-TEEN"
+            },
+            {
+              "id": "en-a0-numbers-word-16",
+              "word": "sixteen",
+              "meaningRomanUrdu": "solah",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "siks-TEEN"
+            },
+            {
+              "id": "en-a0-numbers-word-17",
+              "word": "seventeen",
+              "meaningRomanUrdu": "satrah",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "sev-uhn-TEEN"
+            },
+            {
+              "id": "en-a0-numbers-word-18",
+              "word": "eighteen",
+              "meaningRomanUrdu": "atharah",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "ay-TEEN"
+            },
+            {
+              "id": "en-a0-numbers-word-19",
+              "word": "nineteen",
+              "meaningRomanUrdu": "unnees",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "nyn-TEEN"
+            },
+            {
+              "id": "en-a0-numbers-word-20",
+              "word": "twenty",
+              "meaningRomanUrdu": "bees",
+              "partOfSpeech": "number",
+              "pronunciationGuide": "TWEN-tee"
+            }
+          ],
+          "reading": {
+            "text": "I have one bag, two books and three pens. Sara has five books.",
+            "meaningRomanUrdu": "Mere paas aik basta, do kitabein aur teen qalam hain. Sara ke paas paanch kitabein hain."
+          },
+          "speakingPrompts": [
+            "Count from zero to twenty slowly. Then count five things around you."
+          ],
+          "reviewTags": [
+            "numbers",
+            "counting",
+            "singular-plural"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-number-choice",
+              "prompt": "Which word means 12?",
+              "explanationRomanUrdu": "Twelve 12 hai, twenty 20 aur two 2 hai.",
+              "options": [
+                {
+                  "id": "number-twelve",
+                  "text": "twelve"
+                },
+                {
+                  "id": "number-twenty",
+                  "text": "twenty"
+                },
+                {
+                  "id": "number-two",
+                  "text": "two"
+                }
+              ],
+              "correctOptionId": "number-twelve"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-number-fill",
+              "prompt": "Write 15 in English.",
+              "explanationRomanUrdu": "15 ko fifteen likhte hain.",
+              "acceptedAnswers": [
+                "fifteen"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-number-match",
+              "prompt": "Match each item with its meaning.",
+              "explanationRomanUrdu": "Three 3, thirteen 13 aur twenty 20 hai.",
+              "pairs": [
+                {
+                  "id": "number-pair-three",
+                  "left": "three",
+                  "right": "3"
+                },
+                {
+                  "id": "number-pair-thirteen",
+                  "left": "thirteen",
+                  "right": "13"
+                },
+                {
+                  "id": "number-pair-twenty",
+                  "left": "twenty",
+                  "right": "20"
+                }
+              ]
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-number-order",
+              "prompt": "Put these numbers from smallest to largest.",
+              "explanationRomanUrdu": "1 se 10 aur phir 20: one, ten, twenty.",
+              "tokens": [
+                {
+                  "id": "number-t-twenty",
+                  "text": "twenty"
+                },
+                {
+                  "id": "number-t-one",
+                  "text": "one"
+                },
+                {
+                  "id": "number-t-ten",
+                  "text": "ten"
+                }
+              ],
+              "correctOrder": [
+                "number-t-one",
+                "number-t-ten",
+                "number-t-twenty"
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-number-multi",
+              "prompt": "Choose both correct count phrases.",
+              "explanationRomanUrdu": "One book singular aur five books plural hai. Two books hona chahiye.",
+              "options": [
+                {
+                  "id": "number-phrase-one",
+                  "text": "one book"
+                },
+                {
+                  "id": "number-phrase-five",
+                  "text": "five books"
+                },
+                {
+                  "id": "number-phrase-bad",
+                  "text": "two book"
+                }
+              ],
+              "correctOptionIds": [
+                "number-phrase-one",
+                "number-phrase-five"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "en-a0-time-dates",
+          "title": "Time, days and dates",
+          "objectives": [
+            "Read simple clock times and day names.",
+            "Understand an unambiguous written date."
+          ],
+          "explanationRomanUrdu": "Poora ghanta batane ke liye o'clock bolte hain: three o'clock yani 3:00. Half past three 3:30 hai. Days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. Date likhte waqt month ka naam use karna numbers ki uljhan se bachata hai: 5 May 2026. Isay the fifth of May, twenty twenty-six parh sakte hain.",
+          "rulesRomanUrdu": [
+            "3:00 = three o'clock; 3:30 = half past three.",
+            "AM aadhi raat se dopahar se pehle tak, PM dopahar se aadhi raat se pehle tak hota hai. 12 AM aadhi raat aur 12 PM dopahar hai.",
+            "Din aur month ka pehla harf capital: Monday, May.",
+            "Months: January, February, March, April, May, June, July, August, September, October, November, December.",
+            "Date formats ilaqay ke hisaab se badalte hain. 5 May 2026 jaisa month-name format saaf hota hai."
+          ],
+          "examples": [
+            {
+              "text": "It is three o'clock.",
+              "meaningRomanUrdu": "Teen bajay hain.",
+              "speech": {
+                "text": "It is three o'clock.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Today is Monday.",
+              "meaningRomanUrdu": "Aaj Monday yani peer hai.",
+              "speech": {
+                "text": "Today is Monday.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "The date is 5 May 2026.",
+              "meaningRomanUrdu": "Tareekh 5 May 2026 hai.",
+              "speech": {
+                "text": "The date is 5 May 2026.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a0-time-dates-word-00",
+              "word": "Monday",
+              "meaningRomanUrdu": "peer",
+              "partOfSpeech": "day name",
+              "pronunciationGuide": "MUN-day"
+            },
+            {
+              "id": "en-a0-time-dates-word-01",
+              "word": "Tuesday",
+              "meaningRomanUrdu": "mangal",
+              "partOfSpeech": "day name",
+              "pronunciationGuide": "TOOZ-day"
+            },
+            {
+              "id": "en-a0-time-dates-word-02",
+              "word": "Wednesday",
+              "meaningRomanUrdu": "budh",
+              "partOfSpeech": "day name",
+              "pronunciationGuide": "WENZ-day"
+            },
+            {
+              "id": "en-a0-time-dates-word-03",
+              "word": "Thursday",
+              "meaningRomanUrdu": "jumerat",
+              "partOfSpeech": "day name",
+              "pronunciationGuide": "THURZ-day"
+            },
+            {
+              "id": "en-a0-time-dates-word-04",
+              "word": "Friday",
+              "meaningRomanUrdu": "juma",
+              "partOfSpeech": "day name",
+              "pronunciationGuide": "FRY-day"
+            },
+            {
+              "id": "en-a0-time-dates-word-05",
+              "word": "Saturday",
+              "meaningRomanUrdu": "hafta",
+              "partOfSpeech": "day name",
+              "pronunciationGuide": "SAT-er-day"
+            },
+            {
+              "id": "en-a0-time-dates-word-06",
+              "word": "Sunday",
+              "meaningRomanUrdu": "itwaar",
+              "partOfSpeech": "day name",
+              "pronunciationGuide": "SUN-day"
+            },
+            {
+              "id": "en-a0-time-dates-word-07",
+              "word": "today",
+              "meaningRomanUrdu": "aaj",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "tuh-DAY"
+            },
+            {
+              "id": "en-a0-time-dates-word-08",
+              "word": "half past",
+              "meaningRomanUrdu": "ghantay ke tees minute baad",
+              "partOfSpeech": "time phrase",
+              "pronunciationGuide": "haf past"
+            },
+            {
+              "id": "en-a0-time-dates-word-09",
+              "word": "fifth",
+              "meaningRomanUrdu": "paanchwaan",
+              "partOfSpeech": "ordinal number",
+              "pronunciationGuide": "fifth"
+            }
+          ],
+          "reading": {
+            "text": "Today is Monday. The class is at three o'clock in the afternoon. The date is 5 May 2026.",
+            "meaningRomanUrdu": "Aaj peer hai. Class dopahar ke baad teen bajay hai. Tareekh 5 May 2026 hai. Yeh reading ki misaali maloomat hai, maujooda din ki khabar nahin."
+          },
+          "speakingPrompts": [
+            "Say three o'clock and half past three. Name today's day in English."
+          ],
+          "reviewTags": [
+            "time",
+            "dates",
+            "days-months"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-time-choice",
+              "prompt": "What time is half past three?",
+              "explanationRomanUrdu": "Half past ka matlab us ghantay ke tees minute baad hai: 3:30.",
+              "options": [
+                {
+                  "id": "time-three-thirty",
+                  "text": "3:30"
+                },
+                {
+                  "id": "time-three",
+                  "text": "3:00"
+                },
+                {
+                  "id": "time-four",
+                  "text": "4:00"
+                }
+              ],
+              "correctOptionId": "time-three-thirty"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-time-fill",
+              "prompt": "What day comes after Monday?",
+              "explanationRomanUrdu": "Days ki tartib mein Monday ke baad Tuesday hai.",
+              "acceptedAnswers": [
+                "Tuesday"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-time-match",
+              "prompt": "Match each item with its meaning.",
+              "explanationRomanUrdu": "12 AM aadhi raat, 12 PM dopahar aur three o'clock 3:00 hai.",
+              "pairs": [
+                {
+                  "id": "time-pair-am",
+                  "left": "12 AM",
+                  "right": "midnight"
+                },
+                {
+                  "id": "time-pair-pm",
+                  "left": "12 PM",
+                  "right": "noon"
+                },
+                {
+                  "id": "time-pair-three",
+                  "left": "three o'clock",
+                  "right": "3:00"
+                }
+              ]
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-time-order",
+              "prompt": "Build: Aaj Monday hai.",
+              "explanationRomanUrdu": "Durust jumla Today is Monday. hai. Din ka naam capital hota hai.",
+              "tokens": [
+                {
+                  "id": "time-t-monday",
+                  "text": "Monday."
+                },
+                {
+                  "id": "time-t-today",
+                  "text": "Today"
+                },
+                {
+                  "id": "time-t-is",
+                  "text": "is"
+                }
+              ],
+              "correctOrder": [
+                "time-t-today",
+                "time-t-is",
+                "time-t-monday"
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-time-multi",
+              "prompt": "Choose both correctly capitalized names.",
+              "explanationRomanUrdu": "Days aur months capital letter se shuru hotay hain: Monday, May, Friday.",
+              "options": [
+                {
+                  "id": "time-name-mon",
+                  "text": "Monday"
+                },
+                {
+                  "id": "time-name-may",
+                  "text": "May"
+                },
+                {
+                  "id": "time-name-fri",
+                  "text": "friday"
+                }
+              ],
+              "correctOptionIds": [
+                "time-name-mon",
+                "time-name-may"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "en-a0-polite-expressions",
+          "title": "Please, thank you and simple requests",
+          "objectives": [
+            "Use polite everyday expressions.",
+            "Ask someone to repeat or speak slowly."
+          ],
+          "explanationRomanUrdu": "Rozmarrah guftagu mein please se darkhwast narm hoti hai. Kisi ki madad par Thank you kehte hain; jawab mein You're welcome keh sakte hain. Samajh na aaye to Please say that again. ya Please speak slowly. kehna bilkul theek hai. I don't understand. saaf batata hai ke baat samajh nahin aayi.",
+          "rulesRomanUrdu": [
+            "Please ko request ke saath use karain: Please speak slowly.",
+            "Thank you ka jawab You're welcome ho sakta hai.",
+            "Sorry ghalti par maazrat hai. Excuse me tawajjoh hasil karne ya guzarnay ki ijazat ke liye ho sakta hai.",
+            "Mushkil baat dobara poochain: Please say that again."
+          ],
+          "examples": [
+            {
+              "text": "Please speak slowly.",
+              "meaningRomanUrdu": "Meherbani kar ke aahista bolain.",
+              "speech": {
+                "text": "Please speak slowly.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Thank you. You're welcome.",
+              "meaningRomanUrdu": "Shukriya. Koi baat nahin / khushi hui.",
+              "speech": {
+                "text": "Thank you. You're welcome.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "I don't understand.",
+              "meaningRomanUrdu": "Mujhe samajh nahin aaya.",
+              "speech": {
+                "text": "I don't understand.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a0-polite-expressions-word-00",
+              "word": "please",
+              "meaningRomanUrdu": "meherbani kar ke",
+              "partOfSpeech": "politeness word",
+              "pronunciationGuide": "pleez"
+            },
+            {
+              "id": "en-a0-polite-expressions-word-01",
+              "word": "thank you",
+              "meaningRomanUrdu": "shukriya",
+              "partOfSpeech": "expression",
+              "pronunciationGuide": "thank yoo"
+            },
+            {
+              "id": "en-a0-polite-expressions-word-02",
+              "word": "sorry",
+              "meaningRomanUrdu": "maazrat",
+              "partOfSpeech": "expression",
+              "pronunciationGuide": "SOR-ee"
+            },
+            {
+              "id": "en-a0-polite-expressions-word-03",
+              "word": "slowly",
+              "meaningRomanUrdu": "aahista",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "SLOH-lee"
+            },
+            {
+              "id": "en-a0-polite-expressions-word-04",
+              "word": "again",
+              "meaningRomanUrdu": "dobara",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "uh-GEN"
+            }
+          ],
+          "reading": {
+            "text": "Ali: Please speak slowly. Sara: Yes. Ali: Thank you. Sara: You're welcome.",
+            "meaningRomanUrdu": "Ali: Meherbani kar ke aahista bolain. Sara: Jee. Ali: Shukriya. Sara: Koi baat nahin."
+          },
+          "speakingPrompts": [
+            "Say Please speak slowly. Then practise Thank you and You're welcome."
+          ],
+          "reviewTags": [
+            "everyday-expressions",
+            "polite-requests"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-polite-choice",
+              "prompt": "You did not hear a sentence clearly. What can you say?",
+              "explanationRomanUrdu": "Please say that again. doosray shakhs se baat dobara kehne ki darkhwast hai.",
+              "options": [
+                {
+                  "id": "polite-repeat",
+                  "text": "Please say that again."
+                },
+                {
+                  "id": "polite-bye",
+                  "text": "Goodbye."
+                },
+                {
+                  "id": "polite-name",
+                  "text": "My name is Ali."
+                }
+              ],
+              "correctOptionId": "polite-repeat"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-polite-fill",
+              "prompt": "Complete the polite expression: Thank ___.",
+              "explanationRomanUrdu": "Thank you shukriya kehne ka tareeqa hai.",
+              "acceptedAnswers": [
+                "you"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-polite-match",
+              "prompt": "Match each item with its meaning.",
+              "explanationRomanUrdu": "Please darkhwast mein, sorry maazrat mein aur thank you shukriya mein aata hai.",
+              "pairs": [
+                {
+                  "id": "polite-pair-please",
+                  "left": "Please",
+                  "right": "Meherbani kar ke"
+                },
+                {
+                  "id": "polite-pair-sorry",
+                  "left": "Sorry",
+                  "right": "Maazrat"
+                },
+                {
+                  "id": "polite-pair-thanks",
+                  "left": "Thank you",
+                  "right": "Shukriya"
+                }
+              ]
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-polite-order",
+              "prompt": "Build: Meherbani kar ke aahista bolain.",
+              "explanationRomanUrdu": "Please speak slowly. narm aur saaf request hai.",
+              "tokens": [
+                {
+                  "id": "polite-t-slow",
+                  "text": "slowly."
+                },
+                {
+                  "id": "polite-t-please",
+                  "text": "Please"
+                },
+                {
+                  "id": "polite-t-speak",
+                  "text": "speak"
+                }
+              ],
+              "correctOrder": [
+                "polite-t-please",
+                "polite-t-speak",
+                "polite-t-slow"
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-polite-multi",
+              "prompt": "Choose both expressions that help when you do not understand.",
+              "explanationRomanUrdu": "Dobara kehne aur aahista bolne ki request samajhnay mein madad karti hai.",
+              "options": [
+                {
+                  "id": "polite-help-again",
+                  "text": "Please say that again."
+                },
+                {
+                  "id": "polite-help-slow",
+                  "text": "Please speak slowly."
+                },
+                {
+                  "id": "polite-help-bye",
+                  "text": "Goodbye."
+                }
+              ],
+              "correctOptionIds": [
+                "polite-help-again",
+                "polite-help-slow"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

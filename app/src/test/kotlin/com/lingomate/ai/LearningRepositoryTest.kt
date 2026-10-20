@@ -104,13 +104,13 @@ class LearningRepositoryTest {
     @Test fun completionAndRepeatedSubmissionAreAtomicAndIdempotent() = runBlocking {
         repository.installBundledContent()
         val initial = repository.beginOrResume("en-a0-greetings")
-        for (exercise in initial.content.exercises) repository.submit(initial.session.id, exercise.id, correctAnswer(exercise))
+        for (exercise in initial.content.exercises) submitAnswer(initial.session.id, exercise, correctAnswer(exercise))
         repeat(3) { repository.submit(initial.session.id, initial.content.exercises.last().id, correctAnswer(initial.content.exercises.last())) }
         val completed = repository.run(initial.session.id)
         val progress = requireNotNull(database.learningDao().progress(initial.session.lessonId))
         assertTrue(completed.complete)
-        assertEquals(5, completed.attempts.size)
-        assertEquals(5, progress.bestCorrect)
+        assertEquals(6, completed.attempts.size)
+        assertEquals(6, progress.bestCorrect)
         assertEquals(1, progress.completedRuns)
         assertNull(completed.session.activeLessonKey)
         val newRun = repository.beginOrResume(initial.session.lessonId)
@@ -132,18 +132,18 @@ class LearningRepositoryTest {
     @Test fun secondRunKeepsTheBestScoreAndCountsEachCompletedRunOnce() = runBlocking {
         repository.installBundledContent()
         val first = repository.beginOrResume("en-a0-greetings")
-        first.content.exercises.forEach { repository.submit(first.session.id, it.id, correctAnswer(it)) }
+        first.content.exercises.forEach { submitAnswer(first.session.id, it, correctAnswer(it)) }
         val second = repository.beginOrResume(first.session.lessonId)
         second.content.exercises.forEach { exercise ->
             val answer = if (exercise is Exercise.FillBlank) ExerciseAnswer.Text("wrong") else correctAnswer(exercise)
-            repository.submit(second.session.id, exercise.id, answer)
+            submitAnswer(second.session.id, exercise, answer)
         }
         val progress = requireNotNull(database.learningDao().progress(first.session.lessonId))
-        assertEquals(5, progress.bestCorrect)
+        assertEquals(6, progress.bestCorrect)
         assertEquals(2, progress.completedRuns)
     }
 
-    @Test fun actualVersionOneToTwoExpansionPreservesActiveAndCompletedLearning() = runBlocking {
+    @Test fun actualVersionOneToCurrentExpansionPreservesActiveAndCompletedLearning() = runBlocking {
         val versionOne = requireNotNull(javaClass.getResource("/content/english-a0-v1.json")).readText()
         repository.importPack(versionOne)
         val active = repository.beginOrResume("en-a0-greetings")
@@ -154,7 +154,7 @@ class LearningRepositoryTest {
         repository.installBundledContent()
         val resumed = repository.beginOrResume(active.session.lessonId)
         assertEquals(11, database.learningDao().packLessons(pack.id).size)
-        assertEquals(2, database.learningDao().pack(pack.id)?.version)
+        assertEquals(pack.version, database.learningDao().pack(pack.id)?.version)
         assertEquals(active.session.id, resumed.session.id)
         assertEquals(1, resumed.session.packVersion)
         assertEquals(active.content, resumed.content)
@@ -162,7 +162,32 @@ class LearningRepositoryTest {
         assertEquals(oldProgress, database.learningDao().progress(finished.session.lessonId))
     }
 
+    @Test fun actualVersionTwoToThreeUpdateDoesNotAddNewActivitiesToAnActiveSnapshot() = runBlocking {
+        repository.importPack(requireNotNull(javaClass.getResource("/content/english-a0-v2.json")).readText())
+        val active = repository.beginOrResume("en-a0-greetings")
+        repository.submit(active.session.id, active.content.exercises.first().id, correctAnswer(active.content.exercises.first()))
+        val finished = repository.beginOrResume("en-a0-pronouns-be")
+        finished.content.exercises.forEach { repository.submit(finished.session.id, it.id, correctAnswer(it)) }
+        val progress = database.learningDao().progress(finished.session.lessonId)
+        repository.installBundledContent()
+        val resumed = repository.beginOrResume(active.session.lessonId)
+        assertEquals(3, database.learningDao().pack(pack.id)?.version)
+        assertEquals(2, resumed.session.packVersion)
+        assertEquals(active.content, resumed.content)
+        assertEquals(5, resumed.content.exercises.size)
+        assertEquals(1, resumed.attempts.size)
+        assertTrue(resumed.listeningModes.isEmpty())
+        assertEquals(6, repository.lesson(active.session.lessonId).exercises.size)
+        assertEquals(progress, database.learningDao().progress(finished.session.lessonId))
+    }
+
+    private suspend fun submitAnswer(sessionId: String, exercise: Exercise, answer: ExerciseAnswer) {
+        if (answer is ExerciseAnswer.ListeningSelection) repository.prepareListening(sessionId, exercise.id, answer.mode)
+        repository.submit(sessionId, exercise.id, answer)
+    }
+
     private fun correctAnswer(exercise: Exercise): ExerciseAnswer = when (exercise) {
+        is Exercise.ListeningChoice -> ExerciseAnswer.ListeningSelection(exercise.correctOptionId, ListeningMode.AUDIO)
         is Exercise.SingleChoice -> ExerciseAnswer.Selection(listOf(exercise.correctOptionId))
         is Exercise.MultiChoice -> ExerciseAnswer.Selection(exercise.correctOptionIds)
         is Exercise.FillBlank -> ExerciseAnswer.Text(exercise.acceptedAnswers.first())

@@ -54,7 +54,7 @@ class LessonFlowTest {
 
     @After fun close() { scope.cancel(); database.close() }
 
-    @Test fun allFiveActivityTypesSaveAnswersShowFeedbackAndUpdateCourseProgress() {
+    @Test fun allSixActivityTypesSaveAnswersShowFeedbackAndUpdateCourseProgress() {
         click("Continue English")
         click("Open: Hello and introductions")
         click("Start practice")
@@ -76,14 +76,21 @@ class LessonFlowTest {
         click("Next activity")
         click("Hello"); click("Good morning")
         click("Check answer")
+        click("Next activity")
+        click("Use reading instead")
+        waitFor("Transcript: Hello. My name is Sara.")
+        click("Sara")
+        click("Check answer")
+        waitFor("Saved as a reading alternative, not a listening result.")
         click("See results")
         waitFor("Practice complete")
-        compose.onNodeWithText("5 of 5 activities correct. This is a practice result, not a language-proficiency score.").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("6 of 6 activities correct. This is a practice result, not a language-proficiency score.").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithText("Listening answers: 0 · Reading alternatives: 1").performScrollTo().assertIsDisplayed()
         click("Back to course")
-        waitFor("Completed · Best practice result 5/5\nLanguage review pending.")
+        waitFor("Completed · Best practice result 6/6\nLanguage review pending.")
         runBlocking {
             val progress = requireNotNull(database.learningDao().progress("en-a0-greetings"))
-            assertEquals(5, progress.bestCorrect)
+            assertEquals(6, progress.bestCorrect)
             assertEquals(1, progress.completedRuns)
         }
     }

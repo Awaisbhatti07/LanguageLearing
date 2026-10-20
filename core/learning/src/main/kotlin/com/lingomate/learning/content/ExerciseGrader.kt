@@ -30,6 +30,11 @@ object ExerciseGrader {
                 val valid = ids.size == 1 && ids.single() in exercise.options.map { it.id }
                 result(valid, valid && ids.single() == exercise.correctOptionId)
             }
+            is Exercise.ListeningChoice -> {
+                val selection = answer as? ExerciseAnswer.ListeningSelection ?: return result(false)
+                val valid = exercise.options.any { it.id == selection.optionId }
+                result(valid, selection.optionId == exercise.correctOptionId)
+            }
             is Exercise.MultiChoice -> {
                 val ids = (answer as? ExerciseAnswer.Selection)?.optionIds ?: return result(false)
                 val valid = ids.isNotEmpty() && ids.distinct().size == ids.size && ids.all { id -> exercise.options.any { it.id == id } }
@@ -59,6 +64,7 @@ object ExerciseGrader {
 
     fun expectedAnswer(exercise: Exercise): String = when (exercise) {
         is Exercise.SingleChoice -> exercise.options.first { it.id == exercise.correctOptionId }.text
+        is Exercise.ListeningChoice -> exercise.options.first { it.id == exercise.correctOptionId }.text
         is Exercise.MultiChoice -> exercise.options.filter { it.id in exercise.correctOptionIds }.joinToString("; ") { it.text }
         is Exercise.FillBlank -> exercise.acceptedAnswers.joinToString(" / ")
         is Exercise.SentenceOrder -> exercise.correctOrder.joinToString(" ") { id -> exercise.tokens.first { it.id == id }.text }

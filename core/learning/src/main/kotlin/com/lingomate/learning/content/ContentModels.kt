@@ -71,6 +71,9 @@ data class ChoiceOption(val id: String, val text: String)
 data class MatchPair(val id: String, val left: String, val right: String)
 
 @Serializable
+enum class ListeningMode { AUDIO, READING_ALTERNATIVE }
+
+@Serializable
 sealed interface Exercise {
     val id: String
     val prompt: String
@@ -81,6 +84,16 @@ sealed interface Exercise {
         override val id: String,
         override val prompt: String,
         override val explanationRomanUrdu: String,
+        val options: List<ChoiceOption>,
+        val correctOptionId: String,
+    ) : Exercise
+
+    @Serializable @SerialName("listening_choice")
+    data class ListeningChoice(
+        override val id: String,
+        override val prompt: String,
+        override val explanationRomanUrdu: String,
+        val speech: SpeechReference,
         val options: List<ChoiceOption>,
         val correctOptionId: String,
     ) : Exercise
@@ -125,6 +138,9 @@ sealed interface Exercise {
 sealed interface ExerciseAnswer {
     @Serializable @SerialName("selection")
     data class Selection(val optionIds: List<String>) : ExerciseAnswer
+
+    @Serializable @SerialName("listening_selection")
+    data class ListeningSelection(val optionId: String, val mode: ListeningMode) : ExerciseAnswer
 
     @Serializable @SerialName("text")
     data class Text(val value: String) : ExerciseAnswer

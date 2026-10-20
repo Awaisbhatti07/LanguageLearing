@@ -4,7 +4,7 @@
 - Native Android only: Kotlin, Jetpack Compose, Material 3. English UI; Roman Urdu teaching explanations; correct Arabic and RTL rendering.
 - Read `docs/MASTER_PLAN.md`, `PROJECT_STATUS.md`, `TASK_QUEUE.md`, `TEST_RESULTS.md`, and `RESUME_INSTRUCTIONS.md` before continuing. Preserve existing work and Git history.
 - Work milestones in order. Record incomplete acceptance criteria; never label placeholders, unreviewed content, or unexecuted checks complete.
-- Default is implementation only. Tests, builds, launches, and verification need explicit user authorization. The initial development request authorizes implementation, tests, static analysis, builds, and local checkpoint commits for this project. Device/emulator launches, paid API use, deployment, destructive operations, and external Git pushes require separate authorization.
+- Default is implementation only. The user's latest engineering instructions require explicit authorization for tests, builds, launches and automated verification of each new development scope; “continue” alone authorizes source implementation. Earlier executed checks remain historical evidence, not permission or a pass for later changes. Read-only source/diff inspection, editing and local checkpoint commits remain allowed. Device/emulator launches, paid API use, deployment, destructive operations and external Git pushes require their own authorization.
 - No review agents or subagents unless explicitly requested. No unrelated changes or unnecessary dependencies.
 - Never embed API secrets, log credentials/transcripts, use destructive database fallback, reset user progress, or commit local SDK/signing configuration.
 

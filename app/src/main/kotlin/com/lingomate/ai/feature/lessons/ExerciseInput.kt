@@ -24,11 +24,20 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
+import com.lingomate.ai.core.audio.SpeechPlayer
 import com.lingomate.learning.content.Exercise
 import com.lingomate.learning.content.ExerciseAnswer
+import com.lingomate.learning.content.ListeningMode
 
 @Composable
-fun ExerciseInput(exercise: Exercise, saving: Boolean, onSubmit: (ExerciseAnswer) -> Unit) {
+fun ExerciseInput(
+    exercise: Exercise,
+    saving: Boolean,
+    listeningMode: ListeningMode?,
+    onListeningMode: (ListeningMode) -> Unit,
+    speechPlayer: SpeechPlayer? = null,
+    onSubmit: (ExerciseAnswer) -> Unit,
+) {
     var selected by rememberSaveable(exercise.id) { mutableStateOf(emptyList<String>()) }
     var text by rememberSaveable(exercise.id) { mutableStateOf("") }
     var links by rememberSaveable(exercise.id) { mutableStateOf(emptyList<String>()) }
@@ -36,6 +45,17 @@ fun ExerciseInput(exercise: Exercise, saving: Boolean, onSubmit: (ExerciseAnswer
     Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
         Text(exercise.prompt, style = MaterialTheme.typography.titleLarge)
         when (exercise) {
+            is Exercise.ListeningChoice -> {
+                ListeningPrompt(exercise, saving, listeningMode, onListeningMode, speechPlayer)
+                exercise.options.forEach { option ->
+                    Row(Modifier.fillMaxWidth().selectable(selected = option.id in selected,
+                        enabled = !saving && listeningMode != null, role = Role.RadioButton,
+                        onClick = { selected = listOf(option.id) }).padding(vertical = 8.dp)) {
+                        RadioButton(selected = option.id in selected, onClick = null, enabled = !saving && listeningMode != null)
+                        Text(option.text, modifier = Modifier.padding(12.dp))
+                    }
+                }
+            }
             is Exercise.SingleChoice -> exercise.options.forEach { option ->
                 Row(Modifier.fillMaxWidth().selectable(selected = option.id in selected, enabled = !saving,
                     role = Role.RadioButton, onClick = { selected = listOf(option.id) }).padding(vertical = 8.dp)) {
@@ -95,6 +115,9 @@ fun ExerciseInput(exercise: Exercise, saving: Boolean, onSubmit: (ExerciseAnswer
             }
         }
         val answer: ExerciseAnswer? = when (exercise) {
+            is Exercise.ListeningChoice -> selected.singleOrNull()?.let { id ->
+                listeningMode?.let { ExerciseAnswer.ListeningSelection(id, it) }
+            }
             is Exercise.SingleChoice, is Exercise.MultiChoice -> selected.takeIf { it.isNotEmpty() }?.let { ExerciseAnswer.Selection(it) }
             is Exercise.FillBlank -> text.takeIf { it.isNotBlank() }?.let { ExerciseAnswer.Text(it) }
             is Exercise.SentenceOrder -> selected.takeIf { it.size == exercise.tokens.size }?.let { ExerciseAnswer.Order(it) }
@@ -103,7 +126,7 @@ fun ExerciseInput(exercise: Exercise, saving: Boolean, onSubmit: (ExerciseAnswer
             }
         }
         Button(onClick = { answer?.let(onSubmit) }, enabled = answer != null && !saving, modifier = Modifier.fillMaxWidth()) {
-            Text(if (saving) "Saving answer…" else "Check answer")
+            Text(if (saving) "Saving practice…" else "Check answer")
         }
     }
 }

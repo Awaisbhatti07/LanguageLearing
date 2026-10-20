@@ -74,9 +74,8 @@ object ContentValidator {
             text(example.text)
             text(example.meaningRomanUrdu)
             example.speech?.let { speech ->
-                text(speech.text)
+                validateSpeech(speech)
                 require(speech.text == example.text) { "Spoken example must match displayed text" }
-                require(speech.languageTag in setOf("en", "en-US", "en-GB", "ar"))
                 require(speech.languageTag.substringBefore('-') == track.languageTag)
             }
         }
@@ -92,7 +91,14 @@ object ContentValidator {
         lesson.reviewTags.forEach(::identifier)
         require(lesson.exercises.size in 2..30)
         unique(lesson.exercises.map { it.id })
-        lesson.exercises.forEach(::validateExercise)
+        lesson.exercises.forEach { exercise ->
+            validateExercise(exercise)
+            if (exercise is Exercise.ListeningChoice) {
+                require(exercise.speech.languageTag.substringBefore('-') == track.languageTag) {
+                    "Listening language must match the lesson track"
+                }
+            }
+        }
     }
 
     fun validateExercise(exercise: Exercise) {
@@ -101,6 +107,11 @@ object ContentValidator {
         text(exercise.explanationRomanUrdu)
         when (exercise) {
             is Exercise.SingleChoice -> {
+                options(exercise.options)
+                require(exercise.correctOptionId in exercise.options.map { it.id })
+            }
+            is Exercise.ListeningChoice -> {
+                validateSpeech(exercise.speech)
                 options(exercise.options)
                 require(exercise.correctOptionId in exercise.options.map { it.id })
             }
@@ -129,6 +140,11 @@ object ContentValidator {
                 require(exercise.pairs.map { normalizeAnswer(it.right) }.distinct().size == exercise.pairs.size)
             }
         }
+    }
+
+    private fun validateSpeech(reference: SpeechReference) {
+        text(reference.text)
+        require(reference.languageTag in setOf("en", "en-US", "en-GB", "ar")) { "Unsupported speech language" }
     }
 
     private fun options(options: List<ChoiceOption>) {

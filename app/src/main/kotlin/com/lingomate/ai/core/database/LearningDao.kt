@@ -53,6 +53,12 @@ interface LearningDao {
     @Insert
     suspend fun insertAttempt(attempt: ExerciseAttemptEntity)
 
+    @Query("SELECT * FROM listening_presentations WHERE sessionId = :sessionId")
+    suspend fun listeningPresentations(sessionId: String): List<ListeningPresentationEntity>
+
+    @Upsert
+    suspend fun upsertListeningPresentation(presentation: ListeningPresentationEntity)
+
     @Query("SELECT * FROM lesson_sessions ORDER BY startedAt DESC, id")
     fun observeSessions(): Flow<List<LessonSessionEntity>>
 }

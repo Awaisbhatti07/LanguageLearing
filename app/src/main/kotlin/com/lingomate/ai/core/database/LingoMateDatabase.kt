@@ -9,8 +9,8 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 
 @Database(
     entities = [ContentPackEntity::class, LessonEntity::class, LessonProgressEntity::class,
-        LessonSessionEntity::class, ExerciseAttemptEntity::class],
-    version = 2,
+        LessonSessionEntity::class, ExerciseAttemptEntity::class, ListeningPresentationEntity::class],
+    version = 3,
     exportSchema = true,
 )
 abstract class LingoMateDatabase : RoomDatabase() {
@@ -30,9 +30,15 @@ abstract class LingoMateDatabase : RoomDatabase() {
             }
         }
 
+        val MIGRATION_2_3 = object : Migration(2, 3) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("CREATE TABLE IF NOT EXISTS listening_presentations (sessionId TEXT NOT NULL, exerciseId TEXT NOT NULL, mode TEXT NOT NULL, PRIMARY KEY(sessionId, exerciseId), FOREIGN KEY(sessionId) REFERENCES lesson_sessions(id) ON UPDATE NO ACTION ON DELETE RESTRICT)")
+            }
+        }
+
         fun open(context: Context): LingoMateDatabase = Room.databaseBuilder(
             context.applicationContext, LingoMateDatabase::class.java, "lingomate.db",
-        ).addMigrations(MIGRATION_1_2).build()
+        ).addMigrations(MIGRATION_1_2, MIGRATION_2_3).build()
         // Every future schema change needs an explicit migration. Never use destructive fallback.
     }
 }

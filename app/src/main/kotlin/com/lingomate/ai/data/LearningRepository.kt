@@ -25,9 +25,11 @@ data class LessonRun(
     val session: LessonSessionEntity,
     val content: LessonContent,
     val attempts: List<ExerciseAttemptEntity>,
+    val listeningModes: Map<String, ListeningMode> = emptyMap(),
 ) {
     val complete: Boolean get() = session.completedAt != null
     val correctCount: Int get() = attempts.count { it.correct }
+    fun answeredIn(mode: ListeningMode): Int = attempts.count { listeningModes[it.exerciseId] == mode }
 }
 
 class LearningRepository(
@@ -99,6 +101,22 @@ class LearningRepository(
 
     suspend fun run(id: String): LessonRun = withContext(Dispatchers.IO) { database.withTransaction { readRun(id) } }
 
+    /** Persist exposure before showing a transcript. Reading mode is irreversible within this run. */
+    suspend fun prepareListening(sessionId: String, exerciseId: String, mode: ListeningMode): LessonRun = withContext(Dispatchers.IO) {
+        database.withTransaction {
+            val run = readRun(sessionId)
+            require(!run.complete && run.content.exercises.getOrNull(run.attempts.size)?.id == exerciseId) {
+                "Listening activity is not current"
+            }
+            require(run.content.exercises[run.attempts.size] is Exercise.ListeningChoice)
+            val persisted = run.listeningModes[exerciseId]
+            if (persisted != ListeningMode.READING_ALTERNATIVE) {
+                dao.upsertListeningPresentation(ListeningPresentationEntity(sessionId, exerciseId, mode.name))
+            }
+            readRun(sessionId)
+        }
+    }
+
     suspend fun submit(sessionId: String, exerciseId: String, answer: ExerciseAnswer): LessonRun = withContext(Dispatchers.IO) {
         database.withTransaction {
             val run = readRun(sessionId)
@@ -107,6 +125,11 @@ class LearningRepository(
             require(!run.complete) { "Session is already complete" }
             val exercise = run.content.exercises.getOrNull(run.attempts.size)
             require(exercise?.id == exerciseId) { "Answer is out of sequence" }
+            if (exercise is Exercise.ListeningChoice) {
+                require(answer is ExerciseAnswer.ListeningSelection && run.listeningModes[exerciseId] == answer.mode) {
+                    "Complete playback or choose the reading alternative before answering"
+                }
+            }
             val grade = ExerciseGrader.grade(requireNotNull(exercise), answer)
             require(grade.valid) { "Select or enter a complete valid answer" }
             val now = clock()
@@ -136,6 +159,17 @@ class LearningRepository(
         ContentValidator.validateLesson(content, LearningTrack.valueOf(session.track))
         val attempts = dao.attempts(id)
         check(attempts.map { it.exerciseId } == content.exercises.take(attempts.size).map { it.id }) { "Invalid saved answer sequence" }
-        return LessonRun(session, content, attempts)
+        val modes = dao.listeningPresentations(id).associate { it.exerciseId to ListeningMode.valueOf(it.mode) }
+        val listeningIds = content.exercises.filterIsInstance<Exercise.ListeningChoice>().map { it.id }.toSet()
+        check(modes.keys.all { it in listeningIds }) { "Invalid saved listening activity" }
+        attempts.forEach { attempt ->
+            val answer = ContentCodec.json.decodeFromString<ExerciseAnswer>(attempt.answerPayload)
+            if (attempt.exerciseId in listeningIds) {
+                check(answer is ExerciseAnswer.ListeningSelection && answer.mode == modes[attempt.exerciseId]) {
+                    "Saved listening answer does not match its presentation"
+                }
+            }
+        }
+        return LessonRun(session, content, attempts, modes)
     }
 }

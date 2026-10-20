@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "english-a0-starter",
-  "version": 2,
+  "version": 3,
   "title": "English A0 foundations",
   "track": "ENGLISH",
   "level": "A0",
@@ -95,7 +95,8 @@
           "reviewTags": [
             "alphabet",
             "capital-letters",
-            "letter-sounds"
+            "letter-sounds",
+            "listening-comprehension"
           ],
           "exercises": [
             {
@@ -200,6 +201,31 @@
                 "alpha-t-b",
                 "alpha-t-c"
               ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a0-alphabet-listen",
+              "prompt": "Which letter do you hear after B?",
+              "explanationRomanUrdu": "Audio mein A, B, C kaha gaya hai. B ke baad C sunai deta hai.",
+              "speech": {
+                "text": "A, B, C.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a0-alphabet-listen-opt-0",
+                  "text": "D"
+                },
+                {
+                  "id": "en-a0-alphabet-listen-opt-1",
+                  "text": "C"
+                },
+                {
+                  "id": "en-a0-alphabet-listen-opt-2",
+                  "text": "A"
+                }
+              ],
+              "correctOptionId": "en-a0-alphabet-listen-opt-1"
             }
           ]
         },
@@ -283,7 +309,8 @@
           "reviewTags": [
             "pronunciation-basics",
             "word-stress",
-            "letter-sounds"
+            "letter-sounds",
+            "listening-comprehension"
           ],
           "exercises": [
             {
@@ -389,6 +416,31 @@
                 "sound-t-a",
                 "sound-t-table"
               ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a0-sounds-listen",
+              "prompt": "Which animal is mentioned in the audio?",
+              "explanationRomanUrdu": "Cat ka matlab billi hai. Audio mein cat on the mat kaha gaya hai; cat aur mat ki aakhri awaaz milti hai.",
+              "speech": {
+                "text": "A cat is on the mat.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a0-sounds-listen-opt-0",
+                  "text": "A dog"
+                },
+                {
+                  "id": "en-a0-sounds-listen-opt-1",
+                  "text": "A fish"
+                },
+                {
+                  "id": "en-a0-sounds-listen-opt-2",
+                  "text": "A cat"
+                }
+              ],
+              "correctOptionId": "en-a0-sounds-listen-opt-2"
             }
           ]
         }
@@ -469,7 +521,8 @@
           ],
           "reviewTags": [
             "greetings",
-            "introductions"
+            "introductions",
+            "listening-comprehension"
           ],
           "exercises": [
             {
@@ -579,6 +632,31 @@
                 "meet-hello",
                 "meet-morning"
               ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a0-greetings-listen",
+              "prompt": "What is the speaker's name?",
+              "explanationRomanUrdu": "My name is Sara ka matlab mera naam Sara hai.",
+              "speech": {
+                "text": "Hello. My name is Sara.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a0-greetings-listen-opt-0",
+                  "text": "Sara"
+                },
+                {
+                  "id": "en-a0-greetings-listen-opt-1",
+                  "text": "Ali"
+                },
+                {
+                  "id": "en-a0-greetings-listen-opt-2",
+                  "text": "Omar"
+                }
+              ],
+              "correctOptionId": "en-a0-greetings-listen-opt-0"
             }
           ]
         },
@@ -653,7 +731,8 @@
           ],
           "reviewTags": [
             "subject-pronouns",
-            "be-verb"
+            "be-verb",
+            "listening-comprehension"
           ],
           "exercises": [
             {
@@ -758,6 +837,31 @@
                 "correct-i",
                 "correct-you"
               ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a0-pronouns-be-listen",
+              "prompt": "Who is the speaker talking about?",
+              "explanationRomanUrdu": "We ka matlab hum hai aur students jama hai. Speaker apne group ke talib-e-ilm hone ki baat karta hai.",
+              "speech": {
+                "text": "We are students.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a0-pronouns-be-listen-opt-0",
+                  "text": "One teacher"
+                },
+                {
+                  "id": "en-a0-pronouns-be-listen-opt-1",
+                  "text": "A group of students"
+                },
+                {
+                  "id": "en-a0-pronouns-be-listen-opt-2",
+                  "text": "One doctor"
+                }
+              ],
+              "correctOptionId": "en-a0-pronouns-be-listen-opt-1"
             }
           ]
         },
@@ -833,7 +937,8 @@
           ],
           "reviewTags": [
             "indefinite-articles",
-            "countable-nouns"
+            "countable-nouns",
+            "listening-comprehension"
           ],
           "exercises": [
             {
@@ -943,6 +1048,31 @@
                 "phrase-egg",
                 "phrase-student"
               ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a0-articles-listen",
+              "prompt": "What does the speaker have?",
+              "explanationRomanUrdu": "Speaker ke paas aik apple hai. Apple ki shuru ki awaaz vowel hai, is liye an apple kaha gaya hai.",
+              "speech": {
+                "text": "I have an apple.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a0-articles-listen-opt-0",
+                  "text": "An orange"
+                },
+                {
+                  "id": "en-a0-articles-listen-opt-1",
+                  "text": "A book"
+                },
+                {
+                  "id": "en-a0-articles-listen-opt-2",
+                  "text": "An apple"
+                }
+              ],
+              "correctOptionId": "en-a0-articles-listen-opt-2"
             }
           ]
         },
@@ -1032,7 +1162,8 @@
           "reviewTags": [
             "basic-vocabulary",
             "demonstratives",
-            "nouns"
+            "nouns",
+            "listening-comprehension"
           ],
           "exercises": [
             {
@@ -1142,6 +1273,31 @@
                 "words-o-book",
                 "words-o-bag"
               ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a0-everyday-words-listen",
+              "prompt": "Where is the book?",
+              "explanationRomanUrdu": "On the table ka matlab mez par hai. Audio mein kitab mez par hai.",
+              "speech": {
+                "text": "The book is on the table.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a0-everyday-words-listen-opt-0",
+                  "text": "On the table"
+                },
+                {
+                  "id": "en-a0-everyday-words-listen-opt-1",
+                  "text": "Under the chair"
+                },
+                {
+                  "id": "en-a0-everyday-words-listen-opt-2",
+                  "text": "In the bag"
+                }
+              ],
+              "correctOptionId": "en-a0-everyday-words-listen-opt-0"
             }
           ]
         },
@@ -1231,7 +1387,8 @@
           ],
           "reviewTags": [
             "singular-plural",
-            "irregular-plurals"
+            "irregular-plurals",
+            "listening-comprehension"
           ],
           "exercises": [
             {
@@ -1341,6 +1498,31 @@
                 "plural-two",
                 "plural-children-p"
               ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a0-plurals-listen",
+              "prompt": "How many books does the speaker have?",
+              "explanationRomanUrdu": "Two ka matlab do hai. Do kitabon ke liye books ki jama shakal istemal hui hai.",
+              "speech": {
+                "text": "I have two books.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a0-plurals-listen-opt-0",
+                  "text": "One"
+                },
+                {
+                  "id": "en-a0-plurals-listen-opt-1",
+                  "text": "Two"
+                },
+                {
+                  "id": "en-a0-plurals-listen-opt-2",
+                  "text": "Three"
+                }
+              ],
+              "correctOptionId": "en-a0-plurals-listen-opt-1"
             }
           ]
         },
@@ -1423,7 +1605,8 @@
           ],
           "reviewTags": [
             "basic-sentences",
-            "be-negatives"
+            "be-negatives",
+            "listening-comprehension"
           ],
           "exercises": [
             {
@@ -1533,6 +1716,31 @@
                 "sentence-neg-i",
                 "sentence-neg-they"
               ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a0-sentence-building-listen",
+              "prompt": "What colour is the bag?",
+              "explanationRomanUrdu": "Red ka matlab laal hai. The bag is red mein bag ka rang bataya gaya hai.",
+              "speech": {
+                "text": "The bag is red.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a0-sentence-building-listen-opt-0",
+                  "text": "Green"
+                },
+                {
+                  "id": "en-a0-sentence-building-listen-opt-1",
+                  "text": "Blue"
+                },
+                {
+                  "id": "en-a0-sentence-building-listen-opt-2",
+                  "text": "Red"
+                }
+              ],
+              "correctOptionId": "en-a0-sentence-building-listen-opt-2"
             }
           ]
         }
@@ -1741,7 +1949,8 @@
           "reviewTags": [
             "numbers",
             "counting",
-            "singular-plural"
+            "singular-plural",
+            "listening-comprehension"
           ],
           "exercises": [
             {
@@ -1846,6 +2055,31 @@
                 "number-phrase-one",
                 "number-phrase-five"
               ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a0-numbers-listen",
+              "prompt": "How many pencils does the speaker have?",
+              "explanationRomanUrdu": "Twelve ka matlab baarah, yani 12 hai. Twenty 20 aur two 2 hai.",
+              "speech": {
+                "text": "I have twelve pencils.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a0-numbers-listen-opt-0",
+                  "text": "Twelve"
+                },
+                {
+                  "id": "en-a0-numbers-listen-opt-1",
+                  "text": "Twenty"
+                },
+                {
+                  "id": "en-a0-numbers-listen-opt-2",
+                  "text": "Two"
+                }
+              ],
+              "correctOptionId": "en-a0-numbers-listen-opt-0"
             }
           ]
         },
@@ -1972,7 +2206,8 @@
           "reviewTags": [
             "time",
             "dates",
-            "days-months"
+            "days-months",
+            "listening-comprehension"
           ],
           "exercises": [
             {
@@ -2077,6 +2312,31 @@
                 "time-name-mon",
                 "time-name-may"
               ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a0-time-dates-listen",
+              "prompt": "When does the class start?",
+              "explanationRomanUrdu": "Three thirty ka matlab saaray teen hai. In the afternoon se maloom hota hai ke yeh 3:30 PM hai.",
+              "speech": {
+                "text": "The class starts at three thirty in the afternoon.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a0-time-dates-listen-opt-0",
+                  "text": "3:00 PM"
+                },
+                {
+                  "id": "en-a0-time-dates-listen-opt-1",
+                  "text": "3:30 PM"
+                },
+                {
+                  "id": "en-a0-time-dates-listen-opt-2",
+                  "text": "3:30 AM"
+                }
+              ],
+              "correctOptionId": "en-a0-time-dates-listen-opt-1"
             }
           ]
         },
@@ -2166,7 +2426,8 @@
           ],
           "reviewTags": [
             "everyday-expressions",
-            "polite-requests"
+            "polite-requests",
+            "listening-comprehension"
           ],
           "exercises": [
             {
@@ -2271,6 +2532,31 @@
                 "polite-help-again",
                 "polite-help-slow"
               ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a0-polite-expressions-listen",
+              "prompt": "What does the speaker ask someone to do?",
+              "explanationRomanUrdu": "Please open the door ka matlab meherbani karke darwaza kholain hai. Please aur thank you narmi aur shukriya zahir karte hain.",
+              "speech": {
+                "text": "Please open the door. Thank you.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a0-polite-expressions-listen-opt-0",
+                  "text": "Close a book"
+                },
+                {
+                  "id": "en-a0-polite-expressions-listen-opt-1",
+                  "text": "Sit down"
+                },
+                {
+                  "id": "en-a0-polite-expressions-listen-opt-2",
+                  "text": "Open the door"
+                }
+              ],
+              "correctOptionId": "en-a0-polite-expressions-listen-opt-2"
             }
           ]
         }

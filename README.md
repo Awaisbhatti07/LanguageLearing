@@ -4,6 +4,8 @@ Native Android language learning: English, Modern Standard Arabic and a separate
 
 Current development preview includes 11 English A0 lessons and 55 deterministic practice activities, reading, vocabulary and optional installed offline device-TTS examples. Answers, resumable practice sessions and progress are stored locally. English content is pending qualified language review; Fusha/Quranic lessons, assessed listening, complete revision and both online AI modes remain unfinished. See the progress files for exact test/build evidence and remaining work.
 
+Local implementation checkpoint: source pack v3 adds one listening assessment per lesson (66 activities total), with hidden transcripts, offline playback and durable reading alternatives. New migration/regression tests are written, but this change has not been compiled or executed under the user's current implementation-only instructions. The last verified APK/source remains pack v2 at d9b6800; the new listening work is not yet published as verified.
+
 Start with [project status](docs/PROJECT_STATUS.md), [task queue](docs/TASK_QUEUE.md) and [resume instructions](docs/RESUME_INSTRUCTIONS.md). The complete user specification is preserved in [product requirements](docs/PRODUCT_REQUIREMENTS.md).
 
 ## Development

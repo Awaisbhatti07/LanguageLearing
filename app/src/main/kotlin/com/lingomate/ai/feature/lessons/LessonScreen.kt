@@ -11,26 +11,21 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleEventObserver
-import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.lingomate.ai.core.audio.DeviceSpeechPlayer
 import com.lingomate.ai.core.designsystem.InfoCard
 import com.lingomate.ai.core.designsystem.ScreenColumn
 import com.lingomate.ai.core.designsystem.SectionTitle
 import com.lingomate.learning.LearningTrack
 import com.lingomate.learning.content.ContentCodec
+import com.lingomate.learning.content.Exercise
 import com.lingomate.learning.content.ExerciseAnswer
 import com.lingomate.learning.content.ExerciseGrader
+import com.lingomate.learning.content.ListeningMode
 
 @Composable
 fun LessonScreen(model: LessonViewModel, onBackToCourse: () -> Unit) {
@@ -44,7 +39,7 @@ fun LessonScreen(model: LessonViewModel, onBackToCourse: () -> Unit) {
         else -> ScreenColumn {
             val content = run.content
             SectionTitle(content.title, "Explanations in Roman Urdu · Learning material pending language review")
-            if (state.writeFailed) InfoCard("Answer could not be saved", "Try Check answer again. Your earlier saved answers are preserved.", "Dismiss", model::dismissWriteError)
+            if (state.writeFailed) InfoCard("Practice could not be saved", "Try your last action again. Your earlier saved answers are preserved.", "Dismiss", model::dismissWriteError)
             val feedback = state.feedbackPosition
             when {
                 feedback != null -> {
@@ -53,11 +48,18 @@ fun LessonScreen(model: LessonViewModel, onBackToCourse: () -> Unit) {
                     val answer = ContentCodec.json.decodeFromString<ExerciseAnswer>(attempt.answerPayload)
                     val grade = ExerciseGrader.grade(exercise, answer)
                     InfoCard(if (grade.correct) "Correct" else "Keep practising", "Answer: ${grade.expectedAnswer}\n\n${grade.explanationRomanUrdu}")
+                    if (exercise is Exercise.ListeningChoice && answer is ExerciseAnswer.ListeningSelection) {
+                        Text(if (answer.mode == ListeningMode.AUDIO) "Saved as listening practice." else "Saved as a reading alternative, not a listening result.")
+                        Text("Transcript: ${exercise.speech.text}")
+                    }
                     Text("Answer saved on this device.")
                     Button(onClick = model::next) { Text(if (run.complete) "See results" else "Next activity") }
                 }
                 run.complete -> {
                     InfoCard("Practice complete", "${run.correctCount} of ${content.exercises.size} activities correct. This is a practice result, not a language-proficiency score.")
+                    if (content.exercises.any { it is Exercise.ListeningChoice }) {
+                        Text("Listening answers: ${run.answeredIn(ListeningMode.AUDIO)} · Reading alternatives: ${run.answeredIn(ListeningMode.READING_ALTERNATIVE)}")
+                    }
                     Text("Your answers and completion are saved. Revisit this lesson anytime to practise again.")
                     Button(onClick = onBackToCourse) { Text("Back to course") }
                 }
@@ -65,7 +67,8 @@ fun LessonScreen(model: LessonViewModel, onBackToCourse: () -> Unit) {
                     Text("Activity ${run.attempts.size + 1} of ${content.exercises.size}", color = MaterialTheme.colorScheme.primary)
                     key(run.session.id, run.attempts.size) {
                         val exercise = content.exercises[run.attempts.size]
-                        ExerciseInput(exercise, state.saving) { model.submit(exercise.id, it) }
+                        ExerciseInput(exercise, state.saving, run.listeningModes[exercise.id],
+                            onListeningMode = { model.prepareListening(exercise.id, it) }) { model.submit(exercise.id, it) }
                     }
                 }
                 else -> {
@@ -88,15 +91,9 @@ fun LessonScreen(model: LessonViewModel, onBackToCourse: () -> Unit) {
 
 @Composable
 private fun LessonExamples(examples: List<com.lingomate.learning.content.LessonExample>, track: LearningTrack) {
-    val context = LocalContext.current
-    val player = remember(context) { DeviceSpeechPlayer(context) }
+    val player = rememberLessonSpeechPlayer()
+    StopSpeechWhenInactive(player)
     val speech by player.state.collectAsStateWithLifecycle()
-    val owner = LocalLifecycleOwner.current
-    DisposableEffect(player, owner) {
-        val observer = LifecycleEventObserver { _, event -> if (event == Lifecycle.Event.ON_STOP) player.stop() }
-        owner.lifecycle.addObserver(observer)
-        onDispose { owner.lifecycle.removeObserver(observer); player.close() }
-    }
     examples.forEach { example ->
         Card {
             Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {

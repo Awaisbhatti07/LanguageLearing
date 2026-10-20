@@ -90,3 +90,17 @@ data class ExerciseAttemptEntity(
     val correct: Boolean,
     val answeredAt: Long,
 )
+
+@Entity(
+    tableName = "listening_presentations",
+    primaryKeys = ["sessionId", "exerciseId"],
+    foreignKeys = [ForeignKey(
+        entity = LessonSessionEntity::class, parentColumns = ["id"], childColumns = ["sessionId"],
+        onDelete = ForeignKey.RESTRICT,
+    )],
+)
+data class ListeningPresentationEntity(
+    val sessionId: String,
+    val exerciseId: String,
+    val mode: String,
+)

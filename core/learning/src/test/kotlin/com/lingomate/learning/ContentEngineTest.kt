@@ -21,12 +21,13 @@ class ContentEngineTest {
     private val matches = Exercise.MatchPairs("test-match", "Match meanings", "I ka matlab main hai.",
         listOf(MatchPair("pair-i", "I", "main"), MatchPair("pair-you", "you", "aap")))
 
-    @Test fun bundledPackHasRealLessonsAndAllFiveDeterministicActivityTypes() {
+    @Test fun bundledPackHasRealLessonsAndAllSixDeterministicActivityTypes() {
         val pack = pack()
         val lessons = pack.units.flatMap { it.lessons }
         assertEquals(11, lessons.size)
-        assertTrue(lessons.all { it.exercises.size >= 5 && it.reading != null })
-        assertEquals(5, lessons.flatMap { it.exercises }.map { it::class }.toSet().size)
+        assertTrue(lessons.all { it.exercises.size >= 6 && it.reading != null })
+        assertEquals(6, lessons.flatMap { it.exercises }.map { it::class }.toSet().size)
+        assertTrue(lessons.all { it.exercises.count { exercise -> exercise is Exercise.ListeningChoice } == 1 })
         assertEquals(ReviewStatus.PENDING_REVIEW, pack.provenance.reviewStatus)
     }
     @Test fun a0PackCoversEveryPlannedFoundationSkillWithoutEmptyLessons() {
@@ -35,14 +36,16 @@ class ContentEngineTest {
         val required = setOf("alphabet", "pronunciation-basics", "basic-vocabulary", "greetings", "introductions",
             "subject-pronouns", "be-verb", "indefinite-articles", "singular-plural", "basic-sentences", "numbers", "time", "dates", "everyday-expressions")
         assertTrue("Missing A0 coverage: ${required - tags}", tags.containsAll(required))
-        assertEquals(55, lessons.sumOf { it.exercises.size })
+        assertEquals(66, lessons.sumOf { it.exercises.size })
         assertTrue(lessons.all { it.examples.size >= 3 && it.vocabulary.size >= 3 })
     }
     @Test fun packRoundTripPreservesDisplayTextAndHarakat() {
         val original = pack().let { pack -> pack.copy(track = LearningTrack.FUSHA, units = pack.units.map { unit ->
             unit.copy(lessons = unit.lessons.map { lesson -> lesson.copy(examples = listOf(
                 LessonExample("أَنَا طَالِبٌ", "Main talib-e-ilm hoon.", SpeechReference("أَنَا طَالِبٌ", "ar")),
-            )) })
+            ), exercises = lesson.exercises.map { exercise ->
+                if (exercise is Exercise.ListeningChoice) exercise.copy(speech = SpeechReference("أَنَا طَالِبٌ", "ar")) else exercise
+            }) })
         }) }
         val encoded = ContentCodec.json.encodeToString(original)
         assertEquals(original, ContentCodec.parsePack(encoded))

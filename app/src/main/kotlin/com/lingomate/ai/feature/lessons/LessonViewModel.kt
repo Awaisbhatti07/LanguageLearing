@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.lingomate.ai.data.LearningRepository
 import com.lingomate.ai.data.LessonRun
 import com.lingomate.learning.content.ExerciseAnswer
+import com.lingomate.learning.content.ListeningMode
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -53,6 +54,20 @@ class LessonViewModel(
 
     fun next() { _state.value = _state.value.copy(feedbackPosition = null) }
     fun dismissWriteError() { _state.value = _state.value.copy(writeFailed = false) }
+
+    fun prepareListening(exerciseId: String, mode: ListeningMode) {
+        val current = _state.value
+        val run = current.run ?: return
+        if (current.loading || current.saving || current.feedbackPosition != null || run.complete) return
+        _state.value = current.copy(saving = true, writeFailed = false)
+        viewModelScope.launch {
+            try {
+                val updated = repository.prepareListening(run.session.id, exerciseId, mode)
+                _state.value = current.copy(run = updated, saving = false)
+            } catch (error: CancellationException) { throw error }
+            catch (_: Exception) { _state.value = current.copy(saving = false, writeFailed = true) }
+        }
+    }
 
     fun submit(exerciseId: String, answer: ExerciseAnswer) {
         val current = _state.value
