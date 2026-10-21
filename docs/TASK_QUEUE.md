@@ -2,7 +2,7 @@
 
 Status values: TODO / IN_PROGRESS / BLOCKED / DONE. DONE requires recorded acceptance evidence. See milestone gates in `MASTER_PLAN.md`.
 
-Publication checkpoint (2026-10-20): verified listening source `f31126f` and schema/results checkpoint `80e26e1` are pushed to `origin/develop/lingomate`, with the remote hash confirmed. GIT-01 is resolved. M4-01L automated acceptance is complete; publication does not complete pending curriculum or device acceptance gates.
+Publication checkpoint (2026-10-21): verified A1/catalog source `ba16b96` and results checkpoint `c2ba2b4` are pushed to `origin/develop/lingomate`, with the remote hash confirmed and clean synchronized branch. A0/listening history is preserved. Publication/87 passing tests do not complete pending qualified curriculum or device acceptance gates.
 
 | ID | Milestone | Status | Task | Dependencies | Acceptance / remaining | Files | Test evidence / commit | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
