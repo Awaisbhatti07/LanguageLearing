@@ -6,7 +6,7 @@ Coverage is based on the user's specification; an authored lesson must have obje
 | Level | Planned skill coverage | Content state | Review state |
 | --- | --- | --- | --- |
 | A0 | Alphabet/sounds; pronunciation; basic vocabulary; greetings/introductions; pronouns; am/is/are; articles; singular/plural; sentence construction; numbers; time/dates/everyday expressions | Pack v3: 11 lessons/66 activities, including one listening question per lesson. Full run passed 37 core/40 app tests, migrations, APK/lint | Pending qualified language review and physical-device audio; authored coverage is not certified mastery |
-| A1 | Present Simple/Continuous; Past Simple; basic future; questions/negatives; prepositions; common verbs; adjectives/adverbs; routines; family/shopping/travel/workplace; guided listening/speaking | Draft pack v1: 18 lessons/108 activities in four units, all six activity types, reading and guided self-speaking. Catalog integration/test sources prepared; no new checks executed | Pending new-scope unit/build verification, qualified language review and device audio; not a completed/certified A1 level |
+| A1 | Present Simple/Continuous; Past Simple; basic future; questions/negatives; prepositions; common verbs; adjectives/adverbs; routines; family/shopping/travel/workplace; guided listening/speaking | Pack v1: 18 lessons/108 activities in four units, all six types, reading/self-speaking. Approved full run passed 43 core/44 app tests, APK/lint; two-pack ordering/A0 preservation and A1 access/resume passed | Qualified language review and device audio pending; automated coverage is not completed/certified A1 proficiency |
 | A2 | Present Perfect; Past Continuous; future structures; modals; comparisons; basic conditionals; phrasal verbs; connectors; everyday communication; listening; paragraph writing; roleplay | TODO | Pending |
 | B1 | Tense accuracy; conditionals; passive; reported speech; relatives; complex sentences; connected speech; stories/opinions; workplace/interviews/presentations; intermediate reading/listening/writing | TODO | Pending |
 
@@ -28,7 +28,7 @@ English A0 lesson mapping: `en-a0-alphabet`, `en-a0-sounds`, `en-a0-greetings`, 
 
 ## English A1 draft mapping
 
-Each lesson includes original Roman Urdu teaching, examples, vocabulary, reading, self-speaking and six exercises including a listening question. This mapping records authored scope, not passed tests or expert review. Speaking prompts are self-practice with no recording/automatic score; grammar lessons remain directly accessible without completing A0 first.
+Each lesson includes original Roman Urdu teaching, examples, vocabulary, reading, self-speaking and six exercises including a listening question. Topic/key/structural and integration checks passed in the authorized run; this mapping still does not establish expert review or proficiency. Speaking prompts are self-practice with no recording/automatic score; direct grammar access without completing A0 first is covered by the passing navigation test.
 
 | Stable lesson ID | Main teaching/context |
 | --- | --- |
