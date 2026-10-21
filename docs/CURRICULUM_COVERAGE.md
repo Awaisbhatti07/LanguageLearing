@@ -8,7 +8,7 @@ Coverage is based on the user's specification; an authored lesson must have obje
 | A0 | Alphabet/sounds; pronunciation; basic vocabulary; greetings/introductions; pronouns; am/is/are; articles; singular/plural; sentence construction; numbers; time/dates/everyday expressions | Pack v3: 11 lessons/66 activities, including one listening question per lesson. Full run passed 37 core/40 app tests, migrations, APK/lint | Pending qualified language review and physical-device audio; authored coverage is not certified mastery |
 | A1 | Present Simple/Continuous; Past Simple; basic future; questions/negatives; prepositions; common verbs; adjectives/adverbs; routines; family/shopping/travel/workplace; guided listening/speaking | Pack v1: 18 lessons/108 activities in four units, all six types, reading/self-speaking. Approved full run passed 43 core/44 app tests, APK/lint; two-pack ordering/A0 preservation and A1 access/resume passed | Qualified language review and device audio pending; automated coverage is not completed/certified A1 proficiency |
 | A2 | Present Perfect; Past Continuous; future structures; modals; comparisons; basic conditionals; phrasal verbs; connectors; everyday communication; listening; paragraph writing; roleplay | Pack v1: 21 lessons/128 activities in four units; 126 scored activities including 21 listening questions, plus two saved paragraph/checklist activities. Approved full run passed 53 core/51 app tests, APK/lint; three-pack ordering, old-data preservation and paragraph save/resume passed | PENDING_REVIEW; qualified review and device audio pending; self-writing/roleplay have no automatic quality score |
-| B1 | Tense accuracy; conditionals; passive; reported speech; relatives; complex sentences; connected speech; stories/opinions; workplace/interviews/presentations; intermediate reading/listening/writing | TODO | Pending |
+| B1 | Tense accuracy; conditionals; passive; reported speech; relatives; complex sentences; connected speech; stories/opinions; workplace/interviews/presentations; intermediate reading/listening/writing | Pack v1 source draft: 24 lessons/148 activities in four units, including 24 listening questions and four ungraded saved writing tasks. Core/repository/Compose regression sources authored; no B1 tests/build/lint executed | PENDING_REVIEW; structural execution, qualified review/device audio pending; authored topic coverage does not complete B1/M4 acceptance |
 
 ## Fusha Arabic
 | Level | Planned skill coverage | Content state | Review state |
@@ -80,3 +80,36 @@ Each of the 21 lessons includes original Roman Urdu teaching, four spoken exampl
 | en-a2-listening-detail | Corrected time/room details and clarification questions |
 | en-a2-paragraph-writing | Topic/support/sequence/closing; saved paragraph and self-review |
 | en-a2-practical-roleplay | Explain problem, offer alternative, agree and confirm details |
+
+## English B1 draft mapping
+
+Each lesson has original Roman Urdu explanations/rules, four examples with English speech references, five vocabulary entries, a developed reading with Roman Urdu meaning, two role/role-swap prompts, review tags and six scored activities including one listening question. Four lessons additionally save an ungraded writing response/checklist (148 activities total). The new source inventory would be 74 lessons/450 activities/74 listening/six paragraphs across English A0–B1; no B1 parser/tests/build has run, and the current APK remains A0–A2 only. This mapping is authored coverage, not qualified review or certified proficiency.
+
+| Stable lesson ID | Main teaching/context |
+| --- | --- |
+| en-b1-tense-accuracy | Routine/current/finished-past meanings; auxiliary agreement and base forms |
+| en-b1-perfect-past | Experience versus dated detail; been/gone with return context |
+| en-b1-narrative-tenses | Past Continuous background and Past Simple main events |
+| en-b1-past-perfect | Had + participle, earlier event and main timeline |
+| en-b1-future-review | Immediate decision, prior intention, confirmed arrangement, timetable |
+| en-b1-used-to | Old habits/states, did ... use to, distinction from be used to |
+| en-b1-conditionals-review | Zero/first conditional, unless meaning and possible plans |
+| en-b1-second-conditional | Imagined present/future, if + past / would + base, advice |
+| en-b1-passive-present | Am/is/are + participle, processes, optional agent |
+| en-b1-passive-past | Was/were + participle, irregular forms, completed-event reporting |
+| en-b1-reported-statements | Contextual backshift/pronouns/time, said versus told + person |
+| en-b1-reported-questions | Statement word order, if/whether, contextual backshift |
+| en-b1-defining-relatives | Who/which/that/where, identifying information, no repeated subject |
+| en-b1-nondefining-relatives | Extra information, who/which and paired commas, no that |
+| en-b1-complex-sentences | Because/although/so that, reason/concession/purpose |
+| en-b1-connected-speech | Linking, weak forms, stress/meaning groups, ordinary spelling and TTS limits |
+| en-b1-storytelling | Setting/problem/response/outcome; saved narrative and self-review |
+| en-b1-opinions | Opinion/reason/example/alternative/conclusion; saved opinion and self-review |
+| en-b1-workplace | Clarify task/version/dependency, owner/deadline, summarise agreement |
+| en-b1-interviews | Relevant situation/action/result, clarification and truthful limits |
+| en-b1-presentations | Purpose/signposts/examples/conclusion; saved proposal script and self-review |
+| en-b1-reading-purpose | Developed notice, purpose/main idea/detail/evidence/not stated |
+| en-b1-listening-inference | Wording-supported intention, cautious interest versus confirmed promise |
+| en-b1-writing-messages | Context/reason/alternative/pending detail/next step; saved message first |
+
+Connected-speech practice introduces awareness and clearly states that installed voices may not demonstrate natural reductions; its listening question checks the script’s meaning. Writing, roleplay and presentation practice do not record speech or automatically assess grammar/argument/pronunciation quality. Longer reading and listening scripts, explanations and approximate pronunciation guides still need qualified review and real-device audio checks. Full independent grammar library, assessed writing/speaking, dictation, translation rubrics and SRS remain M7/later work.

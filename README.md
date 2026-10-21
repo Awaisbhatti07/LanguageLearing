@@ -8,6 +8,8 @@ The latest authorized run passed **53 core/51 app unit tests (104 total)**, debu
 
 A2 includes two paragraph self-practice tasks with explicit local saving, self-review checklists and example responses. Writing receives no automatic grammar/quality score and does not change quiz points. A2 covers experiences/past events, future/modals, comparisons/conditionals, phrasal verbs and connected communication/roleplay. Content remains pending review. B1, Fusha/Quranic lessons, complete revision and both online AI modes remain unfinished. See the progress files for exact evidence and remaining work.
 
+The local B1 source draft adds **24 lessons/148 activities**, including 24 listening questions and four ungraded writing tasks. Topics include narrative tenses, conditionals, passive/reported speech, relative/complex clauses, connected speech, stories/opinions and practical workplace/interview/presentation skills. **B1 tests/build/lint have not run; the current APK and 104-test report cover only A0–A2.** All B1 content awaits qualified review. Its connected-speech material explains that device voices may not reproduce natural weak forms; no pronunciation grade is claimed.
+
 Start with [project status](docs/PROJECT_STATUS.md), [task queue](docs/TASK_QUEUE.md) and [resume instructions](docs/RESUME_INSTRUCTIONS.md). The complete user specification is preserved in [product requirements](docs/PRODUCT_REQUIREMENTS.md).
 
 ## Development

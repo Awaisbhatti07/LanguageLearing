@@ -169,6 +169,31 @@ class LessonFlowTest {
         }
     }
 
+    @Test fun b1ReportedQuestionOpensDirectlyAndResumesWithoutChangingEarlierLevelProgress() {
+        click("Continue English")
+        waitFor("Continue: Letters and the alphabet")
+        click("Open: Reported questions: statement word order")
+        click("Start practice")
+        click("She asked where I lived.")
+        click("Check answer")
+        waitFor("Correct")
+        compose.onNodeWithContentDescription("Back").performClick()
+        click("Resume: Reported questions: statement word order")
+        waitFor("Correct")
+        click("Next activity")
+        waitFor("Report “Can you help?” with backshift: She asked whether I ___ help.")
+        runBlocking {
+            val session = requireNotNull(database.learningDao().activeSession("en-b1-reported-questions"))
+            val answer = database.learningDao().attempts(session.id).single()
+            assertTrue(answer.correct)
+            assertEquals("en-b1-reported-questions-choice", answer.exerciseId)
+            assertNull(database.learningDao().progress("en-a0-alphabet"))
+            assertNull(database.learningDao().progress("en-a1-routines"))
+            assertNull(database.learningDao().progress("en-a2-perfect-experiences"))
+            assertNull(database.learningDao().progress(session.lessonId))
+        }
+    }
+
     private fun waitFor(text: String) {
         compose.waitUntil(10_000) { compose.onAllNodesWithText(text).fetchSemanticsNodes().isNotEmpty() }
     }

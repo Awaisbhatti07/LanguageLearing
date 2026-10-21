@@ -1,7 +1,7 @@
 # LingoMate AI master plan
 
 Source requirements: `PRODUCT_REQUIREMENTS.md` (user-provided, preserved verbatim).
-Started: 2026-10-20, Asia/Karachi. Remote: https://github.com/Awaisbhatti07/LanguageLearing.git. Normal pushes to `develop/lingomate` are authorized; verified A1/catalog source ba16b96 and results checkpoint c2ba2b4 are published on that branch. Main remains unchanged.
+Started: 2026-10-20, Asia/Karachi. Remote: https://github.com/Awaisbhatti07/LanguageLearing.git. Normal pushes of verified changes to `develop/lingomate` are authorized; verified A2 source 1320bdc and results checkpoint 246f83a are published on that branch. New B1 work is implementation only pending scoped checks. Main remains unchanged.
 
 | Milestone | Deliverables and acceptance gate |
 | --- | --- |
@@ -47,3 +47,7 @@ No milestone is complete until its acceptance evidence exists. Later milestone p
 2026-10-21 M4-03 verification authorized: user approved core/app unit tests, debug build and lint for 1320bdc. Combined command is running with the existing isolated SDK/cache after a sandbox-only local socket startup failure. Inspect actual results before acceptance/publication; no device launch or qualified curriculum review is implied.
 
 2026-10-21 M4-03 automated acceptance: application run BUILD SUCCESSFUL in 52s, **53 core/51 app tests (104 total), 0 failures/errors/skips**, debug APK/lint passed. No source correction/test rerun. The APK has all three source-identical packs: 50 lessons/302 activities/50 listening/two paragraphs. Writing persistence/original prompts/idempotency/adjusted clocks, quiz-only scoring, three-level ordering, A0/A1 preservation and Compose paragraph save/resume passed. Room schemas and earlier content unchanged. Record/publish inspected results through the authorized normal development push. M4-03 stays IN_PROGRESS for qualified review/device audio; B1 and later work remain unfinished.
+
+2026-10-21 M4-04 implementation: user requested continuation after published A2 verification. Author B1 in a separate stable-ID pack, reusing existing scored/listening and ungraded paragraph activities. Plan 24 lessons/four units with four writing tasks. All requested B1 topics need teaching/practice, with honest connected-speech/device-voice limits. Preserve A0–A2, Room v3, dependencies and learner data. Source implementation only; B1 checks need new explicit authorization. Prior qualified-review/device-audio gates remain open.
+
+2026-10-21 M4-04 source checkpoint: 24 B1 lessons/148 activities authored in four units: 144 scored (24 listening) plus four ungraded writing tasks. Original teaching/readings/roleplays and topic mapping cover all specified B1 areas; connected-speech device limits and self-assessment boundaries are explicit. Core content/key/ID/coverage, four-level ordering/old-progress/A2-writing preservation, all B1 writing tasks and direct grammar access/resume regression sources are prepared. No production-code, schema, dependency or previous-asset changes; no B1 tests/builds/lint/automated validation executed. Checkpoint locally before requesting scoped verification; M4 and all language/device-review gates stay open.
