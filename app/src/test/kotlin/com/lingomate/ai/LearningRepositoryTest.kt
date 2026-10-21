@@ -187,6 +187,7 @@ class LearningRepositoryTest {
     }
 
     private fun correctAnswer(exercise: Exercise): ExerciseAnswer = when (exercise) {
+        is Exercise.ParagraphWriting -> ExerciseAnswer.ParagraphText(exercise.modelParagraph, emptyList())
         is Exercise.ListeningChoice -> ExerciseAnswer.ListeningSelection(exercise.correctOptionId, ListeningMode.AUDIO)
         is Exercise.SingleChoice -> ExerciseAnswer.Selection(listOf(exercise.correctOptionId))
         is Exercise.MultiChoice -> ExerciseAnswer.Selection(exercise.correctOptionIds)

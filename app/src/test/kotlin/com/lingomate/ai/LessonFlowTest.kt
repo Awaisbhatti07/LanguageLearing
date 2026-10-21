@@ -138,6 +138,37 @@ class LessonFlowTest {
         }
     }
 
+    @Test fun a2ParagraphSavesSelfReviewWithoutClaimingAGradeAndResumesItsOriginalText() {
+        click("Continue English")
+        click("Open: Paragraph writing: a connected short account")
+        click("Start practice")
+        waitFor("Your paragraph")
+        compose.onNodeWithText("Save paragraph").performScrollTo().assertIsNotEnabled()
+        val text = "I visited an imaginary library. I goed with a friend."
+        compose.onNodeWithText("Your paragraph").performScrollTo().performTextInput(text)
+        click("My first sentence introduces the main idea.")
+        click("Save paragraph")
+        waitFor("Paragraph saved")
+        compose.onNodeWithText("Correct").assertDoesNotExist()
+        compose.onNodeWithText("Keep practising").assertDoesNotExist()
+        compose.onNodeWithText("Checked: My first sentence introduces the main idea.").performScrollTo().assertIsDisplayed()
+        compose.onNodeWithContentDescription("Back").performClick()
+        click("Resume: Paragraph writing: a connected short account")
+        waitFor("Paragraph saved")
+        compose.onNodeWithText(text, substring = true).performScrollTo().assertIsDisplayed()
+        click("Next activity")
+        waitFor("Which sentence introduces the main idea of a library-visit paragraph?")
+        runBlocking {
+            val session = requireNotNull(database.learningDao().activeSession("en-a2-paragraph-writing"))
+            val answer = database.learningDao().attempts(session.id).single()
+            assertFalse(answer.correct)
+            assertNull(database.learningDao().progress(session.lessonId))
+            val saved = requireNotNull(repository.latestParagraph(session.lessonId, answer.exerciseId))
+            assertEquals(text, saved.answer.text)
+            assertEquals(listOf("en-a2-paragraph-writing-check-0"), saved.answer.checkedCriterionIds)
+        }
+    }
+
     private fun waitFor(text: String) {
         compose.waitUntil(10_000) { compose.onAllNodesWithText(text).fetchSemanticsNodes().isNotEmpty() }
     }

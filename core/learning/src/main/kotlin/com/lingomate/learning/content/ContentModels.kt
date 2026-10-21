@@ -73,11 +73,23 @@ data class MatchPair(val id: String, val left: String, val right: String)
 @Serializable
 enum class ListeningMode { AUDIO, READING_ALTERNATIVE }
 
+const val MAX_PARAGRAPH_CHARACTERS = 2_000
+
 @Serializable
 sealed interface Exercise {
     val id: String
     val prompt: String
     val explanationRomanUrdu: String
+
+    @Serializable @SerialName("paragraph_writing")
+    data class ParagraphWriting(
+        override val id: String,
+        override val prompt: String,
+        override val explanationRomanUrdu: String,
+        val checklist: List<ChoiceOption>,
+        val modelParagraph: String,
+        val modelMeaningRomanUrdu: String,
+    ) : Exercise
 
     @Serializable @SerialName("single_choice")
     data class SingleChoice(
@@ -134,8 +146,14 @@ sealed interface Exercise {
     ) : Exercise
 }
 
+/** Paragraphs are saved self-practice, separate from automatically scored questions. */
+val Exercise.isScored: Boolean get() = this !is Exercise.ParagraphWriting
+
 @Serializable
 sealed interface ExerciseAnswer {
+    @Serializable @SerialName("paragraph_text")
+    data class ParagraphText(val text: String, val checkedCriterionIds: List<String>) : ExerciseAnswer
+
     @Serializable @SerialName("selection")
     data class Selection(val optionIds: List<String>) : ExerciseAnswer
 

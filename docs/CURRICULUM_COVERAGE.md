@@ -7,7 +7,7 @@ Coverage is based on the user's specification; an authored lesson must have obje
 | --- | --- | --- | --- |
 | A0 | Alphabet/sounds; pronunciation; basic vocabulary; greetings/introductions; pronouns; am/is/are; articles; singular/plural; sentence construction; numbers; time/dates/everyday expressions | Pack v3: 11 lessons/66 activities, including one listening question per lesson. Full run passed 37 core/40 app tests, migrations, APK/lint | Pending qualified language review and physical-device audio; authored coverage is not certified mastery |
 | A1 | Present Simple/Continuous; Past Simple; basic future; questions/negatives; prepositions; common verbs; adjectives/adverbs; routines; family/shopping/travel/workplace; guided listening/speaking | Pack v1: 18 lessons/108 activities in four units, all six types, reading/self-speaking. Approved full run passed 43 core/44 app tests, APK/lint; two-pack ordering/A0 preservation and A1 access/resume passed | Qualified language review and device audio pending; automated coverage is not completed/certified A1 proficiency |
-| A2 | Present Perfect; Past Continuous; future structures; modals; comparisons; basic conditionals; phrasal verbs; connectors; everyday communication; listening; paragraph writing; roleplay | TODO | Pending |
+| A2 | Present Perfect; Past Continuous; future structures; modals; comparisons; basic conditionals; phrasal verbs; connectors; everyday communication; listening; paragraph writing; roleplay | Pack v1 source draft: 21 lessons/128 activities in four units; 126 scored activities including 21 listening questions, plus two saved paragraph/checklist activities. Content/validation/persistence/UI regression sources authored; no A2 tests/build/lint executed | PENDING_REVIEW; structural execution, qualified review and device audio pending; self-writing/roleplay have no automatic quality score |
 | B1 | Tense accuracy; conditionals; passive; reported speech; relatives; complex sentences; connected speech; stories/opinions; workplace/interviews/presentations; intermediate reading/listening/writing | TODO | Pending |
 
 ## Fusha Arabic
@@ -23,6 +23,8 @@ No Quranic material is approved or bundled yet. Source/license acquisition, exac
 
 ## Exercise coverage
 Verified within recorded automated scope: single/multi-choice, fill blanks, ordering and matching with persisted grading, reading activities, offline device-TTS examples, self-practice speaking prompts and dedicated listening questions with hidden transcripts and durable, separately labelled reading alternatives. Listening UI tests use fake playback; actual device audio remains unverified. Still planned: dictation, writing/translation rubrics, assessed speaking and full revision scheduling. Neither reading alternatives nor self-practice prompts establish listening/speaking proficiency.
+
+A2 source adds paragraph submission with learner-controlled self-review, an example response and locally saved original writing. This seventh activity is ungraded and excluded from quiz points/denominator; it is not an assessed writing rubric. Practical roleplays specify two roles and a goal, remain self-practice and use no recording or automatic speaking assessment. These new paths have not been compiled or executed yet.
 
 English A0 lesson mapping: `en-a0-alphabet`, `en-a0-sounds`, `en-a0-greetings`, `en-a0-pronouns-be`, `en-a0-articles`, `en-a0-everyday-words`, `en-a0-plurals`, `en-a0-sentence-building`, `en-a0-numbers`, `en-a0-time-dates`, `en-a0-polite-expressions`. Numbers cover 0–20; time/dates include weekdays, month names, 3:00/3:30 and AM/PM. This remains a foundation, not unlimited vocabulary or audio assessment coverage.
 
@@ -50,3 +52,31 @@ Each lesson includes original Roman Urdu teaching, examples, vocabulary, reading
 | en-a1-travel | Station/travel questions, simple directions |
 | en-a1-workplace | Workday verbs, requests, routine versus now |
 | en-a1-guided-conversation | Integrated routine/past/plan dialogue and clarification |
+
+## English A2 draft mapping
+
+Each of the 21 lessons includes original Roman Urdu teaching, four spoken examples, five vocabulary entries, reading, two speaking prompts covering paired roles/role swaps and six scored activities including listening. Connectors and paragraph-writing lessons additionally have an ungraded paragraph activity (128 total activities). The standalone paragraph lesson starts with writing. All material and regression sources are unexecuted drafts, pending qualified review; the previous APK contains A0/A1 only.
+
+| Stable lesson ID | Main teaching/context |
+| --- | --- |
+| en-a2-perfect-experiences | Have/has + participle, ever/never, life experiences |
+| en-a2-perfect-recent | Just/already/yet, recent results and negatives/questions |
+| en-a2-perfect-duration | Continuing states, for/since, how long |
+| en-a2-perfect-past | Experience versus finished past time, past follow-up questions |
+| en-a2-past-continuous | Was/were + -ing, past action in progress |
+| en-a2-past-interruptions | Background/shorter events, when/while |
+| en-a2-future-arrangements | Present Continuous arrangements, going-to intentions, timetable present |
+| en-a2-future-possibility | Will predictions, may/might possibilities |
+| en-a2-can-could | Current/past general ability, polite requests |
+| en-a2-should-advice | Everyday advice and should not |
+| en-a2-obligation | Must/have to; prohibited versus optional |
+| en-a2-comparatives | -er/more, than, better/worse, as ... as |
+| en-a2-superlatives | The -est/most, best/worst, one of + plural |
+| en-a2-zero-conditional | Present + present, repeated routines/results |
+| en-a2-first-conditional | If + present, will + base verb, alternative plans |
+| en-a2-phrasal-verbs | Get up, look for, put away, turn off, pick up; pronoun position |
+| en-a2-connectors | And/but/because/so, first/then/finally; saved connected account |
+| en-a2-everyday-messages | Polite changes to arrangements, time/place and confirmation |
+| en-a2-listening-detail | Corrected time/room details and clarification questions |
+| en-a2-paragraph-writing | Topic/support/sequence/closing; saved paragraph and self-review |
+| en-a2-practical-roleplay | Explain problem, offer alternative, agree and confirm details |

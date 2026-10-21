@@ -29,8 +29,15 @@ data class LessonRun(
 ) {
     val complete: Boolean get() = session.completedAt != null
     val correctCount: Int get() = attempts.count { it.correct }
+    val scoredQuestionCount: Int get() = content.exercises.count { it.isScored }
     fun answeredIn(mode: ListeningMode): Int = attempts.count { listeningModes[it.exerciseId] == mode }
 }
+
+data class SavedParagraph(
+    val exercise: Exercise.ParagraphWriting,
+    val answer: ExerciseAnswer.ParagraphText,
+    val savedAt: Long,
+)
 
 class LearningRepository(
     private val database: LingoMateDatabase,
@@ -101,6 +108,19 @@ class LearningRepository(
 
     suspend fun run(id: String): LessonRun = withContext(Dispatchers.IO) { database.withTransaction { readRun(id) } }
 
+    suspend fun latestParagraph(lessonId: String, exerciseId: String): SavedParagraph? = withContext(Dispatchers.IO) {
+        database.withTransaction {
+            val attempt = dao.latestAttempt(lessonId, exerciseId) ?: return@withTransaction null
+            val original = readRun(attempt.sessionId)
+            val exercise = original.content.exercises.first { it.id == attempt.exerciseId } as? Exercise.ParagraphWriting
+                ?: return@withTransaction null
+            val answer = ContentCodec.json.decodeFromString<ExerciseAnswer>(attempt.answerPayload) as? ExerciseAnswer.ParagraphText
+                ?: return@withTransaction null
+            // Display the original prompt/checklist, never reinterpret old writing under new content.
+            SavedParagraph(exercise, answer, attempt.answeredAt)
+        }
+    }
+
     /** Persist exposure before showing a transcript. Reading mode is irreversible within this run. */
     suspend fun prepareListening(sessionId: String, exerciseId: String, mode: ListeningMode): LessonRun = withContext(Dispatchers.IO) {
         database.withTransaction {
@@ -134,11 +154,11 @@ class LearningRepository(
             require(grade.valid) { "Select or enter a complete valid answer" }
             val now = clock()
             dao.insertAttempt(ExerciseAttemptEntity(sessionId, exerciseId, run.attempts.size,
-                ContentCodec.json.encodeToString<ExerciseAnswer>(answer), grade.correct, now))
+                ContentCodec.json.encodeToString<ExerciseAnswer>(answer), grade.scored && grade.correct, now))
             if (run.attempts.size + 1 == run.content.exercises.size) {
                 check(dao.completeSession(sessionId, now) == 1)
-                val count = run.correctCount + if (grade.correct) 1 else 0
-                val total = run.content.exercises.size
+                val count = run.correctCount + if (grade.scored && grade.correct) 1 else 0
+                val total = run.scoredQuestionCount
                 val old = dao.progress(run.session.lessonId)
                 val improved = old == null || old.questionCount <= 0 || count * old.questionCount > old.bestCorrect * total
                 dao.upsertProgress(LessonProgressEntity(

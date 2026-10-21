@@ -81,6 +81,7 @@ class EnglishLevelsTest {
 
     private suspend fun submitCorrect(session: String, exercise: Exercise, mode: ListeningMode = ListeningMode.AUDIO) {
         val answer = when (exercise) {
+            is Exercise.ParagraphWriting -> ExerciseAnswer.ParagraphText(exercise.modelParagraph, emptyList())
             is Exercise.SingleChoice -> ExerciseAnswer.Selection(listOf(exercise.correctOptionId))
             is Exercise.MultiChoice -> ExerciseAnswer.Selection(exercise.correctOptionIds)
             is Exercise.FillBlank -> ExerciseAnswer.Text(exercise.acceptedAnswers.first())

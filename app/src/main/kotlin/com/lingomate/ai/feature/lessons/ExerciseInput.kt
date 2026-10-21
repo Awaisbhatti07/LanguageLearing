@@ -28,6 +28,7 @@ import com.lingomate.ai.core.audio.SpeechPlayer
 import com.lingomate.learning.content.Exercise
 import com.lingomate.learning.content.ExerciseAnswer
 import com.lingomate.learning.content.ListeningMode
+import com.lingomate.learning.content.MAX_PARAGRAPH_CHARACTERS
 
 @Composable
 fun ExerciseInput(
@@ -45,6 +46,24 @@ fun ExerciseInput(
     Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
         Text(exercise.prompt, style = MaterialTheme.typography.titleLarge)
         when (exercise) {
+            is Exercise.ParagraphWriting -> {
+                Text("Writing self-practice · No automatic writing grade.")
+                Text("Write your paragraph, then review the checklist yourself. Your text and checks are stored when you tap Save paragraph. Save before leaving this activity.")
+                OutlinedTextField(value = text, onValueChange = { if (it.length <= MAX_PARAGRAPH_CHARACTERS) text = it },
+                    enabled = !saving, label = { Text("Your paragraph") }, minLines = 5,
+                    supportingText = { Text("${text.length}/$MAX_PARAGRAPH_CHARACTERS characters") }, modifier = Modifier.fillMaxWidth())
+                Text("Self-review checklist", style = MaterialTheme.typography.titleMedium)
+                exercise.checklist.forEach { criterion ->
+                    Row(Modifier.fillMaxWidth().toggleable(value = criterion.id in selected, enabled = !saving,
+                        role = Role.Checkbox, onValueChange = {
+                            selected = if (criterion.id in selected) selected - criterion.id else selected + criterion.id
+                        }).padding(vertical = 8.dp)) {
+                        Checkbox(checked = criterion.id in selected, onCheckedChange = null)
+                        Text(criterion.text, modifier = Modifier.padding(12.dp))
+                    }
+                }
+                Text("You can save with unchecked items and practise again later. These checks are your own review, not a quality score.")
+            }
             is Exercise.ListeningChoice -> {
                 ListeningPrompt(exercise, saving, listeningMode, onListeningMode, speechPlayer)
                 exercise.options.forEach { option ->
@@ -115,6 +134,7 @@ fun ExerciseInput(
             }
         }
         val answer: ExerciseAnswer? = when (exercise) {
+            is Exercise.ParagraphWriting -> text.takeIf { it.isNotBlank() }?.let { ExerciseAnswer.ParagraphText(it, selected) }
             is Exercise.ListeningChoice -> selected.singleOrNull()?.let { id ->
                 listeningMode?.let { ExerciseAnswer.ListeningSelection(id, it) }
             }
@@ -126,7 +146,7 @@ fun ExerciseInput(
             }
         }
         Button(onClick = { answer?.let(onSubmit) }, enabled = answer != null && !saving, modifier = Modifier.fillMaxWidth()) {
-            Text(if (saving) "Saving practice…" else "Check answer")
+            Text(if (saving) "Saving practice…" else if (exercise is Exercise.ParagraphWriting) "Save paragraph" else "Check answer")
         }
     }
 }

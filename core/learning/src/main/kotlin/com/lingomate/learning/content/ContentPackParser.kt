@@ -90,6 +90,7 @@ object ContentValidator {
         require(lesson.reviewTags.size in 1..20)
         lesson.reviewTags.forEach(::identifier)
         require(lesson.exercises.size in 2..30)
+        require(lesson.exercises.any { it.isScored }) { "A lesson needs at least one scored assessment activity" }
         unique(lesson.exercises.map { it.id })
         lesson.exercises.forEach { exercise ->
             validateExercise(exercise)
@@ -106,6 +107,11 @@ object ContentValidator {
         text(exercise.prompt)
         text(exercise.explanationRomanUrdu)
         when (exercise) {
+            is Exercise.ParagraphWriting -> {
+                options(exercise.checklist)
+                text(exercise.modelParagraph, MAX_PARAGRAPH_CHARACTERS)
+                text(exercise.modelMeaningRomanUrdu)
+            }
             is Exercise.SingleChoice -> {
                 options(exercise.options)
                 require(exercise.correctOptionId in exercise.options.map { it.id })
@@ -141,6 +147,8 @@ object ContentValidator {
             }
         }
     }
+
+    fun validateParagraphText(value: String) { text(value, MAX_PARAGRAPH_CHARACTERS) }
 
     private fun validateSpeech(reference: SpeechReference) {
         text(reference.text)

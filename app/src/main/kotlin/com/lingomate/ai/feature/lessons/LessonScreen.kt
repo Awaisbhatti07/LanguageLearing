@@ -46,8 +46,12 @@ fun LessonScreen(model: LessonViewModel, onBackToCourse: () -> Unit) {
                     val exercise = content.exercises[feedback]
                     val attempt = run.attempts[feedback]
                     val answer = ContentCodec.json.decodeFromString<ExerciseAnswer>(attempt.answerPayload)
-                    val grade = ExerciseGrader.grade(exercise, answer)
-                    InfoCard(if (grade.correct) "Correct" else "Keep practising", "Answer: ${grade.expectedAnswer}\n\n${grade.explanationRomanUrdu}")
+                    if (exercise is Exercise.ParagraphWriting && answer is ExerciseAnswer.ParagraphText) {
+                        ParagraphReview(exercise, answer)
+                    } else {
+                        val grade = ExerciseGrader.grade(exercise, answer)
+                        InfoCard(if (grade.correct) "Correct" else "Keep practising", "Answer: ${grade.expectedAnswer}\n\n${grade.explanationRomanUrdu}")
+                    }
                     if (exercise is Exercise.ListeningChoice && answer is ExerciseAnswer.ListeningSelection) {
                         Text(if (answer.mode == ListeningMode.AUDIO) "Saved as listening practice." else "Saved as a reading alternative, not a listening result.")
                         Text("Transcript: ${exercise.speech.text}")
@@ -56,7 +60,15 @@ fun LessonScreen(model: LessonViewModel, onBackToCourse: () -> Unit) {
                     Button(onClick = model::next) { Text(if (run.complete) "See results" else "Next activity") }
                 }
                 run.complete -> {
-                    InfoCard("Practice complete", "${run.correctCount} of ${content.exercises.size} activities correct. This is a practice result, not a language-proficiency score.")
+                    val scoredLabel = if (content.exercises.any { it is Exercise.ParagraphWriting }) "scored activities" else "activities"
+                    InfoCard("Practice complete", "${run.correctCount} of ${run.scoredQuestionCount} $scoredLabel correct. This is a practice result, not a language-proficiency score.")
+                    run.attempts.forEachIndexed { index, attempt ->
+                        val exercise = content.exercises[index]
+                        if (exercise is Exercise.ParagraphWriting) {
+                            val answer = ContentCodec.json.decodeFromString<ExerciseAnswer>(attempt.answerPayload) as ExerciseAnswer.ParagraphText
+                            ParagraphReview(exercise, answer)
+                        }
+                    }
                     if (content.exercises.any { it is Exercise.ListeningChoice }) {
                         Text("Listening answers: ${run.answeredIn(ListeningMode.AUDIO)} · Reading alternatives: ${run.answeredIn(ListeningMode.READING_ALTERNATIVE)}")
                     }
@@ -82,6 +94,9 @@ fun LessonScreen(model: LessonViewModel, onBackToCourse: () -> Unit) {
                     content.vocabulary.forEach { item -> InfoCard(item.word, "${item.meaningRomanUrdu}\n${item.partOfSpeech} · Say: ${item.pronunciationGuide}") }
                     content.reading?.let { InfoCard("Read and understand", "${it.text}\n\n${it.meaningRomanUrdu}") }
                     InfoCard("Say it in your own words", content.speakingPrompts.joinToString("\n\n") + "\n\nSelf-practice only. No recording or pronunciation score.")
+                    state.savedParagraphs.forEach { paragraph ->
+                        ParagraphReview(paragraph.exercise, paragraph.answer, "Most recent saved paragraph")
+                    }
                     Button(onClick = model::startPractice, modifier = Modifier.fillMaxWidth()) { Text(if (run.attempts.isEmpty()) "Start practice" else "Resume practice") }
                 }
             }

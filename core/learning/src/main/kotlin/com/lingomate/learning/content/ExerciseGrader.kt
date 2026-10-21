@@ -14,17 +14,25 @@ data class GradeResult(
     val correct: Boolean,
     val expectedAnswer: String,
     val explanationRomanUrdu: String,
+    val scored: Boolean = true,
 )
 
-/** One point per activity; multi-choice, order and matching use all-or-nothing grading. */
+/** One point per scored activity. Paragraph self-practice never receives an automatic grade. */
 object ExerciseGrader {
     fun grade(exercise: Exercise, answer: ExerciseAnswer): GradeResult {
         ContentValidator.validateExercise(exercise)
         val expected = expectedAnswer(exercise)
         fun result(valid: Boolean, correct: Boolean = false) = GradeResult(
-            valid, valid && correct, expected, exercise.explanationRomanUrdu,
+            valid, valid && correct, expected, exercise.explanationRomanUrdu, scored = exercise.isScored,
         )
         return when (exercise) {
+            is Exercise.ParagraphWriting -> {
+                val paragraph = answer as? ExerciseAnswer.ParagraphText ?: return result(false)
+                try { ContentValidator.validateParagraphText(paragraph.text) }
+                catch (_: IllegalArgumentException) { return result(false) }
+                val checked = paragraph.checkedCriterionIds
+                result(checked.distinct().size == checked.size && checked.all { id -> exercise.checklist.any { it.id == id } })
+            }
             is Exercise.SingleChoice -> {
                 val ids = (answer as? ExerciseAnswer.Selection)?.optionIds ?: return result(false)
                 val valid = ids.size == 1 && ids.single() in exercise.options.map { it.id }
@@ -63,6 +71,7 @@ object ExerciseGrader {
     }
 
     fun expectedAnswer(exercise: Exercise): String = when (exercise) {
+        is Exercise.ParagraphWriting -> exercise.modelParagraph
         is Exercise.SingleChoice -> exercise.options.first { it.id == exercise.correctOptionId }.text
         is Exercise.ListeningChoice -> exercise.options.first { it.id == exercise.correctOptionId }.text
         is Exercise.MultiChoice -> exercise.options.filter { it.id in exercise.correctOptionIds }.joinToString("; ") { it.text }

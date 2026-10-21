@@ -5,6 +5,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.lingomate.ai.data.LearningRepository
 import com.lingomate.ai.data.LessonRun
+import com.lingomate.ai.data.SavedParagraph
+import com.lingomate.learning.content.Exercise
 import com.lingomate.learning.content.ExerciseAnswer
 import com.lingomate.learning.content.ListeningMode
 import kotlinx.coroutines.CancellationException
@@ -20,6 +22,7 @@ data class LessonUiState(
     val writeFailed: Boolean = false,
     val practice: Boolean = false,
     val feedbackPosition: Int? = null,
+    val savedParagraphs: List<SavedParagraph> = emptyList(),
 )
 
 class LessonViewModel(
@@ -40,8 +43,12 @@ class LessonViewModel(
                 val run = if (savedSession != null) repository.run(savedSession) else repository.beginOrResume(lessonId)
                 saved["session_id"] = run.session.id
                 val practice = saved.get<Boolean>("practice") == true || run.attempts.isNotEmpty()
+                val paragraphs = run.content.exercises.filterIsInstance<Exercise.ParagraphWriting>().mapNotNull {
+                    repository.latestParagraph(lessonId, it.id)
+                }
                 _state.value = LessonUiState(run, loading = false, practice = practice,
-                    feedbackPosition = if (practice && !run.complete) run.attempts.lastIndex.takeIf { it >= 0 } else null)
+                    feedbackPosition = if (practice && !run.complete) run.attempts.lastIndex.takeIf { it >= 0 } else null,
+                    savedParagraphs = paragraphs)
             } catch (error: CancellationException) { throw error }
             catch (_: Exception) { _state.value = _state.value.copy(loading = false, failed = true) }
         }

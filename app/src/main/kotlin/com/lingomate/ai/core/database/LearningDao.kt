@@ -55,6 +55,12 @@ interface LearningDao {
     @Insert
     suspend fun insertAttempt(attempt: ExerciseAttemptEntity)
 
+    // Attempts are immutable inserts in a rowid table. Save order survives equal or adjusted clocks.
+    @Query("""SELECT a.* FROM exercise_attempts a INNER JOIN lesson_sessions s ON s.id = a.sessionId
+        WHERE s.lessonId = :lessonId AND a.exerciseId = :exerciseId
+        ORDER BY a.rowid DESC LIMIT 1""")
+    suspend fun latestAttempt(lessonId: String, exerciseId: String): ExerciseAttemptEntity?
+
     @Query("SELECT * FROM listening_presentations WHERE sessionId = :sessionId")
     suspend fun listeningPresentations(sessionId: String): List<ListeningPresentationEntity>
 
