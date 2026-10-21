@@ -1,7 +1,7 @@
 # LingoMate AI master plan
 
 Source requirements: `PRODUCT_REQUIREMENTS.md` (user-provided, preserved verbatim).
-Started: 2026-10-20, Asia/Karachi. Remote: https://github.com/Awaisbhatti07/LanguageLearing.git. Normal pushes of verified changes to `develop/lingomate` are authorized; verified A2 source 1320bdc and results checkpoint 246f83a are published on that branch. New B1 work is implementation only pending scoped checks. Main remains unchanged.
+Started: 2026-10-20, Asia/Karachi. Remote: https://github.com/Awaisbhatti07/LanguageLearing.git. Normal pushes of verified changes to `develop/lingomate` are authorized. B1 source c39c0db passed its explicitly approved 115-test/APK/lint scope; results/publication are recorded in the progress files. Prior A2 source 1320bdc/results 246f83a and all history remain preserved. Full M4 curriculum/device review is pending. Main remains unchanged.
 
 | Milestone | Deliverables and acceptance gate |
 | --- | --- |
@@ -51,3 +51,7 @@ No milestone is complete until its acceptance evidence exists. Later milestone p
 2026-10-21 M4-04 implementation: user requested continuation after published A2 verification. Author B1 in a separate stable-ID pack, reusing existing scored/listening and ungraded paragraph activities. Plan 24 lessons/four units with four writing tasks. All requested B1 topics need teaching/practice, with honest connected-speech/device-voice limits. Preserve A0–A2, Room v3, dependencies and learner data. Source implementation only; B1 checks need new explicit authorization. Prior qualified-review/device-audio gates remain open.
 
 2026-10-21 M4-04 source checkpoint: 24 B1 lessons/148 activities authored in four units: 144 scored (24 listening) plus four ungraded writing tasks. Original teaching/readings/roleplays and topic mapping cover all specified B1 areas; connected-speech device limits and self-assessment boundaries are explicit. Core content/key/ID/coverage, four-level ordering/old-progress/A2-writing preservation, all B1 writing tasks and direct grammar access/resume regression sources are prepared. No production-code, schema, dependency or previous-asset changes; no B1 tests/builds/lint/automated validation executed. Checkpoint locally before requesting scoped verification; M4 and all language/device-review gates stay open.
+
+2026-10-21 M4-04 verification authorized: user approved B1 core/app unit tests, debug build and lint for c39c0db. The combined command is starting with the existing isolated SDK/cache and scoped local-socket execution. Inspect actual reports and four-pack artifact before verified acceptance/publication; qualified language/device review and full M4 remain open.
+
+2026-10-21 M4-04 automated acceptance: 60 core/55 app tests passed (115 distinct, 0 failures/errors/skips), debug APK/lint passed, and all four source-identical packs are in the APK (74 lessons/450 activities/74 listening/six paragraphs). Initial combined run's stalled Robolectric worker was deliberately terminated (exit 137); isolated B1 UI/lint (15s) and full app rerun (23s) passed without source fixes. Exact transient stall cause remains unknown. Preserve this evidence and source/history before normal verified publication. M4-01 through M4-04 remain IN_PROGRESS for qualified language/device-audio acceptance; those gates are the next work before M5, not permission to skip them.
