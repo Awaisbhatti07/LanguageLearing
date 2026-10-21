@@ -17,7 +17,9 @@ interface LearningDao {
     @Upsert
     suspend fun upsertLessons(lessons: List<LessonEntity>)
 
-    @Query("SELECT * FROM lessons ORDER BY track, position, id")
+    @Query("""SELECT * FROM lessons ORDER BY track,
+        CASE level WHEN 'A0' THEN 0 WHEN 'A1' THEN 1 WHEN 'A2' THEN 2 WHEN 'B1' THEN 3 ELSE 4 END,
+        packId, position, id""")
     fun observeLessons(): Flow<List<LessonEntity>>
 
     @Query("SELECT * FROM lessons WHERE id = :id")

@@ -1,0 +1,4364 @@
+{
+  "schemaVersion": 1,
+  "id": "english-a1-beginner",
+  "version": 1,
+  "title": "English A1 everyday communication",
+  "track": "ENGLISH",
+  "level": "A1",
+  "provenance": {
+    "author": "Original LingoMate AI project material, AI-assisted draft",
+    "rightsNotice": "Original project-authored educational material; no third-party curriculum copied. Distribution permission follows the project owner’s decision.",
+    "reviewStatus": "PENDING_REVIEW"
+  },
+  "units": [
+    {
+      "id": "en-a1-present",
+      "title": "Everyday routines and actions now",
+      "lessons": [
+        {
+          "id": "en-a1-routines",
+          "title": "Daily routines and the Present Simple",
+          "objectives": [
+            "Describe a regular daily routine.",
+            "Use the base verb and the he/she/it form."
+          ],
+          "explanationRomanUrdu": "Present Simple roz ki aadat, baar baar hone wala kaam ya aam haqeeqat batata hai. I, you, we aur they ke saath verb ki base form aati hai: I work. He, she aur it ke saath aam tor par s ya es lagta hai: she works, he goes. Yeh tense sirf abhi chalne wale kaam ke liye nahin hai. Every day aur every morning jaise alfaaz routine ka waqt wazeh karte hain.",
+          "rulesRomanUrdu": [
+            "I/you/we/they + base verb: We work.",
+            "He/she/it + verb-s: She works. Go ki shakal goes hai.",
+            "Routine ke liye every day ya every morning laga sakte hain.",
+            "I work durust hai; I am work durust nahin."
+          ],
+          "examples": [
+            {
+              "text": "I get up at seven.",
+              "meaningRomanUrdu": "Main saat bajay uthta ya uthti hoon.",
+              "speech": {
+                "text": "I get up at seven.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She works in a shop.",
+              "meaningRomanUrdu": "Woh aik dukaan mein kaam karti hai.",
+              "speech": {
+                "text": "She works in a shop.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "We study English every day.",
+              "meaningRomanUrdu": "Hum har roz English parhtay hain.",
+              "speech": {
+                "text": "We study English every day.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "He goes to work by bus.",
+              "meaningRomanUrdu": "Woh bus se kaam par jata hai.",
+              "speech": {
+                "text": "He goes to work by bus.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-routines-vocab-0",
+              "word": "get up",
+              "meaningRomanUrdu": "neend se uthna",
+              "partOfSpeech": "verb phrase",
+              "pronunciationGuide": "get UP"
+            },
+            {
+              "id": "en-a1-routines-vocab-1",
+              "word": "work",
+              "meaningRomanUrdu": "kaam karna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "wurk"
+            },
+            {
+              "id": "en-a1-routines-vocab-2",
+              "word": "study",
+              "meaningRomanUrdu": "parhna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "STUH-dee"
+            },
+            {
+              "id": "en-a1-routines-vocab-3",
+              "word": "every day",
+              "meaningRomanUrdu": "har roz",
+              "partOfSpeech": "time phrase",
+              "pronunciationGuide": "EV-ree day"
+            },
+            {
+              "id": "en-a1-routines-vocab-4",
+              "word": "breakfast",
+              "meaningRomanUrdu": "nashta",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "BREK-fuhst"
+            }
+          ],
+          "reading": {
+            "text": "Sara gets up at seven. She has breakfast at home and goes to work by bus. Her shop opens at nine. After work, she studies English for twenty minutes. She follows this routine every weekday.",
+            "meaningRomanUrdu": "Sara saat bajay uthti hai. Woh ghar par nashta karti hai aur bus se kaam par jati hai. Uski dukaan nau bajay khulti hai. Kaam ke baad woh bees minute English parhti hai. Woh har working day yeh routine karti hai."
+          },
+          "speakingPrompts": [
+            "Say three things you do every morning: I get up... I have... I go...",
+            "Describe a family member using he or she and two routine verbs."
+          ],
+          "reviewTags": [
+            "present-simple",
+            "daily-routines",
+            "common-verbs"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-routines-choice",
+              "prompt": "Choose the correct routine sentence.",
+              "explanationRomanUrdu": "She ke saath Present Simple mein works aata hai.",
+              "options": [
+                {
+                  "id": "en-a1-routines-choice-opt-0",
+                  "text": "She work in a shop."
+                },
+                {
+                  "id": "en-a1-routines-choice-opt-1",
+                  "text": "She works in a shop."
+                },
+                {
+                  "id": "en-a1-routines-choice-opt-2",
+                  "text": "She is work in a shop."
+                }
+              ],
+              "correctOptionId": "en-a1-routines-choice-opt-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-routines-blank",
+              "prompt": "He ___ to work by bus. Use go in the correct form.",
+              "explanationRomanUrdu": "He ke saath go ki form goes hai.",
+              "acceptedAnswers": [
+                "goes"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-routines-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "We ke baad base verb study aati hai; every day routine batata hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-routines-order-word-1",
+                  "text": "study"
+                },
+                {
+                  "id": "en-a1-routines-order-word-2",
+                  "text": "English"
+                },
+                {
+                  "id": "en-a1-routines-order-word-3",
+                  "text": "every"
+                },
+                {
+                  "id": "en-a1-routines-order-word-4",
+                  "text": "day."
+                },
+                {
+                  "id": "en-a1-routines-order-word-0",
+                  "text": "We"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-routines-order-word-0",
+                "en-a1-routines-order-word-1",
+                "en-a1-routines-order-word-2",
+                "en-a1-routines-order-word-3",
+                "en-a1-routines-order-word-4"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-routines-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Yeh teen rozmarrah ke kaam hain; inhein apni routine mein istemal karain.",
+              "pairs": [
+                {
+                  "id": "en-a1-routines-pair-0",
+                  "left": "get up",
+                  "right": "neend se uthna"
+                },
+                {
+                  "id": "en-a1-routines-pair-1",
+                  "left": "have breakfast",
+                  "right": "nashta karna"
+                },
+                {
+                  "id": "en-a1-routines-pair-2",
+                  "left": "go to work",
+                  "right": "kaam par jana"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-routines-multi",
+              "prompt": "Choose all correct Present Simple sentences.",
+              "explanationRomanUrdu": "I work aur he goes durust hain. She ke saath studies chahiye.",
+              "options": [
+                {
+                  "id": "en-a1-routines-multi-opt-0",
+                  "text": "I work every day."
+                },
+                {
+                  "id": "en-a1-routines-multi-opt-1",
+                  "text": "He goes by bus."
+                },
+                {
+                  "id": "en-a1-routines-multi-opt-2",
+                  "text": "She study English."
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-routines-multi-opt-0",
+                "en-a1-routines-multi-opt-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-routines-listen",
+              "prompt": "What time does the speaker go to work?",
+              "explanationRomanUrdu": "Audio mein go to work at eight kaha gaya hai, yani aath bajay.",
+              "speech": {
+                "text": "I get up at seven and have breakfast at home. I go to work at eight.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-routines-listen-opt-0",
+                  "text": "Seven"
+                },
+                {
+                  "id": "en-a1-routines-listen-opt-1",
+                  "text": "Nine"
+                },
+                {
+                  "id": "en-a1-routines-listen-opt-2",
+                  "text": "Eight"
+                }
+              ],
+              "correctOptionId": "en-a1-routines-listen-opt-2"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-do-does",
+          "title": "Present Simple negatives and yes-no questions",
+          "objectives": [
+            "Make routine negatives with do not and does not.",
+            "Ask and answer questions with do and does."
+          ],
+          "explanationRomanUrdu": "Present Simple mein aam action verbs ka negative do not ya does not se banta hai. Do not ki chhoti shakal don't aur does not ki doesn't hai. Does ya doesn't ke baad verb base form mein rehti hai: she doesn't work, na ke doesn't works. Sawal mein do ya does subject se pehle aata hai. Am, is aur are ke sawal is pattern se alag hain: Is she ready?",
+          "rulesRomanUrdu": [
+            "I/you/we/they + do not + base verb.",
+            "He/she/it + does not + base verb; verb par s nahin lagta.",
+            "Do/Does + subject + base verb? Does Ali work here?",
+            "Short answer: Yes, he does. No, he does not."
+          ],
+          "examples": [
+            {
+              "text": "I do not work on Sundays.",
+              "meaningRomanUrdu": "Main itwaar ko kaam nahin karta ya karti.",
+              "speech": {
+                "text": "I do not work on Sundays.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She does not drive.",
+              "meaningRomanUrdu": "Woh gaari nahin chalati.",
+              "speech": {
+                "text": "She does not drive.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Do you study at home?",
+              "meaningRomanUrdu": "Kya aap ghar par parhtay hain?",
+              "speech": {
+                "text": "Do you study at home?",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Does Ali work here? Yes, he does.",
+              "meaningRomanUrdu": "Kya Ali yahan kaam karta hai? Jee haan.",
+              "speech": {
+                "text": "Does Ali work here? Yes, he does.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-do-does-vocab-0",
+              "word": "drive",
+              "meaningRomanUrdu": "gaari chalana",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "dryv"
+            },
+            {
+              "id": "en-a1-do-does-vocab-1",
+              "word": "here",
+              "meaningRomanUrdu": "yahan",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "heer"
+            },
+            {
+              "id": "en-a1-do-does-vocab-2",
+              "word": "Sunday",
+              "meaningRomanUrdu": "itwaar",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "SUN-day"
+            },
+            {
+              "id": "en-a1-do-does-vocab-3",
+              "word": "question",
+              "meaningRomanUrdu": "sawal",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "KWES-chuhn"
+            },
+            {
+              "id": "en-a1-do-does-vocab-4",
+              "word": "answer",
+              "meaningRomanUrdu": "jawab",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "AN-ser"
+            }
+          ],
+          "reading": {
+            "text": "Ali works in an office. He does not work on Sundays. His sister asks, Do you drive to work? Ali says, No, I do not. I take the bus. Does your office open at nine? she asks. Yes, it does, he answers.",
+            "meaningRomanUrdu": "Ali daftar mein kaam karta hai. Woh itwaar ko kaam nahin karta. Uski behen poochti hai ke kya woh gaari se kaam par jata hai. Ali kehta hai nahin, main bus leta hoon. Woh poochti hai kya tumhara daftar nau bajay khulta hai. Ali haan kehta hai."
+          },
+          "speakingPrompts": [
+            "Ask a partner two Do you...? questions about routines.",
+            "Say one thing a family member does not do. Use he/she does not + base verb."
+          ],
+          "reviewTags": [
+            "present-simple",
+            "negatives-questions",
+            "do-does"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-do-does-choice",
+              "prompt": "Choose the correct negative.",
+              "explanationRomanUrdu": "Does not ke baad base verb drive chahiye.",
+              "options": [
+                {
+                  "id": "en-a1-do-does-choice-opt-0",
+                  "text": "She does not drives."
+                },
+                {
+                  "id": "en-a1-do-does-choice-opt-1",
+                  "text": "She do not drive."
+                },
+                {
+                  "id": "en-a1-do-does-choice-opt-2",
+                  "text": "She does not drive."
+                }
+              ],
+              "correctOptionId": "en-a1-do-does-choice-opt-2"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-do-does-blank",
+              "prompt": "___ Ali work here? Use Do or Does.",
+              "explanationRomanUrdu": "Ali aik shakhs hai; sawal Does Ali work here? hai.",
+              "acceptedAnswers": [
+                "Does"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-do-does-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Sawal mein Do pehle, phir subject you aur base verb study aati hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-do-does-order-word-1",
+                  "text": "you"
+                },
+                {
+                  "id": "en-a1-do-does-order-word-2",
+                  "text": "study"
+                },
+                {
+                  "id": "en-a1-do-does-order-word-3",
+                  "text": "at"
+                },
+                {
+                  "id": "en-a1-do-does-order-word-4",
+                  "text": "home?"
+                },
+                {
+                  "id": "en-a1-do-does-order-word-0",
+                  "text": "Do"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-do-does-order-word-0",
+                "en-a1-do-does-order-word-1",
+                "en-a1-do-does-order-word-2",
+                "en-a1-do-does-order-word-3",
+                "en-a1-do-does-order-word-4"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-do-does-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Do aur does subject ke mutabiq badalte hain; main verb base form mein rehti hai.",
+              "pairs": [
+                {
+                  "id": "en-a1-do-does-pair-0",
+                  "left": "do not",
+                  "right": "I aur we ke saath aam negative helper"
+                },
+                {
+                  "id": "en-a1-do-does-pair-1",
+                  "left": "does not",
+                  "right": "he aur she ke saath aam negative helper"
+                },
+                {
+                  "id": "en-a1-do-does-pair-2",
+                  "left": "Yes, I do.",
+                  "right": "Do you...? ka haan mein short jawab"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-do-does-multi",
+              "prompt": "Choose all correct questions or negatives.",
+              "explanationRomanUrdu": "Does he live aur she does not work durust hain. Teesre jumlay mein subject/helper aur verb dono ghalat hain.",
+              "options": [
+                {
+                  "id": "en-a1-do-does-multi-opt-0",
+                  "text": "Does he live here?"
+                },
+                {
+                  "id": "en-a1-do-does-multi-opt-1",
+                  "text": "She does not work here."
+                },
+                {
+                  "id": "en-a1-do-does-multi-opt-2",
+                  "text": "Do she works here?"
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-do-does-multi-opt-0",
+                "en-a1-do-does-multi-opt-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-do-does-listen",
+              "prompt": "How does Ali travel to work?",
+              "explanationRomanUrdu": "Ali kehta hai I take the bus; drive ke sawal ka jawab no hai.",
+              "speech": {
+                "text": "Do you drive to work, Ali? No, I do not. I take the bus every morning.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-do-does-listen-opt-0",
+                  "text": "By bus"
+                },
+                {
+                  "id": "en-a1-do-does-listen-opt-1",
+                  "text": "By car"
+                },
+                {
+                  "id": "en-a1-do-does-listen-opt-2",
+                  "text": "On foot"
+                }
+              ],
+              "correctOptionId": "en-a1-do-does-listen-opt-0"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-question-words",
+          "title": "Asking who, what, where and when",
+          "objectives": [
+            "Choose a question word for the information you need.",
+            "Build simple information questions with be or do/does."
+          ],
+          "explanationRomanUrdu": "Question words mukhtalif maloomat poochte hain. Who shakhs, what cheez ya kaam, where jagah, when waqt, why wajah aur how tareeqa poochta hai. Be ke saath question word ke baad is/are aur subject aata hai: Where is the shop? Aam action verb ke saath do/does chahiye: Where does she work? Sawal ka helper dekh kar main verb base form mein rakhain.",
+          "rulesRomanUrdu": [
+            "Who = kaun; where = kahan; when = kab.",
+            "Be pattern: question word + is/are + subject?",
+            "Action pattern: question word + do/does + subject + base verb?",
+            "Why ka jawab aksar because se wajah batata hai."
+          ],
+          "examples": [
+            {
+              "text": "Where is the station?",
+              "meaningRomanUrdu": "Station kahan hai?",
+              "speech": {
+                "text": "Where is the station?",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "When do you start work?",
+              "meaningRomanUrdu": "Aap kaam kab shuru karte hain?",
+              "speech": {
+                "text": "When do you start work?",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "What does Sara study?",
+              "meaningRomanUrdu": "Sara kya parhti hai?",
+              "speech": {
+                "text": "What does Sara study?",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Why are you tired? Because I work late.",
+              "meaningRomanUrdu": "Aap thakay hue kyun hain? Kyun ke main der tak kaam karta ya karti hoon.",
+              "speech": {
+                "text": "Why are you tired? Because I work late.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-question-words-vocab-0",
+              "word": "where",
+              "meaningRomanUrdu": "kahan",
+              "partOfSpeech": "question word",
+              "pronunciationGuide": "wair"
+            },
+            {
+              "id": "en-a1-question-words-vocab-1",
+              "word": "when",
+              "meaningRomanUrdu": "kab",
+              "partOfSpeech": "question word",
+              "pronunciationGuide": "wen"
+            },
+            {
+              "id": "en-a1-question-words-vocab-2",
+              "word": "why",
+              "meaningRomanUrdu": "kyun",
+              "partOfSpeech": "question word",
+              "pronunciationGuide": "wy"
+            },
+            {
+              "id": "en-a1-question-words-vocab-3",
+              "word": "because",
+              "meaningRomanUrdu": "kyun ke",
+              "partOfSpeech": "conjunction",
+              "pronunciationGuide": "bi-KOZ"
+            },
+            {
+              "id": "en-a1-question-words-vocab-4",
+              "word": "start",
+              "meaningRomanUrdu": "shuru karna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "start"
+            }
+          ],
+          "reading": {
+            "text": "Mina is new at the office. She asks, Where is the meeting room? Ali shows her the room. When does the meeting start? she asks. At ten, Ali says. Mina asks what she needs. Ali says, Bring a pen and your notebook.",
+            "meaningRomanUrdu": "Mina daftar mein nayi hai. Woh meeting room ki jagah poochti hai. Ali usay kamra dikhata hai. Mina poochti hai meeting kab shuru hoti hai. Ali kehta hai das bajay. Mina poochti hai kya chahiye, aur Ali pen aur notebook lanay ko kehta hai."
+          },
+          "speakingPrompts": [
+            "Ask where a shop is and when it opens.",
+            "Use who, what and how to ask a partner three short questions."
+          ],
+          "reviewTags": [
+            "negatives-questions",
+            "question-words",
+            "common-verbs"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-question-words-choice",
+              "prompt": "Which word asks about a place?",
+              "explanationRomanUrdu": "Where jagah poochta hai; when waqt aur who shakhs poochta hai.",
+              "options": [
+                {
+                  "id": "en-a1-question-words-choice-opt-0",
+                  "text": "When"
+                },
+                {
+                  "id": "en-a1-question-words-choice-opt-1",
+                  "text": "Where"
+                },
+                {
+                  "id": "en-a1-question-words-choice-opt-2",
+                  "text": "Who"
+                }
+              ],
+              "correctOptionId": "en-a1-question-words-choice-opt-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-question-words-blank",
+              "prompt": "Where ___ she work? Use do or does.",
+              "explanationRomanUrdu": "She ke saath does aata hai aur work base form mein rehta hai.",
+              "acceptedAnswers": [
+                "does"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-question-words-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "When ke baad do, subject you aur base verb start hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-question-words-order-word-1",
+                  "text": "do"
+                },
+                {
+                  "id": "en-a1-question-words-order-word-2",
+                  "text": "you"
+                },
+                {
+                  "id": "en-a1-question-words-order-word-3",
+                  "text": "start"
+                },
+                {
+                  "id": "en-a1-question-words-order-word-4",
+                  "text": "work?"
+                },
+                {
+                  "id": "en-a1-question-words-order-word-0",
+                  "text": "When"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-question-words-order-word-0",
+                "en-a1-question-words-order-word-1",
+                "en-a1-question-words-order-word-2",
+                "en-a1-question-words-order-word-3",
+                "en-a1-question-words-order-word-4"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-question-words-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Who shakhs, when waqt aur how tareeqa poochta hai.",
+              "pairs": [
+                {
+                  "id": "en-a1-question-words-pair-0",
+                  "left": "who",
+                  "right": "kaun"
+                },
+                {
+                  "id": "en-a1-question-words-pair-1",
+                  "left": "when",
+                  "right": "kab"
+                },
+                {
+                  "id": "en-a1-question-words-pair-2",
+                  "left": "how",
+                  "right": "kis tarah"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-question-words-multi",
+              "prompt": "Choose all correctly formed information questions.",
+              "explanationRomanUrdu": "Be sawal Where is... aur action sawal What does she study... durust hain. When does she start? hona chahiye.",
+              "options": [
+                {
+                  "id": "en-a1-question-words-multi-opt-0",
+                  "text": "Where is the station?"
+                },
+                {
+                  "id": "en-a1-question-words-multi-opt-1",
+                  "text": "What does she study?"
+                },
+                {
+                  "id": "en-a1-question-words-multi-opt-2",
+                  "text": "When she does start?"
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-question-words-multi-opt-0",
+                "en-a1-question-words-multi-opt-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-question-words-listen",
+              "prompt": "When does the meeting start?",
+              "explanationRomanUrdu": "At ten ka matlab das bajay hai. Upstairs jagah ka jawab hai, waqt ka nahin.",
+              "speech": {
+                "text": "Where is the meeting room? It is upstairs. When does the meeting start? At ten.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-question-words-listen-opt-0",
+                  "text": "Nine"
+                },
+                {
+                  "id": "en-a1-question-words-listen-opt-1",
+                  "text": "Eleven"
+                },
+                {
+                  "id": "en-a1-question-words-listen-opt-2",
+                  "text": "Ten"
+                }
+              ],
+              "correctOptionId": "en-a1-question-words-listen-opt-2"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-present-continuous",
+          "title": "Actions happening now: Present Continuous",
+          "objectives": [
+            "Describe an action happening now with am/is/are + -ing.",
+            "Form a negative and a question about an action now."
+          ],
+          "explanationRomanUrdu": "Present Continuous bolne ke waqt chalne wala kaam batata hai. Is mein subject ke mutabiq am, is ya are aur verb ki ing form dono chahiye: I am reading. Sirf I reading ya I am read durust nahin. Negative mein be ke baad not aata hai. Sawal mein am/is/are ko subject se pehle le aayain. Abhi aur routine mein farq ko aglay lesson mein dekhenge.",
+          "rulesRomanUrdu": [
+            "I am, he/she/it is, you/we/they are + verb-ing.",
+            "Negative: She is not working now.",
+            "Question: Are you listening? Short answer: Yes, I am.",
+            "Write → writing mein aakhri e nikalta hai; run → running mein n dohrata hai."
+          ],
+          "examples": [
+            {
+              "text": "I am reading a book.",
+              "meaningRomanUrdu": "Main abhi aik kitab parh raha ya rahi hoon.",
+              "speech": {
+                "text": "I am reading a book.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She is writing an email.",
+              "meaningRomanUrdu": "Woh abhi email likh rahi hai.",
+              "speech": {
+                "text": "She is writing an email.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "They are not working now.",
+              "meaningRomanUrdu": "Woh log abhi kaam nahin kar rahe.",
+              "speech": {
+                "text": "They are not working now.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Are you listening? Yes, I am.",
+              "meaningRomanUrdu": "Kya aap sun rahe hain? Jee haan.",
+              "speech": {
+                "text": "Are you listening? Yes, I am.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-present-continuous-vocab-0",
+              "word": "read",
+              "meaningRomanUrdu": "parhna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "reed"
+            },
+            {
+              "id": "en-a1-present-continuous-vocab-1",
+              "word": "write",
+              "meaningRomanUrdu": "likhna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "ryt"
+            },
+            {
+              "id": "en-a1-present-continuous-vocab-2",
+              "word": "listen",
+              "meaningRomanUrdu": "sunna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "LIS-uhn"
+            },
+            {
+              "id": "en-a1-present-continuous-vocab-3",
+              "word": "now",
+              "meaningRomanUrdu": "abhi",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "now"
+            },
+            {
+              "id": "en-a1-present-continuous-vocab-4",
+              "word": "email",
+              "meaningRomanUrdu": "email / barqi paigham",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "EE-mayl"
+            }
+          ],
+          "reading": {
+            "text": "It is nine o'clock. Sara is sitting at her desk. She is writing an email. Ali is reading a report. They are not talking because they are busy. Their manager is asking a question, and Sara is listening carefully.",
+            "meaningRomanUrdu": "Nau bajay hain. Sara apni mez par baithi email likh rahi hai. Ali report parh raha hai. Dono masroof hone ki wajah se baat nahin kar rahe. Unka manager sawal pooch raha hai aur Sara tawajjoh se sun rahi hai."
+          },
+          "speakingPrompts": [
+            "Describe three actions happening around you now: Someone is... They are...",
+            "Ask Are you studying now? Answer yes or no using the right be form."
+          ],
+          "reviewTags": [
+            "present-continuous",
+            "negatives-questions",
+            "actions-now"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-present-continuous-choice",
+              "prompt": "Choose the sentence about an action now.",
+              "explanationRomanUrdu": "Is aur writing dono mil kar Present Continuous banate hain.",
+              "options": [
+                {
+                  "id": "en-a1-present-continuous-choice-opt-0",
+                  "text": "She is writing an email."
+                },
+                {
+                  "id": "en-a1-present-continuous-choice-opt-1",
+                  "text": "She writing an email."
+                },
+                {
+                  "id": "en-a1-present-continuous-choice-opt-2",
+                  "text": "She is write an email."
+                }
+              ],
+              "correctOptionId": "en-a1-present-continuous-choice-opt-0"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-present-continuous-blank",
+              "prompt": "They ___ reading now. Use am, is or are.",
+              "explanationRomanUrdu": "They ke saath are aur verb-ing chahiye.",
+              "acceptedAnswers": [
+                "are"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-present-continuous-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Continuous sawal mein Are pehle aata hai, phir subject aur listening.",
+              "tokens": [
+                {
+                  "id": "en-a1-present-continuous-order-word-1",
+                  "text": "you"
+                },
+                {
+                  "id": "en-a1-present-continuous-order-word-2",
+                  "text": "listening"
+                },
+                {
+                  "id": "en-a1-present-continuous-order-word-3",
+                  "text": "now?"
+                },
+                {
+                  "id": "en-a1-present-continuous-order-word-0",
+                  "text": "Are"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-present-continuous-order-word-0",
+                "en-a1-present-continuous-order-word-1",
+                "en-a1-present-continuous-order-word-2",
+                "en-a1-present-continuous-order-word-3"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-present-continuous-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Ing forms chalne wale kaam ko be ke saath batati hain.",
+              "pairs": [
+                {
+                  "id": "en-a1-present-continuous-pair-0",
+                  "left": "reading",
+                  "right": "parh raha / rahi"
+                },
+                {
+                  "id": "en-a1-present-continuous-pair-1",
+                  "left": "writing",
+                  "right": "likh raha / rahi"
+                },
+                {
+                  "id": "en-a1-present-continuous-pair-2",
+                  "left": "listening",
+                  "right": "sun raha / rahi"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-present-continuous-multi",
+              "prompt": "Choose all correct Present Continuous sentences.",
+              "explanationRomanUrdu": "Are working aur is not sleeping durust hain. I am working hona chahiye.",
+              "options": [
+                {
+                  "id": "en-a1-present-continuous-multi-opt-0",
+                  "text": "They are working."
+                },
+                {
+                  "id": "en-a1-present-continuous-multi-opt-1",
+                  "text": "He is not sleeping."
+                },
+                {
+                  "id": "en-a1-present-continuous-multi-opt-2",
+                  "text": "I am work now."
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-present-continuous-multi-opt-0",
+                "en-a1-present-continuous-multi-opt-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-present-continuous-listen",
+              "prompt": "What is Sara doing?",
+              "explanationRomanUrdu": "Sara ke liye writing an email kaha gaya hai; reading Ali ka kaam hai.",
+              "speech": {
+                "text": "Sara is writing an email. Ali is reading a report. Their manager is asking a question.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-present-continuous-listen-opt-0",
+                  "text": "Reading a report"
+                },
+                {
+                  "id": "en-a1-present-continuous-listen-opt-1",
+                  "text": "Writing an email"
+                },
+                {
+                  "id": "en-a1-present-continuous-listen-opt-2",
+                  "text": "Sleeping"
+                }
+              ],
+              "correctOptionId": "en-a1-present-continuous-listen-opt-1"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-present-contrast",
+          "title": "Routines compared with actions now",
+          "objectives": [
+            "Choose Present Simple for a routine and Continuous for now.",
+            "Use time expressions to explain the difference."
+          ],
+          "explanationRomanUrdu": "Present Simple aam routine batata hai jab ke Present Continuous is waqt ka chalne wala kaam batata hai. I work in a shop rozmarrah ka kaam hai. I am working at home today aaj ki aarzi surat-e-haal bata sakta hai. Every day, usually aur on Mondays routine ki nishaniyan hain; right now aur at the moment abhi ki taraf ishara karte hain. Tense sirf aik lafz dekh kar nahin, maani samajh kar chunain.",
+          "rulesRomanUrdu": [
+            "Routine: She walks to work every day.",
+            "Now: She is taking the bus right now.",
+            "Aik hi jumlay mein aam routine aur aaj ka mukhtalif kaam compare ho sakta hai.",
+            "Know aur like jaise state verbs ko aam bunyadi maani mein usually Simple mein rakhain: I know, I like."
+          ],
+          "examples": [
+            {
+              "text": "I drink tea every morning.",
+              "meaningRomanUrdu": "Main har subah chai peeta ya peeti hoon.",
+              "speech": {
+                "text": "I drink tea every morning.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "I am drinking water now.",
+              "meaningRomanUrdu": "Main abhi pani pee raha ya rahi hoon.",
+              "speech": {
+                "text": "I am drinking water now.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She usually walks, but today she is taking the bus.",
+              "meaningRomanUrdu": "Woh aam tor par paidal chalti hai, lekin aaj bus le rahi hai.",
+              "speech": {
+                "text": "She usually walks, but today she is taking the bus.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "I like this book.",
+              "meaningRomanUrdu": "Mujhe yeh kitab pasand hai.",
+              "speech": {
+                "text": "I like this book.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-present-contrast-vocab-0",
+              "word": "usually",
+              "meaningRomanUrdu": "aam tor par",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "YOO-zhoo-uh-lee"
+            },
+            {
+              "id": "en-a1-present-contrast-vocab-1",
+              "word": "right now",
+              "meaningRomanUrdu": "isi waqt",
+              "partOfSpeech": "time phrase",
+              "pronunciationGuide": "ryt NOW"
+            },
+            {
+              "id": "en-a1-present-contrast-vocab-2",
+              "word": "walk",
+              "meaningRomanUrdu": "paidal chalna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "wawk"
+            },
+            {
+              "id": "en-a1-present-contrast-vocab-3",
+              "word": "take the bus",
+              "meaningRomanUrdu": "bus lena",
+              "partOfSpeech": "verb phrase",
+              "pronunciationGuide": "tayk thuh BUS"
+            },
+            {
+              "id": "en-a1-present-contrast-vocab-4",
+              "word": "today",
+              "meaningRomanUrdu": "aaj",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "tuh-DAY"
+            }
+          ],
+          "reading": {
+            "text": "Ali usually works in the office. He takes the bus every morning. Today he is working at home because the office is closed. Right now he is reading an email. His sister usually studies at home, but today she is studying at the library.",
+            "meaningRomanUrdu": "Ali aam tor par daftar mein kaam karta hai aur har subah bus leta hai. Aaj daftar band hone ki wajah se ghar par kaam kar raha hai. Abhi woh email parh raha hai. Uski behen aam tor par ghar par parhti hai, lekin aaj library mein parh rahi hai."
+          },
+          "speakingPrompts": [
+            "Say one routine sentence and one sentence about what you are doing now.",
+            "Compare your usual travel to work with a different plan for today."
+          ],
+          "reviewTags": [
+            "present-simple",
+            "present-continuous",
+            "daily-routines"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-present-contrast-choice",
+              "prompt": "Choose the sentence for a regular routine.",
+              "explanationRomanUrdu": "Every day ki routine ke liye I go durust hai.",
+              "options": [
+                {
+                  "id": "en-a1-present-contrast-choice-opt-0",
+                  "text": "I am go every day."
+                },
+                {
+                  "id": "en-a1-present-contrast-choice-opt-1",
+                  "text": "I going every day."
+                },
+                {
+                  "id": "en-a1-present-contrast-choice-opt-2",
+                  "text": "I go every day."
+                }
+              ],
+              "correctOptionId": "en-a1-present-contrast-choice-opt-2"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-present-contrast-blank",
+              "prompt": "She ___ reading right now. Use is or does.",
+              "explanationRomanUrdu": "Abhi reading chal rahi hai; is reading chahiye, does reading nahin.",
+              "acceptedAnswers": [
+                "is"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-present-contrast-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Aaj ka chalne wala ya aarzi kaam am working se bataya gaya hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-present-contrast-order-word-1",
+                  "text": "am"
+                },
+                {
+                  "id": "en-a1-present-contrast-order-word-2",
+                  "text": "working"
+                },
+                {
+                  "id": "en-a1-present-contrast-order-word-3",
+                  "text": "at"
+                },
+                {
+                  "id": "en-a1-present-contrast-order-word-4",
+                  "text": "home"
+                },
+                {
+                  "id": "en-a1-present-contrast-order-word-5",
+                  "text": "today."
+                },
+                {
+                  "id": "en-a1-present-contrast-order-word-0",
+                  "text": "I"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-present-contrast-order-word-0",
+                "en-a1-present-contrast-order-word-1",
+                "en-a1-present-contrast-order-word-2",
+                "en-a1-present-contrast-order-word-3",
+                "en-a1-present-contrast-order-word-4",
+                "en-a1-present-contrast-order-word-5"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-present-contrast-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Waqt ki expressions routine aur abhi mein farq samajhne mein madad deti hain.",
+              "pairs": [
+                {
+                  "id": "en-a1-present-contrast-pair-0",
+                  "left": "every day",
+                  "right": "har roz ki routine"
+                },
+                {
+                  "id": "en-a1-present-contrast-pair-1",
+                  "left": "right now",
+                  "right": "isi waqt ka kaam"
+                },
+                {
+                  "id": "en-a1-present-contrast-pair-2",
+                  "left": "at the moment",
+                  "right": "is lamhay ka kaam"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-present-contrast-multi",
+              "prompt": "Choose all correctly formed sentences.",
+              "explanationRomanUrdu": "Routine mein works aur now ke saath is working durust hain; does working ghalat form hai.",
+              "options": [
+                {
+                  "id": "en-a1-present-contrast-multi-opt-0",
+                  "text": "She works every Monday."
+                },
+                {
+                  "id": "en-a1-present-contrast-multi-opt-1",
+                  "text": "She is working now."
+                },
+                {
+                  "id": "en-a1-present-contrast-multi-opt-2",
+                  "text": "She does working now."
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-present-contrast-multi-opt-0",
+                "en-a1-present-contrast-multi-opt-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-present-contrast-listen",
+              "prompt": "Where is the speaker working today?",
+              "explanationRomanUrdu": "Usually office routine hai; today working at home aaj ki jagah batata hai.",
+              "speech": {
+                "text": "I usually work in the office. Today the office is closed, so I am working at home.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-present-contrast-listen-opt-0",
+                  "text": "At home"
+                },
+                {
+                  "id": "en-a1-present-contrast-listen-opt-1",
+                  "text": "At the office"
+                },
+                {
+                  "id": "en-a1-present-contrast-listen-opt-2",
+                  "text": "At the library"
+                }
+              ],
+              "correctOptionId": "en-a1-present-contrast-listen-opt-0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "en-a1-past-plans",
+      "title": "Past events and simple plans",
+      "lessons": [
+        {
+          "id": "en-a1-past-be",
+          "title": "Yesterday with was and were",
+          "objectives": [
+            "Describe a past place or state with was and were.",
+            "Ask and answer past be questions without did."
+          ],
+          "explanationRomanUrdu": "Was aur were, am/is/are ki past shaklain hain. In se guzray hue waqt ki jagah ya haalat batate hain: I was at home yesterday. I, he, she aur it ke saath was; you, we aur they ke saath were aata hai. Negative mein not lagta hai. Sawal banane ke liye was ya were subject se pehle aata hai. Be ke is pattern mein did nahin lagta.",
+          "rulesRomanUrdu": [
+            "I/he/she/it was; you/we/they were.",
+            "Negative: was not = wasn't; were not = weren't.",
+            "Question: Were you busy yesterday? Yes, I was.",
+            "Yesterday aur last night guzray waqt ko wazeh karte hain."
+          ],
+          "examples": [
+            {
+              "text": "I was at home yesterday.",
+              "meaningRomanUrdu": "Main kal ghar par tha ya thi.",
+              "speech": {
+                "text": "I was at home yesterday.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "They were busy last night.",
+              "meaningRomanUrdu": "Woh log kal raat masroof thay.",
+              "speech": {
+                "text": "They were busy last night.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She was not late.",
+              "meaningRomanUrdu": "Woh der se nahin aayi thi.",
+              "speech": {
+                "text": "She was not late.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Were you tired? Yes, I was.",
+              "meaningRomanUrdu": "Kya aap thakay hue thay? Jee haan.",
+              "speech": {
+                "text": "Were you tired? Yes, I was.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-past-be-vocab-0",
+              "word": "yesterday",
+              "meaningRomanUrdu": "kal / guzra hua din",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "YES-ter-day"
+            },
+            {
+              "id": "en-a1-past-be-vocab-1",
+              "word": "last night",
+              "meaningRomanUrdu": "kal raat",
+              "partOfSpeech": "time phrase",
+              "pronunciationGuide": "last NYT"
+            },
+            {
+              "id": "en-a1-past-be-vocab-2",
+              "word": "busy",
+              "meaningRomanUrdu": "masroof",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "BIZ-ee"
+            },
+            {
+              "id": "en-a1-past-be-vocab-3",
+              "word": "tired",
+              "meaningRomanUrdu": "thaka hua",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "tyrd"
+            },
+            {
+              "id": "en-a1-past-be-vocab-4",
+              "word": "late",
+              "meaningRomanUrdu": "der se / dair ho jana",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "layt"
+            }
+          ],
+          "reading": {
+            "text": "Yesterday was a busy day. Mina was at the office in the morning. Her colleagues were at a meeting. At lunchtime, Mina was tired, but she was not unhappy. In the evening, she was at home with her family.",
+            "meaningRomanUrdu": "Kal masroof din tha. Mina subah daftar mein thi. Uske saath kaam karne walay meeting mein thay. Dopahar ke khanay ke waqt Mina thaki hui thi, lekin udaas nahin thi. Shaam ko woh apne ghar walon ke saath ghar par thi."
+          },
+          "speakingPrompts": [
+            "Say where you were yesterday morning and last night.",
+            "Ask a partner Were you busy yesterday? Give a short answer, then add one detail."
+          ],
+          "reviewTags": [
+            "past-simple",
+            "past-be",
+            "negatives-questions"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-past-be-choice",
+              "prompt": "Choose the correct sentence about yesterday.",
+              "explanationRomanUrdu": "They ke saath past be ki form were hai.",
+              "options": [
+                {
+                  "id": "en-a1-past-be-choice-opt-0",
+                  "text": "They were busy yesterday."
+                },
+                {
+                  "id": "en-a1-past-be-choice-opt-1",
+                  "text": "They was busy yesterday."
+                },
+                {
+                  "id": "en-a1-past-be-choice-opt-2",
+                  "text": "They are yesterday busy."
+                }
+              ],
+              "correctOptionId": "en-a1-past-be-choice-opt-0"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-past-be-blank",
+              "prompt": "She ___ at home last night. Use was or were.",
+              "explanationRomanUrdu": "She ke saath was aata hai.",
+              "acceptedAnswers": [
+                "was"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-past-be-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Past be sawal mein Were subject you se pehle aata hai; did ki zaroorat nahin.",
+              "tokens": [
+                {
+                  "id": "en-a1-past-be-order-word-1",
+                  "text": "you"
+                },
+                {
+                  "id": "en-a1-past-be-order-word-2",
+                  "text": "at"
+                },
+                {
+                  "id": "en-a1-past-be-order-word-3",
+                  "text": "home"
+                },
+                {
+                  "id": "en-a1-past-be-order-word-4",
+                  "text": "yesterday?"
+                },
+                {
+                  "id": "en-a1-past-be-order-word-0",
+                  "text": "Were"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-past-be-order-word-0",
+                "en-a1-past-be-order-word-1",
+                "en-a1-past-be-order-word-2",
+                "en-a1-past-be-order-word-3",
+                "en-a1-past-be-order-word-4"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-past-be-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "In expressions se past time ka pata chalta hai.",
+              "pairs": [
+                {
+                  "id": "en-a1-past-be-pair-0",
+                  "left": "yesterday",
+                  "right": "guzra hua din"
+                },
+                {
+                  "id": "en-a1-past-be-pair-1",
+                  "left": "last night",
+                  "right": "guzri hui raat"
+                },
+                {
+                  "id": "en-a1-past-be-pair-2",
+                  "left": "last week",
+                  "right": "guzra hua hafta"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-past-be-multi",
+              "prompt": "Choose all correct past be forms.",
+              "explanationRomanUrdu": "I was aur we were durust hain. They ke saath were chahiye.",
+              "options": [
+                {
+                  "id": "en-a1-past-be-multi-opt-0",
+                  "text": "I was tired."
+                },
+                {
+                  "id": "en-a1-past-be-multi-opt-1",
+                  "text": "They was tired."
+                },
+                {
+                  "id": "en-a1-past-be-multi-opt-2",
+                  "text": "We were at home."
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-past-be-multi-opt-0",
+                "en-a1-past-be-multi-opt-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-past-be-listen",
+              "prompt": "Where was the speaker last night?",
+              "explanationRomanUrdu": "Last night ke liye at home kaha gaya hai; office subah ki jagah thi.",
+              "speech": {
+                "text": "Yesterday morning I was at the office. Last night I was at home with my family.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-past-be-listen-opt-0",
+                  "text": "At a station"
+                },
+                {
+                  "id": "en-a1-past-be-listen-opt-1",
+                  "text": "At home"
+                },
+                {
+                  "id": "en-a1-past-be-listen-opt-2",
+                  "text": "At the office"
+                }
+              ],
+              "correctOptionId": "en-a1-past-be-listen-opt-1"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-past-regular",
+          "title": "Finished actions with regular past verbs",
+          "objectives": [
+            "Describe a finished action using a regular -ed verb.",
+            "Use did not and did questions with the base verb."
+          ],
+          "explanationRomanUrdu": "Past Simple guzray hue waqt mein mukammal kaam batata hai. Regular verbs mein aam tor par ed lagta hai: work se worked. E par khatam verb mein sirf d lagta hai: live se lived. Consonant ke baad y ho to aksar ied banta hai: study se studied. Positive past form subject ke saath nahin badalti. Negative did not aur sawal did ke baad base verb rakhain.",
+          "rulesRomanUrdu": [
+            "Positive: I worked. She worked. They worked.",
+            "Work → worked; play → played; live → lived; study → studied.",
+            "Negative: I did not visit. Did not visited ghalat hai.",
+            "Question: Did you visit Ali? Yes, I did."
+          ],
+          "examples": [
+            {
+              "text": "I worked yesterday.",
+              "meaningRomanUrdu": "Main ne kal kaam kiya.",
+              "speech": {
+                "text": "I worked yesterday.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She visited her aunt last week.",
+              "meaningRomanUrdu": "Woh pichlay haftay apni khala ya phuppo se mili.",
+              "speech": {
+                "text": "She visited her aunt last week.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "We did not watch television.",
+              "meaningRomanUrdu": "Hum ne television nahin dekha.",
+              "speech": {
+                "text": "We did not watch television.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Did you study last night? Yes, I did.",
+              "meaningRomanUrdu": "Kya aap ne kal raat parhai ki? Jee haan.",
+              "speech": {
+                "text": "Did you study last night? Yes, I did.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-past-regular-vocab-0",
+              "word": "visit",
+              "meaningRomanUrdu": "milne jana / daura karna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "VIZ-it"
+            },
+            {
+              "id": "en-a1-past-regular-vocab-1",
+              "word": "watch",
+              "meaningRomanUrdu": "dekhna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "woch"
+            },
+            {
+              "id": "en-a1-past-regular-vocab-2",
+              "word": "play",
+              "meaningRomanUrdu": "khelna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "play"
+            },
+            {
+              "id": "en-a1-past-regular-vocab-3",
+              "word": "clean",
+              "meaningRomanUrdu": "saaf karna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "kleen"
+            },
+            {
+              "id": "en-a1-past-regular-vocab-4",
+              "word": "last week",
+              "meaningRomanUrdu": "pichlay haftay",
+              "partOfSpeech": "time phrase",
+              "pronunciationGuide": "last WEEK"
+            }
+          ],
+          "reading": {
+            "text": "Last Saturday, Ali cleaned his room in the morning. He visited his aunt in the afternoon. They talked and watched a film. Ali did not work that day. In the evening, he studied English and called a friend.",
+            "meaningRomanUrdu": "Pichlay Saturday ko Ali ne subah apna kamra saaf kiya. Dopahar ke baad woh apni khala ya phuppo se milne gaya. Unhon ne baat ki aur film dekhi. Ali ne us din kaam nahin kiya. Shaam ko us ne English parhi aur dost ko phone kiya."
+          },
+          "speakingPrompts": [
+            "Describe three finished actions from yesterday using worked, played, studied or visited.",
+            "Ask Did you watch a film last week? Answer and add when you watched it."
+          ],
+          "reviewTags": [
+            "past-simple",
+            "regular-past",
+            "negatives-questions"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-past-regular-choice",
+              "prompt": "Choose the correct finished-action sentence.",
+              "explanationRomanUrdu": "Positive Past Simple mein visited chahiye. Did ke saath visited nahin lagta.",
+              "options": [
+                {
+                  "id": "en-a1-past-regular-choice-opt-0",
+                  "text": "She visit yesterday."
+                },
+                {
+                  "id": "en-a1-past-regular-choice-opt-1",
+                  "text": "She visited yesterday."
+                },
+                {
+                  "id": "en-a1-past-regular-choice-opt-2",
+                  "text": "She did visited yesterday."
+                }
+              ],
+              "correctOptionId": "en-a1-past-regular-choice-opt-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-past-regular-blank",
+              "prompt": "I ___ English last night. Use study in the past form.",
+              "explanationRomanUrdu": "Study mein consonant + y hai; past form studied banti hai.",
+              "acceptedAnswers": [
+                "studied"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-past-regular-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Did ke baad visit base form mein aata hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-past-regular-order-word-1",
+                  "text": "you"
+                },
+                {
+                  "id": "en-a1-past-regular-order-word-2",
+                  "text": "visit"
+                },
+                {
+                  "id": "en-a1-past-regular-order-word-3",
+                  "text": "Ali"
+                },
+                {
+                  "id": "en-a1-past-regular-order-word-4",
+                  "text": "yesterday?"
+                },
+                {
+                  "id": "en-a1-past-regular-order-word-0",
+                  "text": "Did"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-past-regular-order-word-0",
+                "en-a1-past-regular-order-word-1",
+                "en-a1-past-regular-order-word-2",
+                "en-a1-past-regular-order-word-3",
+                "en-a1-past-regular-order-word-4"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-past-regular-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Yeh regular verbs ki past forms hain.",
+              "pairs": [
+                {
+                  "id": "en-a1-past-regular-pair-0",
+                  "left": "worked",
+                  "right": "kaam kiya"
+                },
+                {
+                  "id": "en-a1-past-regular-pair-1",
+                  "left": "cleaned",
+                  "right": "saaf kiya"
+                },
+                {
+                  "id": "en-a1-past-regular-pair-2",
+                  "left": "visited",
+                  "right": "milne gaya / gayi"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-past-regular-multi",
+              "prompt": "Choose all correct Past Simple sentences.",
+              "explanationRomanUrdu": "Played positive past hai aur did ke baad call base form hai. Negative mein did not watch chahiye.",
+              "options": [
+                {
+                  "id": "en-a1-past-regular-multi-opt-0",
+                  "text": "We did not watched TV."
+                },
+                {
+                  "id": "en-a1-past-regular-multi-opt-1",
+                  "text": "They played football."
+                },
+                {
+                  "id": "en-a1-past-regular-multi-opt-2",
+                  "text": "Did she call you?"
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-past-regular-multi-opt-1",
+                "en-a1-past-regular-multi-opt-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-past-regular-listen",
+              "prompt": "What did the speaker do in the afternoon?",
+              "explanationRomanUrdu": "Afternoon mein visited my aunt kaha gaya hai; baqi kaam doosre waqt hue.",
+              "speech": {
+                "text": "Yesterday I cleaned my room in the morning. In the afternoon I visited my aunt. In the evening I studied English.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-past-regular-listen-opt-0",
+                  "text": "Cleaned the room"
+                },
+                {
+                  "id": "en-a1-past-regular-listen-opt-1",
+                  "text": "Studied English"
+                },
+                {
+                  "id": "en-a1-past-regular-listen-opt-2",
+                  "text": "Visited an aunt"
+                }
+              ],
+              "correctOptionId": "en-a1-past-regular-listen-opt-2"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-past-irregular",
+          "title": "Past Simple with went, had and ate",
+          "objectives": [
+            "Recognize common irregular past forms.",
+            "Keep the base verb after did and did not."
+          ],
+          "explanationRomanUrdu": "Kuch aam verbs ka past ed se nahin banta. Go ka went, have ka had, eat ka ate, buy ka bought aur see ka saw hai. Inhein chhote jumlon aur maani ke saath seekhain. Positive mein past form hoti hai, lekin did ya did not aane par base form wapas aati hai: Did you go? I did not go. Did you went ghalat hai.",
+          "rulesRomanUrdu": [
+            "Go → went; have → had; eat → ate; buy → bought; see → saw.",
+            "Irregular positive past bhi tamam subjects ke saath aik jaisi rehti hai.",
+            "Did + subject + base verb? Did she buy a book?",
+            "Did not + base verb: We did not have lunch."
+          ],
+          "examples": [
+            {
+              "text": "I went to the market.",
+              "meaningRomanUrdu": "Main bazaar gaya ya gayi.",
+              "speech": {
+                "text": "I went to the market.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She bought a book yesterday.",
+              "meaningRomanUrdu": "Us ne kal aik kitab khareedi.",
+              "speech": {
+                "text": "She bought a book yesterday.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "We had lunch at one.",
+              "meaningRomanUrdu": "Hum ne aik bajay dopahar ka khana khaya.",
+              "speech": {
+                "text": "We had lunch at one.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Did you eat breakfast? No, I did not.",
+              "meaningRomanUrdu": "Kya aap ne nashta kiya? Nahin.",
+              "speech": {
+                "text": "Did you eat breakfast? No, I did not.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-past-irregular-vocab-0",
+              "word": "went",
+              "meaningRomanUrdu": "gaya / gayi",
+              "partOfSpeech": "verb: past of go",
+              "pronunciationGuide": "went"
+            },
+            {
+              "id": "en-a1-past-irregular-vocab-1",
+              "word": "had",
+              "meaningRomanUrdu": "tha / rakha / khaya, context ke mutabiq",
+              "partOfSpeech": "verb: past of have",
+              "pronunciationGuide": "had"
+            },
+            {
+              "id": "en-a1-past-irregular-vocab-2",
+              "word": "ate",
+              "meaningRomanUrdu": "khaya",
+              "partOfSpeech": "verb: past of eat",
+              "pronunciationGuide": "ayt"
+            },
+            {
+              "id": "en-a1-past-irregular-vocab-3",
+              "word": "bought",
+              "meaningRomanUrdu": "khareeda",
+              "partOfSpeech": "verb: past of buy",
+              "pronunciationGuide": "bawt"
+            },
+            {
+              "id": "en-a1-past-irregular-vocab-4",
+              "word": "saw",
+              "meaningRomanUrdu": "dekha",
+              "partOfSpeech": "verb: past of see",
+              "pronunciationGuide": "saw"
+            }
+          ],
+          "reading": {
+            "text": "Mina went to the market yesterday. She bought bread and apples. At noon, she met Ali and they had lunch together. Mina ate rice. Ali did not eat rice; he had soup. Later, Mina went home by bus.",
+            "meaningRomanUrdu": "Mina kal bazaar gayi. Us ne bread aur seb khareeday. Dopahar ko woh Ali se mili aur dono ne saath khana khaya. Mina ne chawal khaye. Ali ne chawal nahin khaye; us ne soup liya. Baad mein Mina bus se ghar gayi."
+          },
+          "speakingPrompts": [
+            "Describe yesterday using went, had and ate in three sentences.",
+            "Ask Did you buy anything yesterday? Answer with bought or did not buy."
+          ],
+          "reviewTags": [
+            "past-simple",
+            "irregular-past",
+            "common-verbs",
+            "negatives-questions"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-past-irregular-choice",
+              "prompt": "Choose the correct question.",
+              "explanationRomanUrdu": "Did ke baad base form go chahiye, went nahin.",
+              "options": [
+                {
+                  "id": "en-a1-past-irregular-choice-opt-0",
+                  "text": "Did she went home?"
+                },
+                {
+                  "id": "en-a1-past-irregular-choice-opt-1",
+                  "text": "Does she went home yesterday?"
+                },
+                {
+                  "id": "en-a1-past-irregular-choice-opt-2",
+                  "text": "Did she go home?"
+                }
+              ],
+              "correctOptionId": "en-a1-past-irregular-choice-opt-2"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-past-irregular-blank",
+              "prompt": "Yesterday we ___ lunch at one. Use have in the past form.",
+              "explanationRomanUrdu": "Have ki irregular past form had hai.",
+              "acceptedAnswers": [
+                "had"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-past-irregular-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Negative mein did not ke baad base verb buy aata hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-past-irregular-order-word-1",
+                  "text": "did"
+                },
+                {
+                  "id": "en-a1-past-irregular-order-word-2",
+                  "text": "not"
+                },
+                {
+                  "id": "en-a1-past-irregular-order-word-3",
+                  "text": "buy"
+                },
+                {
+                  "id": "en-a1-past-irregular-order-word-4",
+                  "text": "a"
+                },
+                {
+                  "id": "en-a1-past-irregular-order-word-5",
+                  "text": "book."
+                },
+                {
+                  "id": "en-a1-past-irregular-order-word-0",
+                  "text": "I"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-past-irregular-order-word-0",
+                "en-a1-past-irregular-order-word-1",
+                "en-a1-past-irregular-order-word-2",
+                "en-a1-past-irregular-order-word-3",
+                "en-a1-past-irregular-order-word-4",
+                "en-a1-past-irregular-order-word-5"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-past-irregular-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Irregular forms ko verb ke saath yaad karain; har verb par ed nahin lagta.",
+              "pairs": [
+                {
+                  "id": "en-a1-past-irregular-pair-0",
+                  "left": "go",
+                  "right": "past: went"
+                },
+                {
+                  "id": "en-a1-past-irregular-pair-1",
+                  "left": "eat",
+                  "right": "past: ate"
+                },
+                {
+                  "id": "en-a1-past-irregular-pair-2",
+                  "left": "buy",
+                  "right": "past: bought"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-past-irregular-multi",
+              "prompt": "Choose all correct irregular-past sentences.",
+              "explanationRomanUrdu": "Bought positive past hai. Did ke baad have base form durust hai; did not go chahiye.",
+              "options": [
+                {
+                  "id": "en-a1-past-irregular-multi-opt-0",
+                  "text": "She bought a bag."
+                },
+                {
+                  "id": "en-a1-past-irregular-multi-opt-1",
+                  "text": "I did not went."
+                },
+                {
+                  "id": "en-a1-past-irregular-multi-opt-2",
+                  "text": "Did they have lunch?"
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-past-irregular-multi-opt-0",
+                "en-a1-past-irregular-multi-opt-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-past-irregular-listen",
+              "prompt": "What did Ali have for lunch?",
+              "explanationRomanUrdu": "Ali ke liye he had soup kaha gaya hai; rice Mina ne khaya.",
+              "speech": {
+                "text": "Yesterday Mina and Ali had lunch together. Mina ate rice. Ali did not eat rice; he had soup.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-past-irregular-listen-opt-0",
+                  "text": "Soup"
+                },
+                {
+                  "id": "en-a1-past-irregular-listen-opt-1",
+                  "text": "Rice"
+                },
+                {
+                  "id": "en-a1-past-irregular-listen-opt-2",
+                  "text": "Bread"
+                }
+              ],
+              "correctOptionId": "en-a1-past-irregular-listen-opt-0"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-future-plans",
+          "title": "Plans with going to and simple future with will",
+          "objectives": [
+            "Describe an intention with be going to + base verb.",
+            "Use will for a simple promise or decision."
+          ],
+          "explanationRomanUrdu": "Mustaqbil ki baat ke liye is lesson mein do bunyadi patterns hain. Am/is/are going to + base verb pehle se irada ya plan batata hai. Will + base verb saada future, us waqt ka faisla ya wada bata sakta hai. I am going to study aaj se socha hua plan ho sakta hai; I will help you madad ka wada ho sakta hai. Tomorrow aur next week future ka waqt wazeh karte hain.",
+          "rulesRomanUrdu": [
+            "I am / she is / they are going to + base verb.",
+            "Going-to question: Are you going to travel tomorrow?",
+            "Will har subject ke saath aik jaisa hai: I will help. She will help.",
+            "Negative: am not going to; will not = won't. Will ke baad to nahin lagta."
+          ],
+          "examples": [
+            {
+              "text": "I am going to study tonight.",
+              "meaningRomanUrdu": "Mera aaj raat parhnay ka irada hai.",
+              "speech": {
+                "text": "I am going to study tonight.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She is going to visit her family.",
+              "meaningRomanUrdu": "Uska apne ghar walon se milne janay ka irada hai.",
+              "speech": {
+                "text": "She is going to visit her family.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "I will help you.",
+              "meaningRomanUrdu": "Main aap ki madad karoon ga ya gi.",
+              "speech": {
+                "text": "I will help you.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "We will not be late.",
+              "meaningRomanUrdu": "Hum der se nahin pohnchain ge.",
+              "speech": {
+                "text": "We will not be late.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-future-plans-vocab-0",
+              "word": "tomorrow",
+              "meaningRomanUrdu": "kal / aane wala din",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "tuh-MOR-oh"
+            },
+            {
+              "id": "en-a1-future-plans-vocab-1",
+              "word": "tonight",
+              "meaningRomanUrdu": "aaj raat",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "tuh-NYT"
+            },
+            {
+              "id": "en-a1-future-plans-vocab-2",
+              "word": "next week",
+              "meaningRomanUrdu": "aglay haftay",
+              "partOfSpeech": "time phrase",
+              "pronunciationGuide": "nekst WEEK"
+            },
+            {
+              "id": "en-a1-future-plans-vocab-3",
+              "word": "plan",
+              "meaningRomanUrdu": "mansuba / irada",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "plan"
+            },
+            {
+              "id": "en-a1-future-plans-vocab-4",
+              "word": "help",
+              "meaningRomanUrdu": "madad karna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "help"
+            }
+          ],
+          "reading": {
+            "text": "Sara is going to visit her family next week. She is going to travel by train on Monday. Her brother says, I will meet you at the station. Sara is happy. Tonight she is going to pack her bag and check her ticket.",
+            "meaningRomanUrdu": "Sara aglay haftay apne ghar walon se milne janay wali hai. Uska peer ko train se safar karne ka plan hai. Uska bhai kehta hai ke main station par tum se miloon ga. Sara khush hai. Aaj raat woh bag pack karne aur ticket check karne ka irada rakhti hai."
+          },
+          "speakingPrompts": [
+            "Give two plans for tomorrow with I am going to...",
+            "Offer a partner simple help with I will... Then ask about their weekend plan."
+          ],
+          "reviewTags": [
+            "basic-future",
+            "going-to",
+            "will",
+            "negatives-questions"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-future-plans-choice",
+              "prompt": "Choose a correctly formed plan.",
+              "explanationRomanUrdu": "Is going to ke baad base verb visit hai. Will ke baad to nahin lagta.",
+              "options": [
+                {
+                  "id": "en-a1-future-plans-choice-opt-0",
+                  "text": "She is going to visit us."
+                },
+                {
+                  "id": "en-a1-future-plans-choice-opt-1",
+                  "text": "She going visit us."
+                },
+                {
+                  "id": "en-a1-future-plans-choice-opt-2",
+                  "text": "She will to visit us."
+                }
+              ],
+              "correctOptionId": "en-a1-future-plans-choice-opt-0"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-future-plans-blank",
+              "prompt": "They ___ going to travel tomorrow. Use am, is or are.",
+              "explanationRomanUrdu": "They ke saath are going to chahiye.",
+              "acceptedAnswers": [
+                "are"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-future-plans-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Will ke baad base verb help aati hai; to ya s nahin lagta.",
+              "tokens": [
+                {
+                  "id": "en-a1-future-plans-order-word-1",
+                  "text": "will"
+                },
+                {
+                  "id": "en-a1-future-plans-order-word-2",
+                  "text": "help"
+                },
+                {
+                  "id": "en-a1-future-plans-order-word-3",
+                  "text": "you"
+                },
+                {
+                  "id": "en-a1-future-plans-order-word-4",
+                  "text": "tomorrow."
+                },
+                {
+                  "id": "en-a1-future-plans-order-word-0",
+                  "text": "I"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-future-plans-order-word-0",
+                "en-a1-future-plans-order-word-1",
+                "en-a1-future-plans-order-word-2",
+                "en-a1-future-plans-order-word-3",
+                "en-a1-future-plans-order-word-4"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-future-plans-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Yeh waqt ki expressions future plans ko wazeh karti hain.",
+              "pairs": [
+                {
+                  "id": "en-a1-future-plans-pair-0",
+                  "left": "tomorrow",
+                  "right": "aane wala kal"
+                },
+                {
+                  "id": "en-a1-future-plans-pair-1",
+                  "left": "tonight",
+                  "right": "aaj ki raat"
+                },
+                {
+                  "id": "en-a1-future-plans-pair-2",
+                  "left": "next week",
+                  "right": "agla hafta"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-future-plans-multi",
+              "prompt": "Choose all correctly formed future sentences.",
+              "explanationRomanUrdu": "Am going to study aur will call durust hain. Will help mein to nahin hota.",
+              "options": [
+                {
+                  "id": "en-a1-future-plans-multi-opt-0",
+                  "text": "We will to help."
+                },
+                {
+                  "id": "en-a1-future-plans-multi-opt-1",
+                  "text": "I am going to study."
+                },
+                {
+                  "id": "en-a1-future-plans-multi-opt-2",
+                  "text": "She will call you."
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-future-plans-multi-opt-1",
+                "en-a1-future-plans-multi-opt-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-future-plans-listen",
+              "prompt": "How is the speaker going to travel?",
+              "explanationRomanUrdu": "Plan mein travel by train kaha gaya hai; station par bhai milay ga.",
+              "speech": {
+                "text": "I am going to visit my family next week. I am going to travel by train on Monday. My brother will meet me at the station.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-future-plans-listen-opt-0",
+                  "text": "By bus"
+                },
+                {
+                  "id": "en-a1-future-plans-listen-opt-1",
+                  "text": "By train"
+                },
+                {
+                  "id": "en-a1-future-plans-listen-opt-2",
+                  "text": "By car"
+                }
+              ],
+              "correctOptionId": "en-a1-future-plans-listen-opt-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "en-a1-describing",
+      "title": "Places, descriptions and people",
+      "lessons": [
+        {
+          "id": "en-a1-place-prepositions",
+          "title": "Where things are: prepositions of place",
+          "objectives": [
+            "Describe a position with in, on, under, next to and between.",
+            "Ask and answer Where is...? questions."
+          ],
+          "explanationRomanUrdu": "Jagah batane ke liye preposition noun phrase se pehle aata hai. In andar, on satah par, under neeche, next to bilkul paas aur between do cheezon ke darmiyan batata hai. The book is on the table mein book subject hai, is be verb hai aur on the table jagah batata hai. Between ke saath dono reference cheezen batain: between the bank and the shop.",
+          "rulesRomanUrdu": [
+            "In = andar: in the bag; on = satah par: on the desk.",
+            "Under = neeche; next to = bilkul paas.",
+            "Between X and Y = X aur Y ke darmiyan.",
+            "Question: Where is the book? Answer: It is on the table."
+          ],
+          "examples": [
+            {
+              "text": "The keys are in the bag.",
+              "meaningRomanUrdu": "Chabiyan bag ke andar hain.",
+              "speech": {
+                "text": "The keys are in the bag.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "The book is on the desk.",
+              "meaningRomanUrdu": "Kitab mez par hai.",
+              "speech": {
+                "text": "The book is on the desk.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "The chair is next to the window.",
+              "meaningRomanUrdu": "Kursi khirki ke bilkul paas hai.",
+              "speech": {
+                "text": "The chair is next to the window.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "The cafe is between the bank and the shop.",
+              "meaningRomanUrdu": "Cafe bank aur dukaan ke darmiyan hai.",
+              "speech": {
+                "text": "The cafe is between the bank and the shop.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-place-prepositions-vocab-0",
+              "word": "desk",
+              "meaningRomanUrdu": "kaam ya parhai ki mez",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "desk"
+            },
+            {
+              "id": "en-a1-place-prepositions-vocab-1",
+              "word": "keys",
+              "meaningRomanUrdu": "chabiyan",
+              "partOfSpeech": "plural noun",
+              "pronunciationGuide": "keez"
+            },
+            {
+              "id": "en-a1-place-prepositions-vocab-2",
+              "word": "window",
+              "meaningRomanUrdu": "khirki",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "WIN-doh"
+            },
+            {
+              "id": "en-a1-place-prepositions-vocab-3",
+              "word": "under",
+              "meaningRomanUrdu": "neeche",
+              "partOfSpeech": "preposition",
+              "pronunciationGuide": "UN-der"
+            },
+            {
+              "id": "en-a1-place-prepositions-vocab-4",
+              "word": "between",
+              "meaningRomanUrdu": "darmiyan",
+              "partOfSpeech": "preposition",
+              "pronunciationGuide": "bi-TWEEN"
+            }
+          ],
+          "reading": {
+            "text": "Ali is looking for his keys. His bag is under the desk. The keys are in the bag. His phone is on the desk, next to a book. There is a chair between the desk and the window. Ali takes his keys and leaves.",
+            "meaningRomanUrdu": "Ali apni chabiyan dhoond raha hai. Uska bag mez ke neeche hai aur chabiyan bag ke andar hain. Uska phone mez par kitab ke paas hai. Mez aur khirki ke darmiyan kursi hai. Ali chabiyan leta hai aur chala jata hai."
+          },
+          "speakingPrompts": [
+            "Describe the positions of three things in your room.",
+            "Ask a partner Where are the keys? Answer with a full sentence using in, on or under."
+          ],
+          "reviewTags": [
+            "prepositions",
+            "place-prepositions",
+            "negatives-questions"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-place-prepositions-choice",
+              "prompt": "Which phrase means inside the bag?",
+              "explanationRomanUrdu": "In andar ko batata hai; on upar satah par aur under neeche ko.",
+              "options": [
+                {
+                  "id": "en-a1-place-prepositions-choice-opt-0",
+                  "text": "On the bag"
+                },
+                {
+                  "id": "en-a1-place-prepositions-choice-opt-1",
+                  "text": "In the bag"
+                },
+                {
+                  "id": "en-a1-place-prepositions-choice-opt-2",
+                  "text": "Under the bag"
+                }
+              ],
+              "correctOptionId": "en-a1-place-prepositions-choice-opt-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-place-prepositions-blank",
+              "prompt": "The cafe is ___ the bank and the shop. Use the word meaning in the middle of the two.",
+              "explanationRomanUrdu": "Do cheezon ke darmiyan ke liye between...and istemal hota hai.",
+              "acceptedAnswers": [
+                "between"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-place-prepositions-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Plural keys ke saath are hai; in the bag jagah batata hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-place-prepositions-order-word-1",
+                  "text": "keys"
+                },
+                {
+                  "id": "en-a1-place-prepositions-order-word-2",
+                  "text": "are"
+                },
+                {
+                  "id": "en-a1-place-prepositions-order-word-3",
+                  "text": "in"
+                },
+                {
+                  "id": "en-a1-place-prepositions-order-word-4",
+                  "text": "the"
+                },
+                {
+                  "id": "en-a1-place-prepositions-order-word-5",
+                  "text": "bag."
+                },
+                {
+                  "id": "en-a1-place-prepositions-order-word-0",
+                  "text": "The"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-place-prepositions-order-word-0",
+                "en-a1-place-prepositions-order-word-1",
+                "en-a1-place-prepositions-order-word-2",
+                "en-a1-place-prepositions-order-word-3",
+                "en-a1-place-prepositions-order-word-4",
+                "en-a1-place-prepositions-order-word-5"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-place-prepositions-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Jagah ki har preposition mukhtalif rishta batati hai.",
+              "pairs": [
+                {
+                  "id": "en-a1-place-prepositions-pair-0",
+                  "left": "under",
+                  "right": "neeche"
+                },
+                {
+                  "id": "en-a1-place-prepositions-pair-1",
+                  "left": "next to",
+                  "right": "bilkul paas"
+                },
+                {
+                  "id": "en-a1-place-prepositions-pair-2",
+                  "left": "between",
+                  "right": "do cheezon ke darmiyan"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-place-prepositions-multi",
+              "prompt": "Choose all correct position phrases.",
+              "explanationRomanUrdu": "In the bag aur next to the window durust hain. Between X and Y mein and chahiye.",
+              "options": [
+                {
+                  "id": "en-a1-place-prepositions-multi-opt-0",
+                  "text": "in the bag"
+                },
+                {
+                  "id": "en-a1-place-prepositions-multi-opt-1",
+                  "text": "between the shop the bank"
+                },
+                {
+                  "id": "en-a1-place-prepositions-multi-opt-2",
+                  "text": "next to the window"
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-place-prepositions-multi-opt-0",
+                "en-a1-place-prepositions-multi-opt-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-place-prepositions-listen",
+              "prompt": "Where are the keys?",
+              "explanationRomanUrdu": "Keys bag ke andar hain; bag khud desk ke neeche hai.",
+              "speech": {
+                "text": "My bag is under the desk. My keys are in the bag. My phone is on the desk.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-place-prepositions-listen-opt-0",
+                  "text": "On the desk"
+                },
+                {
+                  "id": "en-a1-place-prepositions-listen-opt-1",
+                  "text": "Next to the window"
+                },
+                {
+                  "id": "en-a1-place-prepositions-listen-opt-2",
+                  "text": "In the bag"
+                }
+              ],
+              "correctOptionId": "en-a1-place-prepositions-listen-opt-2"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-time-prepositions",
+          "title": "Time expressions with at, on and in",
+          "objectives": [
+            "Choose at for a clock time, on for a day, and in for a month.",
+            "Give clear routine and appointment times."
+          ],
+          "explanationRomanUrdu": "Waqt ki aam expressions mein at clock time ke saath, on din ya tareekh ke saath, aur in mahinay, saal ya din ke kuch hison ke saath aata hai. At nine, on Monday, in May aur in the morning ko chhote chunks ki tarah seekhain. Night ke liye aam expression at night hai. Every day, tomorrow aur yesterday ke bilkul pehle aam tor par in/on/at nahin lagta.",
+          "rulesRomanUrdu": [
+            "At + clock time: at nine; at 3:30.",
+            "On + day/date: on Monday; on 5 May.",
+            "In + month/year: in May; in 2026. In the morning/afternoon/evening.",
+            "At night, lekin tomorrow aur every day se pehle koi preposition nahin: I work tomorrow."
+          ],
+          "examples": [
+            {
+              "text": "The class starts at nine.",
+              "meaningRomanUrdu": "Class nau bajay shuru hoti hai.",
+              "speech": {
+                "text": "The class starts at nine.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "We meet on Monday.",
+              "meaningRomanUrdu": "Hum peer ko milte hain.",
+              "speech": {
+                "text": "We meet on Monday.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "My birthday is in May.",
+              "meaningRomanUrdu": "Meri salgirah May mein hai.",
+              "speech": {
+                "text": "My birthday is in May.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "I study in the evening.",
+              "meaningRomanUrdu": "Main shaam ko parhta ya parhti hoon.",
+              "speech": {
+                "text": "I study in the evening.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-time-prepositions-vocab-0",
+              "word": "appointment",
+              "meaningRomanUrdu": "mulaqat ka tay-shuda waqt",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "uh-POINT-muhnt"
+            },
+            {
+              "id": "en-a1-time-prepositions-vocab-1",
+              "word": "morning",
+              "meaningRomanUrdu": "subah",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "MOR-ning"
+            },
+            {
+              "id": "en-a1-time-prepositions-vocab-2",
+              "word": "afternoon",
+              "meaningRomanUrdu": "dopahar ke baad",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "af-ter-NOON"
+            },
+            {
+              "id": "en-a1-time-prepositions-vocab-3",
+              "word": "evening",
+              "meaningRomanUrdu": "shaam",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "EEV-ning"
+            },
+            {
+              "id": "en-a1-time-prepositions-vocab-4",
+              "word": "birthday",
+              "meaningRomanUrdu": "salgirah",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "BURTH-day"
+            }
+          ],
+          "reading": {
+            "text": "Mina has an English class on Tuesday. It starts at six in the evening. Her birthday is in May, and she plans a small family meal. She studies every day. Tomorrow she is going to meet Ali at seven, after her class.",
+            "meaningRomanUrdu": "Mina ki English class mangal ko hoti hai. Woh shaam chhay bajay shuru hoti hai. Mina ki salgirah May mein hai aur woh ghar walon ke saath chhota sa khana plan karti hai. Woh har roz parhti hai. Kal class ke baad saat bajay Ali se milne ka irada hai."
+          },
+          "speakingPrompts": [
+            "Say when you start work or study using at and on.",
+            "Arrange a meeting: choose a day and a clock time, then say the full sentence."
+          ],
+          "reviewTags": [
+            "prepositions",
+            "time-prepositions",
+            "daily-routines"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-time-prepositions-choice",
+              "prompt": "Choose the correct phrase for a clock time.",
+              "explanationRomanUrdu": "Clock time ke saath at aata hai.",
+              "options": [
+                {
+                  "id": "en-a1-time-prepositions-choice-opt-0",
+                  "text": "At nine"
+                },
+                {
+                  "id": "en-a1-time-prepositions-choice-opt-1",
+                  "text": "On nine"
+                },
+                {
+                  "id": "en-a1-time-prepositions-choice-opt-2",
+                  "text": "In nine"
+                }
+              ],
+              "correctOptionId": "en-a1-time-prepositions-choice-opt-0"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-time-prepositions-blank",
+              "prompt": "We meet ___ Monday. Use in, on or at.",
+              "explanationRomanUrdu": "Din Monday ke saath on chahiye.",
+              "acceptedAnswers": [
+                "on"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-time-prepositions-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Starts ke baad at six clock time batata hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-time-prepositions-order-word-1",
+                  "text": "class"
+                },
+                {
+                  "id": "en-a1-time-prepositions-order-word-2",
+                  "text": "starts"
+                },
+                {
+                  "id": "en-a1-time-prepositions-order-word-3",
+                  "text": "at"
+                },
+                {
+                  "id": "en-a1-time-prepositions-order-word-4",
+                  "text": "six."
+                },
+                {
+                  "id": "en-a1-time-prepositions-order-word-0",
+                  "text": "The"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-time-prepositions-order-word-0",
+                "en-a1-time-prepositions-order-word-1",
+                "en-a1-time-prepositions-order-word-2",
+                "en-a1-time-prepositions-order-word-3",
+                "en-a1-time-prepositions-order-word-4"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-time-prepositions-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "At nine, on Monday aur in May ko aik saath yaad karain.",
+              "pairs": [
+                {
+                  "id": "en-a1-time-prepositions-pair-0",
+                  "left": "at",
+                  "right": "clock time: nine"
+                },
+                {
+                  "id": "en-a1-time-prepositions-pair-1",
+                  "left": "on",
+                  "right": "day: Monday"
+                },
+                {
+                  "id": "en-a1-time-prepositions-pair-2",
+                  "left": "in",
+                  "right": "month: May"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-time-prepositions-multi",
+              "prompt": "Choose all correct time phrases.",
+              "explanationRomanUrdu": "On Friday aur in June durust hain. In the morning hota hai.",
+              "options": [
+                {
+                  "id": "en-a1-time-prepositions-multi-opt-0",
+                  "text": "on Friday"
+                },
+                {
+                  "id": "en-a1-time-prepositions-multi-opt-1",
+                  "text": "at the morning"
+                },
+                {
+                  "id": "en-a1-time-prepositions-multi-opt-2",
+                  "text": "in June"
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-time-prepositions-multi-opt-0",
+                "en-a1-time-prepositions-multi-opt-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-time-prepositions-listen",
+              "prompt": "What time does the class start?",
+              "explanationRomanUrdu": "Class at six shuru hoti hai. Seven mulaqat ka waqt aur Tuesday din hai.",
+              "speech": {
+                "text": "Our English class is on Tuesday. It starts at six in the evening. We meet Ali at seven after class.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-time-prepositions-listen-opt-0",
+                  "text": "Seven"
+                },
+                {
+                  "id": "en-a1-time-prepositions-listen-opt-1",
+                  "text": "Six"
+                },
+                {
+                  "id": "en-a1-time-prepositions-listen-opt-2",
+                  "text": "Tuesday"
+                }
+              ],
+              "correctOptionId": "en-a1-time-prepositions-listen-opt-1"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-adjectives-adverbs",
+          "title": "Describing things and how people act",
+          "objectives": [
+            "Use an adjective to describe a noun or a state.",
+            "Use a manner adverb to describe an action."
+          ],
+          "explanationRomanUrdu": "Adjective shakhs ya cheez ki sifat batata hai: a careful driver. Be ke baad bhi adjective aata hai: the driver is careful. Adverb kaam ke tareeqay ko bata sakta hai: she drives carefully. Bohat se manner adverbs adjective mein ly lagane se bante hain, lekin har lafz aisa nahin. Good adjective aur well uska aam adverb hai. Fast adjective aur adverb dono ho sakta hai.",
+          "rulesRomanUrdu": [
+            "Adjective noun se pehle: a slow bus; be ke baad: the bus is slow.",
+            "Manner adverb action ko batata hai: He speaks slowly.",
+            "Careful → carefully; slow → slowly; clear → clearly.",
+            "Good → well; fast → fast. Har adverb ko ly se na banayain."
+          ],
+          "examples": [
+            {
+              "text": "She is a careful driver.",
+              "meaningRomanUrdu": "Woh ehtiyat se gaari chalanay wali driver hai.",
+              "speech": {
+                "text": "She is a careful driver.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She drives carefully.",
+              "meaningRomanUrdu": "Woh ehtiyat se gaari chalati hai.",
+              "speech": {
+                "text": "She drives carefully.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Please speak slowly.",
+              "meaningRomanUrdu": "Meherbani karke aahista bolain.",
+              "speech": {
+                "text": "Please speak slowly.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "He is a good cook. He cooks well.",
+              "meaningRomanUrdu": "Woh acha bawarchi hai aur acha khana pakata hai.",
+              "speech": {
+                "text": "He is a good cook. He cooks well.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-adjectives-adverbs-vocab-0",
+              "word": "careful",
+              "meaningRomanUrdu": "ehtiyat karne wala",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "KAIR-fuhl"
+            },
+            {
+              "id": "en-a1-adjectives-adverbs-vocab-1",
+              "word": "carefully",
+              "meaningRomanUrdu": "ehtiyat se",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "KAIR-fuh-lee"
+            },
+            {
+              "id": "en-a1-adjectives-adverbs-vocab-2",
+              "word": "slowly",
+              "meaningRomanUrdu": "aahista",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "SLOH-lee"
+            },
+            {
+              "id": "en-a1-adjectives-adverbs-vocab-3",
+              "word": "clear",
+              "meaningRomanUrdu": "wazeh",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "kleer"
+            },
+            {
+              "id": "en-a1-adjectives-adverbs-vocab-4",
+              "word": "well",
+              "meaningRomanUrdu": "achay tareeqay se",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "wel"
+            }
+          ],
+          "reading": {
+            "text": "Ali is a careful driver. He drives slowly near the school. His sister is a good cook. She cooks well and explains her recipes clearly. Today Ali is learning a recipe. He listens carefully and asks her to speak slowly.",
+            "meaningRomanUrdu": "Ali ehtiyat karne wala driver hai. Woh school ke paas aahista gaari chalata hai. Uski behen achi bawarchi hai. Woh acha khana pakati hai aur recipes wazeh taur par samjhati hai. Aaj Ali recipe seekh raha hai. Woh tawajjoh se sunta hai aur usay aahista bolne ko kehta hai."
+          },
+          "speakingPrompts": [
+            "Describe a person with one adjective, then describe an action with an adverb.",
+            "Practise a polite request: Please speak slowly. Please explain it clearly."
+          ],
+          "reviewTags": [
+            "adjectives-adverbs",
+            "manner-adverbs",
+            "common-verbs"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-adjectives-adverbs-choice",
+              "prompt": "Choose the word for how she drives: She drives ___.",
+              "explanationRomanUrdu": "Drive action hai; uska tareeqa carefully adverb se batate hain.",
+              "options": [
+                {
+                  "id": "en-a1-adjectives-adverbs-choice-opt-0",
+                  "text": "careful"
+                },
+                {
+                  "id": "en-a1-adjectives-adverbs-choice-opt-1",
+                  "text": "carefully"
+                },
+                {
+                  "id": "en-a1-adjectives-adverbs-choice-opt-2",
+                  "text": "a careful"
+                }
+              ],
+              "correctOptionId": "en-a1-adjectives-adverbs-choice-opt-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-adjectives-adverbs-blank",
+              "prompt": "He is a good cook. He cooks ___. Use the adverb related to good.",
+              "explanationRomanUrdu": "Good ka aam manner adverb well hai, goodly nahin.",
+              "acceptedAnswers": [
+                "well"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-adjectives-adverbs-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Speak action aur slowly bolne ka tareeqa batata hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-adjectives-adverbs-order-word-1",
+                  "text": "speak"
+                },
+                {
+                  "id": "en-a1-adjectives-adverbs-order-word-2",
+                  "text": "slowly."
+                },
+                {
+                  "id": "en-a1-adjectives-adverbs-order-word-0",
+                  "text": "Please"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-adjectives-adverbs-order-word-0",
+                "en-a1-adjectives-adverbs-order-word-1",
+                "en-a1-adjectives-adverbs-order-word-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-adjectives-adverbs-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Careful adjective hai; carefully aur slowly action ke tareeqay batate hain.",
+              "pairs": [
+                {
+                  "id": "en-a1-adjectives-adverbs-pair-0",
+                  "left": "careful",
+                  "right": "ehtiyat karne wala"
+                },
+                {
+                  "id": "en-a1-adjectives-adverbs-pair-1",
+                  "left": "carefully",
+                  "right": "ehtiyat se"
+                },
+                {
+                  "id": "en-a1-adjectives-adverbs-pair-2",
+                  "left": "slowly",
+                  "right": "aahista"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-adjectives-adverbs-multi",
+              "prompt": "Choose all correct descriptions.",
+              "explanationRomanUrdu": "Speaks slowly mein adverb, good cook mein adjective hai. A careful driver chahiye.",
+              "options": [
+                {
+                  "id": "en-a1-adjectives-adverbs-multi-opt-0",
+                  "text": "He speaks slowly."
+                },
+                {
+                  "id": "en-a1-adjectives-adverbs-multi-opt-1",
+                  "text": "She is a carefully driver."
+                },
+                {
+                  "id": "en-a1-adjectives-adverbs-multi-opt-2",
+                  "text": "She is a good cook."
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-adjectives-adverbs-multi-opt-0",
+                "en-a1-adjectives-adverbs-multi-opt-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-adjectives-adverbs-listen",
+              "prompt": "How does the speaker ask someone to speak?",
+              "explanationRomanUrdu": "Darkhwast please speak slowly hai, yani aahista bolain.",
+              "speech": {
+                "text": "Please speak slowly. I am learning English. My teacher speaks clearly, and I listen carefully.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-adjectives-adverbs-listen-opt-0",
+                  "text": "Loudly"
+                },
+                {
+                  "id": "en-a1-adjectives-adverbs-listen-opt-1",
+                  "text": "Quickly"
+                },
+                {
+                  "id": "en-a1-adjectives-adverbs-listen-opt-2",
+                  "text": "Slowly"
+                }
+              ],
+              "correctOptionId": "en-a1-adjectives-adverbs-listen-opt-2"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-frequency",
+          "title": "How often: always, usually and sometimes",
+          "objectives": [
+            "Describe how often a routine happens.",
+            "Place frequency adverbs with ordinary verbs and be."
+          ],
+          "explanationRomanUrdu": "Always, usually, often, sometimes aur never kaam ki frequency batate hain. Aam action verb se pehle yeh adverb aata hai: I usually walk. Be ke baad aata hai: she is always busy. Sometimes jumlay ke shuru mein bhi aa sakta hai. Never ka maani pehle se negative hai; bunyadi standard English mein I never drive kaafi hai, I do not never drive nahin.",
+          "rulesRomanUrdu": [
+            "Always = hamesha; usually = aam tor par; often = aksar.",
+            "Sometimes = kabhi kabhi; never = kabhi nahin.",
+            "Ordinary verb se pehle: I usually walk. Be ke baad: She is often busy.",
+            "How often...? frequency poochta hai; every day aur twice a week bhi jawab ho sakte hain."
+          ],
+          "examples": [
+            {
+              "text": "I usually walk to work.",
+              "meaningRomanUrdu": "Main aam tor par paidal kaam par jata ya jati hoon.",
+              "speech": {
+                "text": "I usually walk to work.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She is always on time.",
+              "meaningRomanUrdu": "Woh hamesha waqt par hoti hai.",
+              "speech": {
+                "text": "She is always on time.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "We sometimes eat out.",
+              "meaningRomanUrdu": "Hum kabhi kabhi bahar khana khatay hain.",
+              "speech": {
+                "text": "We sometimes eat out.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "I never drink coffee at night.",
+              "meaningRomanUrdu": "Main raat ko kabhi coffee nahin peeta ya peeti.",
+              "speech": {
+                "text": "I never drink coffee at night.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-frequency-vocab-0",
+              "word": "always",
+              "meaningRomanUrdu": "hamesha",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "AWL-wayz"
+            },
+            {
+              "id": "en-a1-frequency-vocab-1",
+              "word": "often",
+              "meaningRomanUrdu": "aksar",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "OF-uhn"
+            },
+            {
+              "id": "en-a1-frequency-vocab-2",
+              "word": "sometimes",
+              "meaningRomanUrdu": "kabhi kabhi",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "SUM-tymz"
+            },
+            {
+              "id": "en-a1-frequency-vocab-3",
+              "word": "never",
+              "meaningRomanUrdu": "kabhi nahin",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "NEV-er"
+            },
+            {
+              "id": "en-a1-frequency-vocab-4",
+              "word": "twice a week",
+              "meaningRomanUrdu": "haftay mein do baar",
+              "partOfSpeech": "time phrase",
+              "pronunciationGuide": "twys uh WEEK"
+            }
+          ],
+          "reading": {
+            "text": "Sara usually walks to work. She sometimes takes the bus when it rains. She is always on time. She studies English every evening and practises speaking twice a week. She never drinks coffee at night because she wants to sleep well.",
+            "meaningRomanUrdu": "Sara aam tor par paidal kaam par jati hai. Barish mein woh kabhi kabhi bus leti hai. Woh hamesha waqt par pohnchti hai. Woh har shaam English parhti hai aur haftay mein do baar bolne ki practice karti hai. Raat ko coffee kabhi nahin peeti taa ke achi neend aaye."
+          },
+          "speakingPrompts": [
+            "Describe four routines using usually, sometimes, often and never.",
+            "Ask How often do you study English? Give a frequency expression and one detail."
+          ],
+          "reviewTags": [
+            "adjectives-adverbs",
+            "frequency-adverbs",
+            "daily-routines"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-frequency-choice",
+              "prompt": "Choose the sentence with standard frequency-adverb position.",
+              "explanationRomanUrdu": "Usually aam action verb walk se pehle aa sakta hai.",
+              "options": [
+                {
+                  "id": "en-a1-frequency-choice-opt-0",
+                  "text": "I usually walk to work."
+                },
+                {
+                  "id": "en-a1-frequency-choice-opt-1",
+                  "text": "I walk usually to work always."
+                },
+                {
+                  "id": "en-a1-frequency-choice-opt-2",
+                  "text": "I usually to work walk."
+                }
+              ],
+              "correctOptionId": "en-a1-frequency-choice-opt-0"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-frequency-blank",
+              "prompt": "She is ___ on time. Use the word meaning hamesha.",
+              "explanationRomanUrdu": "Be verb is ke baad always hai; maani hamesha hai.",
+              "acceptedAnswers": [
+                "always"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-frequency-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Never ordinary verb drink se pehle aata hai aur khud negative maani rakhta hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-frequency-order-word-1",
+                  "text": "never"
+                },
+                {
+                  "id": "en-a1-frequency-order-word-2",
+                  "text": "drink"
+                },
+                {
+                  "id": "en-a1-frequency-order-word-3",
+                  "text": "coffee"
+                },
+                {
+                  "id": "en-a1-frequency-order-word-4",
+                  "text": "at"
+                },
+                {
+                  "id": "en-a1-frequency-order-word-5",
+                  "text": "night."
+                },
+                {
+                  "id": "en-a1-frequency-order-word-0",
+                  "text": "I"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-frequency-order-word-0",
+                "en-a1-frequency-order-word-1",
+                "en-a1-frequency-order-word-2",
+                "en-a1-frequency-order-word-3",
+                "en-a1-frequency-order-word-4",
+                "en-a1-frequency-order-word-5"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-frequency-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Frequency alfaaz kitni baar hone ka farq batate hain.",
+              "pairs": [
+                {
+                  "id": "en-a1-frequency-pair-0",
+                  "left": "always",
+                  "right": "hamesha"
+                },
+                {
+                  "id": "en-a1-frequency-pair-1",
+                  "left": "sometimes",
+                  "right": "kabhi kabhi"
+                },
+                {
+                  "id": "en-a1-frequency-pair-2",
+                  "left": "never",
+                  "right": "kabhi nahin"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-frequency-multi",
+              "prompt": "Choose all correct routine sentences.",
+              "explanationRomanUrdu": "Is often aur sometimes eat durust patterns hain. Never ke saath do not ka double negative na banayain.",
+              "options": [
+                {
+                  "id": "en-a1-frequency-multi-opt-0",
+                  "text": "She is often busy."
+                },
+                {
+                  "id": "en-a1-frequency-multi-opt-1",
+                  "text": "I do not never drink tea."
+                },
+                {
+                  "id": "en-a1-frequency-multi-opt-2",
+                  "text": "We sometimes eat out."
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-frequency-multi-opt-0",
+                "en-a1-frequency-multi-opt-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-frequency-listen",
+              "prompt": "How often does the speaker practise speaking?",
+              "explanationRomanUrdu": "Speaking ki practice twice a week, yani haftay mein do baar, hoti hai.",
+              "speech": {
+                "text": "I study English every evening. I practise speaking twice a week. I never drink coffee at night.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-frequency-listen-opt-0",
+                  "text": "Every morning"
+                },
+                {
+                  "id": "en-a1-frequency-listen-opt-1",
+                  "text": "Twice a week"
+                },
+                {
+                  "id": "en-a1-frequency-listen-opt-2",
+                  "text": "Never"
+                }
+              ],
+              "correctOptionId": "en-a1-frequency-listen-opt-1"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-family",
+          "title": "Family, possessions and have or has",
+          "objectives": [
+            "Introduce family members and describe possessions.",
+            "Use have/has and my, your, his, her, our and their."
+          ],
+          "explanationRomanUrdu": "Family ka taaruf rishtay aur saada descriptions se karain. Possession ya talluq ke liye my, your, his, her, our aur their noun se pehle aata hai: my brother, her bag. I/you/we/they have aur he/she/it has istemal karte hain. Does ke saath base form have wapas aati hai: Does she have a car? Naam ke saath apostrophe-s bhi milkiyat bata sakta hai: Sara's bag.",
+          "rulesRomanUrdu": [
+            "My/your/his/her/our/their + noun; possessive ke saath noun chahiye.",
+            "I/you/we/they have; he/she/it has.",
+            "Question/negative: Does she have...? She does not have...",
+            "Sara's bag = Sara ka bag. My sister's name = meri behen ka naam."
+          ],
+          "examples": [
+            {
+              "text": "This is my brother. His name is Ali.",
+              "meaningRomanUrdu": "Yeh mera bhai hai. Uska naam Ali hai.",
+              "speech": {
+                "text": "This is my brother. His name is Ali.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She has two sisters.",
+              "meaningRomanUrdu": "Uski do behnain hain.",
+              "speech": {
+                "text": "She has two sisters.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Our parents live nearby.",
+              "meaningRomanUrdu": "Hamaray walidain qareeb rehtay hain.",
+              "speech": {
+                "text": "Our parents live nearby.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Does your sister have a car?",
+              "meaningRomanUrdu": "Kya aap ki behen ke paas gaari hai?",
+              "speech": {
+                "text": "Does your sister have a car?",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-family-vocab-0",
+              "word": "brother",
+              "meaningRomanUrdu": "bhai",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "BRUH-ther"
+            },
+            {
+              "id": "en-a1-family-vocab-1",
+              "word": "sister",
+              "meaningRomanUrdu": "behen",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "SIS-ter"
+            },
+            {
+              "id": "en-a1-family-vocab-2",
+              "word": "parents",
+              "meaningRomanUrdu": "walidain",
+              "partOfSpeech": "plural noun",
+              "pronunciationGuide": "PAIR-uhnts"
+            },
+            {
+              "id": "en-a1-family-vocab-3",
+              "word": "nearby",
+              "meaningRomanUrdu": "qareeb",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "neer-BY"
+            },
+            {
+              "id": "en-a1-family-vocab-4",
+              "word": "their",
+              "meaningRomanUrdu": "unka / unki",
+              "partOfSpeech": "possessive determiner",
+              "pronunciationGuide": "thair"
+            }
+          ],
+          "reading": {
+            "text": "This is Mina's family. Her brother Ali is a teacher. He has a small car. Their parents live nearby. Mina has two sisters, and they study at the same school. On Fridays, the family has dinner together at their parents' home.",
+            "meaningRomanUrdu": "Yeh Mina ka khandan hai. Uska bhai Ali ustad hai. Uske paas chhoti gaari hai. Unke walidain qareeb rehtay hain. Mina ki do behnain hain aur woh aik hi school mein parhti hain. Jummay ko sab walidain ke ghar saath raat ka khana khatay hain."
+          },
+          "speakingPrompts": [
+            "Introduce two people in your family, or use imaginary people if you prefer.",
+            "Ask about a possession with Does your...have...? Give a full answer."
+          ],
+          "reviewTags": [
+            "family",
+            "possessives",
+            "have-has",
+            "common-verbs"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-family-choice",
+              "prompt": "Choose the correct possession sentence.",
+              "explanationRomanUrdu": "She ke saath positive Present Simple mein has aata hai.",
+              "options": [
+                {
+                  "id": "en-a1-family-choice-opt-0",
+                  "text": "She have a car."
+                },
+                {
+                  "id": "en-a1-family-choice-opt-1",
+                  "text": "She does has a car."
+                },
+                {
+                  "id": "en-a1-family-choice-opt-2",
+                  "text": "She has a car."
+                }
+              ],
+              "correctOptionId": "en-a1-family-choice-opt-2"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-family-blank",
+              "prompt": "Does your brother ___ a car? Use have or has.",
+              "explanationRomanUrdu": "Does ke baad base form have chahiye.",
+              "acceptedAnswers": [
+                "have"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-family-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Her brother subject hai aur has uske saath positive form hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-family-order-word-1",
+                  "text": "brother"
+                },
+                {
+                  "id": "en-a1-family-order-word-2",
+                  "text": "has"
+                },
+                {
+                  "id": "en-a1-family-order-word-3",
+                  "text": "a"
+                },
+                {
+                  "id": "en-a1-family-order-word-4",
+                  "text": "car."
+                },
+                {
+                  "id": "en-a1-family-order-word-0",
+                  "text": "Her"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-family-order-word-0",
+                "en-a1-family-order-word-1",
+                "en-a1-family-order-word-2",
+                "en-a1-family-order-word-3",
+                "en-a1-family-order-word-4"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-family-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Possessive determiner noun se pehle talluq batata hai.",
+              "pairs": [
+                {
+                  "id": "en-a1-family-pair-0",
+                  "left": "my",
+                  "right": "mera / meri"
+                },
+                {
+                  "id": "en-a1-family-pair-1",
+                  "left": "our",
+                  "right": "hamara / hamari"
+                },
+                {
+                  "id": "en-a1-family-pair-2",
+                  "left": "their",
+                  "right": "unka / unki"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-family-multi",
+              "prompt": "Choose all correct family sentences.",
+              "explanationRomanUrdu": "Parents ke saath live aur singular brother ke saath has hai. She has two sisters chahiye.",
+              "options": [
+                {
+                  "id": "en-a1-family-multi-opt-0",
+                  "text": "Our parents live nearby."
+                },
+                {
+                  "id": "en-a1-family-multi-opt-1",
+                  "text": "She have two sisters."
+                },
+                {
+                  "id": "en-a1-family-multi-opt-2",
+                  "text": "His brother has a car."
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-family-multi-opt-0",
+                "en-a1-family-multi-opt-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-family-listen",
+              "prompt": "Who has a small car?",
+              "explanationRomanUrdu": "Ali Mina ka bhai hai aur uske paas small car hai.",
+              "speech": {
+                "text": "My name is Mina. My brother Ali is a teacher. He has a small car. My two sisters go to school.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-family-listen-opt-0",
+                  "text": "Mina's brother"
+                },
+                {
+                  "id": "en-a1-family-listen-opt-1",
+                  "text": "Mina's sisters"
+                },
+                {
+                  "id": "en-a1-family-listen-opt-2",
+                  "text": "Mina's teacher"
+                }
+              ],
+              "correctOptionId": "en-a1-family-listen-opt-0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "en-a1-conversations",
+      "title": "Shopping, travel and everyday conversations",
+      "lessons": [
+        {
+          "id": "en-a1-shopping",
+          "title": "Shopping: asking, choosing and paying",
+          "objectives": [
+            "Ask for an item politely and understand a simple price.",
+            "Use how much for a price and how many for a count."
+          ],
+          "explanationRomanUrdu": "Dukaan mein item maangne ke liye I would like... aik narm expression hai. Kya aap ke paas hai ke liye Do you have...? pooch sakte hain. Price poochne ke liye How much is this bag? ya How much are these apples? ka pattern hai. Countable cheezon ki tadaad ke liye How many + plural noun hai. Price aur tadaad ko alag samajh kar sunain; two apples aur four dollars mukhtalif maloomat hain.",
+          "rulesRomanUrdu": [
+            "Polite request: I would like two apples, please.",
+            "Availability: Do you have a blue bag?",
+            "Price: How much is this...? How much are these...?",
+            "Quantity: How many apples? Count ke sawal mein plural noun aata hai."
+          ],
+          "examples": [
+            {
+              "text": "I would like two apples, please.",
+              "meaningRomanUrdu": "Mujhe do seb chahiye, meherbani.",
+              "speech": {
+                "text": "I would like two apples, please.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Do you have a blue bag?",
+              "meaningRomanUrdu": "Kya aap ke paas neela bag hai?",
+              "speech": {
+                "text": "Do you have a blue bag?",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "How much is this book?",
+              "meaningRomanUrdu": "Is kitab ki qeemat kitni hai?",
+              "speech": {
+                "text": "How much is this book?",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "How many apples do you need?",
+              "meaningRomanUrdu": "Aap ko kitne seb chahiye?",
+              "speech": {
+                "text": "How many apples do you need?",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-shopping-vocab-0",
+              "word": "price",
+              "meaningRomanUrdu": "qeemat",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "prys"
+            },
+            {
+              "id": "en-a1-shopping-vocab-1",
+              "word": "cost",
+              "meaningRomanUrdu": "qeemat hona",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "kost"
+            },
+            {
+              "id": "en-a1-shopping-vocab-2",
+              "word": "pay",
+              "meaningRomanUrdu": "ada karna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "pay"
+            },
+            {
+              "id": "en-a1-shopping-vocab-3",
+              "word": "receipt",
+              "meaningRomanUrdu": "raseed",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "ri-SEET"
+            },
+            {
+              "id": "en-a1-shopping-vocab-4",
+              "word": "change",
+              "meaningRomanUrdu": "baqi paisay",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "chaynj"
+            }
+          ],
+          "reading": {
+            "text": "Mina is at a small shop. She says, I would like two apples, please. The shop assistant says they cost four dollars in total. Mina pays and asks for a receipt. She checks her bag before leaving. She does not buy any bread today.",
+            "meaningRomanUrdu": "Mina chhoti dukaan par hai. Woh do seb narmi se maangti hai. Dukaandar kehta hai dono ki kul qeemat chaar dollars hai. Mina paisay ada karti hai aur raseed maangti hai. Janay se pehle bag check karti hai. Woh aaj bread nahin khareedti."
+          },
+          "speakingPrompts": [
+            "Roleplay a customer and shop assistant: ask for an item, ask its price, then say thank you.",
+            "Ask a partner How many...do you need? Use apples, books or bags."
+          ],
+          "reviewTags": [
+            "shopping",
+            "negatives-questions",
+            "polite-requests"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-shopping-choice",
+              "prompt": "Choose the question that asks for a price.",
+              "explanationRomanUrdu": "Qeemat poochne ka durust sawal How much is this bag? hai.",
+              "options": [
+                {
+                  "id": "en-a1-shopping-choice-opt-0",
+                  "text": "How many is this bag?"
+                },
+                {
+                  "id": "en-a1-shopping-choice-opt-1",
+                  "text": "How much is this bag?"
+                },
+                {
+                  "id": "en-a1-shopping-choice-opt-2",
+                  "text": "Where much this bag?"
+                }
+              ],
+              "correctOptionId": "en-a1-shopping-choice-opt-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-shopping-blank",
+              "prompt": "How ___ apples do you need? Use much or many.",
+              "explanationRomanUrdu": "Apples gini ja sakti hain aur plural hain; how many chahiye.",
+              "acceptedAnswers": [
+                "many"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-shopping-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "I would like aik polite request hai, phir item aur please aata hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-shopping-order-word-1",
+                  "text": "would"
+                },
+                {
+                  "id": "en-a1-shopping-order-word-2",
+                  "text": "like"
+                },
+                {
+                  "id": "en-a1-shopping-order-word-3",
+                  "text": "two"
+                },
+                {
+                  "id": "en-a1-shopping-order-word-4",
+                  "text": "apples,"
+                },
+                {
+                  "id": "en-a1-shopping-order-word-5",
+                  "text": "please."
+                },
+                {
+                  "id": "en-a1-shopping-order-word-0",
+                  "text": "I"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-shopping-order-word-0",
+                "en-a1-shopping-order-word-1",
+                "en-a1-shopping-order-word-2",
+                "en-a1-shopping-order-word-3",
+                "en-a1-shopping-order-word-4",
+                "en-a1-shopping-order-word-5"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-shopping-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Qeemat, raseed aur baqi paisay shopping ke alag alfaaz hain.",
+              "pairs": [
+                {
+                  "id": "en-a1-shopping-pair-0",
+                  "left": "price",
+                  "right": "qeemat"
+                },
+                {
+                  "id": "en-a1-shopping-pair-1",
+                  "left": "receipt",
+                  "right": "raseed"
+                },
+                {
+                  "id": "en-a1-shopping-pair-2",
+                  "left": "change",
+                  "right": "baqi paisay"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-shopping-multi",
+              "prompt": "Choose all clear shopping questions.",
+              "explanationRomanUrdu": "Count ke liye how many apples aur price ke liye how much are these apples durust hain.",
+              "options": [
+                {
+                  "id": "en-a1-shopping-multi-opt-0",
+                  "text": "How many apples do you need?"
+                },
+                {
+                  "id": "en-a1-shopping-multi-opt-1",
+                  "text": "How much are these apples?"
+                },
+                {
+                  "id": "en-a1-shopping-multi-opt-2",
+                  "text": "How much apples you need?"
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-shopping-multi-opt-0",
+                "en-a1-shopping-multi-opt-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-shopping-listen",
+              "prompt": "How many apples does the customer buy?",
+              "explanationRomanUrdu": "Customer two apples maangta hai. Four dollars qeemat hai, tadaad nahin.",
+              "speech": {
+                "text": "I would like two apples, please. The apples cost four dollars in total. Here is your receipt. Thank you.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-shopping-listen-opt-0",
+                  "text": "Four"
+                },
+                {
+                  "id": "en-a1-shopping-listen-opt-1",
+                  "text": "One"
+                },
+                {
+                  "id": "en-a1-shopping-listen-opt-2",
+                  "text": "Two"
+                }
+              ],
+              "correctOptionId": "en-a1-shopping-listen-opt-2"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-travel",
+          "title": "Travel basics and simple directions",
+          "objectives": [
+            "Ask about a destination and a travel time.",
+            "Understand short directions with go straight and turn."
+          ],
+          "explanationRomanUrdu": "Safar mein jagah, rawangi ka waqt aur rasta poochna kaam aata hai. Where is the station? jagah aur What time does the train leave? waqt poochta hai. Excuse me se baat narmi se shuru karain. Rasta batane ke liye Go straight, turn left aur turn right jaise imperative chunks hain; in mein you aam tor par nahin bola jata. Opposite ka matlab samnay doosri taraf hai.",
+          "rulesRomanUrdu": [
+            "Excuse me, where is the station? aik narm sawal hai.",
+            "What time does the bus/train leave? rawangi ka waqt poochta hai.",
+            "Go straight; turn left; turn right. Imperative mein base verb hota hai.",
+            "Opposite the bank = bank ke samnay doosri taraf; next to = bilkul paas."
+          ],
+          "examples": [
+            {
+              "text": "Excuse me, where is the station?",
+              "meaningRomanUrdu": "Maaf kijiye, station kahan hai?",
+              "speech": {
+                "text": "Excuse me, where is the station?",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Go straight and turn left.",
+              "meaningRomanUrdu": "Seedhay jayein aur baayein murain.",
+              "speech": {
+                "text": "Go straight and turn left.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "The station is opposite the bank.",
+              "meaningRomanUrdu": "Station bank ke samnay doosri taraf hai.",
+              "speech": {
+                "text": "The station is opposite the bank.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "What time does the train leave?",
+              "meaningRomanUrdu": "Train kis waqt rawana hoti hai?",
+              "speech": {
+                "text": "What time does the train leave?",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-travel-vocab-0",
+              "word": "station",
+              "meaningRomanUrdu": "station",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "STAY-shuhn"
+            },
+            {
+              "id": "en-a1-travel-vocab-1",
+              "word": "ticket",
+              "meaningRomanUrdu": "ticket",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "TIK-it"
+            },
+            {
+              "id": "en-a1-travel-vocab-2",
+              "word": "leave",
+              "meaningRomanUrdu": "rawana hona",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "leev"
+            },
+            {
+              "id": "en-a1-travel-vocab-3",
+              "word": "turn left",
+              "meaningRomanUrdu": "baayein murna",
+              "partOfSpeech": "verb phrase",
+              "pronunciationGuide": "turn LEFT"
+            },
+            {
+              "id": "en-a1-travel-vocab-4",
+              "word": "opposite",
+              "meaningRomanUrdu": "samnay doosri taraf",
+              "partOfSpeech": "preposition",
+              "pronunciationGuide": "OP-uh-zit"
+            }
+          ],
+          "reading": {
+            "text": "Ali needs a train ticket. He asks a woman for directions to the station. She says, Go straight and turn left. The station is opposite the bank. At the station, Ali asks what time the train leaves. It leaves at ten, so he buys a ticket and waits.",
+            "meaningRomanUrdu": "Ali ko train ka ticket chahiye. Woh aik khatoon se station ka rasta poochta hai. Woh seedhay janay aur baayein murnay ko kehti hain. Station bank ke samnay doosri taraf hai. Station par Ali train ki rawangi ka waqt poochta hai. Train das bajay jati hai, is liye woh ticket leta hai aur intezar karta hai."
+          },
+          "speakingPrompts": [
+            "Roleplay asking for the station. Give two short directions and name one landmark.",
+            "Ask when a bus leaves. Give a clock time using at."
+          ],
+          "reviewTags": [
+            "travel",
+            "directions",
+            "prepositions",
+            "negatives-questions"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-travel-choice",
+              "prompt": "Which instruction means baayein murain?",
+              "explanationRomanUrdu": "Left baayein aur right daayein hota hai.",
+              "options": [
+                {
+                  "id": "en-a1-travel-choice-opt-0",
+                  "text": "Turn left."
+                },
+                {
+                  "id": "en-a1-travel-choice-opt-1",
+                  "text": "Turn right."
+                },
+                {
+                  "id": "en-a1-travel-choice-opt-2",
+                  "text": "Go straight."
+                }
+              ],
+              "correctOptionId": "en-a1-travel-choice-opt-0"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-travel-blank",
+              "prompt": "What time ___ the train leave? Use do or does.",
+              "explanationRomanUrdu": "The train singular subject hai; does ke baad leave base form rehti hai.",
+              "acceptedAnswers": [
+                "does"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-travel-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Direction do base verbs go aur turn se di gayi hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-travel-order-word-1",
+                  "text": "straight"
+                },
+                {
+                  "id": "en-a1-travel-order-word-2",
+                  "text": "and"
+                },
+                {
+                  "id": "en-a1-travel-order-word-3",
+                  "text": "turn"
+                },
+                {
+                  "id": "en-a1-travel-order-word-4",
+                  "text": "left."
+                },
+                {
+                  "id": "en-a1-travel-order-word-0",
+                  "text": "Go"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-travel-order-word-0",
+                "en-a1-travel-order-word-1",
+                "en-a1-travel-order-word-2",
+                "en-a1-travel-order-word-3",
+                "en-a1-travel-order-word-4"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-travel-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Left aur right ko rasta sunte waqt alag pehchanain.",
+              "pairs": [
+                {
+                  "id": "en-a1-travel-pair-0",
+                  "left": "turn left",
+                  "right": "baayein murain"
+                },
+                {
+                  "id": "en-a1-travel-pair-1",
+                  "left": "turn right",
+                  "right": "daayein murain"
+                },
+                {
+                  "id": "en-a1-travel-pair-2",
+                  "left": "go straight",
+                  "right": "seedhay jayein"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-travel-multi",
+              "prompt": "Choose all clear travel questions.",
+              "explanationRomanUrdu": "Where is... aur what time does...leave durust sawal hain; does leaves ghalat hai.",
+              "options": [
+                {
+                  "id": "en-a1-travel-multi-opt-0",
+                  "text": "What time the train does leaves?"
+                },
+                {
+                  "id": "en-a1-travel-multi-opt-1",
+                  "text": "Where is the station?"
+                },
+                {
+                  "id": "en-a1-travel-multi-opt-2",
+                  "text": "What time does the train leave?"
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-travel-multi-opt-1",
+                "en-a1-travel-multi-opt-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-travel-listen",
+              "prompt": "What should the traveller do after going straight?",
+              "explanationRomanUrdu": "Directions mein pehle go straight phir turn left kaha gaya hai.",
+              "speech": {
+                "text": "Excuse me, where is the station? Go straight and turn left. The station is opposite the bank.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-travel-listen-opt-0",
+                  "text": "Turn right"
+                },
+                {
+                  "id": "en-a1-travel-listen-opt-1",
+                  "text": "Turn left"
+                },
+                {
+                  "id": "en-a1-travel-listen-opt-2",
+                  "text": "Buy a book"
+                }
+              ],
+              "correctOptionId": "en-a1-travel-listen-opt-1"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-workplace",
+          "title": "Workplace routines and simple requests",
+          "objectives": [
+            "Describe a workday and ask for help politely.",
+            "Distinguish a usual work task from a task now."
+          ],
+          "explanationRomanUrdu": "Daftar ya kaam ki jagah par routine, abhi ka kaam aur saada darkhwast saaf bolna zaroori hai. I check emails every morning routine hai; I am checking an email now abhi ka kaam hai. Can you help me, please? aur Please send the report narm basic requests hain. Request ke baad thank you aur waqt ki wazahat conversation ko asaan banati hai. Apni asal job na ho to imaginary workplace se practice kar sakte hain.",
+          "rulesRomanUrdu": [
+            "Routine: I start work at nine and finish at five.",
+            "Now: She is checking the report.",
+            "Request: Can you help me, please? / Please send the email.",
+            "Deadline ka simple waqt: before lunch, at three, tomorrow morning."
+          ],
+          "examples": [
+            {
+              "text": "I check emails every morning.",
+              "meaningRomanUrdu": "Main har subah emails check karta ya karti hoon.",
+              "speech": {
+                "text": "I check emails every morning.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "She is speaking to a customer now.",
+              "meaningRomanUrdu": "Woh abhi customer se baat kar rahi hai.",
+              "speech": {
+                "text": "She is speaking to a customer now.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Can you help me, please?",
+              "meaningRomanUrdu": "Kya aap meherbani karke meri madad kar sakte hain?",
+              "speech": {
+                "text": "Can you help me, please?",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Please send the report before lunch.",
+              "meaningRomanUrdu": "Meherbani karke dopahar ke khanay se pehle report bhej dein.",
+              "speech": {
+                "text": "Please send the report before lunch.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-workplace-vocab-0",
+              "word": "send",
+              "meaningRomanUrdu": "bhejna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "send"
+            },
+            {
+              "id": "en-a1-workplace-vocab-1",
+              "word": "check",
+              "meaningRomanUrdu": "jaanchna / dekhna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "chek"
+            },
+            {
+              "id": "en-a1-workplace-vocab-2",
+              "word": "report",
+              "meaningRomanUrdu": "report",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "ri-PORT"
+            },
+            {
+              "id": "en-a1-workplace-vocab-3",
+              "word": "customer",
+              "meaningRomanUrdu": "gahak",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "KUS-tuh-mer"
+            },
+            {
+              "id": "en-a1-workplace-vocab-4",
+              "word": "finish",
+              "meaningRomanUrdu": "khatam karna",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "FIN-ish"
+            }
+          ],
+          "reading": {
+            "text": "Mina starts work at nine. She checks emails every morning. Today she is preparing a report. Ali asks, Can you help me with this email, please? Mina says, Yes. I will help you after the meeting. She is going to send her report before lunch.",
+            "meaningRomanUrdu": "Mina nau bajay kaam shuru karti hai aur har subah emails check karti hai. Aaj woh report tayyar kar rahi hai. Ali email mein madad maangta hai. Mina kehti hai ke meeting ke baad madad karay gi. Uska dopahar ke khanay se pehle report bhejne ka irada hai."
+          },
+          "speakingPrompts": [
+            "Describe an imaginary workday with start, check and finish.",
+            "Roleplay asking a colleague for help, agreeing, and saying when you can help."
+          ],
+          "reviewTags": [
+            "workplace",
+            "common-verbs",
+            "polite-requests",
+            "present-simple",
+            "present-continuous"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-workplace-choice",
+              "prompt": "Choose a clear polite workplace request.",
+              "explanationRomanUrdu": "Can you help me, please? mein can ke baad base verb help hai.",
+              "options": [
+                {
+                  "id": "en-a1-workplace-choice-opt-0",
+                  "text": "You help now report."
+                },
+                {
+                  "id": "en-a1-workplace-choice-opt-1",
+                  "text": "Can you helping me?"
+                },
+                {
+                  "id": "en-a1-workplace-choice-opt-2",
+                  "text": "Can you help me, please?"
+                }
+              ],
+              "correctOptionId": "en-a1-workplace-choice-opt-2"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-workplace-blank",
+              "prompt": "She is ___ a report now. Use check in the -ing form.",
+              "explanationRomanUrdu": "Is ke baad chalne wale kaam ke liye checking chahiye.",
+              "acceptedAnswers": [
+                "checking"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-workplace-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Please se narmi, send se darkhwast aur before lunch se waqt bataya gaya hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-workplace-order-word-1",
+                  "text": "send"
+                },
+                {
+                  "id": "en-a1-workplace-order-word-2",
+                  "text": "the"
+                },
+                {
+                  "id": "en-a1-workplace-order-word-3",
+                  "text": "report"
+                },
+                {
+                  "id": "en-a1-workplace-order-word-4",
+                  "text": "before"
+                },
+                {
+                  "id": "en-a1-workplace-order-word-5",
+                  "text": "lunch."
+                },
+                {
+                  "id": "en-a1-workplace-order-word-0",
+                  "text": "Please"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-workplace-order-word-0",
+                "en-a1-workplace-order-word-1",
+                "en-a1-workplace-order-word-2",
+                "en-a1-workplace-order-word-3",
+                "en-a1-workplace-order-word-4",
+                "en-a1-workplace-order-word-5"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-workplace-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Yeh aam workplace verb phrases hain.",
+              "pairs": [
+                {
+                  "id": "en-a1-workplace-pair-0",
+                  "left": "send an email",
+                  "right": "email bhejna"
+                },
+                {
+                  "id": "en-a1-workplace-pair-1",
+                  "left": "check a report",
+                  "right": "report jaanchna"
+                },
+                {
+                  "id": "en-a1-workplace-pair-2",
+                  "left": "finish work",
+                  "right": "kaam khatam karna"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-workplace-multi",
+              "prompt": "Choose all correct workplace sentences.",
+              "explanationRomanUrdu": "Routine mein check aur abhi ke kaam mein is checking hai. Does checking ghalat pattern hai.",
+              "options": [
+                {
+                  "id": "en-a1-workplace-multi-opt-0",
+                  "text": "I check emails every morning."
+                },
+                {
+                  "id": "en-a1-workplace-multi-opt-1",
+                  "text": "She is checking a report now."
+                },
+                {
+                  "id": "en-a1-workplace-multi-opt-2",
+                  "text": "He does checking emails."
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-workplace-multi-opt-0",
+                "en-a1-workplace-multi-opt-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-workplace-listen",
+              "prompt": "When does the second speaker offer to help?",
+              "explanationRomanUrdu": "Madad ka waqt after the meeting hai; report abhi tayyar ho rahi hai.",
+              "speech": {
+                "text": "Can you help me with this email, please? Yes, I will help you after the meeting. I am preparing a report now.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-workplace-listen-opt-0",
+                  "text": "Before breakfast"
+                },
+                {
+                  "id": "en-a1-workplace-listen-opt-1",
+                  "text": "Right now"
+                },
+                {
+                  "id": "en-a1-workplace-listen-opt-2",
+                  "text": "After the meeting"
+                }
+              ],
+              "correctOptionId": "en-a1-workplace-listen-opt-2"
+            }
+          ]
+        },
+        {
+          "id": "en-a1-guided-conversation",
+          "title": "A short everyday conversation",
+          "objectives": [
+            "Link a routine, a past event and a future plan in a conversation.",
+            "Listen for the exact information asked for and give a short response."
+          ],
+          "explanationRomanUrdu": "Chhoti conversation mein pehle greeting, phir aik sawal aur uska jawab, aur phir munasib follow-up kaam aata hai. Sawal ka waqt samajhain: do you aam routine, did you guzra hua kaam aur are you going to future plan pooch sakta hai. Jawab mein sirf yes/no ke bajaye aik chhoti detail bhi dein. Samajh na aaye to Please say that again ya Please speak slowly kehna theek hai. Yeh self-practice hai, automatic speaking assessment nahin.",
+          "rulesRomanUrdu": [
+            "Routine: What do you do after work? I study English.",
+            "Past: What did you do yesterday? I visited my family.",
+            "Plan: When are you going to visit them? On Saturday.",
+            "Clarification: Please say that again. / Please speak slowly."
+          ],
+          "examples": [
+            {
+              "text": "What do you do after work? I study English.",
+              "meaningRomanUrdu": "Aap kaam ke baad kya karte hain? Main English parhta ya parhti hoon.",
+              "speech": {
+                "text": "What do you do after work? I study English.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "What did you do yesterday? I visited my family.",
+              "meaningRomanUrdu": "Aap ne kal kya kiya? Main apne ghar walon se milne gaya ya gayi.",
+              "speech": {
+                "text": "What did you do yesterday? I visited my family.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "When are you going to travel? On Saturday.",
+              "meaningRomanUrdu": "Aap kab safar karne ka irada rakhte hain? Saturday ko.",
+              "speech": {
+                "text": "When are you going to travel? On Saturday.",
+                "languageTag": "en"
+              }
+            },
+            {
+              "text": "Please say that again.",
+              "meaningRomanUrdu": "Meherbani karke woh dobara kahain.",
+              "speech": {
+                "text": "Please say that again.",
+                "languageTag": "en"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "en-a1-guided-conversation-vocab-0",
+              "word": "conversation",
+              "meaningRomanUrdu": "guftagu",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "kon-ver-SAY-shuhn"
+            },
+            {
+              "id": "en-a1-guided-conversation-vocab-1",
+              "word": "again",
+              "meaningRomanUrdu": "dobara",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "uh-GEN"
+            },
+            {
+              "id": "en-a1-guided-conversation-vocab-2",
+              "word": "after",
+              "meaningRomanUrdu": "ke baad",
+              "partOfSpeech": "preposition",
+              "pronunciationGuide": "AF-ter"
+            },
+            {
+              "id": "en-a1-guided-conversation-vocab-3",
+              "word": "together",
+              "meaningRomanUrdu": "saath",
+              "partOfSpeech": "adverb",
+              "pronunciationGuide": "tuh-GETH-er"
+            },
+            {
+              "id": "en-a1-guided-conversation-vocab-4",
+              "word": "weekend",
+              "meaningRomanUrdu": "haftay ka aakhri hissa",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "WEEK-end"
+            }
+          ],
+          "reading": {
+            "text": "Mina and Ali meet after work. Mina asks what Ali usually does in the evening. He says he studies English. Yesterday he visited his family. Mina asks about his next visit. Ali is going to visit them on Saturday. Mina says, Have a good weekend!",
+            "meaningRomanUrdu": "Mina aur Ali kaam ke baad milte hain. Mina poochti hai ke Ali aam tor par shaam ko kya karta hai. Woh kehta hai English parhta hoon. Kal woh apne ghar walon se mila tha. Mina aglay visit ke baare mein poochti hai. Ali Saturday ko unse milne ka irada rakhta hai. Mina achay weekend ki dua deti hai."
+          },
+          "speakingPrompts": [
+            "Roleplay a greeting, a routine question, a past question and a future-plan question. Answer each with one detail.",
+            "Repeat the conversation with imaginary people. Ask for repetition once using Please say that again."
+          ],
+          "reviewTags": [
+            "guided-listening-speaking",
+            "conversation-review",
+            "daily-routines",
+            "past-simple",
+            "basic-future"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "en-a1-guided-conversation-choice",
+              "prompt": "Which question asks about a finished past action?",
+              "explanationRomanUrdu": "Did you do yesterday guzray mukammal kaam ka sawal hai.",
+              "options": [
+                {
+                  "id": "en-a1-guided-conversation-choice-opt-0",
+                  "text": "What did you do yesterday?"
+                },
+                {
+                  "id": "en-a1-guided-conversation-choice-opt-1",
+                  "text": "What do you do every day?"
+                },
+                {
+                  "id": "en-a1-guided-conversation-choice-opt-2",
+                  "text": "What are you going to do tomorrow?"
+                }
+              ],
+              "correctOptionId": "en-a1-guided-conversation-choice-opt-0"
+            },
+            {
+              "type": "fill_blank",
+              "id": "en-a1-guided-conversation-blank",
+              "prompt": "Please ___ that again. Use the verb meaning kahain.",
+              "explanationRomanUrdu": "Please say that again dobara kehne ki narm darkhwast hai.",
+              "acceptedAnswers": [
+                "say"
+              ],
+              "ignoreCase": true
+            },
+            {
+              "type": "sentence_order",
+              "id": "en-a1-guided-conversation-order",
+              "prompt": "Build the sentence.",
+              "explanationRomanUrdu": "Did helper ke baad main verb do base form mein hai.",
+              "tokens": [
+                {
+                  "id": "en-a1-guided-conversation-order-word-1",
+                  "text": "did"
+                },
+                {
+                  "id": "en-a1-guided-conversation-order-word-2",
+                  "text": "you"
+                },
+                {
+                  "id": "en-a1-guided-conversation-order-word-3",
+                  "text": "do"
+                },
+                {
+                  "id": "en-a1-guided-conversation-order-word-4",
+                  "text": "yesterday?"
+                },
+                {
+                  "id": "en-a1-guided-conversation-order-word-0",
+                  "text": "What"
+                }
+              ],
+              "correctOrder": [
+                "en-a1-guided-conversation-order-word-0",
+                "en-a1-guided-conversation-order-word-1",
+                "en-a1-guided-conversation-order-word-2",
+                "en-a1-guided-conversation-order-word-3",
+                "en-a1-guided-conversation-order-word-4"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "en-a1-guided-conversation-match",
+              "prompt": "Match each expression with its meaning.",
+              "explanationRomanUrdu": "Waqt ki expressions sun kar sawal aur jawab ka tense samajhain.",
+              "pairs": [
+                {
+                  "id": "en-a1-guided-conversation-pair-0",
+                  "left": "every day",
+                  "right": "routine ka waqt"
+                },
+                {
+                  "id": "en-a1-guided-conversation-pair-1",
+                  "left": "yesterday",
+                  "right": "guzra hua waqt"
+                },
+                {
+                  "id": "en-a1-guided-conversation-pair-2",
+                  "left": "tomorrow",
+                  "right": "aane wala waqt"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "en-a1-guided-conversation-multi",
+              "prompt": "Choose all clear conversation questions.",
+              "explanationRomanUrdu": "Are you going to travel future plan aur do you do routine ka sawal hai. Did ke baad went nahin aata.",
+              "options": [
+                {
+                  "id": "en-a1-guided-conversation-multi-opt-0",
+                  "text": "What did you went yesterday?"
+                },
+                {
+                  "id": "en-a1-guided-conversation-multi-opt-1",
+                  "text": "When are you going to travel?"
+                },
+                {
+                  "id": "en-a1-guided-conversation-multi-opt-2",
+                  "text": "What do you do after work?"
+                }
+              ],
+              "correctOptionIds": [
+                "en-a1-guided-conversation-multi-opt-1",
+                "en-a1-guided-conversation-multi-opt-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "en-a1-guided-conversation-listen",
+              "prompt": "When is Ali going to visit his family?",
+              "explanationRomanUrdu": "Ali ka plan on Saturday hai. Sawal future visit ka waqt poochta hai.",
+              "speech": {
+                "text": "Mina asks, When are you going to visit your family? Ali says, I am going to visit them on Saturday. Mina says, Have a good weekend.",
+                "languageTag": "en"
+              },
+              "options": [
+                {
+                  "id": "en-a1-guided-conversation-listen-opt-0",
+                  "text": "Yesterday"
+                },
+                {
+                  "id": "en-a1-guided-conversation-listen-opt-1",
+                  "text": "On Saturday"
+                },
+                {
+                  "id": "en-a1-guided-conversation-listen-opt-2",
+                  "text": "Every evening"
+                }
+              ],
+              "correctOptionId": "en-a1-guided-conversation-listen-opt-1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -42,7 +42,9 @@ class LessonFlowTest {
         val context = ApplicationProvider.getApplicationContext<Context>()
         database = Room.inMemoryDatabaseBuilder(context, LingoMateDatabase::class.java).build()
         repository = LearningRepository(database, {
-            listOf(context.assets.open("content/english-a0-starter.json").bufferedReader().use { it.readText() })
+            context.assets.list("content").orEmpty().filter { it.endsWith(".json") }.sorted().map { file ->
+                context.assets.open("content/$file").bufferedReader().use { it.readText() }
+            }
         })
         runBlocking { repository.installBundledContent() }
         val preferences = UserPreferences(PreferenceDataStoreFactory.create(scope = scope) {
@@ -111,6 +113,28 @@ class LessonFlowTest {
             val session = requireNotNull(database.learningDao().activeSession("en-a0-greetings"))
             assertEquals(1, database.learningDao().attempts(session.id).size)
             assertNull(database.learningDao().progress("en-a0-greetings"))
+        }
+    }
+
+    @Test fun a1GrammarLessonOpensDirectlyWhileContinueStillStartsWithA0AndAnswerResumes() {
+        click("Continue English")
+        waitFor("Continue: Letters and the alphabet")
+        compose.onNodeWithText("Continue: Letters and the alphabet").performScrollTo().assertIsDisplayed()
+        click("Open: Daily routines and the Present Simple")
+        click("Start practice")
+        click("She works in a shop.")
+        click("Check answer")
+        waitFor("Correct")
+        compose.onNodeWithContentDescription("Back").performClick()
+        click("Resume: Daily routines and the Present Simple")
+        waitFor("Correct")
+        runBlocking {
+            val session = requireNotNull(database.learningDao().activeSession("en-a1-routines"))
+            val answer = database.learningDao().attempts(session.id).single()
+            assertTrue(answer.correct)
+            assertEquals("en-a1-routines-choice", answer.exerciseId)
+            assertNull(database.learningDao().progress("en-a0-alphabet"))
+            assertNull(database.learningDao().progress("en-a1-routines"))
         }
     }
 

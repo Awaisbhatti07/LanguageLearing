@@ -6,6 +6,8 @@ Current development preview includes 11 English A0 lessons and 66 deterministic 
 
 The latest authorized run passed 37 core/40 app unit tests, debug build and lint. Physical-device audio/appearance and qualified English review remain pending. This is a partial course: English A1–B1, Fusha/Quranic lessons, complete revision and both online AI modes remain unfinished. See the progress files for exact verification evidence and remaining work.
 
+Local implementation draft: a separate A1 pack adds 18 lessons/108 activities with Roman Urdu teaching, reading/listening and guided self-speaking, plus catalog ordering by level. This new source and its regression tests have not been run or built under the current implementation-only scope. The verified APK still contains A0 only; A1 is not yet published as verified or marked complete.
+
 Start with [project status](docs/PROJECT_STATUS.md), [task queue](docs/TASK_QUEUE.md) and [resume instructions](docs/RESUME_INSTRUCTIONS.md). The complete user specification is preserved in [product requirements](docs/PRODUCT_REQUIREMENTS.md).
 
 ## Development
