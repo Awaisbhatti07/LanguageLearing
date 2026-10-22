@@ -4,7 +4,8 @@
 - Native Android only: Kotlin, Jetpack Compose, Material 3. English UI; Roman Urdu teaching explanations; correct Arabic and RTL rendering.
 - Read `docs/MASTER_PLAN.md`, `PROJECT_STATUS.md`, `TASK_QUEUE.md`, `TEST_RESULTS.md`, and `RESUME_INSTRUCTIONS.md` before continuing. Preserve existing work and Git history.
 - Work milestones in order. Record incomplete acceptance criteria; never label placeholders, unreviewed content, or unexecuted checks complete.
-- Default is implementation only. The user's latest engineering instructions require explicit authorization for tests, builds, launches and automated verification of each new development scope; “continue” alone authorizes source implementation. Earlier executed checks remain historical evidence, not permission or a pass for later changes. Read-only source/diff inspection, editing and local checkpoint commits remain allowed. Device/emulator launches, paid API use, deployment, destructive operations and external Git pushes require their own authorization.
+- On 2026-10-22 the user approved option 1 (unit tests, debug build/lint and a fresh isolated Android 36 emulator) and said “please don't ask everytime.” This is standing approval for routine project unit tests, debug builds, lint and checks on this project's fresh isolated emulator; do not repeat those permission questions unless the user narrows/revokes the scope. Use existing SDK/system images, isolate emulator data under `/private/tmp`, and target only that instance. Preserve existing AVDs/accounts/snapshots and physical devices; no SDK or voice downloads are included. Earlier results remain historical evidence, not a pass for changed source.
+- Paid APIs, deployment, destructive operations, physical-device/user-AVD operations, SDK/voice downloads and pushes outside the separately authorized normal development-branch scope still require specific authorization. Read-only inspection, source editing and local checkpoint commits remain allowed. Record actual verification evidence and limitations; qualified curriculum review cannot be inferred from automation.
 - No review agents or subagents unless explicitly requested. No unrelated changes or unnecessary dependencies.
 - Never embed API secrets, log credentials/transcripts, use destructive database fallback, reset user progress, or commit local SDK/signing configuration.
 
@@ -22,11 +23,11 @@
 - Use `develop/lingomate`. Commit completed verified changes; checkpoint incomplete work only with an explicit WIP description and accurate verification state. The user explicitly authorized pushing verified code to the development branch on 2026-10-20. Normal pushes to `origin develop/lingomate` are now allowed; no force push, main-branch update, deployment or paid API use is authorized.
 - Do not install SDKs or dependencies outside authorized scope. Use an isolated Gradle user home if the execution sandbox cannot write the default cache.
 
-## Verification commands (when authorized)
+## Routine verification commands (standing approval recorded above)
 ```sh
 ./gradlew :core:learning:test
 ./gradlew :app:testDebugUnitTest :app:assembleDebug :app:lintDebug
-# Only after device/emulator authorization:
+# Only target this project's isolated emulator; never connected user devices:
 ./gradlew :app:connectedDebugAndroidTest
 ```
 Source inspection, compilation, JVM tests, instrumentation and real-device behavior are separate evidence. Never infer a device pass from an APK build.

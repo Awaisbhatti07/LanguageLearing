@@ -4,9 +4,9 @@ Native Android language learning: English, Modern Standard Arabic and a separate
 
 Current development preview includes **74 English lessons/450 activities**: A0 has 11 lessons/66 activities, A1 has 18/108, A2 has 21/128 and B1 has 24/148. Each lesson includes reading, vocabulary, self-speaking and a listening question, using optional installed offline device voices. Listening keeps transcripts hidden until the learner chooses reading or saves an answer; reading alternatives stay separately recorded after reopening. Answers, resumable sessions and progress are stored locally through versioned content/database upgrades. The course lists A0 through B1 in order while allowing direct topic access.
 
-Latest authorized B1 verification passed **60 core/55 app unit tests (115 total)**, debug build and lint. The initial app-test worker stalled; an isolated case and full app rerun passed without source changes. All four packs were inspected in the APK. Physical-device audio/appearance and qualified English review remain pending; no completed/certified level is claimed.
+The latest lesson-flow checks passed **56 app tests**, debug build and lint; unchanged core coverage remains **60 passing UP-TO-DATE tests**. Every new lesson step starts at the top. Android 36 runtime inspection also found and fixed status-bar contrast when the app theme differs from the device theme. The corrected APK retains all four source-identical packs.
 
-The local lesson-flow update gives each study/practice/feedback/results step its own scroll position so a new question starts at the top. This source change and its regression have not been tested/built; the existing APK/115-test report still applies to the prior B1 checkpoint. The proposed next checks and remaining human-review gates are in [M4 acceptance](docs/M4_ACCEPTANCE.md).
+Approved checks on a fresh offline Android 36 emulator have exercised A0 answers/results, persisted feedback and reading alternatives, actual TTS completion, themes and settings. Enlarged-font/paragraph acceptance is in progress; exact observations and remaining limits are in [M4 acceptance](docs/M4_ACCEPTANCE.md). Physical audio quality and qualified English/Roman Urdu review remain pending; no completed/certified level is claimed.
 
 A2 includes two paragraph self-practice tasks with explicit local saving, self-review checklists and example responses. Writing receives no automatic grammar/quality score and does not change quiz points. A2 covers experiences/past events, future/modals, comparisons/conditionals, phrasal verbs and connected communication/roleplay.
 
@@ -25,6 +25,6 @@ Start with [project status](docs/PROJECT_STATUS.md), [task queue](docs/TASK_QUEU
 ./gradlew :app:testDebugUnitTest :app:assembleDebug :app:lintDebug
 ```
 
-Run verification commands only after explicit authorization for the current scope, per `AGENTS.md`. Actual executed checks and limits are in [test results](docs/TEST_RESULTS.md). The current debug APK at `app/build/outputs/apk/debug/app-debug.apk` contains A0–B1 and six saved paragraph self-practice tasks; it has not been installed or inspected on a device.
+Routine project unit tests, debug builds, lint and this project's isolated emulator have standing user approval, per `AGENTS.md`; do not repeat those permission prompts. Actual executed checks and limits are in [test results](docs/TEST_RESULTS.md). The current debug APK at `app/build/outputs/apk/debug/app-debug.apk` contains A0–B1 and six saved paragraph self-practice tasks; it is installed on the isolated Android 36 test emulator; this does not establish physical-device/audio-quality acceptance.
 
-No account, embedded API credentials, analytics or paid service is enabled. Do not push, deploy, reset progress or activate paid APIs without authorization. Quranic material requires verified sources and licenses before inclusion.
+No account, embedded API credentials, analytics or paid service is enabled. Normal verified pushes to `develop/lingomate` are authorized. Deployment, progress resets, paid APIs and main/force pushes require separate approval. Quranic material requires verified sources and licenses before inclusion.
