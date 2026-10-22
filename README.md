@@ -6,6 +6,8 @@ Current development preview includes **74 English lessons/450 activities**: A0 h
 
 Latest authorized B1 verification passed **60 core/55 app unit tests (115 total)**, debug build and lint. The initial app-test worker stalled; an isolated case and full app rerun passed without source changes. All four packs were inspected in the APK. Physical-device audio/appearance and qualified English review remain pending; no completed/certified level is claimed.
 
+The local lesson-flow update gives each study/practice/feedback/results step its own scroll position so a new question starts at the top. This source change and its regression have not been tested/built; the existing APK/115-test report still applies to the prior B1 checkpoint. The proposed next checks and remaining human-review gates are in [M4 acceptance](docs/M4_ACCEPTANCE.md).
+
 A2 includes two paragraph self-practice tasks with explicit local saving, self-review checklists and example responses. Writing receives no automatic grammar/quality score and does not change quiz points. A2 covers experiences/past events, future/modals, comparisons/conditionals, phrasal verbs and connected communication/roleplay.
 
 B1 includes four more ungraded writing tasks. Topics cover narrative tenses, conditionals, passive/reported speech, relative/complex clauses, connected speech, stories/opinions and practical workplace/interview/presentation skills. All content awaits qualified review. Connected-speech material explains that device voices may not reproduce natural weak forms; no pronunciation grade is claimed. Full English acceptance, Fusha/Quranic lessons, complete revision and both online AI modes remain unfinished. See the progress files for exact evidence and remaining work.

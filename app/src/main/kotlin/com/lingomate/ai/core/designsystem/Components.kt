@@ -14,13 +14,15 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.key
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ScreenColumn(content: @Composable ColumnScope.() -> Unit) {
+fun ScreenColumn(scrollKey: Any? = Unit, content: @Composable ColumnScope.() -> Unit) {
+    val scrollState = key(scrollKey) { rememberScrollState() }
     Column(
-        Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(20.dp),
+        Modifier.fillMaxSize().verticalScroll(scrollState).padding(20.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp),
         content = content,
     )

@@ -194,6 +194,25 @@ class LessonFlowTest {
         }
     }
 
+    @Test fun lessonStepChangesStartAtTheTopAfterLongStudyInputAndFeedbackPages() {
+        click("Continue English")
+        click("Open: Paragraph writing: a connected short account")
+        // Starting from the study page's bottom must reveal the first activity's heading.
+        click("Start practice")
+        waitFor("Activity 1 of 7")
+        compose.onNodeWithText("Activity 1 of 7").assertIsDisplayed()
+        compose.onNodeWithText("Your paragraph").performScrollTo().performTextInput(
+            "I visited an imaginary library. We read a book and discussed it afterwards.")
+        click("Save paragraph")
+        waitFor("Paragraph saved")
+        compose.onNodeWithText("Paragraph saved").assertIsDisplayed()
+        // Feedback includes the prompt, checklist, model and explanation, with Next at its bottom.
+        click("Next activity")
+        waitFor("Activity 2 of 7")
+        compose.onNodeWithText("Activity 2 of 7").assertIsDisplayed()
+        compose.onNodeWithText("Which sentence introduces the main idea of a library-visit paragraph?").assertIsDisplayed()
+    }
+
     private fun waitFor(text: String) {
         compose.waitUntil(10_000) { compose.onAllNodesWithText(text).fetchSemanticsNodes().isNotEmpty() }
     }

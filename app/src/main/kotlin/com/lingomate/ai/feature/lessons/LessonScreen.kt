@@ -36,7 +36,9 @@ fun LessonScreen(model: LessonViewModel, onBackToCourse: () -> Unit) {
         state.failed || run == null -> ScreenColumn {
             InfoCard("Lesson could not be opened", "Your saved progress has not been reset. Try opening this lesson again.", "Try again", model::load)
         }
-        else -> ScreenColumn {
+        // Saving, playback and errors keep the current position; a new lesson step starts at its top.
+        else -> ScreenColumn(scrollKey = listOf(run.session.id, state.practice, state.feedbackPosition,
+            run.complete, run.attempts.size)) {
             val content = run.content
             SectionTitle(content.title, "Explanations in Roman Urdu · Learning material pending language review")
             if (state.writeFailed) InfoCard("Practice could not be saved", "Try your last action again. Your earlier saved answers are preserved.", "Dismiss", model::dismissWriteError)
