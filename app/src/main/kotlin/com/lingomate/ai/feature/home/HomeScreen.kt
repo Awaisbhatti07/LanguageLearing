@@ -34,7 +34,10 @@ fun HomeScreen(settings: UserSettings, learning: LearningUiState, onRetry: () ->
         val studied = learning.catalog.sessions.filter { session ->
             session.completedAt?.let { Instant.ofEpochMilli(it).atZone(zone).toLocalDate() == today } == true
         }.map { it.lessonId }.distinct().size
-        InfoCard("Today's goal · ${settings.dailyGoal} lessons", "$studied distinct lessons practised today. Start with a short lesson, practise its examples, then return for a review.")
+        InfoCard(
+            "Today's goal · ${settings.dailyGoal} ${if (settings.dailyGoal == 1) "lesson" else "lessons"}",
+            "$studied distinct ${if (studied == 1) "lesson" else "lessons"} practised today. Start with a short lesson, practise its examples, then return for a review.",
+        )
         if (learning.failed) InfoCard("Lessons could not be loaded", "Saved learning data has not been reset.", "Try again", onRetry)
         else if (learning.loading) Text("Loading your offline lessons…")
         LearningTrack.entries.forEach { TrackCard(it, learning.catalog, onTrack = onTrack) }
