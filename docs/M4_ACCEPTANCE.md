@@ -1,31 +1,34 @@
 # English M4 acceptance checkpoint
 
-Updated: 2026-10-22 (Asia/Karachi). Option 1 is authorized and running; results below distinguish completed checks from remaining gates.
+Updated: 2026-10-23 (Asia/Karachi). Representative automated/runtime checks passed as recorded below; full M4 and qualified curriculum acceptance remain incomplete.
 
-## Evidence and current source
+## Source and automated evidence
 
-- Published B1 source c39c0db/results ab008a2: 60 core/55 app tests, debug APK/lint passed. Four packs contain 74 lessons/450 activities/74 listening questions/six ungraded writing tasks. All provenance remains `PENDING_REVIEW`.
-- New source fix: each lesson step gets its own scroll state. Study → first activity, submission → feedback, Next → next activity and feedback → results start at the top. Saving/error/playback/reading-mode changes within the same step retain its position. Other screens keep their existing scroll behavior. Its long-writing Compose regression and all 56 app tests passed; unchanged core coverage remains 60 UP-TO-DATE tests. Debug build/lint passed. Actual A0 study/activity/feedback/results transitions start at the top.
-- No content IDs, answer/scoring/storage code, schema, dependencies or learner records changed. Runtime inspection exposed a separate system-bar contrast bug; MainActivity now follows the selected app theme. The corrected APK passed 56 app tests/build/lint and is installed on the isolated emulator.
+- 4672698 resets scroll only when a lesson session/step changes; saving/errors/playback retain position. Its long-writing Compose regression passed. 488446d fixes system-bar contrast when app/device themes differ. 52d6f68 fixes singular Home goal/progress labels. No content IDs/versions, grading/storage/schema, dependencies or learner records changed.
+- Initial combined core/app/build/lint command passed in 51s: **56 app tests**, 0 failures/errors/skips; unchanged **60 core tests were UP-TO-DATE**, not re-executed. Theme-fix app tests/build/lint passed in 53s; Home-fix app tests/build/lint passed in 56s, again 56 tests/0 failures/errors/skips. Lint contains only the existing newer-Gradle suggestion.
+- Verified APK: **13,969,405 bytes**, SHA-256 `001e1054ee323339766c9af546fc44c01e371e2aabedcbf7c33c01ea28dde308`. All four packaged assets match source: 74 lessons/450 activities/74 listening/six paragraphs, all `PENDING_REVIEW`. The 2026-10-23 resumption inspected/reused this artifact and existing reports; it did not rerun tests/build or install SDK/voice components.
 
-## Authorized execution scope
+## Runtime evidence
 
-1. User approved option 1 and standing routine checks on 2026-10-22 (“please don't ask everytime”). Core/app command passed in 51s; core was UP-TO-DATE, app 56 tests passed. After the system-bar fix, app tests/build/lint passed in 53s. All reports have 0 failures/errors/skips. Existing SDK/cache reused, no SDK/voice download.
-2. Authorized and created a fresh isolated emulator data directory under `/private/tmp` using the already installed Android 36 Google Play ARM64 phone image (`~/Library/Android/sdk/system-images/android-36/google_apis_playstore/arm64-v8a`). Start with a 1080×2400 display at 480 dpi (360×800 dp), then inspect enlarged fonts at 1.5× and both app themes. Existing AVD data, accounts, snapshots, physical devices and unrelated projects remain untouched. Install the resulting debug APK only on that isolated instance. Never use clear-data/uninstall/wipe commands against a user's existing installation.
-3. Record the emulator API/image, dimensions, density, theme and font scale. A pass on one installed image is limited to that image; it does not prove minimum API 26, target API 37, Redmi Note 12 or physical audio behavior.
-4. Exercise the scenarios below. Save observations/screenshots and exact failures. Fix relevant issues under standing routine-check approval; retain separate limits in AGENTS.md. No paid APIs, online AI, deployment or external messaging.
+User approved option 1 on 2026-10-22 and standing routine project checks (“please don't ask everytime”). Existing Android 36 Google Play ARM64 revision 7 image, 1080×2400/480 dpi (360×800 dp), isolated serial **emulator-5580**, ADB **5039**, no snapshots. Previous temporary AVD/evidence were cleared between sessions; resumption uses fresh synthetic data at `/private/tmp/lingomate-m4-xzzt60ol`. Existing user AVDs/accounts/snapshots/physical devices remain untouched. Wi-Fi/data both read 0 before the speech checks. The installed speech service was temporarily disabled only on this throwaway instance and re-enabled afterward.
 
-| Scenario | Acceptance to observe | Current result |
+[Persistent screenshot evidence](evidence/m4-2026-10-23/README.md) contains original PNGs and environment metadata. Earlier 2026-10-22 observations are retained in TEST_RESULTS.md; their temporary screenshots no longer exist.
+
+| Scenario | Actual observation | Limits / remaining work |
 | --- | --- | --- |
-| First launch/course | Onboarding/settings persist, A0→A1→A2→B1 order, direct grammar access, no complete-course/certification claim | Not run on device |
-| Long lesson transitions | Scroll to Start practice; first activity starts at top. Save a paragraph from the bottom; feedback heading visible. Next question/results start at top | New regression source only; unexecuted |
-| Scored practice | All six scored input types, correct/wrong feedback, resume after navigation and process termination, completion once | Android 36 A0: all six types; deliberately wrong first answer; feedback resumed after force-stop; results 5/6, reading 1/listening 0; completed course card 5/6 |
-| Paragraph practice | Explicit save, learner checks/original text, no automatic grade, six scored questions in a seven-activity run, saved text readable on next run | JVM evidence only |
-| Reading alternative | Transcript hidden first, durable reading choice before reveal, remains reading after resume/replay, no audio credit | Android 36: initial transcript hidden/options disabled, actual completed TTS unlock, reading selected and restored after force-stop, saved/result reading 1/listening 0; replay case remains JVM evidence |
-| Device TTS | Full-playback gate; stop/back/background behavior; missing voice/error recovery. Use only installed offline voices; absence is recorded, not fixed by unapproved downloads | Actual offline engine completed A0 example/question and unlocked choices. Background/stop/failure checks remain in progress; no audible quality assessment |
-| Small screen/accessibility | Dark/light, enlarged fonts, keyboard, scrolling/touch targets and Back; no clipped questions/actions or unreadable saved writing | Not run on device |
+| First launch/course | Onboarding/settings and active lesson survived the earlier APK update. A0→A1→A2 traversal observed; B1 reported-question topic opened directly with A0/A1/A2 incomplete. UI shows 74 lessons/pending review and no certification claim | Representative access; not every lesson was exercised |
+| Long transitions | A0 study/activity/feedback/results, A2 study→first activity, save-from-bottom→feedback and next-question headings began at the top. A2 first/next activities also observed at 1.5× fonts | New long-writing Compose regression additionally passed |
+| Scored practice | A0 all six types, deliberately wrong answer, restart/resume, expected 5/6 result. Fresh A2 seven-activity run finished **6/6 scored**; paragraph excluded. Review shows one completed run; Home one distinct lesson/1 of 74 | App grading/UI evidence, not expert validation of answer keys/proficiency |
+| Paragraph practice | Paced 110-character synthetic entry matched displayed field exactly, optional first checklist item saved, ungraded feedback and original text. Earlier saved feedback survived restart at 1.5× fonts | After process restart/new run, original text is present in the 1.5× study review (saved hierarchy/screenshot). Earlier rapid ADB injection delivered only a prefix; pacing resolved that helper issue without source changes |
+| Reading alternative | Hidden transcript/disabled options initially; full actual TTS completion unlocks options. Reading persists through restart in the A0 run and replay in fresh A2; feedback/results listening 0/reading 1 | No reading answer counted as listening |
+| Device TTS | Real offline engine: stop before completion and background/return kept answers locked; full completion unlocked them. Reading replay retained mode. Disabled speech service produced visible offline-voice error, reading submission still worked; service re-enabled | Back/stale-callback edge cases additionally have JVM/fake-player coverage. Audible/physical output quality was not assessed |
+| Appearance/accessibility | Dark/light plus System following device dark/light all show readable matching status/navigation icons. Theme/goal persisted after force-stop. Home/Settings/Review, keyboard, long forms and controls usable at 1.5× with scrolling; goal chips wrap | Minimum API 26, target API 37, physical/Redmi Note 12 behavior and full accessibility audit not established |
 
-An emulator can establish runtime/UI evidence and actual engine callbacks if a suitable offline voice is installed. Without listening to captured/physical output, do not claim pronunciation, volume, intelligibility, natural connected speech or audio quality was assessed.
+An emulator establishes representative runtime/UI and engine-callback evidence. No pronunciation, volume, intelligibility, natural connected-speech or audio-quality assessment is claimed. A minor Review singular-label issue is tracked in KNOWN_ISSUES.md; functionality/counts are unaffected.
+
+Final font scale restored to 1.0 and the speech service confirmed enabled, then only emulator-5580 was stopped. Temporary synthetic data is retained; persistent screenshots are committed with the checkpoint.
+
+Normal publication was attempted and rejected HTTP 403 for authenticated `aslamm14`. Source/evidence remain local until the user restores writer access. No account/remote/main/force-push change, paid service or deployment was performed.
 
 ## Qualified curriculum review — still requires a reviewer
 
