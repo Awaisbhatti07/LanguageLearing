@@ -28,7 +28,7 @@ An emulator establishes representative runtime/UI and engine-callback evidence. 
 
 Final font scale restored to 1.0 and the speech service confirmed enabled, then only emulator-5580 was stopped. Temporary synthetic data is retained; persistent screenshots are committed with the checkpoint.
 
-Normal publication was attempted and rejected HTTP 403 for authenticated `aslamm14`. Source/evidence remain local until the user restores writer access. No account/remote/main/force-push change, paid service or deployment was performed.
+The initial normal push failed HTTP 403. After the user switched authentication and requested retry, normal publication succeeded through d0c2ed2; remote hash `d0c2ed20ec611f198aa2e897dea766f52f25b1cb` was confirmed. All five saved M4 commits/fixes/evidence are published. No automatic account/remote/main/force-push change, paid service or deployment was performed.
 
 ## Qualified curriculum review — still requires a reviewer
 
