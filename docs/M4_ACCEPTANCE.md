@@ -2,7 +2,7 @@
 
 Updated: 2026-10-26 (Asia/Karachi). Representative automated/runtime checks passed as recorded below; full M4 and qualified curriculum acceptance remain incomplete.
 
-2026-10-26 continuation: UI-01 Review singular-label source is now corrected, with manual source/diff inspection only. New tests/build/lint/runtime checks have not run because SDK 37/cache remain absent; downloads need separate authorization under AGENTS.md. The recorded APK/reports/screenshots below remain evidence for the preceding published source. Keep this new correction local WIP pending verification.
+2026-10-26 continuation: UI-01 Review singular-label source is now corrected, with manual source/diff inspection only. The user has now explicitly approved restoring SDK 37/cache and downloading missing pinned build dependencies. Setup and current checks are in progress; inspect results before acceptance. The recorded APK/reports/screenshots below remain evidence for the preceding published source. Keep this new correction local WIP pending verification.
 
 ## Source and automated evidence
 
