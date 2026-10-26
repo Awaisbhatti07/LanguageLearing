@@ -32,6 +32,11 @@ tasks.withType<org.gradle.api.tasks.testing.Test>().configureEach {
     systemProperty("lingomate.schemas", file("schemas").absolutePath)
     // Prevent Android/Compose test classes from sharing process-level sandbox state.
     forkEvery = 1
+    // Mitigate observed Robolectric worker spins on ARM64 macOS; the JVM cause is unconfirmed.
+    // This limits host-test optimization only and does not change Android runtime behavior.
+    if (System.getProperty("os.name") == "Mac OS X" && System.getProperty("os.arch") == "aarch64") {
+        jvmArgs("-XX:TieredStopAtLevel=1")
+    }
 }
 
 dependencies {

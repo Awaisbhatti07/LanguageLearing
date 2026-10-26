@@ -49,7 +49,7 @@ fun LessonScreen(model: LessonViewModel, onBackToCourse: () -> Unit) {
                     val attempt = run.attempts[feedback]
                     val answer = ContentCodec.json.decodeFromString<ExerciseAnswer>(attempt.answerPayload)
                     if (exercise is Exercise.ParagraphWriting && answer is ExerciseAnswer.ParagraphText) {
-                        ParagraphReview(exercise, answer)
+                        ParagraphReview(exercise, answer, languageTag = languageTag)
                     } else {
                         val grade = ExerciseGrader.grade(exercise, answer)
                         if (languageTag == "ar") StudyTextCard(grade.expectedAnswer, grade.explanationRomanUrdu,
@@ -73,7 +73,7 @@ fun LessonScreen(model: LessonViewModel, onBackToCourse: () -> Unit) {
                         val exercise = content.exercises[index]
                         if (exercise is Exercise.ParagraphWriting) {
                             val answer = ContentCodec.json.decodeFromString<ExerciseAnswer>(attempt.answerPayload) as ExerciseAnswer.ParagraphText
-                            ParagraphReview(exercise, answer)
+                            ParagraphReview(exercise, answer, languageTag = languageTag)
                         }
                     }
                     if (content.exercises.any { it is Exercise.ListeningChoice }) {
@@ -102,7 +102,7 @@ fun LessonScreen(model: LessonViewModel, onBackToCourse: () -> Unit) {
                     content.reading?.let { StudyTextCard(it.text, it.meaningRomanUrdu, languageTag, "Read and understand") }
                     InfoCard("Say it in your own words", content.speakingPrompts.joinToString("\n\n") + "\n\nSelf-practice only. No recording or pronunciation score.")
                     state.savedParagraphs.forEach { paragraph ->
-                        ParagraphReview(paragraph.exercise, paragraph.answer, "Most recent saved paragraph")
+                        ParagraphReview(paragraph.exercise, paragraph.answer, "Most recent saved paragraph", languageTag)
                     }
                     Button(onClick = model::startPractice, modifier = Modifier.fillMaxWidth()) { Text(if (run.attempts.isEmpty()) "Start practice" else "Resume practice") }
                 }

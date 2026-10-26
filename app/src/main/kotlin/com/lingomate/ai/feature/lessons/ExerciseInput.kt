@@ -53,6 +53,8 @@ fun ExerciseInput(
                 Text("Write your paragraph, then review the checklist yourself. Your text and checks are stored when you tap Save paragraph. Save before leaving this activity.")
                 OutlinedTextField(value = text, onValueChange = { if (it.length <= MAX_PARAGRAPH_CHARACTERS) text = it },
                     enabled = !saving, label = { Text("Your paragraph") }, minLines = 5,
+                    textStyle = MaterialTheme.typography.bodyLarge.copy(
+                        textDirection = if (languageTag == "ar") TextDirection.Rtl else TextDirection.Ltr),
                     supportingText = { Text("${text.length}/$MAX_PARAGRAPH_CHARACTERS characters") }, modifier = Modifier.fillMaxWidth())
                 Text("Self-review checklist", style = MaterialTheme.typography.titleMedium)
                 exercise.checklist.forEach { criterion ->

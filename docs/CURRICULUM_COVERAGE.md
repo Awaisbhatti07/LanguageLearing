@@ -15,8 +15,8 @@ Coverage is based on the user's specification; an authored lesson must have obje
 | --- | --- | --- | --- |
 | A0 | Alphabet; joining/shapes; sounds; fatha/kasra/damma; sukoon/shaddah/tanween; madd; reading; greetings; basic nouns/verbs/sentences | Draft v1: 12 lessons/72 activities, including 12 listening questions; 67 core/61 app tests and APK/lint passed. Focused Android 36 study/RTL/1.5×/selected-answer/feedback-restart passed; exact scope under evidence/m5-2026-10-26 | PENDING_REVIEW; qualified Fusha/phonetic and physical-audio acceptance pending |
 | A1 | Personal/demonstrative pronouns; gender; singular/plural; word classes; nominal/verbal sentences; past/present; questions/negation; prepositions; daily vocabulary/conversation | Draft v1: 18 lessons/108 activities in four units; 18 listening questions. 74 core/65 app tests and build/lint passed; focused Android 36 A1 boundary/RTL/1.5×/feedback-restart/earlier-progress check passed | PENDING_REVIEW; qualified Fusha/phonetic and physical-audio acceptance pending |
-| A2 | Conjugation; verb forms; attached pronouns; idafah; adjective agreement; imperatives; sentence patterns; roots; reading/listening/speaking | TODO | Pending |
-| B1 | Applied Nahw/Sarf; intermediate verbs; connectors/relationships; passages; listening; descriptions/opinions; Fusha conversation; writing | TODO | Pending |
+| A2 | Conjugation; verb forms; attached pronouns; idafah; adjective agreement; imperatives; sentence patterns; roots; reading/listening/speaking | Draft v1: 20 lessons/122 activities, 20 listening questions and two ungraded Arabic writing tasks; shared 83-core/71-app batch and APK/lint passed; focused Android 36 paragraph/model RTL/1.5×/restart passed | PENDING_REVIEW; qualified Arabic/physical audio pending |
+| B1 | Applied Nahw/Sarf; intermediate verbs; connectors/relationships; passages; listening; descriptions/opinions; Fusha conversation; writing | Draft v1: 22 lessons/136 activities, 22 listening questions and four ungraded Arabic writing tasks; shared 83-core/71-app batch and APK/lint passed; Arabic B1 save/resume/RTL passed Compose | PENDING_REVIEW; qualified Arabic/physical audio pending |
 
 ## Quranic Arabic
 No Quranic material is approved or bundled yet. Source/license acquisition, exact text/reference/word alignment, frequency method and qualified linguistic/religious review are prerequisites. Vocabulary recognition must never be labelled full ayah comprehension.
@@ -161,3 +161,57 @@ Each lesson has at least four Arabic examples with matching Arabic speech refere
 | ar-a1-guided-conversation | Integrated introduction/action/question/negation/repetition request |
 
 Human/physical review still needs to assess correctness, level suitability, all marked forms/keys, Roman Urdu meanings, pronunciation guides and installed Arabic voice/waqf quality. Roleplay is self-practice without recording or automatic speech assessment. Full conjugation, forms, attached-pronoun/case system and idafah remain A2/later development. No prior English/Fusha A0 asset is revised by this pack.
+
+## Fusha A2/B1 draft mapping
+
+All lessons include original Roman Urdu teaching/rules, at least four marked Arabic examples and vocabulary entries, original reading and guided self-speaking plus six scored activity types. A2 has two and B1 four additional saved self-writing tasks, excluded from quiz points. B1 readings omit most vowel marks while marked teaching examples remain available; unmarked ambiguity must be resolved from context, not a claimed automatic diacritization engine. This authored coverage is not qualified proficiency acceptance.
+
+| Stable A2 lesson ID | Main teaching/context |
+| --- | --- |
+| ar-a2-past-conjugation | Regular past person/number/gender, selected dual/plural forms |
+| ar-a2-present-conjugation | Selected present paradigms and five-form awareness |
+| ar-a2-form-two | Form II, teaching versus studying |
+| ar-a2-forms-three-four | Common Form III/IV pairs and meaning limits |
+| ar-a2-forms-five-six | Learning/teaching distinction and cooperation |
+| ar-a2-derived-forms | Common VII/VIII/X vocabulary, no invented derivations |
+| ar-a2-possessive-suffixes | Noun possession and ta marbuta attachments |
+| ar-a2-object-suffixes | Subject/object role and return references |
+| ar-a2-preposition-suffixes | Li/ila/fi/min attached forms and spelling |
+| ar-a2-idafah | First noun case and second noun genitive relationship |
+| ar-a2-adjective-agreement | Gender/case/definiteness and non-human plural agreement |
+| ar-a2-dual-plural-cases | Dual and sound-plural case markers |
+| ar-a2-imperatives | Selected addressed commands, gender/number |
+| ar-a2-prohibition | Prohibition versus negative fact |
+| ar-a2-kana | Past states and predicate marking |
+| ar-a2-relative-clauses | Alladhi/allati, subject/object links |
+| ar-a2-root-families | Taught root vocabulary families, no frequency claims |
+| ar-a2-connected-account | Sequence/reason/result, saved self-writing |
+| ar-a2-arrangement-details | Corrected room/day details and confirmation |
+| ar-a2-practical-message | Problem/alternative/confirmation, saved message |
+
+| Stable B1 lesson ID | Main teaching/context |
+| --- | --- |
+| ar-b1-case-roles | Doer/object/preposition/idafah roles before endings |
+| ar-b1-kana-inna | Contrasting kana/inna effects and states |
+| ar-b1-verb-moods | An/lan/lam and indicative/subjunctive/jussive |
+| ar-b1-five-verbs | Noon retention/deletion versus feminine-plural noon |
+| ar-b1-weak-verbs | Selected hollow/weak-final changes and context |
+| ar-b1-passive | Event focus, affected nominative subject, unknown doer |
+| ar-b1-participles | Active/passive role and meaningful vowel distinctions |
+| ar-b1-verbal-nouns | Masdar patterns and noun constructions |
+| ar-b1-agreement-order | Subject-first versus verb-first agreement |
+| ar-b1-relative-relationships | Definiteness, relative clause and return pronouns |
+| ar-b1-purpose-reason | Purpose versus cause/result, no guaranteed outcome |
+| ar-b1-time-relationships | Background/event and sequence |
+| ar-b1-conditions | Possible plans versus confirmed events |
+| ar-b1-contrast | Concession, alternatives and unchanged details |
+| ar-b1-reported-content | Source, perspective and uncertainty |
+| ar-b1-reference-links | Pronoun tracking and genuine ambiguity |
+| ar-b1-reading-evidence | Main idea/detail/not stated |
+| ar-b1-listening-intention | Interest versus final commitment |
+| ar-b1-description | Balanced place description, saved writing |
+| ar-b1-opinions | Claim/reason/example/alternative/conclusion, saved writing |
+| ar-b1-narrative | Setting/problem/response/pending outcome, saved writing |
+| ar-b1-formal-message | Context/request/unresolved detail/next step, saved writing |
+
+The four Fusha packs cover authored topics through B1 while retaining expert language, level suitability, phonetics, real voice and physical/audio review gates. Selected paradigms are not exhaustive morphology; full dictionary/grammar/SRS, assessed speaking and AI remain later milestones. No religious text or corpus frequency is bundled.

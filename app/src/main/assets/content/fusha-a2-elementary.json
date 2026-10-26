@@ -1,0 +1,4456 @@
+{
+  "schemaVersion": 1,
+  "id": "fusha-a2-elementary",
+  "version": 1,
+  "title": "Fusha Arabic A2 connected foundations",
+  "track": "FUSHA",
+  "level": "A2",
+  "provenance": {
+    "author": "Original LingoMate AI project material, AI-assisted draft",
+    "rightsNotice": "Original project-authored educational material; no third-party curriculum, recording or religious dataset copied. Distribution permission follows the project owner’s decision.",
+    "reviewStatus": "PENDING_REVIEW"
+  },
+  "units": [
+    {
+      "id": "ar-a2-verbs",
+      "title": "Conjugation and derived forms",
+      "lessons": [
+        {
+          "id": "ar-a2-past-conjugation",
+          "title": "Past verbs: person, number and gender",
+          "objectives": [
+            "Understand and use the taught past verbs: person, number and gender patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Past verb ki ending person, number aur gender ki pehchan deti hai. Regular كَتَبَ model par singular ke saath dual aur plural bhi dekhen. Yeh taught regular model hai; weak aur doubled roots ki special changes ko isi table se guess na karen.",
+          "rulesRomanUrdu": [
+            "Singular: هُوَ كَتَبَ، هِيَ كَتَبَتْ، أَنْتَ كَتَبْتَ، أَنْتِ كَتَبْتِ، أَنَا كَتَبْتُ.",
+            "Dual: هُمَا كَتَبَا do mard/mixed, هُمَا كَتَبَتَا do auratein; أَنْتُمَا كَتَبْتُمَا aap dono.",
+            "Plural: هُمْ كَتَبُوا، هُنَّ كَتَبْنَ، أَنْتُمْ كَتَبْتُمْ، أَنْتُنَّ كَتَبْتُنَّ، نَحْنُ كَتَبْنَا.",
+            "كَتَبُوا mein waaw ke baad alif likha jata hai lekin alag vowel ki tarah nahin parhte. Ending harakat ko person ke saath seekhen."
+          ],
+          "examples": [
+            {
+              "text": "نَحْنُ كَتَبْنَا رِسَالَةً.",
+              "meaningRomanUrdu": "Hum ne aik khat likha.",
+              "speech": {
+                "text": "نَحْنُ كَتَبْنَا رِسَالَةً.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هُمْ كَتَبُوا رِسَالَةً.",
+              "meaningRomanUrdu": "Un mardon/mixed group ne aik khat likha.",
+              "speech": {
+                "text": "هُمْ كَتَبُوا رِسَالَةً.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هُنَّ كَتَبْنَ رِسَالَةً.",
+              "meaningRomanUrdu": "Un auraton ne aik khat likha.",
+              "speech": {
+                "text": "هُنَّ كَتَبْنَ رِسَالَةً.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "أَنْتُمَا كَتَبْتُمَا رِسَالَةً.",
+              "meaningRomanUrdu": "Aap dono ne aik khat likha.",
+              "speech": {
+                "text": "أَنْتُمَا كَتَبْتُمَا رِسَالَةً.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-past-conjugation-word-0",
+              "word": "كَتَبْنَا",
+              "meaningRomanUrdu": "hum ne likha",
+              "partOfSpeech": "past verb",
+              "pronunciationGuide": "katabnaa"
+            },
+            {
+              "id": "ar-a2-past-conjugation-word-1",
+              "word": "كَتَبُوا",
+              "meaningRomanUrdu": "un mardon ne likha",
+              "partOfSpeech": "past verb",
+              "pronunciationGuide": "katabuu"
+            },
+            {
+              "id": "ar-a2-past-conjugation-word-2",
+              "word": "كَتَبْنَ",
+              "meaningRomanUrdu": "un auraton ne likha",
+              "partOfSpeech": "past verb",
+              "pronunciationGuide": "katabna"
+            },
+            {
+              "id": "ar-a2-past-conjugation-word-3",
+              "word": "كَتَبْتُمَا",
+              "meaningRomanUrdu": "aap dono ne likha",
+              "partOfSpeech": "past verb",
+              "pronunciationGuide": "katabtumaa"
+            }
+          ],
+          "reading": {
+            "text": "أَمْسِ كَتَبْنَا رِسَالَةً فِي الْمَكْتَبِ. هُمْ كَتَبُوا الْعُنْوَانَ. هُنَّ كَتَبْنَ السُّؤَالَ. ثُمَّ قَرَأْنَا الرِّسَالَةَ مَعًا.",
+            "meaningRomanUrdu": "Kal hum ne office mein khat likha. Mardon/mixed group ne address aur auraton ne sawal likha. Phir hum ne khat saath parha."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about past verbs: person, number and gender. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "conjugation",
+            "past-conjugation"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-past-conjugation-single-choice",
+              "prompt": "Which form matches هُنَّ (they, women)?",
+              "explanationRomanUrdu": "Hunna ke saath katabna hai; katabnaa hum aur katabuu male/mixed they hai.",
+              "options": [
+                {
+                  "id": "ar-a2-past-conjugation-choice-0",
+                  "text": "كَتَبُوا"
+                },
+                {
+                  "id": "ar-a2-past-conjugation-choice-1",
+                  "text": "كَتَبْنَ"
+                },
+                {
+                  "id": "ar-a2-past-conjugation-choice-2",
+                  "text": "كَتَبْنَا"
+                }
+              ],
+              "correctOptionId": "ar-a2-past-conjugation-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-past-conjugation-fill-blank",
+              "prompt": "Copy the fully marked form for they (women) wrote: كَتَبْنَ",
+              "explanationRomanUrdu": "Aakhri short a aur long aa ka farq rakhen: katabna versus katabnaa.",
+              "acceptedAnswers": [
+                "كَتَبْنَ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-past-conjugation-sentence-order",
+              "prompt": "Build we wrote a letter, starting with we.",
+              "explanationRomanUrdu": "Nahnu ke saath katabnaa first-person plural hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-past-conjugation-token-1",
+                  "text": "كَتَبْنَا"
+                },
+                {
+                  "id": "ar-a2-past-conjugation-token-2",
+                  "text": "رِسَالَةً"
+                },
+                {
+                  "id": "ar-a2-past-conjugation-token-0",
+                  "text": "نَحْنُ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-past-conjugation-token-0",
+                "ar-a2-past-conjugation-token-1",
+                "ar-a2-past-conjugation-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-past-conjugation-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-past-conjugation-pair-0",
+                  "left": "كَتَبْنَا",
+                  "right": "we wrote"
+                },
+                {
+                  "id": "ar-a2-past-conjugation-pair-1",
+                  "left": "كَتَبْنَ",
+                  "right": "they wrote: women"
+                },
+                {
+                  "id": "ar-a2-past-conjugation-pair-2",
+                  "left": "كَتَبْتُمَا",
+                  "right": "you two wrote"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-past-conjugation-multi-choice",
+              "prompt": "Choose both forms for two people.",
+              "explanationRomanUrdu": "Katabaa aur katabtumaa dual hain; katabuu plural hai.",
+              "options": [
+                {
+                  "id": "ar-a2-past-conjugation-multi-0",
+                  "text": "كَتَبَا"
+                },
+                {
+                  "id": "ar-a2-past-conjugation-multi-1",
+                  "text": "كَتَبْتُمَا"
+                },
+                {
+                  "id": "ar-a2-past-conjugation-multi-2",
+                  "text": "كَتَبُوا"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-past-conjugation-multi-0",
+                "ar-a2-past-conjugation-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-past-conjugation-listening-choice",
+              "prompt": "Who wrote the question?",
+              "explanationRomanUrdu": "Hunna katabna as-suaala female group ka kaam hai.",
+              "speech": {
+                "text": "هُمْ كَتَبُوا الْعُنْوَانَ. هُنَّ كَتَبْنَ السُّؤَالَ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-past-conjugation-listen-0",
+                  "text": "The male group."
+                },
+                {
+                  "id": "ar-a2-past-conjugation-listen-1",
+                  "text": "The female group."
+                },
+                {
+                  "id": "ar-a2-past-conjugation-listen-2",
+                  "text": "The speaker alone."
+                }
+              ],
+              "correctOptionId": "ar-a2-past-conjugation-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-present-conjugation",
+          "title": "Present verbs and the five forms",
+          "objectives": [
+            "Understand and use the taught present verbs and the five forms patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Mudari verb mein prefixes ke saath endings bhi person aur number batati hain. A1 ke singular forms ke baad ab dual, male/mixed plural aur feminine plural ko alag pehchanen. Afal khamsa naam paanch patterns ke liye hai, sirf paanch dictionary verbs ke liye nahin.",
+          "rulesRomanUrdu": [
+            "Singular/first plural: أَكْتُبُ، نَكْتُبُ، يَكْتُبُ، تَكْتُبُ; context se she/you masculine ka farq hota hai.",
+            "Paanch indicative patterns: يَكْتُبَانِ، تَكْتُبَانِ، يَكْتُبُونَ، تَكْتُبُونَ، تَكْتُبِينَ. Yahan noon retained hai.",
+            "أَنْتُنَّ تَكْتُبْنَ aur هُنَّ يَكْتُبْنَ feminine plural hain; in ka noon afal khamsa ka noon nahin.",
+            "أَنْ ya لَمْ ke baad afal khamsa endings badalti hain; un ki applied mood practice B1 mein hogi."
+          ],
+          "examples": [
+            {
+              "text": "هُمَا يَكْتُبَانِ.",
+              "meaningRomanUrdu": "Woh do mard/mixed likhte hain.",
+              "speech": {
+                "text": "هُمَا يَكْتُبَانِ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "أَنْتُمْ تَكْتُبُونَ.",
+              "meaningRomanUrdu": "Aap mard/mixed group likhte hain.",
+              "speech": {
+                "text": "أَنْتُمْ تَكْتُبُونَ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "أَنْتِ تَكْتُبِينَ.",
+              "meaningRomanUrdu": "Aap aik aurat likhti hain.",
+              "speech": {
+                "text": "أَنْتِ تَكْتُبِينَ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هُنَّ يَكْتُبْنَ.",
+              "meaningRomanUrdu": "Woh auratein likhti hain.",
+              "speech": {
+                "text": "هُنَّ يَكْتُبْنَ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-present-conjugation-word-0",
+              "word": "يَكْتُبَانِ",
+              "meaningRomanUrdu": "woh do likhte hain",
+              "partOfSpeech": "present verb",
+              "pronunciationGuide": "yaktubaani"
+            },
+            {
+              "id": "ar-a2-present-conjugation-word-1",
+              "word": "تَكْتُبُونَ",
+              "meaningRomanUrdu": "aap group likhte hain",
+              "partOfSpeech": "present verb",
+              "pronunciationGuide": "taktubuuna"
+            },
+            {
+              "id": "ar-a2-present-conjugation-word-2",
+              "word": "تَكْتُبِينَ",
+              "meaningRomanUrdu": "aap aurat likhti hain",
+              "partOfSpeech": "present verb",
+              "pronunciationGuide": "taktubiina"
+            },
+            {
+              "id": "ar-a2-present-conjugation-word-3",
+              "word": "يَكْتُبْنَ",
+              "meaningRomanUrdu": "woh auratein likhti hain",
+              "partOfSpeech": "present verb",
+              "pronunciationGuide": "yaktubna"
+            }
+          ],
+          "reading": {
+            "text": "الطَّالِبَانِ يَكْتُبَانِ فِي الصَّبَاحِ. أَنْتُمْ تَكْتُبُونَ فِي الْمَسَاءِ. هُنَّ يَكْتُبْنَ هُنَا. نَحْنُ نَقْرَأُ بَعْدَ الدَّرْسِ.",
+            "meaningRomanUrdu": "Do male students subah likhte hain. Aap group shaam likhte hain. Woh auratein yahan likhti hain. Hum sabaq ke baad parhte hain."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about present verbs and the five forms. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "conjugation",
+            "present-conjugation",
+            "five-verbs"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-present-conjugation-single-choice",
+              "prompt": "Which indicative form addresses a male/mixed group?",
+              "explanationRomanUrdu": "Taktubuuna addressed male/mixed plural hai.",
+              "options": [
+                {
+                  "id": "ar-a2-present-conjugation-choice-0",
+                  "text": "تَكْتُبُونَ"
+                },
+                {
+                  "id": "ar-a2-present-conjugation-choice-1",
+                  "text": "تَكْتُبِينَ"
+                },
+                {
+                  "id": "ar-a2-present-conjugation-choice-2",
+                  "text": "يَكْتُبْنَ"
+                }
+              ],
+              "correctOptionId": "ar-a2-present-conjugation-choice-0"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-present-conjugation-fill-blank",
+              "prompt": "Copy the indicative form for you, one woman, write: تَكْتُبِينَ",
+              "explanationRomanUrdu": "Yahan yaa aur aakhri noon ko retain karen.",
+              "acceptedAnswers": [
+                "تَكْتُبِينَ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-present-conjugation-sentence-order",
+              "prompt": "Build you (male group) write, starting with the pronoun.",
+              "explanationRomanUrdu": "Antum ke saath taktubuuna hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-present-conjugation-token-1",
+                  "text": "تَكْتُبُونَ"
+                },
+                {
+                  "id": "ar-a2-present-conjugation-token-0",
+                  "text": "أَنْتُمْ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-present-conjugation-token-0",
+                "ar-a2-present-conjugation-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-present-conjugation-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-present-conjugation-pair-0",
+                  "left": "يَكْتُبَانِ",
+                  "right": "they two write: masculine/mixed"
+                },
+                {
+                  "id": "ar-a2-present-conjugation-pair-1",
+                  "left": "تَكْتُبِينَ",
+                  "right": "you write: one woman"
+                },
+                {
+                  "id": "ar-a2-present-conjugation-pair-2",
+                  "left": "يَكْتُبْنَ",
+                  "right": "they write: women"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-present-conjugation-multi-choice",
+              "prompt": "Choose both of the five indicative patterns.",
+              "explanationRomanUrdu": "Feminine plural yaktubna afal khamsa mein shamil nahin.",
+              "options": [
+                {
+                  "id": "ar-a2-present-conjugation-multi-0",
+                  "text": "تَكْتُبِينَ"
+                },
+                {
+                  "id": "ar-a2-present-conjugation-multi-1",
+                  "text": "يَكْتُبَانِ"
+                },
+                {
+                  "id": "ar-a2-present-conjugation-multi-2",
+                  "text": "يَكْتُبْنَ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-present-conjugation-multi-0",
+                "ar-a2-present-conjugation-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-present-conjugation-listening-choice",
+              "prompt": "When does the addressed group write?",
+              "explanationRomanUrdu": "Antum group ke liye shaam batayi gayi hai.",
+              "speech": {
+                "text": "أَنْتُمْ تَكْتُبُونَ فِي الْمَسَاءِ. نَحْنُ نَقْرَأُ فِي الصَّبَاحِ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-present-conjugation-listen-0",
+                  "text": "In the morning."
+                },
+                {
+                  "id": "ar-a2-present-conjugation-listen-1",
+                  "text": "In the evening."
+                },
+                {
+                  "id": "ar-a2-present-conjugation-listen-2",
+                  "text": "No time is stated."
+                }
+              ],
+              "correctOptionId": "ar-a2-present-conjugation-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-form-two",
+          "title": "Form II: teaching and repeated patterns",
+          "objectives": [
+            "Understand and use the taught form ii: teaching and repeated patterns patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Root ke huroof aur verb ka pattern dono meaning mein hissa lete hain. Form II mein middle radical par shaddah aam pehchan hai: دَرَّسَ / يُدَرِّسُ. Form II kabhi causative ya repeated/intensive maani deta hai lekin har root ka naya verb khud banana sahi nahin; asal vocabulary meaning seekhen.",
+          "rulesRomanUrdu": [
+            "دَرَسَ us ne study kiya; دَرَّسَ us ne parhaya. Shaddah maani ka farq hai.",
+            "عَلَّمَ / يُعَلِّمُ teach aur نَظَّمَ / يُنَظِّمُ organize ki taught vocabulary hai.",
+            "Present pattern mein shuru vowel damma aur middle kasra dekhen: يُدَرِّسُ.",
+            "Root family sirf learning aid hai; usage/transitivity aur exact meaning dictionary/review se verify hote hain."
+          ],
+          "examples": [
+            {
+              "text": "دَرَّسَ الْمُعَلِّمُ.",
+              "meaningRomanUrdu": "Teacher ne parhaya.",
+              "speech": {
+                "text": "دَرَّسَ الْمُعَلِّمُ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هِيَ تُدَرِّسُ الْعَرَبِيَّةَ.",
+              "meaningRomanUrdu": "Woh aurat Arabic parhati hai.",
+              "speech": {
+                "text": "هِيَ تُدَرِّسُ الْعَرَبِيَّةَ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "نَظَّمَ خَالِدٌ الْكُتُبَ.",
+              "meaningRomanUrdu": "Khalid ne kitaaben tartib dein.",
+              "speech": {
+                "text": "نَظَّمَ خَالِدٌ الْكُتُبَ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هُوَ يُعَلِّمُ الطُّلَّابَ.",
+              "meaningRomanUrdu": "Woh students ko sikhata hai.",
+              "speech": {
+                "text": "هُوَ يُعَلِّمُ الطُّلَّابَ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-form-two-word-0",
+              "word": "دَرَّسَ",
+              "meaningRomanUrdu": "us ne parhaya",
+              "partOfSpeech": "Form II past",
+              "pronunciationGuide": "darrasa"
+            },
+            {
+              "id": "ar-a2-form-two-word-1",
+              "word": "يُدَرِّسُ",
+              "meaningRomanUrdu": "woh parhata hai",
+              "partOfSpeech": "Form II present",
+              "pronunciationGuide": "yudarrisu"
+            },
+            {
+              "id": "ar-a2-form-two-word-2",
+              "word": "عَلَّمَ",
+              "meaningRomanUrdu": "us ne sikhaya",
+              "partOfSpeech": "Form II past",
+              "pronunciationGuide": "allama; ayn"
+            },
+            {
+              "id": "ar-a2-form-two-word-3",
+              "word": "نَظَّمَ",
+              "meaningRomanUrdu": "us ne organize kiya",
+              "partOfSpeech": "Form II past",
+              "pronunciationGuide": "nazzama"
+            }
+          ],
+          "reading": {
+            "text": "تُدَرِّسُ سَارَةُ الْعَرَبِيَّةَ. فِي الصَّبَاحِ تُعَلِّمُ الطُّلَّابَ كَلِمَاتٍ جَدِيدَةً. بَعْدَ الدَّرْسِ تُنَظِّمُ الْكُتُبَ. خَالِدٌ يَدْرُسُ هُنَا وَلَا يُدَرِّسُ.",
+            "meaningRomanUrdu": "Sara Arabic parhati hai. Subah students ko naye words sikhati aur baad mein kitaaben tartib deti hai. Khalid yahan student ki tarah parhta hai, parhata nahin."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about form ii: teaching and repeated patterns. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "verb-forms",
+            "form-two",
+            "roots"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-form-two-single-choice",
+              "prompt": "Which verb means he taught rather than he studied?",
+              "explanationRomanUrdu": "Darrasa doubled raa ke saath taught hai; darasa studied.",
+              "options": [
+                {
+                  "id": "ar-a2-form-two-choice-0",
+                  "text": "دَرَسَ"
+                },
+                {
+                  "id": "ar-a2-form-two-choice-1",
+                  "text": "دَرَّسَ"
+                },
+                {
+                  "id": "ar-a2-form-two-choice-2",
+                  "text": "جَلَسَ"
+                }
+              ],
+              "correctOptionId": "ar-a2-form-two-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-form-two-fill-blank",
+              "prompt": "Copy the marked Form II present: يُدَرِّسُ",
+              "explanationRomanUrdu": "Damma prefix aur raa par shaddah/kasra ko preserve karen.",
+              "acceptedAnswers": [
+                "يُدَرِّسُ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-form-two-sentence-order",
+              "prompt": "Build she teaches Arabic, starting with she.",
+              "explanationRomanUrdu": "Hiya tudarrisu female subject ka present action hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-form-two-token-1",
+                  "text": "تُدَرِّسُ"
+                },
+                {
+                  "id": "ar-a2-form-two-token-2",
+                  "text": "الْعَرَبِيَّةَ"
+                },
+                {
+                  "id": "ar-a2-form-two-token-0",
+                  "text": "هِيَ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-form-two-token-0",
+                "ar-a2-form-two-token-1",
+                "ar-a2-form-two-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-form-two-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-form-two-pair-0",
+                  "left": "دَرَسَ",
+                  "right": "he studied"
+                },
+                {
+                  "id": "ar-a2-form-two-pair-1",
+                  "left": "دَرَّسَ",
+                  "right": "he taught"
+                },
+                {
+                  "id": "ar-a2-form-two-pair-2",
+                  "left": "نَظَّمَ",
+                  "right": "he organized"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-form-two-multi-choice",
+              "prompt": "Choose both taught Form II past verbs.",
+              "explanationRomanUrdu": "Darrasa aur allama mein second root consonant doubled hai.",
+              "options": [
+                {
+                  "id": "ar-a2-form-two-multi-0",
+                  "text": "دَرَّسَ"
+                },
+                {
+                  "id": "ar-a2-form-two-multi-1",
+                  "text": "عَلَّمَ"
+                },
+                {
+                  "id": "ar-a2-form-two-multi-2",
+                  "text": "دَرَسَ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-form-two-multi-0",
+                "ar-a2-form-two-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-form-two-listening-choice",
+              "prompt": "Who teaches Arabic?",
+              "explanationRomanUrdu": "Sara tudarrisu ke saath teacher hai; Khalid study karta hai.",
+              "speech": {
+                "text": "سَارَةُ تُدَرِّسُ الْعَرَبِيَّةَ. خَالِدٌ يَدْرُسُ وَلَا يُدَرِّسُ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-form-two-listen-0",
+                  "text": "Khalid."
+                },
+                {
+                  "id": "ar-a2-form-two-listen-1",
+                  "text": "Sara."
+                },
+                {
+                  "id": "ar-a2-form-two-listen-2",
+                  "text": "Both."
+                }
+              ],
+              "correctOptionId": "ar-a2-form-two-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-forms-three-four",
+          "title": "Forms III and IV in common words",
+          "objectives": [
+            "Understand and use the taught forms iii and iv in common words patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Form III aur IV ki pehchan common real verbs se karen. شَارَكَ / يُشَارِكُ participate aur أَرْسَلَ / يُرْسِلُ send hain. Pattern meaning ka ishara de sakta hai, lekin har Form III mutual aur har Form IV causative hona lazmi nahin.",
+          "rulesRomanUrdu": [
+            "Form III فَاعَلَ mein pehle radical ke baad long aa hoti hai: شَارَكَ.",
+            "سَاعَدَ / يُسَاعِدُ help ek aur common Form III pair hai.",
+            "Form IV أَفْعَلَ / يُفْعِلُ ki pehchan: أَرْسَلَ / يُرْسِلُ.",
+            "Present mein Form IV ka shuru hamza alag word ki tarah nahin rehta: yursilu. Exact marked pair ko vocabulary ke saath yaad karen."
+          ],
+          "examples": [
+            {
+              "text": "شَارَكَ خَالِدٌ فِي الدَّرْسِ.",
+              "meaningRomanUrdu": "Khalid ne lesson mein participate kiya.",
+              "speech": {
+                "text": "شَارَكَ خَالِدٌ فِي الدَّرْسِ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هِيَ تُسَاعِدُ الطَّالِبَةَ.",
+              "meaningRomanUrdu": "Woh female student ki madad karti hai.",
+              "speech": {
+                "text": "هِيَ تُسَاعِدُ الطَّالِبَةَ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "أَرْسَلَ خَالِدٌ رِسَالَةً.",
+              "meaningRomanUrdu": "Khalid ne message bheja.",
+              "speech": {
+                "text": "أَرْسَلَ خَالِدٌ رِسَالَةً.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هُوَ يُرْسِلُ رِسَالَةً.",
+              "meaningRomanUrdu": "Woh message bhejta hai.",
+              "speech": {
+                "text": "هُوَ يُرْسِلُ رِسَالَةً.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-forms-three-four-word-0",
+              "word": "شَارَكَ",
+              "meaningRomanUrdu": "participated",
+              "partOfSpeech": "Form III verb",
+              "pronunciationGuide": "shaaraka"
+            },
+            {
+              "id": "ar-a2-forms-three-four-word-1",
+              "word": "سَاعَدَ",
+              "meaningRomanUrdu": "helped",
+              "partOfSpeech": "Form III verb",
+              "pronunciationGuide": "saaada; ayn"
+            },
+            {
+              "id": "ar-a2-forms-three-four-word-2",
+              "word": "أَرْسَلَ",
+              "meaningRomanUrdu": "sent",
+              "partOfSpeech": "Form IV verb",
+              "pronunciationGuide": "arsala"
+            },
+            {
+              "id": "ar-a2-forms-three-four-word-3",
+              "word": "يُرْسِلُ",
+              "meaningRomanUrdu": "sends",
+              "partOfSpeech": "Form IV verb",
+              "pronunciationGuide": "yursilu"
+            }
+          ],
+          "reading": {
+            "text": "شَارَكَ خَالِدٌ فِي دَرْسٍ جَدِيدٍ. سَاعَدَ طَالِبًا، ثُمَّ أَرْسَلَ رِسَالَةً إِلَى الْمُعَلِّمِ. فِي الْمَسَاءِ يُرْسِلُ الْمُعَلِّمُ جَوَابًا.",
+            "meaningRomanUrdu": "Khalid ne naye lesson mein hissa liya, aik student ki madad ki aur teacher ko message bheja. Shaam teacher jawab bhejta hai."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about forms iii and iv in common words. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "verb-forms",
+            "form-three",
+            "form-four"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-forms-three-four-single-choice",
+              "prompt": "Which pair means sent / sends?",
+              "explanationRomanUrdu": "Arsala/yursilu send ka taught Form IV pair hai.",
+              "options": [
+                {
+                  "id": "ar-a2-forms-three-four-choice-0",
+                  "text": "شَارَكَ / يُشَارِكُ"
+                },
+                {
+                  "id": "ar-a2-forms-three-four-choice-1",
+                  "text": "أَرْسَلَ / يُرْسِلُ"
+                },
+                {
+                  "id": "ar-a2-forms-three-four-choice-2",
+                  "text": "دَرَسَ / يَدْرُسُ"
+                }
+              ],
+              "correctOptionId": "ar-a2-forms-three-four-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-forms-three-four-fill-blank",
+              "prompt": "Copy the marked present form sends: يُرْسِلُ",
+              "explanationRomanUrdu": "Yursilu mein prefix damma aur siin kasra hai.",
+              "acceptedAnswers": [
+                "يُرْسِلُ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-forms-three-four-sentence-order",
+              "prompt": "Build Khalid sent a message: verb first, Khalid second, message last.",
+              "explanationRomanUrdu": "Required verb-first order use karen.",
+              "tokens": [
+                {
+                  "id": "ar-a2-forms-three-four-token-1",
+                  "text": "خَالِدٌ"
+                },
+                {
+                  "id": "ar-a2-forms-three-four-token-2",
+                  "text": "رِسَالَةً"
+                },
+                {
+                  "id": "ar-a2-forms-three-four-token-0",
+                  "text": "أَرْسَلَ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-forms-three-four-token-0",
+                "ar-a2-forms-three-four-token-1",
+                "ar-a2-forms-three-four-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-forms-three-four-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-forms-three-four-pair-0",
+                  "left": "شَارَكَ",
+                  "right": "participated"
+                },
+                {
+                  "id": "ar-a2-forms-three-four-pair-1",
+                  "left": "سَاعَدَ",
+                  "right": "helped"
+                },
+                {
+                  "id": "ar-a2-forms-three-four-pair-2",
+                  "left": "أَرْسَلَ",
+                  "right": "sent"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-forms-three-four-multi-choice",
+              "prompt": "Choose both taught Form III verbs.",
+              "explanationRomanUrdu": "Shaaraka aur saaada Form III; arsala Form IV hai.",
+              "options": [
+                {
+                  "id": "ar-a2-forms-three-four-multi-0",
+                  "text": "شَارَكَ"
+                },
+                {
+                  "id": "ar-a2-forms-three-four-multi-1",
+                  "text": "سَاعَدَ"
+                },
+                {
+                  "id": "ar-a2-forms-three-four-multi-2",
+                  "text": "أَرْسَلَ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-forms-three-four-multi-0",
+                "ar-a2-forms-three-four-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-forms-three-four-listening-choice",
+              "prompt": "What did the teacher send?",
+              "explanationRomanUrdu": "Teacher ne jawaaban, aik reply, bheja.",
+              "speech": {
+                "text": "أَرْسَلَ خَالِدٌ رِسَالَةً. أَرْسَلَ الْمُعَلِّمُ جَوَابًا.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-forms-three-four-listen-0",
+                  "text": "A question."
+                },
+                {
+                  "id": "ar-a2-forms-three-four-listen-1",
+                  "text": "A reply."
+                },
+                {
+                  "id": "ar-a2-forms-three-four-listen-2",
+                  "text": "A book."
+                }
+              ],
+              "correctOptionId": "ar-a2-forms-three-four-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-forms-five-six",
+          "title": "Forms V and VI: learning and cooperation",
+          "objectives": [
+            "Understand and use the taught forms v and vi: learning and cooperation patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Form V mein ta prefix aur middle shaddah milti hai: تَعَلَّمَ / يَتَعَلَّمُ learned/learns. Form VI mein ta aur long aa: تَعَاوَنَ / يَتَعَاوَنُ cooperated/cooperates. Pattern pehchan meaning ke saath seekhen; invented root forms na banayen.",
+          "rulesRomanUrdu": [
+            "عَلَّمَ teach aur تَعَلَّمَ learn ka subject role alag hai.",
+            "تَعَلَّمْتُ main ne seekha aur أَتَعَلَّمُ main seekhta/seekhti hoon.",
+            "تَعَاوَنَ cooperation ka real vocabulary item hai; mutual meaning yahan relevant hai.",
+            "Prefix aur shaddah ko teacher/learner ke meaning se joren; صرف pattern dekhna full comprehension nahin."
+          ],
+          "examples": [
+            {
+              "text": "تَعَلَّمْتُ كَلِمَةً.",
+              "meaningRomanUrdu": "Main ne aik word seekha.",
+              "speech": {
+                "text": "تَعَلَّمْتُ كَلِمَةً.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "أَتَعَلَّمُ الْعَرَبِيَّةَ.",
+              "meaningRomanUrdu": "Main Arabic seekhta/seekhti hoon.",
+              "speech": {
+                "text": "أَتَعَلَّمُ الْعَرَبِيَّةَ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هُمْ يَتَعَاوَنُونَ.",
+              "meaningRomanUrdu": "Woh group cooperate karta hai.",
+              "speech": {
+                "text": "هُمْ يَتَعَاوَنُونَ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هِيَ تُعَلِّمُ، وَأَنَا أَتَعَلَّمُ.",
+              "meaningRomanUrdu": "Woh sikhati hai aur main seekhta/seekhti hoon.",
+              "speech": {
+                "text": "هِيَ تُعَلِّمُ، وَأَنَا أَتَعَلَّمُ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-forms-five-six-word-0",
+              "word": "تَعَلَّمَ",
+              "meaningRomanUrdu": "learned",
+              "partOfSpeech": "Form V verb",
+              "pronunciationGuide": "taallama"
+            },
+            {
+              "id": "ar-a2-forms-five-six-word-1",
+              "word": "يَتَعَلَّمُ",
+              "meaningRomanUrdu": "learns",
+              "partOfSpeech": "Form V verb",
+              "pronunciationGuide": "yataallamu"
+            },
+            {
+              "id": "ar-a2-forms-five-six-word-2",
+              "word": "تَعَاوَنَ",
+              "meaningRomanUrdu": "cooperated",
+              "partOfSpeech": "Form VI verb",
+              "pronunciationGuide": "taaawana"
+            },
+            {
+              "id": "ar-a2-forms-five-six-word-3",
+              "word": "يَتَعَاوَنُ",
+              "meaningRomanUrdu": "cooperates",
+              "partOfSpeech": "Form VI verb",
+              "pronunciationGuide": "yata aawanu"
+            }
+          ],
+          "reading": {
+            "text": "أَتَعَلَّمُ الْعَرَبِيَّةَ فِي الْمَكْتَبَةِ. الْمُعَلِّمَةُ تُعَلِّمُ كَلِمَاتٍ جَدِيدَةً. نَحْنُ نَتَعَاوَنُ فِي الْمَجْمُوعَةِ. كُلُّ طَالِبٍ يَقْرَأُ جُمْلَةً.",
+            "meaningRomanUrdu": "Main library mein Arabic seekhta/seekhti hoon. Female teacher naye words sikhati hai. Hum group mein cooperate karte hain aur har student aik sentence parhta hai."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about forms v and vi: learning and cooperation. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "verb-forms",
+            "form-five",
+            "form-six"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-forms-five-six-single-choice",
+              "prompt": "Which form means I learn?",
+              "explanationRomanUrdu": "Ataallamu learner ka action; uallimu I teach hai.",
+              "options": [
+                {
+                  "id": "ar-a2-forms-five-six-choice-0",
+                  "text": "أُعَلِّمُ"
+                },
+                {
+                  "id": "ar-a2-forms-five-six-choice-1",
+                  "text": "أَتَعَلَّمُ"
+                },
+                {
+                  "id": "ar-a2-forms-five-six-choice-2",
+                  "text": "أُرْسِلُ"
+                }
+              ],
+              "correctOptionId": "ar-a2-forms-five-six-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-forms-five-six-fill-blank",
+              "prompt": "Copy the marked first-person form I learn: أَتَعَلَّمُ",
+              "explanationRomanUrdu": "Ta aur laam ki shaddah ko preserve karen.",
+              "acceptedAnswers": [
+                "أَتَعَلَّمُ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-forms-five-six-sentence-order",
+              "prompt": "Build we cooperate in the group, starting with we.",
+              "explanationRomanUrdu": "Nahnu nata aawanu group action hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-forms-five-six-token-1",
+                  "text": "نَتَعَاوَنُ"
+                },
+                {
+                  "id": "ar-a2-forms-five-six-token-2",
+                  "text": "فِي الْمَجْمُوعَةِ"
+                },
+                {
+                  "id": "ar-a2-forms-five-six-token-0",
+                  "text": "نَحْنُ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-forms-five-six-token-0",
+                "ar-a2-forms-five-six-token-1",
+                "ar-a2-forms-five-six-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-forms-five-six-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-forms-five-six-pair-0",
+                  "left": "تَعَلَّمَ",
+                  "right": "learned"
+                },
+                {
+                  "id": "ar-a2-forms-five-six-pair-1",
+                  "left": "عَلَّمَ",
+                  "right": "taught"
+                },
+                {
+                  "id": "ar-a2-forms-five-six-pair-2",
+                  "left": "تَعَاوَنَ",
+                  "right": "cooperated"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-forms-five-six-multi-choice",
+              "prompt": "Choose both forms of learn, not teach.",
+              "explanationRomanUrdu": "Form V ke dono taught forms learning ke liye hain.",
+              "options": [
+                {
+                  "id": "ar-a2-forms-five-six-multi-0",
+                  "text": "تَعَلَّمَ"
+                },
+                {
+                  "id": "ar-a2-forms-five-six-multi-1",
+                  "text": "يَتَعَلَّمُ"
+                },
+                {
+                  "id": "ar-a2-forms-five-six-multi-2",
+                  "text": "عَلَّمَ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-forms-five-six-multi-0",
+                "ar-a2-forms-five-six-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-forms-five-six-listening-choice",
+              "prompt": "Who is learning here?",
+              "explanationRomanUrdu": "Ana ataallamu speaker ko learner batata hai.",
+              "speech": {
+                "text": "هِيَ تُعَلِّمُ الْعَرَبِيَّةَ. أَنَا أَتَعَلَّمُ هُنَا.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-forms-five-six-listen-0",
+                  "text": "The speaker."
+                },
+                {
+                  "id": "ar-a2-forms-five-six-listen-1",
+                  "text": "Only the teacher."
+                },
+                {
+                  "id": "ar-a2-forms-five-six-listen-2",
+                  "text": "No one."
+                }
+              ],
+              "correctOptionId": "ar-a2-forms-five-six-listen-0"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-derived-forms",
+          "title": "More derived forms: VII, VIII and X",
+          "objectives": [
+            "Understand and use the taught more derived forms: vii, viii and x patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Kuch common derived forms in- ya ista- se pehchane ja sakte hain. اِنْكَسَرَ break ho gaya, اِجْتَمَعَ met/gathered aur اِسْتَعْمَلَ used ko real vocabulary ke saath seekhen. Form number se har lafz ka meaning mechanically nahin nikalta.",
+          "rulesRomanUrdu": [
+            "Form VII اِنْكَسَرَ / يَنْكَسِرُ: yahan cheez tootne ka result hai.",
+            "Form VIII اِجْتَمَعَ / يَجْتَمِعُ: log milte/jama hote hain.",
+            "Form X اِسْتَعْمَلَ / يَسْتَعْمِلُ: use karna. Har Form X request ka meaning nahin deta.",
+            "In verbs ke initial alif hamzat al-wasl wale hain; complete phonetic/morphological exceptions ka review baad mein hoga."
+          ],
+          "examples": [
+            {
+              "text": "اِنْكَسَرَ الْقَلَمُ.",
+              "meaningRomanUrdu": "Qalam toot gaya.",
+              "speech": {
+                "text": "اِنْكَسَرَ الْقَلَمُ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "اِجْتَمَعَ الطُّلَّابُ.",
+              "meaningRomanUrdu": "Students mile/jama hue.",
+              "speech": {
+                "text": "اِجْتَمَعَ الطُّلَّابُ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "اِسْتَعْمَلْتُ قَلَمًا.",
+              "meaningRomanUrdu": "Main ne qalam use kiya.",
+              "speech": {
+                "text": "اِسْتَعْمَلْتُ قَلَمًا.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هُوَ يَسْتَعْمِلُ الْكِتَابَ.",
+              "meaningRomanUrdu": "Woh kitaab use karta hai.",
+              "speech": {
+                "text": "هُوَ يَسْتَعْمِلُ الْكِتَابَ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-derived-forms-word-0",
+              "word": "اِنْكَسَرَ",
+              "meaningRomanUrdu": "broke: intransitive",
+              "partOfSpeech": "Form VII verb",
+              "pronunciationGuide": "inkasara"
+            },
+            {
+              "id": "ar-a2-derived-forms-word-1",
+              "word": "اِجْتَمَعَ",
+              "meaningRomanUrdu": "met / gathered",
+              "partOfSpeech": "Form VIII verb",
+              "pronunciationGuide": "ijtamaa"
+            },
+            {
+              "id": "ar-a2-derived-forms-word-2",
+              "word": "اِسْتَعْمَلَ",
+              "meaningRomanUrdu": "used",
+              "partOfSpeech": "Form X verb",
+              "pronunciationGuide": "istamala; ayn"
+            },
+            {
+              "id": "ar-a2-derived-forms-word-3",
+              "word": "يَسْتَعْمِلُ",
+              "meaningRomanUrdu": "uses",
+              "partOfSpeech": "Form X verb",
+              "pronunciationGuide": "yastamilu"
+            }
+          ],
+          "reading": {
+            "text": "اِجْتَمَعَ الطُّلَّابُ فِي الْمَكْتَبَةِ. اِسْتَعْمَلَ خَالِدٌ كِتَابًا جَدِيدًا. اِنْكَسَرَ قَلَمٌ، فَاسْتَعْمَلَ قَلَمًا آخَرَ. ثُمَّ بَدَأَ الدَّرْسُ.",
+            "meaningRomanUrdu": "Students library mein mile. Khalid ne nayi kitaab use ki. Aik qalam toot gaya, is liye us ne doosra qalam use kiya. Phir lesson shuru hua."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about more derived forms: vii, viii and x. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "verb-forms",
+            "derived-forms"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-derived-forms-single-choice",
+              "prompt": "Which verb means used?",
+              "explanationRomanUrdu": "Istamala use karne ka taught verb hai.",
+              "options": [
+                {
+                  "id": "ar-a2-derived-forms-choice-0",
+                  "text": "اِجْتَمَعَ"
+                },
+                {
+                  "id": "ar-a2-derived-forms-choice-1",
+                  "text": "اِنْكَسَرَ"
+                },
+                {
+                  "id": "ar-a2-derived-forms-choice-2",
+                  "text": "اِسْتَعْمَلَ"
+                }
+              ],
+              "correctOptionId": "ar-a2-derived-forms-choice-2"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-derived-forms-fill-blank",
+              "prompt": "Copy the marked present form uses: يَسْتَعْمِلُ",
+              "explanationRomanUrdu": "Yastamilu ke ayn aur kasra ko preserve karen.",
+              "acceptedAnswers": [
+                "يَسْتَعْمِلُ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-derived-forms-sentence-order",
+              "prompt": "Build the pen broke, using verb-first order.",
+              "explanationRomanUrdu": "Inkasara intransitive result batata hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-derived-forms-token-1",
+                  "text": "الْقَلَمُ"
+                },
+                {
+                  "id": "ar-a2-derived-forms-token-0",
+                  "text": "اِنْكَسَرَ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-derived-forms-token-0",
+                "ar-a2-derived-forms-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-derived-forms-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-derived-forms-pair-0",
+                  "left": "اِنْكَسَرَ",
+                  "right": "broke by itself / became broken"
+                },
+                {
+                  "id": "ar-a2-derived-forms-pair-1",
+                  "left": "اِجْتَمَعَ",
+                  "right": "met / gathered"
+                },
+                {
+                  "id": "ar-a2-derived-forms-pair-2",
+                  "left": "اِسْتَعْمَلَ",
+                  "right": "used"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-derived-forms-multi-choice",
+              "prompt": "Choose both taught past verbs beginning with hamzat al-wasl.",
+              "explanationRomanUrdu": "Ijtamaa aur istamala yahan wasl; arsala ka hamza qat hai.",
+              "options": [
+                {
+                  "id": "ar-a2-derived-forms-multi-0",
+                  "text": "اِجْتَمَعَ"
+                },
+                {
+                  "id": "ar-a2-derived-forms-multi-1",
+                  "text": "اِسْتَعْمَلَ"
+                },
+                {
+                  "id": "ar-a2-derived-forms-multi-2",
+                  "text": "أَرْسَلَ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-derived-forms-multi-0",
+                "ar-a2-derived-forms-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-derived-forms-listening-choice",
+              "prompt": "Why did Khalid use another pen?",
+              "explanationRomanUrdu": "Pehle qalam tootne ka sabab diya gaya hai.",
+              "speech": {
+                "text": "اِنْكَسَرَ الْقَلَمُ. اِسْتَعْمَلَ خَالِدٌ قَلَمًا آخَرَ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-derived-forms-listen-0",
+                  "text": "The first pen broke."
+                },
+                {
+                  "id": "ar-a2-derived-forms-listen-1",
+                  "text": "He lost a book."
+                },
+                {
+                  "id": "ar-a2-derived-forms-listen-2",
+                  "text": "No reason is given."
+                }
+              ],
+              "correctOptionId": "ar-a2-derived-forms-listen-0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar-a2-relations",
+      "title": "Pronouns and noun relationships",
+      "lessons": [
+        {
+          "id": "ar-a2-possessive-suffixes",
+          "title": "Possession with attached pronouns",
+          "objectives": [
+            "Understand and use the taught possession with attached pronouns patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Attached pronouns noun ke aakhir lag kar possession batate hain. كِتَابِي meri kitaab, كِتَابُكَ tumhari kitaab (mard), كِتَابُكِ tumhari (aurat), كِتَابُهُ us mard ki aur كِتَابُهَا us aurat ki. Noun ki outer case ending context se badal sakti hai; suffix ki pehchan ko noun case ke saath na milayen.",
+          "rulesRomanUrdu": [
+            "Noun+suffix definite hota hai; in simple possessive nouns par الـ aur tanween nahin lagate.",
+            "هٰذَا كِتَابُنَا hamari kitaab hai; ـنَا us object se hamara relation batata hai.",
+            "Ta marbuta attachment par khuli taa ki tarah likhi jati hai: حَقِيبَةٌ se حَقِيبَتِي.",
+            "هٰذَا كِتَابُهُ aur فِي كِتَابِهِ mein noun case aur hu/hi vowel context badalte hain; sirf aik fixed ending har jagah na use karen."
+          ],
+          "examples": [
+            {
+              "text": "هٰذَا كِتَابِي.",
+              "meaningRomanUrdu": "Yeh meri kitaab hai.",
+              "speech": {
+                "text": "هٰذَا كِتَابِي.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هٰذَا كِتَابُهَا.",
+              "meaningRomanUrdu": "Yeh us aurat ki kitaab hai.",
+              "speech": {
+                "text": "هٰذَا كِتَابُهَا.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هٰذِهِ حَقِيبَتِي.",
+              "meaningRomanUrdu": "Yeh mera bag hai.",
+              "speech": {
+                "text": "هٰذِهِ حَقِيبَتِي.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "كِتَابُنَا جَدِيدٌ.",
+              "meaningRomanUrdu": "Hamari kitaab nayi hai.",
+              "speech": {
+                "text": "كِتَابُنَا جَدِيدٌ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-possessive-suffixes-word-0",
+              "word": "كِتَابِي",
+              "meaningRomanUrdu": "my book",
+              "partOfSpeech": "possessive noun",
+              "pronunciationGuide": "kitaabii"
+            },
+            {
+              "id": "ar-a2-possessive-suffixes-word-1",
+              "word": "كِتَابُهَا",
+              "meaningRomanUrdu": "her book: subject form",
+              "partOfSpeech": "possessive noun",
+              "pronunciationGuide": "kitaabuhaa"
+            },
+            {
+              "id": "ar-a2-possessive-suffixes-word-2",
+              "word": "كِتَابُنَا",
+              "meaningRomanUrdu": "our book: subject form",
+              "partOfSpeech": "possessive noun",
+              "pronunciationGuide": "kitaabunaa"
+            },
+            {
+              "id": "ar-a2-possessive-suffixes-word-3",
+              "word": "حَقِيبَتِي",
+              "meaningRomanUrdu": "my bag",
+              "partOfSpeech": "possessive noun",
+              "pronunciationGuide": "haqiibatii"
+            }
+          ],
+          "reading": {
+            "text": "كِتَابِي فِي حَقِيبَتِي. كِتَابُهَا عَلَى الْمَكْتَبِ. كِتَابُنَا جَدِيدٌ. نَقْرَأُ فِي الْمَكْتَبَةِ، ثُمَّ نَرْجِعُ إِلَى الْبَيْتِ.",
+            "meaningRomanUrdu": "Meri kitaab mere bag mein hai. Us aurat ki kitaab desk par hai. Hamari kitaab nayi hai. Hum library mein parh kar ghar lautte hain."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about possession with attached pronouns. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "pronoun-attachments",
+            "possessive-suffixes"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-possessive-suffixes-single-choice",
+              "prompt": "Which expression means her book?",
+              "explanationRomanUrdu": "Haa suffix her ko batata hai; hu his aur ii my hai.",
+              "options": [
+                {
+                  "id": "ar-a2-possessive-suffixes-choice-0",
+                  "text": "كِتَابُهُ"
+                },
+                {
+                  "id": "ar-a2-possessive-suffixes-choice-1",
+                  "text": "كِتَابُهَا"
+                },
+                {
+                  "id": "ar-a2-possessive-suffixes-choice-2",
+                  "text": "كِتَابِي"
+                }
+              ],
+              "correctOptionId": "ar-a2-possessive-suffixes-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-possessive-suffixes-fill-blank",
+              "prompt": "Copy the marked expression for my bag: حَقِيبَتِي",
+              "explanationRomanUrdu": "Ta marbuta attachment mein taa ban kar yaa se judi hai.",
+              "acceptedAnswers": [
+                "حَقِيبَتِي"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-possessive-suffixes-sentence-order",
+              "prompt": "Build this is our book, starting with this.",
+              "explanationRomanUrdu": "Kitabunaa definite possession hai; extra article nahin.",
+              "tokens": [
+                {
+                  "id": "ar-a2-possessive-suffixes-token-1",
+                  "text": "كِتَابُنَا"
+                },
+                {
+                  "id": "ar-a2-possessive-suffixes-token-0",
+                  "text": "هٰذَا"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-possessive-suffixes-token-0",
+                "ar-a2-possessive-suffixes-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-possessive-suffixes-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-possessive-suffixes-pair-0",
+                  "left": "كِتَابِي",
+                  "right": "my book"
+                },
+                {
+                  "id": "ar-a2-possessive-suffixes-pair-1",
+                  "left": "كِتَابُهُ",
+                  "right": "his book"
+                },
+                {
+                  "id": "ar-a2-possessive-suffixes-pair-2",
+                  "left": "كِتَابُهَا",
+                  "right": "her book"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-possessive-suffixes-multi-choice",
+              "prompt": "Choose both well-formed taught possessive expressions.",
+              "explanationRomanUrdu": "In taught possessive nouns ke saath al- article nahin jorta.",
+              "options": [
+                {
+                  "id": "ar-a2-possessive-suffixes-multi-0",
+                  "text": "كِتَابِي"
+                },
+                {
+                  "id": "ar-a2-possessive-suffixes-multi-1",
+                  "text": "حَقِيبَتِي"
+                },
+                {
+                  "id": "ar-a2-possessive-suffixes-multi-2",
+                  "text": "الْكِتَابِي"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-possessive-suffixes-multi-0",
+                "ar-a2-possessive-suffixes-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-possessive-suffixes-listening-choice",
+              "prompt": "Whose book is on the desk?",
+              "explanationRomanUrdu": "Kitabuhaa desk par hai.",
+              "speech": {
+                "text": "كِتَابِي فِي حَقِيبَتِي. كِتَابُهَا عَلَى الْمَكْتَبِ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-possessive-suffixes-listen-0",
+                  "text": "Mine."
+                },
+                {
+                  "id": "ar-a2-possessive-suffixes-listen-1",
+                  "text": "Hers."
+                },
+                {
+                  "id": "ar-a2-possessive-suffixes-listen-2",
+                  "text": "Ours."
+                }
+              ],
+              "correctOptionId": "ar-a2-possessive-suffixes-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-object-suffixes",
+          "title": "Object pronouns on verbs",
+          "objectives": [
+            "Understand and use the taught object pronouns on verbs patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Verb ke aakhir object pronoun woh shakhs ya cheez ho sakta hai jis par action hota hai. قَرَأْتُهُ I read it (masculine noun), قَرَأْتُهَا I read it (feminine noun). Ending ـتُ subject I aur ـهُ/ـهَا object hain; dono roles ko alag pehchanen.",
+          "rulesRomanUrdu": [
+            "كَتَبْتُ رِسَالَةً، ثُمَّ قَرَأْتُهَا: haa risaala ko refer karta hai.",
+            "قَرَأْتُ الْكِتَابَ، ثُمَّ أَرْسَلْتُهُ: hu kitab ko refer karta hai.",
+            "سَاعَدَنِي = us ne meri madad ki; first-person object mein noon protection bhi hai.",
+            "سَاعَدْتُهُ = main ne us mard ki madad ki. Subject aur object suffix swap karne se meaning badal jata hai."
+          ],
+          "examples": [
+            {
+              "text": "قَرَأْتُهُ.",
+              "meaningRomanUrdu": "Main ne usay parha: masculine object.",
+              "speech": {
+                "text": "قَرَأْتُهُ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "قَرَأْتُهَا.",
+              "meaningRomanUrdu": "Main ne usay parha: feminine object.",
+              "speech": {
+                "text": "قَرَأْتُهَا.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "سَاعَدَنِي.",
+              "meaningRomanUrdu": "Us ne meri madad ki.",
+              "speech": {
+                "text": "سَاعَدَنِي.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "سَاعَدْتُهُ.",
+              "meaningRomanUrdu": "Main ne us mard ki madad ki.",
+              "speech": {
+                "text": "سَاعَدْتُهُ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-object-suffixes-word-0",
+              "word": "قَرَأْتُهُ",
+              "meaningRomanUrdu": "I read it: masculine",
+              "partOfSpeech": "verb with object",
+              "pronunciationGuide": "qaratuhu"
+            },
+            {
+              "id": "ar-a2-object-suffixes-word-1",
+              "word": "قَرَأْتُهَا",
+              "meaningRomanUrdu": "I read it: feminine",
+              "partOfSpeech": "verb with object",
+              "pronunciationGuide": "qaratuhaa"
+            },
+            {
+              "id": "ar-a2-object-suffixes-word-2",
+              "word": "سَاعَدَنِي",
+              "meaningRomanUrdu": "he helped me",
+              "partOfSpeech": "verb with object",
+              "pronunciationGuide": "saaadanii"
+            },
+            {
+              "id": "ar-a2-object-suffixes-word-3",
+              "word": "سَاعَدْتُهُ",
+              "meaningRomanUrdu": "I helped him",
+              "partOfSpeech": "verb with object",
+              "pronunciationGuide": "saaadtuhu"
+            }
+          ],
+          "reading": {
+            "text": "كَتَبْتُ رِسَالَةً فِي الصَّبَاحِ. قَرَأْتُهَا، ثُمَّ أَرْسَلْتُهَا إِلَى الْمُعَلِّمِ. قَرَأْتُ الْكِتَابَ أَيْضًا، وَلٰكِنْ لَمْ أُرْسِلْهُ.",
+            "meaningRomanUrdu": "Main ne subah message likha, parha aur teacher ko bheja. Kitaab bhi parhi lekin usay nahin bheja."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about object pronouns on verbs. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "pronoun-attachments",
+            "object-suffixes"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-object-suffixes-single-choice",
+              "prompt": "Which suffix refers back to feminine رِسَالَةٌ?",
+              "explanationRomanUrdu": "Feminine risaala ka object reference haa hai.",
+              "options": [
+                {
+                  "id": "ar-a2-object-suffixes-choice-0",
+                  "text": "ـهُ"
+                },
+                {
+                  "id": "ar-a2-object-suffixes-choice-1",
+                  "text": "ـهَا"
+                },
+                {
+                  "id": "ar-a2-object-suffixes-choice-2",
+                  "text": "ـنِي"
+                }
+              ],
+              "correctOptionId": "ar-a2-object-suffixes-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-object-suffixes-fill-blank",
+              "prompt": "Copy the marked expression I read it (feminine): قَرَأْتُهَا",
+              "explanationRomanUrdu": "Taa ki damma subject I aur haa object ko dikhate hain.",
+              "acceptedAnswers": [
+                "قَرَأْتُهَا"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-object-suffixes-sentence-order",
+              "prompt": "Build then I sent it (feminine), starting with then.",
+              "explanationRomanUrdu": "Thumma sequence aur arsaltuhaa feminine object batata hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-object-suffixes-token-1",
+                  "text": "أَرْسَلْتُهَا"
+                },
+                {
+                  "id": "ar-a2-object-suffixes-token-0",
+                  "text": "ثُمَّ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-object-suffixes-token-0",
+                "ar-a2-object-suffixes-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-object-suffixes-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-object-suffixes-pair-0",
+                  "left": "سَاعَدَنِي",
+                  "right": "he helped me"
+                },
+                {
+                  "id": "ar-a2-object-suffixes-pair-1",
+                  "left": "سَاعَدْتُهُ",
+                  "right": "I helped him"
+                },
+                {
+                  "id": "ar-a2-object-suffixes-pair-2",
+                  "left": "قَرَأْتُهَا",
+                  "right": "I read it: feminine"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-object-suffixes-multi-choice",
+              "prompt": "Choose both expressions whose subject is I.",
+              "explanationRomanUrdu": "Taught forms mein -tu I hai; saaadanii ka subject he hai.",
+              "options": [
+                {
+                  "id": "ar-a2-object-suffixes-multi-0",
+                  "text": "سَاعَدْتُهُ"
+                },
+                {
+                  "id": "ar-a2-object-suffixes-multi-1",
+                  "text": "قَرَأْتُهَا"
+                },
+                {
+                  "id": "ar-a2-object-suffixes-multi-2",
+                  "text": "سَاعَدَنِي"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-object-suffixes-multi-0",
+                "ar-a2-object-suffixes-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-object-suffixes-listening-choice",
+              "prompt": "What was sent?",
+              "explanationRomanUrdu": "Haa ka reference risaala hai.",
+              "speech": {
+                "text": "كَتَبْتُ رِسَالَةً. قَرَأْتُهَا، ثُمَّ أَرْسَلْتُهَا.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-object-suffixes-listen-0",
+                  "text": "A book."
+                },
+                {
+                  "id": "ar-a2-object-suffixes-listen-1",
+                  "text": "The message."
+                },
+                {
+                  "id": "ar-a2-object-suffixes-listen-2",
+                  "text": "A pen."
+                }
+              ],
+              "correctOptionId": "ar-a2-object-suffixes-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-preposition-suffixes",
+          "title": "Pronouns after prepositions",
+          "objectives": [
+            "Understand and use the taught pronouns after prepositions patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Pronoun preposition ke saath jur kar bhi relation banata hai: لِي for me, لَهُ for him, لَهَا for her; مِنِّي from me. Kuch prepositions attachment par spelling/vowel badalti hain: إِلَى se إِلَيَّ aur عَلَى se عَلَيْهِ. Original form ko simply suffix jor kar hamesha sahi nahin banaya ja sakta.",
+          "rulesRomanUrdu": [
+            "فِي + هُ = فِيهِ; pehle kasra/yaa ke context mein hi sunai deta hai.",
+            "إِلَيْهِ to him aur إِلَيْهَا to her mein yaa ka spelling aur vowel pattern dekhen.",
+            "إِلَيَّ to me mein yaa doubled hai; alif maqsura wala standalone ilaa seedha retain nahin hota.",
+            "هٰذَا الْقَلَمُ لِي ownership/for-me relation batata hai. Context se translation chunein."
+          ],
+          "examples": [
+            {
+              "text": "هٰذَا الْقَلَمُ لِي.",
+              "meaningRomanUrdu": "Yeh qalam mera hai.",
+              "speech": {
+                "text": "هٰذَا الْقَلَمُ لِي.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "أَرْسَلْتُ رِسَالَةً إِلَيْهَا.",
+              "meaningRomanUrdu": "Main ne us aurat ko message bheja.",
+              "speech": {
+                "text": "أَرْسَلْتُ رِسَالَةً إِلَيْهَا.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "الْكِتَابُ فِيهِ صُوَرٌ.",
+              "meaningRomanUrdu": "Kitaab mein tasveeren hain.",
+              "speech": {
+                "text": "الْكِتَابُ فِيهِ صُوَرٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هٰذِهِ الرِّسَالَةُ مِنِّي.",
+              "meaningRomanUrdu": "Yeh message meri taraf se hai.",
+              "speech": {
+                "text": "هٰذِهِ الرِّسَالَةُ مِنِّي.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-preposition-suffixes-word-0",
+              "word": "لِي",
+              "meaningRomanUrdu": "for me / mine",
+              "partOfSpeech": "preposition with pronoun",
+              "pronunciationGuide": "lii"
+            },
+            {
+              "id": "ar-a2-preposition-suffixes-word-1",
+              "word": "إِلَيَّ",
+              "meaningRomanUrdu": "to me",
+              "partOfSpeech": "preposition with pronoun",
+              "pronunciationGuide": "ilayya"
+            },
+            {
+              "id": "ar-a2-preposition-suffixes-word-2",
+              "word": "إِلَيْهَا",
+              "meaningRomanUrdu": "to her",
+              "partOfSpeech": "preposition with pronoun",
+              "pronunciationGuide": "ilayhaa"
+            },
+            {
+              "id": "ar-a2-preposition-suffixes-word-3",
+              "word": "فِيهِ",
+              "meaningRomanUrdu": "in it: masculine",
+              "partOfSpeech": "preposition with pronoun",
+              "pronunciationGuide": "fiihi"
+            }
+          ],
+          "reading": {
+            "text": "هٰذِهِ رِسَالَةٌ مِنِّي. أَرْسَلْتُهَا إِلَيْهَا أَمْسِ. فِيهَا سُؤَالٌ عَنِ الدَّرْسِ. الْجَوَابُ لِي، وَلَيْسَ لِخَالِدٍ.",
+            "meaningRomanUrdu": "Yeh meri taraf se message hai. Main ne kal us aurat ko bheja. Is mein lesson ka sawal hai. Jawab mere liye hai, Khalid ke liye nahin."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about pronouns after prepositions. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "pronoun-attachments",
+            "preposition-suffixes"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-preposition-suffixes-single-choice",
+              "prompt": "Which marked expression means to me?",
+              "explanationRomanUrdu": "Ilayya mein doubled yaa aur first person hai.",
+              "options": [
+                {
+                  "id": "ar-a2-preposition-suffixes-choice-0",
+                  "text": "إِلَيْهِ"
+                },
+                {
+                  "id": "ar-a2-preposition-suffixes-choice-1",
+                  "text": "إِلَيَّ"
+                },
+                {
+                  "id": "ar-a2-preposition-suffixes-choice-2",
+                  "text": "لَهَا"
+                }
+              ],
+              "correctOptionId": "ar-a2-preposition-suffixes-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-preposition-suffixes-fill-blank",
+              "prompt": "Copy the marked expression to me: إِلَيَّ",
+              "explanationRomanUrdu": "Yaa ki shaddah ko preserve karen; extra standalone ilaa na likhen.",
+              "acceptedAnswers": [
+                "إِلَيَّ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-preposition-suffixes-sentence-order",
+              "prompt": "Build this pen is mine, starting with this pen.",
+              "explanationRomanUrdu": "Li ownership relation deta hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-preposition-suffixes-token-1",
+                  "text": "لِي"
+                },
+                {
+                  "id": "ar-a2-preposition-suffixes-token-0",
+                  "text": "هٰذَا الْقَلَمُ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-preposition-suffixes-token-0",
+                "ar-a2-preposition-suffixes-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-preposition-suffixes-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-preposition-suffixes-pair-0",
+                  "left": "لِي",
+                  "right": "for me"
+                },
+                {
+                  "id": "ar-a2-preposition-suffixes-pair-1",
+                  "left": "لَهَا",
+                  "right": "for her"
+                },
+                {
+                  "id": "ar-a2-preposition-suffixes-pair-2",
+                  "left": "مِنِّي",
+                  "right": "from me"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-preposition-suffixes-multi-choice",
+              "prompt": "Choose both prepositions with attached pronouns.",
+              "explanationRomanUrdu": "Ilayhaa aur fiihi attached forms hain; ilaa standalone hai.",
+              "options": [
+                {
+                  "id": "ar-a2-preposition-suffixes-multi-0",
+                  "text": "إِلَيْهَا"
+                },
+                {
+                  "id": "ar-a2-preposition-suffixes-multi-1",
+                  "text": "فِيهِ"
+                },
+                {
+                  "id": "ar-a2-preposition-suffixes-multi-2",
+                  "text": "إِلَى"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-preposition-suffixes-multi-0",
+                "ar-a2-preposition-suffixes-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-preposition-suffixes-listening-choice",
+              "prompt": "Who is the message addressed to?",
+              "explanationRomanUrdu": "Ilayhaa addressee her ko batata hai; minnii sender speaker hai.",
+              "speech": {
+                "text": "هٰذِهِ رِسَالَةٌ مِنِّي إِلَيْهَا. فِيهَا سُؤَالٌ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-preposition-suffixes-listen-0",
+                  "text": "The speaker."
+                },
+                {
+                  "id": "ar-a2-preposition-suffixes-listen-1",
+                  "text": "A woman referred to as her."
+                },
+                {
+                  "id": "ar-a2-preposition-suffixes-listen-2",
+                  "text": "Khalid, explicitly."
+                }
+              ],
+              "correctOptionId": "ar-a2-preposition-suffixes-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-idafah",
+          "title": "Idafah: connected noun phrases",
+          "objectives": [
+            "Understand and use the taught idafah: connected noun phrases patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Idafah mein pehla noun doosre noun se relation banata hai: كِتَابُ الطَّالِبِ student ki kitaab. Simple possession/type idafah mein first noun par article/tanween nahin hota aur second noun genitive hota hai. First noun ka case us ke jumle ke role par depend karta hai.",
+          "rulesRomanUrdu": [
+            "هٰذَا كِتَابُ الطَّالِبِ: first noun yahan -u, second -i.",
+            "قَرَأْتُ كِتَابَ الطَّالِبِ: object hone ki wajah se first noun -a, relation ka second noun phir -i.",
+            "فِي كِتَابِ الطَّالِبِ: preposition ke baad first noun bhi -i.",
+            "مَكْتَبَةُ الْمَدْرَسَةِ school library hai. Is simple type mein first noun ki ta marbuta connected t ke saath parhi jati hai."
+          ],
+          "examples": [
+            {
+              "text": "هٰذَا كِتَابُ الطَّالِبِ.",
+              "meaningRomanUrdu": "Yeh student ki kitaab hai.",
+              "speech": {
+                "text": "هٰذَا كِتَابُ الطَّالِبِ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "قَرَأْتُ كِتَابَ الطَّالِبِ.",
+              "meaningRomanUrdu": "Main ne student ki kitaab parhi.",
+              "speech": {
+                "text": "قَرَأْتُ كِتَابَ الطَّالِبِ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "الْقَلَمُ فِي حَقِيبَةِ الطَّالِبِ.",
+              "meaningRomanUrdu": "Qalam student ke bag mein hai.",
+              "speech": {
+                "text": "الْقَلَمُ فِي حَقِيبَةِ الطَّالِبِ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "مَكْتَبَةُ الْمَدْرَسَةِ كَبِيرَةٌ.",
+              "meaningRomanUrdu": "School ki library bari hai.",
+              "speech": {
+                "text": "مَكْتَبَةُ الْمَدْرَسَةِ كَبِيرَةٌ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-idafah-word-0",
+              "word": "كِتَابُ الطَّالِبِ",
+              "meaningRomanUrdu": "student ki kitaab",
+              "partOfSpeech": "idafah subject form",
+              "pronunciationGuide": "kitaabu at-taalibi"
+            },
+            {
+              "id": "ar-a2-idafah-word-1",
+              "word": "مَكْتَبَةُ الْمَدْرَسَةِ",
+              "meaningRomanUrdu": "school ki library",
+              "partOfSpeech": "idafah subject form",
+              "pronunciationGuide": "maktabatu al-madrasati"
+            },
+            {
+              "id": "ar-a2-idafah-word-2",
+              "word": "بَابُ الْبَيْتِ",
+              "meaningRomanUrdu": "ghar ka darwaza",
+              "partOfSpeech": "idafah subject form",
+              "pronunciationGuide": "baabu al-bayti"
+            },
+            {
+              "id": "ar-a2-idafah-word-3",
+              "word": "حَقِيبَةٌ",
+              "meaningRomanUrdu": "bag",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "haqiibatun"
+            }
+          ],
+          "reading": {
+            "text": "مَكْتَبَةُ الْمَدْرَسَةِ كَبِيرَةٌ. كِتَابُ الطَّالِبِ عَلَى الْمَكْتَبِ. قَرَأْتُ كِتَابَ الطَّالِبِ، ثُمَّ وَضَعْتُهُ فِي حَقِيبَتِي.",
+            "meaningRomanUrdu": "School library bari hai. Student ki kitaab desk par hai. Main ne student ki kitaab parhi aur apne bag mein rakhi."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about idafah: connected noun phrases. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "idafah",
+            "common-sentence-patterns"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-idafah-single-choice",
+              "prompt": "Choose the simple subject-form idafah for the student's book.",
+              "explanationRomanUrdu": "Simple idafah mein first noun par na article na tanween hai.",
+              "options": [
+                {
+                  "id": "ar-a2-idafah-choice-0",
+                  "text": "كِتَابُ الطَّالِبِ"
+                },
+                {
+                  "id": "ar-a2-idafah-choice-1",
+                  "text": "الْكِتَابُ الطَّالِبِ"
+                },
+                {
+                  "id": "ar-a2-idafah-choice-2",
+                  "text": "كِتَابٌ الطَّالِبِ"
+                }
+              ],
+              "correctOptionId": "ar-a2-idafah-choice-0"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-idafah-fill-blank",
+              "prompt": "Copy the marked second noun after كِتَابُ: الطَّالِبِ",
+              "explanationRomanUrdu": "Mudaf ilayh yahan genitive kasra hai.",
+              "acceptedAnswers": [
+                "الطَّالِبِ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-idafah-sentence-order",
+              "prompt": "Build the school library, using library then school.",
+              "explanationRomanUrdu": "First noun library aur second noun school relation hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-idafah-token-1",
+                  "text": "الْمَدْرَسَةِ"
+                },
+                {
+                  "id": "ar-a2-idafah-token-0",
+                  "text": "مَكْتَبَةُ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-idafah-token-0",
+                "ar-a2-idafah-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-idafah-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-idafah-pair-0",
+                  "left": "كِتَابُ الطَّالِبِ",
+                  "right": "the student's book"
+                },
+                {
+                  "id": "ar-a2-idafah-pair-1",
+                  "left": "بَابُ الْبَيْتِ",
+                  "right": "the house door"
+                },
+                {
+                  "id": "ar-a2-idafah-pair-2",
+                  "left": "مَكْتَبَةُ الْمَدْرَسَةِ",
+                  "right": "the school library"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-idafah-multi-choice",
+              "prompt": "Choose both taught simple idafah phrases.",
+              "explanationRomanUrdu": "First do simple idafah rules follow karte hain.",
+              "options": [
+                {
+                  "id": "ar-a2-idafah-multi-0",
+                  "text": "بَابُ الْبَيْتِ"
+                },
+                {
+                  "id": "ar-a2-idafah-multi-1",
+                  "text": "كِتَابُ الطَّالِبِ"
+                },
+                {
+                  "id": "ar-a2-idafah-multi-2",
+                  "text": "الْكِتَابُ الطَّالِبِ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-idafah-multi-0",
+                "ar-a2-idafah-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-idafah-listening-choice",
+              "prompt": "Whose book did the speaker read?",
+              "explanationRomanUrdu": "Idafah ka second noun student hai.",
+              "speech": {
+                "text": "مَكْتَبَةُ الْمَدْرَسَةِ كَبِيرَةٌ. قَرَأْتُ كِتَابَ الطَّالِبِ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-idafah-listen-0",
+                  "text": "The teacher's."
+                },
+                {
+                  "id": "ar-a2-idafah-listen-1",
+                  "text": "The student's."
+                },
+                {
+                  "id": "ar-a2-idafah-listen-2",
+                  "text": "The owner is unstated."
+                }
+              ],
+              "correctOptionId": "ar-a2-idafah-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-adjective-agreement",
+          "title": "Adjective agreement and non-human plurals",
+          "objectives": [
+            "Understand and use the taught adjective agreement and non-human plurals patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Simple descriptive noun phrase mein adjective gender, number, definiteness aur case se noun ko match karta hai. Lekin non-human plural ki common agreement feminine singular hoti hai: كُتُبٌ جَدِيدَةٌ. Human plural aur non-human plural ko aik hi automatic rule se na parhen.",
+          "rulesRomanUrdu": [
+            "قَلَمٌ جَدِيدٌ aur حَقِيبَةٌ جَدِيدَةٌ singular gender match hain.",
+            "الْقَلَمُ الْجَدِيدُ definite descriptive phrase hai; الْقَلَمُ جَدِيدٌ statement hai.",
+            "الْكُتُبُ الْجَدِيدَةُ = the new books; books non-human plural, adjective feminine singular.",
+            "فِي الْحَقِيبَةِ الْجَدِيدَةِ mein preposition ke baad noun aur adjective dono genitive hain."
+          ],
+          "examples": [
+            {
+              "text": "قَلَمٌ جَدِيدٌ.",
+              "meaningRomanUrdu": "Aik naya qalam: phrase.",
+              "speech": {
+                "text": "قَلَمٌ جَدِيدٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "حَقِيبَةٌ جَدِيدَةٌ.",
+              "meaningRomanUrdu": "Aik naya bag: phrase.",
+              "speech": {
+                "text": "حَقِيبَةٌ جَدِيدَةٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "الْكُتُبُ جَدِيدَةٌ.",
+              "meaningRomanUrdu": "Kitaaben nayi hain.",
+              "speech": {
+                "text": "الْكُتُبُ جَدِيدَةٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "فِي الْحَقِيبَةِ الْجَدِيدَةِ.",
+              "meaningRomanUrdu": "Naye bag mein.",
+              "speech": {
+                "text": "فِي الْحَقِيبَةِ الْجَدِيدَةِ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-adjective-agreement-word-0",
+              "word": "جَدِيدٌ",
+              "meaningRomanUrdu": "naya: masculine",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "jadiidun"
+            },
+            {
+              "id": "ar-a2-adjective-agreement-word-1",
+              "word": "جَدِيدَةٌ",
+              "meaningRomanUrdu": "nayi: feminine",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "jadiidatun"
+            },
+            {
+              "id": "ar-a2-adjective-agreement-word-2",
+              "word": "كُتُبٌ",
+              "meaningRomanUrdu": "books",
+              "partOfSpeech": "non-human plural noun",
+              "pronunciationGuide": "kutubun"
+            },
+            {
+              "id": "ar-a2-adjective-agreement-word-3",
+              "word": "الْجَدِيدَةِ",
+              "meaningRomanUrdu": "new: feminine genitive definite",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "al-jadiidati"
+            }
+          ],
+          "reading": {
+            "text": "الْكُتُبُ جَدِيدَةٌ. وَضَعْتُهَا فِي الْحَقِيبَةِ الْجَدِيدَةِ. الْمَكْتَبَةُ الْكَبِيرَةُ قَرِيبَةٌ. أَقْرَأُ هُنَاكَ فِي الصَّبَاحِ.",
+            "meaningRomanUrdu": "Kitaaben nayi hain. Main ne unhein naye bag mein rakha. Bari library qareeb hai. Main subah wahan parhta/parhti hoon."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about adjective agreement and non-human plurals. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "adjective-agreement",
+            "singular-plural"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-adjective-agreement-single-choice",
+              "prompt": "Which statement correctly describes non-human plural books as new?",
+              "explanationRomanUrdu": "Common non-human plural agreement feminine singular hai.",
+              "options": [
+                {
+                  "id": "ar-a2-adjective-agreement-choice-0",
+                  "text": "الْكُتُبُ جَدِيدٌ."
+                },
+                {
+                  "id": "ar-a2-adjective-agreement-choice-1",
+                  "text": "الْكُتُبُ جَدِيدَةٌ."
+                },
+                {
+                  "id": "ar-a2-adjective-agreement-choice-2",
+                  "text": "الْكُتُبُ جَدِيدُونَ."
+                }
+              ],
+              "correctOptionId": "ar-a2-adjective-agreement-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-adjective-agreement-fill-blank",
+              "prompt": "Copy the feminine marked adjective new: جَدِيدَةٌ",
+              "explanationRomanUrdu": "Jadiidatun feminine singular form hai.",
+              "acceptedAnswers": [
+                "جَدِيدَةٌ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-adjective-agreement-sentence-order",
+              "prompt": "Build in the new bag: preposition, noun, adjective.",
+              "explanationRomanUrdu": "Noun aur adjective dono shown genitive forms mein hain.",
+              "tokens": [
+                {
+                  "id": "ar-a2-adjective-agreement-token-1",
+                  "text": "الْحَقِيبَةِ"
+                },
+                {
+                  "id": "ar-a2-adjective-agreement-token-2",
+                  "text": "الْجَدِيدَةِ"
+                },
+                {
+                  "id": "ar-a2-adjective-agreement-token-0",
+                  "text": "فِي"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-adjective-agreement-token-0",
+                "ar-a2-adjective-agreement-token-1",
+                "ar-a2-adjective-agreement-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-adjective-agreement-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-adjective-agreement-pair-0",
+                  "left": "قَلَمٌ جَدِيدٌ",
+                  "right": "a new pen"
+                },
+                {
+                  "id": "ar-a2-adjective-agreement-pair-1",
+                  "left": "حَقِيبَةٌ جَدِيدَةٌ",
+                  "right": "a new bag"
+                },
+                {
+                  "id": "ar-a2-adjective-agreement-pair-2",
+                  "left": "الْكُتُبُ جَدِيدَةٌ",
+                  "right": "the books are new"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-adjective-agreement-multi-choice",
+              "prompt": "Choose both matched singular phrases.",
+              "explanationRomanUrdu": "First do noun/adjective gender ko match karte hain.",
+              "options": [
+                {
+                  "id": "ar-a2-adjective-agreement-multi-0",
+                  "text": "بَيْتٌ كَبِيرٌ"
+                },
+                {
+                  "id": "ar-a2-adjective-agreement-multi-1",
+                  "text": "مَدْرَسَةٌ كَبِيرَةٌ"
+                },
+                {
+                  "id": "ar-a2-adjective-agreement-multi-2",
+                  "text": "مَدْرَسَةٌ كَبِيرٌ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-adjective-agreement-multi-0",
+                "ar-a2-adjective-agreement-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-adjective-agreement-listening-choice",
+              "prompt": "Where were the new books put?",
+              "explanationRomanUrdu": "Haa reference books ko bag mein rakhne se jorta hai.",
+              "speech": {
+                "text": "الْكُتُبُ جَدِيدَةٌ. وَضَعْتُهَا فِي الْحَقِيبَةِ الْجَدِيدَةِ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-adjective-agreement-listen-0",
+                  "text": "On the desk."
+                },
+                {
+                  "id": "ar-a2-adjective-agreement-listen-1",
+                  "text": "In the new bag."
+                },
+                {
+                  "id": "ar-a2-adjective-agreement-listen-2",
+                  "text": "In the old house."
+                }
+              ],
+              "correctOptionId": "ar-a2-adjective-agreement-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-dual-plural-cases",
+          "title": "Dual and sound plurals in context",
+          "objectives": [
+            "Understand and use the taught dual and sound plurals in context patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Dual aur sound plurals ki endings role ke saath badalti hain. الطَّالِبَانِ do male students subject form; الطَّالِبَيْنِ object/genitive form. Sound masculine plural ـُونَ versus ـِينَ aur sound feminine plural ka accusative kasra bhi dekhen.",
+          "rulesRomanUrdu": [
+            "جَاءَ الطَّالِبَانِ: subject dual -aani; رَأَيْتُ الطَّالِبَيْنِ: object dual -ayni.",
+            "الْمُعَلِّمُونَ subject aur إِلَى الْمُعَلِّمِينَ genitive male/mixed teachers.",
+            "رَأَيْتُ الْمُعَلِّمَاتِ: sound feminine plural object par kasra, fatha nahin.",
+            "Yeh shown case forms ko sentence role se jorti hain; har plural sound pattern nahin, broken plurals alag seekhen."
+          ],
+          "examples": [
+            {
+              "text": "جَاءَ الطَّالِبَانِ.",
+              "meaningRomanUrdu": "Do male students aaye.",
+              "speech": {
+                "text": "جَاءَ الطَّالِبَانِ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "رَأَيْتُ الطَّالِبَيْنِ.",
+              "meaningRomanUrdu": "Main ne do male students dekhe.",
+              "speech": {
+                "text": "رَأَيْتُ الطَّالِبَيْنِ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "تَحَدَّثْتُ إِلَى الْمُعَلِّمِينَ.",
+              "meaningRomanUrdu": "Main ne teachers se baat ki.",
+              "speech": {
+                "text": "تَحَدَّثْتُ إِلَى الْمُعَلِّمِينَ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "رَأَيْتُ الْمُعَلِّمَاتِ.",
+              "meaningRomanUrdu": "Main ne female teachers dekhin.",
+              "speech": {
+                "text": "رَأَيْتُ الْمُعَلِّمَاتِ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-dual-plural-cases-word-0",
+              "word": "الطَّالِبَانِ",
+              "meaningRomanUrdu": "two students: subject",
+              "partOfSpeech": "dual noun",
+              "pronunciationGuide": "at-taalibaani"
+            },
+            {
+              "id": "ar-a2-dual-plural-cases-word-1",
+              "word": "الطَّالِبَيْنِ",
+              "meaningRomanUrdu": "two students: object/genitive",
+              "partOfSpeech": "dual noun",
+              "pronunciationGuide": "at-taalibayni"
+            },
+            {
+              "id": "ar-a2-dual-plural-cases-word-2",
+              "word": "الْمُعَلِّمُونَ",
+              "meaningRomanUrdu": "teachers: subject",
+              "partOfSpeech": "sound masculine plural",
+              "pronunciationGuide": "al-muallimuuna"
+            },
+            {
+              "id": "ar-a2-dual-plural-cases-word-3",
+              "word": "الْمُعَلِّمَاتِ",
+              "meaningRomanUrdu": "female teachers: object/genitive",
+              "partOfSpeech": "sound feminine plural",
+              "pronunciationGuide": "al-muallimaati"
+            }
+          ],
+          "reading": {
+            "text": "جَاءَ الطَّالِبَانِ إِلَى الْمَكْتَبَةِ. رَأَيْتُ الطَّالِبَيْنِ هُنَاكَ. تَحَدَّثْتُ إِلَى الْمُعَلِّمِينَ، ثُمَّ سَأَلْتُ الْمُعَلِّمَاتِ عَنِ الدَّرْسِ.",
+            "meaningRomanUrdu": "Do male students library aaye. Main ne un dono ko wahan dekha. Main ne male/mixed teachers se baat aur female teachers se lesson ka sawal kiya."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about dual and sound plurals in context. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "conjugation",
+            "singular-plural",
+            "case-patterns"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-dual-plural-cases-single-choice",
+              "prompt": "Choose the dual object after رَأَيْتُ.",
+              "explanationRomanUrdu": "Dual object yahan -ayni par hai.",
+              "options": [
+                {
+                  "id": "ar-a2-dual-plural-cases-choice-0",
+                  "text": "الطَّالِبَانِ"
+                },
+                {
+                  "id": "ar-a2-dual-plural-cases-choice-1",
+                  "text": "الطَّالِبَيْنِ"
+                },
+                {
+                  "id": "ar-a2-dual-plural-cases-choice-2",
+                  "text": "الطُّلَّابُ"
+                }
+              ],
+              "correctOptionId": "ar-a2-dual-plural-cases-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-dual-plural-cases-fill-blank",
+              "prompt": "Copy the marked dual object/genitive form: الطَّالِبَيْنِ",
+              "explanationRomanUrdu": "Yaa aur noon ki kasra ko preserve karen.",
+              "acceptedAnswers": [
+                "الطَّالِبَيْنِ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-dual-plural-cases-sentence-order",
+              "prompt": "Build the two students came: verb then dual subject.",
+              "explanationRomanUrdu": "Verb-first dual subject ke saath yahan verb singular hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-dual-plural-cases-token-1",
+                  "text": "الطَّالِبَانِ"
+                },
+                {
+                  "id": "ar-a2-dual-plural-cases-token-0",
+                  "text": "جَاءَ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-dual-plural-cases-token-0",
+                "ar-a2-dual-plural-cases-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-dual-plural-cases-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-dual-plural-cases-pair-0",
+                  "left": "الطَّالِبَانِ",
+                  "right": "dual subject"
+                },
+                {
+                  "id": "ar-a2-dual-plural-cases-pair-1",
+                  "left": "الطَّالِبَيْنِ",
+                  "right": "dual object / genitive"
+                },
+                {
+                  "id": "ar-a2-dual-plural-cases-pair-2",
+                  "left": "الْمُعَلِّمَاتِ",
+                  "right": "sound feminine plural object / genitive"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-dual-plural-cases-multi-choice",
+              "prompt": "Choose both correctly marked prepositional phrases.",
+              "explanationRomanUrdu": "Preposition ke baad dual -ayni aur sound masculine -iina hai.",
+              "options": [
+                {
+                  "id": "ar-a2-dual-plural-cases-multi-0",
+                  "text": "إِلَى الطَّالِبَيْنِ"
+                },
+                {
+                  "id": "ar-a2-dual-plural-cases-multi-1",
+                  "text": "إِلَى الْمُعَلِّمِينَ"
+                },
+                {
+                  "id": "ar-a2-dual-plural-cases-multi-2",
+                  "text": "إِلَى الطَّالِبَانِ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-dual-plural-cases-multi-0",
+                "ar-a2-dual-plural-cases-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-dual-plural-cases-listening-choice",
+              "prompt": "Who was asked about the lesson?",
+              "explanationRomanUrdu": "Object al-muallimaati female teachers hain.",
+              "speech": {
+                "text": "جَاءَ الطَّالِبَانِ. سَأَلْتُ الْمُعَلِّمَاتِ عَنِ الدَّرْسِ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-dual-plural-cases-listen-0",
+                  "text": "Two students."
+                },
+                {
+                  "id": "ar-a2-dual-plural-cases-listen-1",
+                  "text": "Female teachers."
+                },
+                {
+                  "id": "ar-a2-dual-plural-cases-listen-2",
+                  "text": "Only one man."
+                }
+              ],
+              "correctOptionId": "ar-a2-dual-plural-cases-listen-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar-a2-patterns",
+      "title": "Commands, clauses and roots",
+      "lessons": [
+        {
+          "id": "ar-a2-imperatives",
+          "title": "Imperatives for common classroom actions",
+          "objectives": [
+            "Understand and use the taught imperatives for common classroom actions patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Command ya direct request ke liye imperative use hota hai. اُكْتُبْ write (aik mard), اُكْتُبِي one woman aur اُكْتُبُوا male/mixed group forms hain. Lehja/context mein direct command aur polite request ka farq samjhen; roleplay fictional classroom tak mahdood hai.",
+          "rulesRomanUrdu": [
+            "اُكْتُبْ / اُكْتُبِي / اُكْتُبُوا addressed number/gender ke saath badalte hain.",
+            "اِفْتَحْ open aur اِجْلِسْ sit ki taught singular forms hain; initial vowel har verb mein same nahin.",
+            "اُكْتُبُوا mein final alif likha hai, alag aa awaaz nahin.",
+            "مِنْ فَضْلِكَ ya مِنْ فَضْلِكِ request ko polite bana sakta hai; grammar pattern ko real consent/context se alag na samjhen."
+          ],
+          "examples": [
+            {
+              "text": "اُكْتُبْ جُمْلَةً.",
+              "meaningRomanUrdu": "Aik jumla likhen: mard se.",
+              "speech": {
+                "text": "اُكْتُبْ جُمْلَةً.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "اُكْتُبِي جُمْلَةً.",
+              "meaningRomanUrdu": "Aik jumla likhen: aurat se.",
+              "speech": {
+                "text": "اُكْتُبِي جُمْلَةً.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "اُكْتُبُوا الْعُنْوَانَ.",
+              "meaningRomanUrdu": "Group address likhe.",
+              "speech": {
+                "text": "اُكْتُبُوا الْعُنْوَانَ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "اِفْتَحْ الْكِتَابَ.",
+              "meaningRomanUrdu": "Kitaab kholen: mard se.",
+              "speech": {
+                "text": "اِفْتَحْ الْكِتَابَ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-imperatives-word-0",
+              "word": "اُكْتُبْ",
+              "meaningRomanUrdu": "write: one man",
+              "partOfSpeech": "imperative",
+              "pronunciationGuide": "uktub"
+            },
+            {
+              "id": "ar-a2-imperatives-word-1",
+              "word": "اُكْتُبِي",
+              "meaningRomanUrdu": "write: one woman",
+              "partOfSpeech": "imperative",
+              "pronunciationGuide": "uktubii"
+            },
+            {
+              "id": "ar-a2-imperatives-word-2",
+              "word": "اُكْتُبُوا",
+              "meaningRomanUrdu": "write: male/mixed group",
+              "partOfSpeech": "imperative",
+              "pronunciationGuide": "uktubuu"
+            },
+            {
+              "id": "ar-a2-imperatives-word-3",
+              "word": "اِفْتَحْ",
+              "meaningRomanUrdu": "open: one man",
+              "partOfSpeech": "imperative",
+              "pronunciationGuide": "iftah"
+            }
+          ],
+          "reading": {
+            "text": "قَالَ الْمُعَلِّمُ: اُكْتُبُوا الْعُنْوَانَ. اُكْتُبْ جُمْلَةً يَا خَالِدُ. اُكْتُبِي سُؤَالًا يَا سَارَةُ. ثُمَّ قَرَأَ الطُّلَّابُ مَا كَتَبُوا.",
+            "meaningRomanUrdu": "Teacher ne group ko address likhne ko kaha; Khalid ko sentence aur Sara ko question likhne ko. Phir students ne apna likha parha."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about imperatives for common classroom actions. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "imperatives",
+            "common-sentence-patterns"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-imperatives-single-choice",
+              "prompt": "Which command addresses one woman?",
+              "explanationRomanUrdu": "Uktubii feminine singular listener ke liye hai.",
+              "options": [
+                {
+                  "id": "ar-a2-imperatives-choice-0",
+                  "text": "اُكْتُبْ"
+                },
+                {
+                  "id": "ar-a2-imperatives-choice-1",
+                  "text": "اُكْتُبِي"
+                },
+                {
+                  "id": "ar-a2-imperatives-choice-2",
+                  "text": "اُكْتُبُوا"
+                }
+              ],
+              "correctOptionId": "ar-a2-imperatives-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-imperatives-fill-blank",
+              "prompt": "Copy the marked command to one man, write: اُكْتُبْ",
+              "explanationRomanUrdu": "Taa ki damma aur final baa sukoon ko rakhen.",
+              "acceptedAnswers": [
+                "اُكْتُبْ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-imperatives-sentence-order",
+              "prompt": "Build open the book, starting with the command.",
+              "explanationRomanUrdu": "Command iftah ke baad object hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-imperatives-token-1",
+                  "text": "الْكِتَابَ"
+                },
+                {
+                  "id": "ar-a2-imperatives-token-0",
+                  "text": "اِفْتَحْ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-imperatives-token-0",
+                "ar-a2-imperatives-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-imperatives-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-imperatives-pair-0",
+                  "left": "اُكْتُبْ",
+                  "right": "write: one man"
+                },
+                {
+                  "id": "ar-a2-imperatives-pair-1",
+                  "left": "اُكْتُبِي",
+                  "right": "write: one woman"
+                },
+                {
+                  "id": "ar-a2-imperatives-pair-2",
+                  "left": "اِجْلِسْ",
+                  "right": "sit: one man"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-imperatives-multi-choice",
+              "prompt": "Choose both singular commands.",
+              "explanationRomanUrdu": "Pehle do one-person commands; third group hai.",
+              "options": [
+                {
+                  "id": "ar-a2-imperatives-multi-0",
+                  "text": "اُكْتُبْ"
+                },
+                {
+                  "id": "ar-a2-imperatives-multi-1",
+                  "text": "اُكْتُبِي"
+                },
+                {
+                  "id": "ar-a2-imperatives-multi-2",
+                  "text": "اُكْتُبُوا"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-imperatives-multi-0",
+                "ar-a2-imperatives-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-imperatives-listening-choice",
+              "prompt": "What is Sara asked to write?",
+              "explanationRomanUrdu": "Sara ko suaalan, question, likhne ko kaha gaya hai.",
+              "speech": {
+                "text": "اُكْتُبِي سُؤَالًا يَا سَارَةُ. اُكْتُبْ جُمْلَةً يَا خَالِدُ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-imperatives-listen-0",
+                  "text": "An address."
+                },
+                {
+                  "id": "ar-a2-imperatives-listen-1",
+                  "text": "A question."
+                },
+                {
+                  "id": "ar-a2-imperatives-listen-2",
+                  "text": "A sentence."
+                }
+              ],
+              "correctOptionId": "ar-a2-imperatives-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-prohibition",
+          "title": "Do not: prohibition versus a negative fact",
+          "objectives": [
+            "Understand and use the taught do not: prohibition versus a negative fact patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "لَا negative statement bhi bana sakti hai aur mana karne ka pattern bhi. أَنْتَ لَا تَكْتُبُ you do not write aik fact; لَا تَكْتُبْ do not write aik prohibition hai. Prohibitive laa ke baad mudari jussive hota hai; shown regular form mein final sukoon dekhen.",
+          "rulesRomanUrdu": [
+            "لَا تَكْتُبْ masculine singular prohibition; تَكْتُبُ indicative negative fact se farq hai.",
+            "لَا تَكْتُبِي one woman aur لَا تَكْتُبُوا group mein afal khamsa ki noon drop hoti hai.",
+            "لَا تَفْتَحْ الْبَابَ = darwaza na kholen.",
+            "Yeh fictional instructions hain; commands ko real-world safety ya professional advice ke taur par na lein. Mood/weak verb tafseel B1 mein hogi."
+          ],
+          "examples": [
+            {
+              "text": "أَنْتَ لَا تَكْتُبُ.",
+              "meaningRomanUrdu": "Aap nahin likhte: fact.",
+              "speech": {
+                "text": "أَنْتَ لَا تَكْتُبُ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "لَا تَكْتُبْ هُنَا.",
+              "meaningRomanUrdu": "Yahan na likhen: mard se.",
+              "speech": {
+                "text": "لَا تَكْتُبْ هُنَا.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "لَا تَكْتُبِي هُنَا.",
+              "meaningRomanUrdu": "Yahan na likhen: aurat se.",
+              "speech": {
+                "text": "لَا تَكْتُبِي هُنَا.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "لَا تَفْتَحْ الْبَابَ.",
+              "meaningRomanUrdu": "Darwaza na kholen: mard se.",
+              "speech": {
+                "text": "لَا تَفْتَحْ الْبَابَ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-prohibition-word-0",
+              "word": "لَا تَكْتُبْ",
+              "meaningRomanUrdu": "do not write: one man",
+              "partOfSpeech": "prohibition",
+              "pronunciationGuide": "laa taktub"
+            },
+            {
+              "id": "ar-a2-prohibition-word-1",
+              "word": "لَا تَكْتُبُ",
+              "meaningRomanUrdu": "you do not write: fact",
+              "partOfSpeech": "negative present",
+              "pronunciationGuide": "laa taktubu"
+            },
+            {
+              "id": "ar-a2-prohibition-word-2",
+              "word": "لَا تَكْتُبِي",
+              "meaningRomanUrdu": "do not write: one woman",
+              "partOfSpeech": "prohibition",
+              "pronunciationGuide": "laa taktubii"
+            },
+            {
+              "id": "ar-a2-prohibition-word-3",
+              "word": "هُنَا",
+              "meaningRomanUrdu": "here",
+              "partOfSpeech": "place word",
+              "pronunciationGuide": "hunaa"
+            }
+          ],
+          "reading": {
+            "text": "فِي هٰذَا التَّدْرِيبِ قَالَ الْمُعَلِّمُ: لَا تَكْتُبُوا عَلَى الْكِتَابِ. اُكْتُبُوا فِي الدَّفْتَرِ. أَمَّا خَالِدٌ فَهُوَ لَا يَكْتُبُ الْآنَ؛ هُوَ يَقْرَأُ.",
+            "meaningRomanUrdu": "Is fictional exercise mein teacher ne book par na likhne aur notebook mein likhne ko kaha. Khalid ab nahin likh raha; woh parh raha hai."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about do not: prohibition versus a negative fact. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "imperatives",
+            "prohibition",
+            "negation"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-prohibition-single-choice",
+              "prompt": "Which is the one-man prohibition do not write?",
+              "explanationRomanUrdu": "Final sukoon yahan prohibition ka required jussive form hai.",
+              "options": [
+                {
+                  "id": "ar-a2-prohibition-choice-0",
+                  "text": "لَا تَكْتُبُ"
+                },
+                {
+                  "id": "ar-a2-prohibition-choice-1",
+                  "text": "لَا تَكْتُبْ"
+                },
+                {
+                  "id": "ar-a2-prohibition-choice-2",
+                  "text": "لَا تَكْتُبِينَ"
+                }
+              ],
+              "correctOptionId": "ar-a2-prohibition-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-prohibition-fill-blank",
+              "prompt": "Copy the marked verb after prohibitive laa: تَكْتُبْ",
+              "explanationRomanUrdu": "Final sukoon, indicative damma nahin.",
+              "acceptedAnswers": [
+                "تَكْتُبْ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-prohibition-sentence-order",
+              "prompt": "Build do not write here, starting with laa.",
+              "explanationRomanUrdu": "Laa ke baad shown jussive command pattern hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-prohibition-token-1",
+                  "text": "تَكْتُبْ"
+                },
+                {
+                  "id": "ar-a2-prohibition-token-2",
+                  "text": "هُنَا"
+                },
+                {
+                  "id": "ar-a2-prohibition-token-0",
+                  "text": "لَا"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-prohibition-token-0",
+                "ar-a2-prohibition-token-1",
+                "ar-a2-prohibition-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-prohibition-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-prohibition-pair-0",
+                  "left": "لَا تَكْتُبْ",
+                  "right": "do not write"
+                },
+                {
+                  "id": "ar-a2-prohibition-pair-1",
+                  "left": "اُكْتُبْ",
+                  "right": "write"
+                },
+                {
+                  "id": "ar-a2-prohibition-pair-2",
+                  "left": "لَا تَفْتَحْ",
+                  "right": "do not open"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-prohibition-multi-choice",
+              "prompt": "Choose both prohibition patterns.",
+              "explanationRomanUrdu": "First two mana karte hain; third aik negative fact hai.",
+              "options": [
+                {
+                  "id": "ar-a2-prohibition-multi-0",
+                  "text": "لَا تَكْتُبْ"
+                },
+                {
+                  "id": "ar-a2-prohibition-multi-1",
+                  "text": "لَا تَفْتَحْ"
+                },
+                {
+                  "id": "ar-a2-prohibition-multi-2",
+                  "text": "أَنْتَ لَا تَكْتُبُ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-prohibition-multi-0",
+                "ar-a2-prohibition-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-prohibition-listening-choice",
+              "prompt": "Where should the group write in this exercise?",
+              "explanationRomanUrdu": "Positive request notebook mein likhna hai; book par mana hai.",
+              "speech": {
+                "text": "لَا تَكْتُبُوا عَلَى الْكِتَابِ. اُكْتُبُوا فِي الدَّفْتَرِ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-prohibition-listen-0",
+                  "text": "On the book."
+                },
+                {
+                  "id": "ar-a2-prohibition-listen-1",
+                  "text": "In the notebook."
+                },
+                {
+                  "id": "ar-a2-prohibition-listen-2",
+                  "text": "On the door."
+                }
+              ],
+              "correctOptionId": "ar-a2-prohibition-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-kana",
+          "title": "Past states with kana",
+          "objectives": [
+            "Understand and use the taught past states with kana patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Present noun sentence ko past state se jorne ke liye كَانَ use ho sakta hai. الْبَيْتُ كَبِيرٌ house is large; كَانَ الْبَيْتُ كَبِيرًا house was large. Kana ke baad subject nominative rehta hai aur descriptive predicate accusative hota hai.",
+          "rulesRomanUrdu": [
+            "كَانَ الْبَيْتُ كَبِيرًا mein baytu -u aur kabiiran -an role ka farq dikhate hain.",
+            "كَانَتِ الْمَدْرَسَةُ كَبِيرَةً feminine subject ke liye hai. Connected speech mein kanat ki taa yahan kasra leti hai.",
+            "كُنْتُ طَالِبًا = main male student tha; كُنْتُ طَالِبَةً female speaker thi.",
+            "كُنَّا هُنَا hum yahan thay. Adverb/location predicate ko har baar tanween wale adjective jaisa na banayen."
+          ],
+          "examples": [
+            {
+              "text": "كَانَ الْبَيْتُ كَبِيرًا.",
+              "meaningRomanUrdu": "Ghar bara tha.",
+              "speech": {
+                "text": "كَانَ الْبَيْتُ كَبِيرًا.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "كَانَتِ الْمَدْرَسَةُ كَبِيرَةً.",
+              "meaningRomanUrdu": "School bara tha.",
+              "speech": {
+                "text": "كَانَتِ الْمَدْرَسَةُ كَبِيرَةً.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "كُنْتُ طَالِبًا.",
+              "meaningRomanUrdu": "Main male student tha.",
+              "speech": {
+                "text": "كُنْتُ طَالِبًا.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "كُنَّا هُنَا.",
+              "meaningRomanUrdu": "Hum yahan thay.",
+              "speech": {
+                "text": "كُنَّا هُنَا.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-kana-word-0",
+              "word": "كَانَ",
+              "meaningRomanUrdu": "was: masculine singular",
+              "partOfSpeech": "past auxiliary verb",
+              "pronunciationGuide": "kaana"
+            },
+            {
+              "id": "ar-a2-kana-word-1",
+              "word": "كَانَتْ",
+              "meaningRomanUrdu": "was: feminine singular, isolated",
+              "partOfSpeech": "past auxiliary verb",
+              "pronunciationGuide": "kaanat"
+            },
+            {
+              "id": "ar-a2-kana-word-2",
+              "word": "كُنْتُ",
+              "meaningRomanUrdu": "I was",
+              "partOfSpeech": "past auxiliary verb",
+              "pronunciationGuide": "kuntu"
+            },
+            {
+              "id": "ar-a2-kana-word-3",
+              "word": "كُنَّا",
+              "meaningRomanUrdu": "we were",
+              "partOfSpeech": "past auxiliary verb",
+              "pronunciationGuide": "kunnaa"
+            }
+          ],
+          "reading": {
+            "text": "كُنْتُ طَالِبًا فِي هٰذِهِ الْمَدْرَسَةِ. كَانَ الْبَيْتُ قَرِيبًا. كَانَتِ الْمَكْتَبَةُ صَغِيرَةً. الْآنَ الْمَكْتَبَةُ كَبِيرَةٌ، وَأَنَا مُعَلِّمٌ.",
+            "meaningRomanUrdu": "Main is school mein male student tha. Ghar qareeb tha aur library chhoti thi. Ab library bari hai aur main teacher hoon."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about past states with kana. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "common-sentence-patterns",
+            "kana"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-kana-single-choice",
+              "prompt": "Choose the taught kana statement with correct predicate ending.",
+              "explanationRomanUrdu": "Subject nominative aur kana predicate accusative hai.",
+              "options": [
+                {
+                  "id": "ar-a2-kana-choice-0",
+                  "text": "كَانَ الْبَيْتُ كَبِيرٌ."
+                },
+                {
+                  "id": "ar-a2-kana-choice-1",
+                  "text": "كَانَ الْبَيْتُ كَبِيرًا."
+                },
+                {
+                  "id": "ar-a2-kana-choice-2",
+                  "text": "كَانَ الْبَيْتَ كَبِيرٌ."
+                }
+              ],
+              "correctOptionId": "ar-a2-kana-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-kana-fill-blank",
+              "prompt": "Complete كَانَ الْبَيْتُ ___ with the shown word large: كَبِيرًا",
+              "explanationRomanUrdu": "Kana ki descriptive khabar yahan -an par hai.",
+              "acceptedAnswers": [
+                "كَبِيرًا"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-kana-sentence-order",
+              "prompt": "Build I was a male student, starting with I was.",
+              "explanationRomanUrdu": "Kuntu ke baad taught predicate taaliban hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-kana-token-1",
+                  "text": "طَالِبًا"
+                },
+                {
+                  "id": "ar-a2-kana-token-0",
+                  "text": "كُنْتُ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-kana-token-0",
+                "ar-a2-kana-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-kana-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-kana-pair-0",
+                  "left": "كَانَ",
+                  "right": "he / it was"
+                },
+                {
+                  "id": "ar-a2-kana-pair-1",
+                  "left": "كُنْتُ",
+                  "right": "I was"
+                },
+                {
+                  "id": "ar-a2-kana-pair-2",
+                  "left": "كُنَّا",
+                  "right": "we were"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-kana-multi-choice",
+              "prompt": "Choose both correctly paired kana patterns.",
+              "explanationRomanUrdu": "First do mein kana predicate ki shown accusative ending hai.",
+              "options": [
+                {
+                  "id": "ar-a2-kana-multi-0",
+                  "text": "كُنْتُ طَالِبًا."
+                },
+                {
+                  "id": "ar-a2-kana-multi-1",
+                  "text": "كَانَ الْبَيْتُ كَبِيرًا."
+                },
+                {
+                  "id": "ar-a2-kana-multi-2",
+                  "text": "كَانَ الْبَيْتُ كَبِيرٌ."
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-kana-multi-0",
+                "ar-a2-kana-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-kana-listening-choice",
+              "prompt": "How is the library described now?",
+              "explanationRomanUrdu": "Al-aan present ko large se jorta hai; small past tha.",
+              "speech": {
+                "text": "كَانَتِ الْمَكْتَبَةُ صَغِيرَةً. الْآنَ الْمَكْتَبَةُ كَبِيرَةٌ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-kana-listen-0",
+                  "text": "Small."
+                },
+                {
+                  "id": "ar-a2-kana-listen-1",
+                  "text": "Large."
+                },
+                {
+                  "id": "ar-a2-kana-listen-2",
+                  "text": "Closed."
+                }
+              ],
+              "correctOptionId": "ar-a2-kana-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-relative-clauses",
+          "title": "Relative clauses with alladhi and allati",
+          "objectives": [
+            "Understand and use the taught relative clauses with alladhi and allati patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Relative clause kisi definite noun ko mazeed pehchan deti hai. الَّذِي singular masculine aur الَّتِي singular feminine hain. هٰذَا الطَّالِبُ الَّذِي يَقْرَأُ yeh woh male student hai jo parhta hai. Relatives ko gender aur reference ke saath seekhen.",
+          "rulesRomanUrdu": [
+            "Subject-relative example: الطَّالِبُ الَّذِي يَقْرَأُ, student who reads.",
+            "Object-relative mein return pronoun zaroori ho sakta hai: الْكِتَابُ الَّذِي قَرَأْتُهُ, the book that I read.",
+            "الطَّالِبَةُ الَّتِي تَقْرَأُ feminine reference hai.",
+            "Simple indefinite noun ko isi definite pattern se automatically na joren; definite/indefinite relationship ki applied practice B1 mein hogi."
+          ],
+          "examples": [
+            {
+              "text": "هٰذَا الطَّالِبُ الَّذِي يَقْرَأُ.",
+              "meaningRomanUrdu": "Yeh woh male student hai jo parhta hai.",
+              "speech": {
+                "text": "هٰذَا الطَّالِبُ الَّذِي يَقْرَأُ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هٰذِهِ الطَّالِبَةُ الَّتِي تَكْتُبُ.",
+              "meaningRomanUrdu": "Yeh woh female student hai jo likhti hai.",
+              "speech": {
+                "text": "هٰذِهِ الطَّالِبَةُ الَّتِي تَكْتُبُ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "الْكِتَابُ الَّذِي قَرَأْتُهُ جَدِيدٌ.",
+              "meaningRomanUrdu": "Jo kitaab main ne parhi woh nayi hai.",
+              "speech": {
+                "text": "الْكِتَابُ الَّذِي قَرَأْتُهُ جَدِيدٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "الرِّسَالَةُ الَّتِي كَتَبْتُهَا قَصِيرَةٌ.",
+              "meaningRomanUrdu": "Jo message main ne likha woh chhota hai.",
+              "speech": {
+                "text": "الرِّسَالَةُ الَّتِي كَتَبْتُهَا قَصِيرَةٌ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-relative-clauses-word-0",
+              "word": "الَّذِي",
+              "meaningRomanUrdu": "who/that: masculine singular",
+              "partOfSpeech": "relative word",
+              "pronunciationGuide": "alladhii"
+            },
+            {
+              "id": "ar-a2-relative-clauses-word-1",
+              "word": "الَّتِي",
+              "meaningRomanUrdu": "who/that: feminine singular",
+              "partOfSpeech": "relative word",
+              "pronunciationGuide": "allatii"
+            },
+            {
+              "id": "ar-a2-relative-clauses-word-2",
+              "word": "قَصِيرٌ",
+              "meaningRomanUrdu": "short: masculine",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "qasiirun"
+            },
+            {
+              "id": "ar-a2-relative-clauses-word-3",
+              "word": "قَصِيرَةٌ",
+              "meaningRomanUrdu": "short: feminine",
+              "partOfSpeech": "adjective",
+              "pronunciationGuide": "qasiiratun"
+            }
+          ],
+          "reading": {
+            "text": "الْكِتَابُ الَّذِي قَرَأْتُهُ جَدِيدٌ. فِيهِ قِصَّةٌ عَنْ مَدْرَسَةٍ. الرِّسَالَةُ الَّتِي كَتَبْتُهَا قَصِيرَةٌ. أَرْسَلْتُهَا إِلَى الطَّالِبَةِ الَّتِي تَدْرُسُ هُنَا.",
+            "meaningRomanUrdu": "Parhi hui kitaab nayi hai aur school ki kahani rakhti hai. Mera likha message chhota hai. Main ne yahan study karne wali female student ko bheja."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about relative clauses with alladhi and allati. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "common-sentence-patterns",
+            "relative-clauses"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-relative-clauses-single-choice",
+              "prompt": "Which relative word matches feminine الرِّسَالَةُ?",
+              "explanationRomanUrdu": "Risaala feminine hai, is liye allatii.",
+              "options": [
+                {
+                  "id": "ar-a2-relative-clauses-choice-0",
+                  "text": "الَّذِي"
+                },
+                {
+                  "id": "ar-a2-relative-clauses-choice-1",
+                  "text": "الَّتِي"
+                },
+                {
+                  "id": "ar-a2-relative-clauses-choice-2",
+                  "text": "هُوَ"
+                }
+              ],
+              "correctOptionId": "ar-a2-relative-clauses-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-relative-clauses-fill-blank",
+              "prompt": "Copy the marked feminine relative word: الَّتِي",
+              "explanationRomanUrdu": "Shaddah aur yaa ko preserve karen.",
+              "acceptedAnswers": [
+                "الَّتِي"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-relative-clauses-sentence-order",
+              "prompt": "Build the book that I read, in noun-relative-verb order.",
+              "explanationRomanUrdu": "Hu return pronoun book ko refer karta hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-relative-clauses-token-1",
+                  "text": "الَّذِي"
+                },
+                {
+                  "id": "ar-a2-relative-clauses-token-2",
+                  "text": "قَرَأْتُهُ"
+                },
+                {
+                  "id": "ar-a2-relative-clauses-token-0",
+                  "text": "الْكِتَابُ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-relative-clauses-token-0",
+                "ar-a2-relative-clauses-token-1",
+                "ar-a2-relative-clauses-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-relative-clauses-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-relative-clauses-pair-0",
+                  "left": "الَّذِي",
+                  "right": "masculine singular relative"
+                },
+                {
+                  "id": "ar-a2-relative-clauses-pair-1",
+                  "left": "الَّتِي",
+                  "right": "feminine singular relative"
+                },
+                {
+                  "id": "ar-a2-relative-clauses-pair-2",
+                  "left": "قَرَأْتُهُ",
+                  "right": "I read it: masculine"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-relative-clauses-multi-choice",
+              "prompt": "Choose both taught matched relative phrases.",
+              "explanationRomanUrdu": "First two gender match; message ko allatii chahiye.",
+              "options": [
+                {
+                  "id": "ar-a2-relative-clauses-multi-0",
+                  "text": "الطَّالِبُ الَّذِي يَقْرَأُ"
+                },
+                {
+                  "id": "ar-a2-relative-clauses-multi-1",
+                  "text": "الطَّالِبَةُ الَّتِي تَكْتُبُ"
+                },
+                {
+                  "id": "ar-a2-relative-clauses-multi-2",
+                  "text": "الرِّسَالَةُ الَّذِي كَتَبْتُهَا"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-relative-clauses-multi-0",
+                "ar-a2-relative-clauses-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-relative-clauses-listening-choice",
+              "prompt": "What is short?",
+              "explanationRomanUrdu": "Short predicate risaala ke bare mein hai.",
+              "speech": {
+                "text": "الرِّسَالَةُ الَّتِي كَتَبْتُهَا قَصِيرَةٌ. الْكِتَابُ طَوِيلٌ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-relative-clauses-listen-0",
+                  "text": "The book."
+                },
+                {
+                  "id": "ar-a2-relative-clauses-listen-1",
+                  "text": "The written message."
+                },
+                {
+                  "id": "ar-a2-relative-clauses-listen-2",
+                  "text": "The school."
+                }
+              ],
+              "correctOptionId": "ar-a2-relative-clauses-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-root-families",
+          "title": "Vocabulary families without guessing meanings",
+          "objectives": [
+            "Understand and use the taught vocabulary families without guessing meanings patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Root family words ke darmiyan relation yaad rakhne mein madad deti hai. ك ت ب se كَتَبَ، كِتَابٌ، كَاتِبٌ aur مَكْتَبَةٌ ki taught family dekhen. Lekin common root se har word ka exact meaning, register ya frequency khud sabit nahin hota.",
+          "rulesRomanUrdu": [
+            "ك ت ب: writing family; كَاتِبٌ writer aur مَكْتَبَةٌ library ke actual vocabulary meanings seekhen.",
+            "د ر س: دَرَسَ studied, دَرْسٌ lesson, مَدْرَسَةٌ school.",
+            "Pattern aur root ko learning links ki tarah use karen; har mathematically possible word real usage nahin.",
+            "Yahan koi religious text, corpus frequency ya unsourced word count nahin. Dictionary/search functions later milestone ka kaam hain."
+          ],
+          "examples": [
+            {
+              "text": "كَتَبَ الْكَاتِبُ.",
+              "meaningRomanUrdu": "Writer ne likha.",
+              "speech": {
+                "text": "كَتَبَ الْكَاتِبُ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "الْكِتَابُ فِي الْمَكْتَبَةِ.",
+              "meaningRomanUrdu": "Kitaab library mein hai.",
+              "speech": {
+                "text": "الْكِتَابُ فِي الْمَكْتَبَةِ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "دَرَسَ الطَّالِبُ.",
+              "meaningRomanUrdu": "Student ne study kiya.",
+              "speech": {
+                "text": "دَرَسَ الطَّالِبُ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "الدَّرْسُ فِي الْمَدْرَسَةِ.",
+              "meaningRomanUrdu": "Lesson school mein hai.",
+              "speech": {
+                "text": "الدَّرْسُ فِي الْمَدْرَسَةِ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-root-families-word-0",
+              "word": "كَاتِبٌ",
+              "meaningRomanUrdu": "writer",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "kaatibun"
+            },
+            {
+              "id": "ar-a2-root-families-word-1",
+              "word": "مَكْتَبَةٌ",
+              "meaningRomanUrdu": "library",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "maktabatun"
+            },
+            {
+              "id": "ar-a2-root-families-word-2",
+              "word": "دَرْسٌ",
+              "meaningRomanUrdu": "lesson",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "darsun"
+            },
+            {
+              "id": "ar-a2-root-families-word-3",
+              "word": "مَدْرَسَةٌ",
+              "meaningRomanUrdu": "school",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "madrasatun"
+            }
+          ],
+          "reading": {
+            "text": "ذَهَبَ الْكَاتِبُ إِلَى الْمَكْتَبَةِ. قَرَأَ كِتَابًا عَنْ مَدْرَسَةٍ جَدِيدَةٍ. فِي الْمَدْرَسَةِ دَرْسٌ قَصِيرٌ. كَتَبَ الْكَاتِبُ مُلَاحَظَةً بَعْدَ الْقِرَاءَةِ.",
+            "meaningRomanUrdu": "Writer library gaya, naye school ki kitaab parhi. School mein aik chhota lesson hai. Writer ne reading ke baad note likha."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about vocabulary families without guessing meanings. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "roots",
+            "vocabulary-by-roots"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-root-families-single-choice",
+              "prompt": "Which taught noun means writer?",
+              "explanationRomanUrdu": "Kaatib writer hai; kitaab book aur maktaba library.",
+              "options": [
+                {
+                  "id": "ar-a2-root-families-choice-0",
+                  "text": "كِتَابٌ"
+                },
+                {
+                  "id": "ar-a2-root-families-choice-1",
+                  "text": "كَاتِبٌ"
+                },
+                {
+                  "id": "ar-a2-root-families-choice-2",
+                  "text": "مَكْتَبَةٌ"
+                }
+              ],
+              "correctOptionId": "ar-a2-root-families-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-root-families-fill-blank",
+              "prompt": "Copy the marked noun writer: كَاتِبٌ",
+              "explanationRomanUrdu": "Alif aur kasra ko noun meaning se joren.",
+              "acceptedAnswers": [
+                "كَاتِبٌ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-root-families-sentence-order",
+              "prompt": "Build the writer wrote, using verb-first order.",
+              "explanationRomanUrdu": "Action kataba aur doer al-kaatib hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-root-families-token-1",
+                  "text": "الْكَاتِبُ"
+                },
+                {
+                  "id": "ar-a2-root-families-token-0",
+                  "text": "كَتَبَ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-root-families-token-0",
+                "ar-a2-root-families-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-root-families-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-root-families-pair-0",
+                  "left": "كِتَابٌ",
+                  "right": "book"
+                },
+                {
+                  "id": "ar-a2-root-families-pair-1",
+                  "left": "كَاتِبٌ",
+                  "right": "writer"
+                },
+                {
+                  "id": "ar-a2-root-families-pair-2",
+                  "left": "مَكْتَبَةٌ",
+                  "right": "library"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-root-families-multi-choice",
+              "prompt": "Choose both words in the taught د ر س family.",
+              "explanationRomanUrdu": "Dars aur madrasa d-r-s family mein hain; kaatib k-t-b.",
+              "options": [
+                {
+                  "id": "ar-a2-root-families-multi-0",
+                  "text": "دَرْسٌ"
+                },
+                {
+                  "id": "ar-a2-root-families-multi-1",
+                  "text": "مَدْرَسَةٌ"
+                },
+                {
+                  "id": "ar-a2-root-families-multi-2",
+                  "text": "كَاتِبٌ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-root-families-multi-0",
+                "ar-a2-root-families-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-root-families-listening-choice",
+              "prompt": "Where did the writer go?",
+              "explanationRomanUrdu": "Destination library hai; school book ka topic hai.",
+              "speech": {
+                "text": "ذَهَبَ الْكَاتِبُ إِلَى الْمَكْتَبَةِ. قَرَأَ كِتَابًا عَنْ مَدْرَسَةٍ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-root-families-listen-0",
+                  "text": "To a school."
+                },
+                {
+                  "id": "ar-a2-root-families-listen-1",
+                  "text": "To the library."
+                },
+                {
+                  "id": "ar-a2-root-families-listen-2",
+                  "text": "To an office, explicitly."
+                }
+              ],
+              "correctOptionId": "ar-a2-root-families-listen-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar-a2-communication",
+      "title": "Connected practical communication",
+      "lessons": [
+        {
+          "id": "ar-a2-connected-account",
+          "title": "Connect a short account",
+          "objectives": [
+            "Understand and use the taught connect a short account patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Chhote connected account mein sequence, reason aur result ko clear rakhen. أَوَّلًا first, ثُمَّ then, لِأَنَّ because aur لِذٰلِكَ therefore reader ko events ka relation samjhate hain. Sirf connectors ki tadaad achhi writing ya grammar grade nahin hoti.",
+          "rulesRomanUrdu": [
+            "أَوَّلًا aur ثُمَّ sequence dete hain; dono ko same event ki contradictory tartib ke liye na use karen.",
+            "لِأَنَّ reason introduce karta hai; لِأَنَّ الْمَكْتَبَةَ قَرِيبَةٌ mein noun accusative hai.",
+            "لِذٰلِكَ result/consequence ko jorta hai; reason aur result ko alag pehchanen.",
+            "Writing ko explicit Save paragraph se save karen. Checklist learner ki apni review hai, automatic correction nahin."
+          ],
+          "examples": [
+            {
+              "text": "أَوَّلًا قَرَأْتُ الْكِتَابَ.",
+              "meaningRomanUrdu": "Pehle main ne kitaab parhi.",
+              "speech": {
+                "text": "أَوَّلًا قَرَأْتُ الْكِتَابَ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "ثُمَّ كَتَبْتُ مُلَاحَظَةً.",
+              "meaningRomanUrdu": "Phir main ne note likha.",
+              "speech": {
+                "text": "ثُمَّ كَتَبْتُ مُلَاحَظَةً.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "ذَهَبْتُ لِأَنَّ الْمَكْتَبَةَ قَرِيبَةٌ.",
+              "meaningRomanUrdu": "Main gaya/gayi kyun ke library qareeb hai.",
+              "speech": {
+                "text": "ذَهَبْتُ لِأَنَّ الْمَكْتَبَةَ قَرِيبَةٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "لِذٰلِكَ رَجَعْتُ مُبَكِّرًا.",
+              "meaningRomanUrdu": "Is liye main jaldi laut aaya/aayi.",
+              "speech": {
+                "text": "لِذٰلِكَ رَجَعْتُ مُبَكِّرًا.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-connected-account-word-0",
+              "word": "أَوَّلًا",
+              "meaningRomanUrdu": "first",
+              "partOfSpeech": "sequence word",
+              "pronunciationGuide": "awwalan"
+            },
+            {
+              "id": "ar-a2-connected-account-word-1",
+              "word": "ثُمَّ",
+              "meaningRomanUrdu": "then",
+              "partOfSpeech": "connector",
+              "pronunciationGuide": "thumma"
+            },
+            {
+              "id": "ar-a2-connected-account-word-2",
+              "word": "لِأَنَّ",
+              "meaningRomanUrdu": "because",
+              "partOfSpeech": "connector",
+              "pronunciationGuide": "lianna"
+            },
+            {
+              "id": "ar-a2-connected-account-word-3",
+              "word": "لِذٰلِكَ",
+              "meaningRomanUrdu": "therefore",
+              "partOfSpeech": "connector",
+              "pronunciationGuide": "lidhaalika"
+            }
+          ],
+          "reading": {
+            "text": "أَوَّلًا ذَهَبْتُ إِلَى الْمَكْتَبَةِ لِأَنَّهَا قَرِيبَةٌ. ثُمَّ قَرَأْتُ قِصَّةً قَصِيرَةً. كَتَبْتُ مُلَاحَظَةً عَنِ الْقِصَّةِ. بَعْدَ ذٰلِكَ رَجَعْتُ إِلَى الْبَيْتِ.",
+            "meaningRomanUrdu": "Pehle qareeb library gaya/gayi, phir short story parhi aur us par note likha. Us ke baad ghar laut aaya/aayi."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about connect a short account. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "connectors",
+            "reading-listening",
+            "structured-writing"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-connected-account-single-choice",
+              "prompt": "Which connector introduces a reason?",
+              "explanationRomanUrdu": "Lianna reason introduce karta hai.",
+              "options": [
+                {
+                  "id": "ar-a2-connected-account-choice-0",
+                  "text": "ثُمَّ"
+                },
+                {
+                  "id": "ar-a2-connected-account-choice-1",
+                  "text": "لِأَنَّ"
+                },
+                {
+                  "id": "ar-a2-connected-account-choice-2",
+                  "text": "أَوَّلًا"
+                }
+              ],
+              "correctOptionId": "ar-a2-connected-account-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-connected-account-fill-blank",
+              "prompt": "Copy the marked sequence connector then: ثُمَّ",
+              "explanationRomanUrdu": "Miim ki shaddah ko rakhen.",
+              "acceptedAnswers": [
+                "ثُمَّ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-connected-account-sentence-order",
+              "prompt": "Build then I wrote a note, starting with then.",
+              "explanationRomanUrdu": "Sequence ke baad action aur object hain.",
+              "tokens": [
+                {
+                  "id": "ar-a2-connected-account-token-1",
+                  "text": "كَتَبْتُ"
+                },
+                {
+                  "id": "ar-a2-connected-account-token-2",
+                  "text": "مُلَاحَظَةً"
+                },
+                {
+                  "id": "ar-a2-connected-account-token-0",
+                  "text": "ثُمَّ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-connected-account-token-0",
+                "ar-a2-connected-account-token-1",
+                "ar-a2-connected-account-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-connected-account-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-connected-account-pair-0",
+                  "left": "أَوَّلًا",
+                  "right": "first"
+                },
+                {
+                  "id": "ar-a2-connected-account-pair-1",
+                  "left": "لِأَنَّ",
+                  "right": "because"
+                },
+                {
+                  "id": "ar-a2-connected-account-pair-2",
+                  "left": "لِذٰلِكَ",
+                  "right": "therefore"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-connected-account-multi-choice",
+              "prompt": "Choose both connectors expressing sequence.",
+              "explanationRomanUrdu": "Awwalan/thumma sequence; lianna reason.",
+              "options": [
+                {
+                  "id": "ar-a2-connected-account-multi-0",
+                  "text": "أَوَّلًا"
+                },
+                {
+                  "id": "ar-a2-connected-account-multi-1",
+                  "text": "ثُمَّ"
+                },
+                {
+                  "id": "ar-a2-connected-account-multi-2",
+                  "text": "لِأَنَّ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-connected-account-multi-0",
+                "ar-a2-connected-account-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-connected-account-listening-choice",
+              "prompt": "What happened after reading?",
+              "explanationRomanUrdu": "Thumma ke baad note likhne ka event hai.",
+              "speech": {
+                "text": "أَوَّلًا قَرَأْتُ قِصَّةً، ثُمَّ كَتَبْتُ مُلَاحَظَةً.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-connected-account-listen-0",
+                  "text": "Writing a note."
+                },
+                {
+                  "id": "ar-a2-connected-account-listen-1",
+                  "text": "Going to a station."
+                },
+                {
+                  "id": "ar-a2-connected-account-listen-2",
+                  "text": "No later action is given."
+                }
+              ],
+              "correctOptionId": "ar-a2-connected-account-listen-0"
+            },
+            {
+              "type": "paragraph_writing",
+              "id": "ar-a2-connected-account-paragraph-writing",
+              "prompt": "Write three or four Arabic sentences about an imaginary library visit. Include a sequence word, one action and a closing. Vowel marks are optional in your own writing.",
+              "explanationRomanUrdu": "Apna original text aur checklist explicit Save paragraph se save karen. Yeh self-practice hai; automatic grammar ya quality score nahin.",
+              "checklist": [
+                {
+                  "id": "ar-a2-connected-account-check-0",
+                  "text": "I used an understandable event order."
+                },
+                {
+                  "id": "ar-a2-connected-account-check-1",
+                  "text": "I included one action and a closing."
+                },
+                {
+                  "id": "ar-a2-connected-account-check-2",
+                  "text": "I checked the person/gender forms myself."
+                }
+              ],
+              "modelParagraph": "أَوَّلًا ذَهَبْتُ إِلَى الْمَكْتَبَةِ. قَرَأْتُ قِصَّةً قَصِيرَةً، ثُمَّ كَتَبْتُ مُلَاحَظَةً. رَجَعْتُ إِلَى الْبَيْتِ فِي الْمَسَاءِ.",
+              "modelMeaningRomanUrdu": "Pehle library gaya/gayi, short story parhi, phir note likha aur shaam ghar laut aaya/aayi."
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-arrangement-details",
+          "title": "Read and listen for corrected details",
+          "objectives": [
+            "Understand and use the taught read and listen for corrected details patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Arrangement ka corrected detail pehle plan ko badal sakta hai. لَا ... بَلْ pattern aur word لٰكِنْ par tawajjuh dein. Sawal latest room, din ya action pooch sakta hai; sirf pehla number sun kar jawab na chunein. Yeh tamam schedules imaginary hain.",
+          "rulesRomanUrdu": [
+            "الْغُرْفَةُ الثَّانِيَةُ room two aur الثَّالِثَةُ room three ke ordinal forms hain.",
+            "يَوْمَ الْخَمِيسِ Thursday ko aur يَوْمَ الْجُمُعَةِ Friday ko phrases hain.",
+            "لَيْسَ ... بَلْ correction mein nayi maloomat ko identify karen.",
+            "Role A details propose kare; role B din/jagah repeat kar ke confirmation le. Speaking unrecorded self-practice hai."
+          ],
+          "examples": [
+            {
+              "text": "الدَّرْسُ يَوْمَ الْخَمِيسِ.",
+              "meaningRomanUrdu": "Lesson Thursday ko hai.",
+              "speech": {
+                "text": "الدَّرْسُ يَوْمَ الْخَمِيسِ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "الْغُرْفَةُ الثَّالِثَةُ قَرِيبَةٌ.",
+              "meaningRomanUrdu": "Room three qareeb hai.",
+              "speech": {
+                "text": "الْغُرْفَةُ الثَّالِثَةُ قَرِيبَةٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "لَيْسَ الدَّرْسُ يَوْمَ الْجُمُعَةِ.",
+              "meaningRomanUrdu": "Lesson Friday ko nahin.",
+              "speech": {
+                "text": "لَيْسَ الدَّرْسُ يَوْمَ الْجُمُعَةِ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هَلِ الْغُرْفَةُ الثَّانِيَةُ هُنَا؟",
+              "meaningRomanUrdu": "Kya room two yahan hai?",
+              "speech": {
+                "text": "هَلِ الْغُرْفَةُ الثَّانِيَةُ هُنَا؟",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-arrangement-details-word-0",
+              "word": "الْخَمِيسُ",
+              "meaningRomanUrdu": "Thursday",
+              "partOfSpeech": "day noun",
+              "pronunciationGuide": "al-khamiisu"
+            },
+            {
+              "id": "ar-a2-arrangement-details-word-1",
+              "word": "الْجُمُعَةُ",
+              "meaningRomanUrdu": "Friday",
+              "partOfSpeech": "day noun",
+              "pronunciationGuide": "al-jumuatu"
+            },
+            {
+              "id": "ar-a2-arrangement-details-word-2",
+              "word": "الثَّانِيَةُ",
+              "meaningRomanUrdu": "second: feminine",
+              "partOfSpeech": "ordinal adjective",
+              "pronunciationGuide": "ath-thaaniyatu"
+            },
+            {
+              "id": "ar-a2-arrangement-details-word-3",
+              "word": "الثَّالِثَةُ",
+              "meaningRomanUrdu": "third: feminine",
+              "partOfSpeech": "ordinal adjective",
+              "pronunciationGuide": "ath-thaalithatu"
+            }
+          ],
+          "reading": {
+            "text": "كَانَ الدَّرْسُ فِي الْغُرْفَةِ الثَّانِيَةِ. الْآنَ الدَّرْسُ فِي الْغُرْفَةِ الثَّالِثَةِ يَوْمَ الْخَمِيسِ، وَلَيْسَ يَوْمَ الْجُمُعَةِ. اِقْرَأِ الرِّسَالَةَ الْجَدِيدَةَ، ثُمَّ أَكِّدِ الْمَكَانَ.",
+            "meaningRomanUrdu": "Lesson pehle room two mein tha. Ab Thursday room three mein hai, Friday nahin. Naya message parhen aur jagah confirm karen; aakhri commands aik mard listener ke liye connected reading forms hain."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about read and listen for corrected details. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "reading-listening",
+            "practical-speaking"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a2-arrangement-details-single-choice",
+              "prompt": "Which phrase identifies room three?",
+              "explanationRomanUrdu": "Thaalitha third room ka ordinal hai.",
+              "options": [
+                {
+                  "id": "ar-a2-arrangement-details-choice-0",
+                  "text": "الْغُرْفَةُ الثَّانِيَةُ"
+                },
+                {
+                  "id": "ar-a2-arrangement-details-choice-1",
+                  "text": "الْغُرْفَةُ الثَّالِثَةُ"
+                },
+                {
+                  "id": "ar-a2-arrangement-details-choice-2",
+                  "text": "يَوْمَ الْخَمِيسِ"
+                }
+              ],
+              "correctOptionId": "ar-a2-arrangement-details-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-arrangement-details-fill-blank",
+              "prompt": "Copy the marked feminine ordinal third: الثَّالِثَةُ",
+              "explanationRomanUrdu": "Thaa aur shown marks ko preserve karen.",
+              "acceptedAnswers": [
+                "الثَّالِثَةُ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-arrangement-details-sentence-order",
+              "prompt": "Build the lesson is on Thursday, starting with the lesson.",
+              "explanationRomanUrdu": "Yawma al-khamiisi time phrase hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-arrangement-details-token-1",
+                  "text": "يَوْمَ"
+                },
+                {
+                  "id": "ar-a2-arrangement-details-token-2",
+                  "text": "الْخَمِيسِ"
+                },
+                {
+                  "id": "ar-a2-arrangement-details-token-0",
+                  "text": "الدَّرْسُ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-arrangement-details-token-0",
+                "ar-a2-arrangement-details-token-1",
+                "ar-a2-arrangement-details-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-arrangement-details-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-arrangement-details-pair-0",
+                  "left": "الثَّانِيَةُ",
+                  "right": "second: feminine"
+                },
+                {
+                  "id": "ar-a2-arrangement-details-pair-1",
+                  "left": "الثَّالِثَةُ",
+                  "right": "third: feminine"
+                },
+                {
+                  "id": "ar-a2-arrangement-details-pair-2",
+                  "left": "الْخَمِيسُ",
+                  "right": "Thursday"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-arrangement-details-multi-choice",
+              "prompt": "Choose both time/day expressions.",
+              "explanationRomanUrdu": "Yawma phrases day/time; room phrase location hai.",
+              "options": [
+                {
+                  "id": "ar-a2-arrangement-details-multi-0",
+                  "text": "يَوْمَ الْخَمِيسِ"
+                },
+                {
+                  "id": "ar-a2-arrangement-details-multi-1",
+                  "text": "يَوْمَ الْجُمُعَةِ"
+                },
+                {
+                  "id": "ar-a2-arrangement-details-multi-2",
+                  "text": "فِي الْغُرْفَةِ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-arrangement-details-multi-0",
+                "ar-a2-arrangement-details-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-arrangement-details-listening-choice",
+              "prompt": "Which room is confirmed?",
+              "explanationRomanUrdu": "Laa ke baad correction third room hai.",
+              "speech": {
+                "text": "الدَّرْسُ فِي الْغُرْفَةِ الثَّانِيَةِ؟ لَا، فِي الْغُرْفَةِ الثَّالِثَةِ يَوْمَ الْخَمِيسِ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-arrangement-details-listen-0",
+                  "text": "Room two."
+                },
+                {
+                  "id": "ar-a2-arrangement-details-listen-1",
+                  "text": "Room three."
+                },
+                {
+                  "id": "ar-a2-arrangement-details-listen-2",
+                  "text": "No room is confirmed."
+                }
+              ],
+              "correctOptionId": "ar-a2-arrangement-details-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a2-practical-message",
+          "title": "Write a short practical message",
+          "objectives": [
+            "Understand and use the taught write a short practical message patterns.",
+            "Apply the distinction in an original reading, listening or practical response."
+          ],
+          "explanationRomanUrdu": "Practical message mein context, problem, proposed alternative aur confirmation request ko joren. Arabic mein mukhtasar aur samajh aane wala text maqsad hai; yeh automatic writing assessment nahin. Apne fictional context mein person/gender aur waqt ko consistent rakhen.",
+          "rulesRomanUrdu": [
+            "لَا أَسْتَطِيعُ الْحُضُورَ = main attend nahin kar sakta/sakti; yahan noun al-hudur istemal hua hai.",
+            "هَلْ يُنَاسِبُكَ يَوْمُ الْخَمِيسِ؟ aik mard se proposed day ki suitability poochta hai.",
+            "مِنْ فَضْلِكَ أَكِّدِ الْمَوْعِدَ mein command final kasra next article se connected reading ke liye hai.",
+            "Checklist incomplete ho tab bhi save kar sakte hain. Learner text ko original form mein save kiya jata hai; quiz denominator mein yeh task shamil nahin."
+          ],
+          "examples": [
+            {
+              "text": "لَا أَسْتَطِيعُ الْحُضُورَ.",
+              "meaningRomanUrdu": "Main attend nahin kar sakta/sakti.",
+              "speech": {
+                "text": "لَا أَسْتَطِيعُ الْحُضُورَ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هَلْ يُنَاسِبُكَ يَوْمُ الْخَمِيسِ؟",
+              "meaningRomanUrdu": "Kya Thursday aap ko munasib hai: mard se?",
+              "speech": {
+                "text": "هَلْ يُنَاسِبُكَ يَوْمُ الْخَمِيسِ؟",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "أَكِّدِ الْمَوْعِدَ، مِنْ فَضْلِكَ.",
+              "meaningRomanUrdu": "Appointment confirm karen, please: mard se, connected form.",
+              "speech": {
+                "text": "أَكِّدِ الْمَوْعِدَ، مِنْ فَضْلِكَ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "شُكْرًا لَكَ.",
+              "meaningRomanUrdu": "Aap ka shukriya: mard se.",
+              "speech": {
+                "text": "شُكْرًا لَكَ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a2-practical-message-word-0",
+              "word": "الْحُضُورُ",
+              "meaningRomanUrdu": "attendance",
+              "partOfSpeech": "verbal noun",
+              "pronunciationGuide": "al-huduuru"
+            },
+            {
+              "id": "ar-a2-practical-message-word-1",
+              "word": "الْمَوْعِدُ",
+              "meaningRomanUrdu": "appointment",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "al-mawidu"
+            },
+            {
+              "id": "ar-a2-practical-message-word-2",
+              "word": "يُنَاسِبُ",
+              "meaningRomanUrdu": "suits",
+              "partOfSpeech": "verb",
+              "pronunciationGuide": "yunaasibu"
+            },
+            {
+              "id": "ar-a2-practical-message-word-3",
+              "word": "أَكِّدْ",
+              "meaningRomanUrdu": "confirm: one man, isolated",
+              "partOfSpeech": "imperative",
+              "pronunciationGuide": "akkid"
+            }
+          ],
+          "reading": {
+            "text": "مَرْحَبًا يَا خَالِدُ. لَا أَسْتَطِيعُ الْحُضُورَ يَوْمَ الْأَرْبِعَاءِ. هَلْ يُنَاسِبُكَ يَوْمُ الْخَمِيسِ فِي الْمَكْتَبَةِ؟ مِنْ فَضْلِكَ أَكِّدِ الْمَوْعِدَ. شُكْرًا لَكَ.",
+            "meaningRomanUrdu": "Hello Khalid. Main Wednesday attend nahin kar sakta/sakti. Kya Thursday library mein aap ko munasib hai? Please appointment confirm karen. Shukriya."
+          },
+          "speakingPrompts": [
+            "Person A uses the first two examples in an imaginary context about write a short practical message. Person B asks for the intended meaning or reference; explain it in your own words.",
+            "Swap roles. Summarize one detail from the reading, then ask for clarification about a different detail. Keep any negation, condition or uncertainty. Self-practice only; no recording or pronunciation score."
+          ],
+          "reviewTags": [
+            "structured-writing",
+            "practical-speaking",
+            "common-sentence-patterns"
+          ],
+          "exercises": [
+            {
+              "type": "paragraph_writing",
+              "id": "ar-a2-practical-message-paragraph-writing",
+              "prompt": "Write a short Arabic message about changing an imaginary study meeting. State the unavailable day, propose another day/place and ask for confirmation. Marks are optional; do not include real contact details.",
+              "explanationRomanUrdu": "Apna original text aur checklist explicit Save paragraph se save karen. Yeh self-practice hai; automatic grammar ya quality score nahin.",
+              "checklist": [
+                {
+                  "id": "ar-a2-practical-message-check-0",
+                  "text": "I stated a clear change or problem."
+                },
+                {
+                  "id": "ar-a2-practical-message-check-1",
+                  "text": "I proposed an alternative day or place."
+                },
+                {
+                  "id": "ar-a2-practical-message-check-2",
+                  "text": "I asked for confirmation without assuming agreement."
+                }
+              ],
+              "modelParagraph": "مَرْحَبًا يَا خَالِدُ. لَا أَسْتَطِيعُ الْحُضُورَ يَوْمَ الْأَرْبِعَاءِ. هَلْ يُنَاسِبُكَ يَوْمُ الْخَمِيسِ فِي الْمَكْتَبَةِ؟ أَكِّدِ الْمَوْعِدَ، مِنْ فَضْلِكَ. شُكْرًا لَكَ.",
+              "modelMeaningRomanUrdu": "Wednesday unavailable hone ka context, Thursday library ka alternative aur confirmation ki request hai."
+            },
+            {
+              "type": "single_choice",
+              "id": "ar-a2-practical-message-single-choice",
+              "prompt": "What is the purpose of هَلْ يُنَاسِبُكَ يَوْمُ الْخَمِيسِ؟",
+              "explanationRomanUrdu": "Hal sawal hai; suitability poochta hai, agreement assume nahin karta.",
+              "options": [
+                {
+                  "id": "ar-a2-practical-message-choice-0",
+                  "text": "Confirm that Thursday is already accepted."
+                },
+                {
+                  "id": "ar-a2-practical-message-choice-1",
+                  "text": "Ask whether Thursday suits the listener."
+                },
+                {
+                  "id": "ar-a2-practical-message-choice-2",
+                  "text": "Cancel all future lessons."
+                }
+              ],
+              "correctOptionId": "ar-a2-practical-message-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a2-practical-message-fill-blank",
+              "prompt": "Copy the marked noun appointment: الْمَوْعِدُ",
+              "explanationRomanUrdu": "Ayn aur kasra ko preserve karen.",
+              "acceptedAnswers": [
+                "الْمَوْعِدُ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a2-practical-message-sentence-order",
+              "prompt": "Build thank you, using shukran then laka.",
+              "explanationRomanUrdu": "Yeh aik mard listener ka taught polite expression hai.",
+              "tokens": [
+                {
+                  "id": "ar-a2-practical-message-token-1",
+                  "text": "لَكَ"
+                },
+                {
+                  "id": "ar-a2-practical-message-token-0",
+                  "text": "شُكْرًا"
+                }
+              ],
+              "correctOrder": [
+                "ar-a2-practical-message-token-0",
+                "ar-a2-practical-message-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a2-practical-message-match-pairs",
+              "prompt": "Match each item to its meaning or grammatical role.",
+              "explanationRomanUrdu": "Har item ko us ke taught maani ya grammatical role se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a2-practical-message-pair-0",
+                  "left": "الْمَوْعِدُ",
+                  "right": "appointment"
+                },
+                {
+                  "id": "ar-a2-practical-message-pair-1",
+                  "left": "الْحُضُورُ",
+                  "right": "attendance"
+                },
+                {
+                  "id": "ar-a2-practical-message-pair-2",
+                  "left": "يَوْمُ الْخَمِيسِ",
+                  "right": "Thursday: subject form"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a2-practical-message-multi-choice",
+              "prompt": "Choose both expressions requesting information or confirmation.",
+              "explanationRomanUrdu": "First do requested response/confirmation hain; thank you acknowledgment hai.",
+              "options": [
+                {
+                  "id": "ar-a2-practical-message-multi-0",
+                  "text": "هَلْ يُنَاسِبُكَ يَوْمُ الْخَمِيسِ؟"
+                },
+                {
+                  "id": "ar-a2-practical-message-multi-1",
+                  "text": "أَكِّدِ الْمَوْعِدَ."
+                },
+                {
+                  "id": "ar-a2-practical-message-multi-2",
+                  "text": "شُكْرًا لَكَ."
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a2-practical-message-multi-0",
+                "ar-a2-practical-message-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a2-practical-message-listening-choice",
+              "prompt": "Which day is proposed as an alternative?",
+              "explanationRomanUrdu": "Wednesday unavailable hai; Thursday propose kiya gaya hai.",
+              "speech": {
+                "text": "لَا أَسْتَطِيعُ الْحُضُورَ يَوْمَ الْأَرْبِعَاءِ. هَلْ يُنَاسِبُكَ يَوْمُ الْخَمِيسِ؟",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a2-practical-message-listen-0",
+                  "text": "Wednesday."
+                },
+                {
+                  "id": "ar-a2-practical-message-listen-1",
+                  "text": "Thursday."
+                },
+                {
+                  "id": "ar-a2-practical-message-listen-2",
+                  "text": "Friday."
+                }
+              ],
+              "correctOptionId": "ar-a2-practical-message-listen-1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

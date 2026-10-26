@@ -292,6 +292,56 @@ class LessonFlowTest {
         }
     }
 
+    @Test fun arabicB1ParagraphSavesRtlOriginalTextAndResumesWithoutAGrade() {
+        click("Continue Arabic Fusha")
+        click("Open: Structured requests and practical Fusha messages")
+        click("Start practice")
+        val ownText = "مرحبا. أريد تأكيد الموعد.\nهل يمكن توضيح الغرفة؟"
+        waitFor("Your paragraph")
+        compose.onNodeWithText("Your paragraph").performScrollTo().performTextInput(ownText)
+        click("I stated the purpose and unresolved detail clearly.")
+        click("Save paragraph")
+        waitFor("Paragraph saved")
+        compose.onNodeWithText(ownText).performScrollTo().assertIsDisplayed()
+        val layouts = mutableListOf<TextLayoutResult>()
+        compose.onNodeWithText(ownText).performSemanticsAction(SemanticsActions.GetTextLayoutResult) { it(layouts) }
+        assertEquals(ResolvedTextDirection.Rtl, layouts.single().getParagraphDirection(0))
+        compose.onNodeWithText("Self-practice saved on this device. No automatic writing grade; this does not change your quiz score.")
+            .performScrollTo().assertIsDisplayed()
+        compose.onNodeWithContentDescription("Back").performClick()
+        click("Resume: Structured requests and practical Fusha messages")
+        waitFor("Paragraph saved")
+        compose.onNodeWithText(ownText).performScrollTo().assertIsDisplayed()
+        runBlocking {
+            val session = requireNotNull(database.learningDao().activeSession("ar-b1-formal-message"))
+            val attempts = database.learningDao().attempts(session.id)
+            assertEquals(1, attempts.size)
+            assertFalse(attempts.single().correct)
+            val saved = requireNotNull(repository.latestParagraph(session.lessonId, "ar-b1-formal-message-paragraph-writing"))
+            assertEquals(ownText, saved.answer.text)
+            assertEquals(1, saved.answer.checkedCriterionIds.size)
+            assertNull(database.learningDao().progress(session.lessonId))
+        }
+    }
+
+    @Test fun directFushaA2IdafahOpensAndResumesWithoutEarlierCompletion() {
+        click("Continue Arabic Fusha")
+        click("Open: Idafah: connected noun phrases")
+        click("Start practice")
+        click("كِتَابُ الطَّالِبِ")
+        click("Check answer")
+        waitFor("Correct")
+        compose.onNodeWithContentDescription("Back").performClick()
+        click("Resume: Idafah: connected noun phrases")
+        waitFor("Correct")
+        runBlocking {
+            val session = requireNotNull(database.learningDao().activeSession("ar-a2-idafah"))
+            assertTrue(database.learningDao().attempts(session.id).single().correct)
+            assertNull(database.learningDao().activeSession("ar-a0-alphabet"))
+            assertEquals(0, repository.catalog.first().completed(com.lingomate.learning.LearningTrack.FUSHA))
+        }
+    }
+
     private fun waitFor(text: String) {
         compose.waitUntil(10_000) { compose.onAllNodesWithText(text).fetchSemanticsNodes().isNotEmpty() }
     }
