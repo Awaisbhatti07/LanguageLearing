@@ -61,7 +61,7 @@ class EnglishLevelsTest {
         assertEquals(ListeningMode.READING_ALTERNATIVE, after.listeningModes[listening.id])
         assertEquals(progress, database.learningDao().progress(finished.session.lessonId))
         assertEquals(18, database.learningDao().packLessons("english-a1-beginner").size)
-        assertEquals(3, database.learningDao().pack("english-a0-starter")?.version)
+        assertEquals(ContentCodec.parsePack(a0).version, database.learningDao().pack("english-a0-starter")?.version)
     }
 
     @Test fun anA1ReadingAlternativeDoesNotCompleteAnA0LessonOrClaimListeningCredit() = runBlocking {

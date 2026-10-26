@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "english-a0-starter",
-  "version": 3,
+  "version": 4,
   "title": "English A0 foundations",
   "track": "ENGLISH",
   "level": "A0",
@@ -128,7 +128,7 @@
               "acceptedAnswers": [
                 "m"
               ],
-              "ignoreCase": true
+              "ignoreCase": false
             },
             {
               "type": "match_pairs",

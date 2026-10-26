@@ -162,7 +162,7 @@ class LearningRepositoryTest {
         assertEquals(oldProgress, database.learningDao().progress(finished.session.lessonId))
     }
 
-    @Test fun actualVersionTwoToThreeUpdateDoesNotAddNewActivitiesToAnActiveSnapshot() = runBlocking {
+    @Test fun actualVersionTwoToCurrentUpdateDoesNotAddNewActivitiesToAnActiveSnapshot() = runBlocking {
         repository.importPack(requireNotNull(javaClass.getResource("/content/english-a0-v2.json")).readText())
         val active = repository.beginOrResume("en-a0-greetings")
         repository.submit(active.session.id, active.content.exercises.first().id, correctAnswer(active.content.exercises.first()))
@@ -171,7 +171,7 @@ class LearningRepositoryTest {
         val progress = database.learningDao().progress(finished.session.lessonId)
         repository.installBundledContent()
         val resumed = repository.beginOrResume(active.session.lessonId)
-        assertEquals(3, database.learningDao().pack(pack.id)?.version)
+        assertEquals(pack.version, database.learningDao().pack(pack.id)?.version)
         assertEquals(2, resumed.session.packVersion)
         assertEquals(active.content, resumed.content)
         assertEquals(5, resumed.content.exercises.size)
@@ -179,6 +179,41 @@ class LearningRepositoryTest {
         assertTrue(resumed.listeningModes.isEmpty())
         assertEquals(6, repository.lesson(active.session.lessonId).exercises.size)
         assertEquals(progress, database.learningDao().progress(finished.session.lessonId))
+    }
+
+    @Test fun alphabetCaseCorrectionPreservesVersionThreeAttemptsAndActiveSnapshots() = runBlocking {
+        repository.importPack(requireNotNull(javaClass.getResource("/content/english-a0-v3.json")).readText())
+        val completed = repository.beginOrResume("en-a0-alphabet")
+        completed.content.exercises.forEach { exercise ->
+            val answer = if (exercise.id == "en-alpha-fill") ExerciseAnswer.Text("M") else correctAnswer(exercise)
+            submitAnswer(completed.session.id, exercise, answer)
+        }
+        val originalResult = repository.run(completed.session.id)
+        val originalProgress = database.learningDao().progress(completed.session.lessonId)
+        assertEquals(6, originalResult.correctCount)
+        val active = repository.beginOrResume(completed.session.lessonId)
+        submitAnswer(active.session.id, active.content.exercises.first(), correctAnswer(active.content.exercises.first()))
+        val beforeUpdate = repository.run(active.session.id)
+
+        repository.installBundledContent()
+        assertEquals(originalResult, repository.run(completed.session.id))
+        assertEquals(originalProgress, database.learningDao().progress(completed.session.lessonId))
+        assertEquals(beforeUpdate, repository.beginOrResume(active.session.lessonId))
+        assertEquals(3, beforeUpdate.session.packVersion)
+        active.content.exercises.drop(1).forEach { exercise ->
+            val answer = if (exercise.id == "en-alpha-fill") ExerciseAnswer.Text("M") else correctAnswer(exercise)
+            submitAnswer(active.session.id, exercise, answer)
+        }
+        assertEquals(6, repository.run(active.session.id).correctCount)
+
+        val fresh = repository.beginOrResume(completed.session.lessonId)
+        assertEquals(4, fresh.session.packVersion)
+        submitAnswer(fresh.session.id, fresh.content.exercises.first(), correctAnswer(fresh.content.exercises.first()))
+        val corrected = repository.submit(fresh.session.id, "en-alpha-fill", ExerciseAnswer.Text("M"))
+        assertFalse(corrected.attempts.last().correct)
+        val lowerCase = fresh.content.exercises.single { it.id == "en-alpha-fill" }
+        assertTrue(ExerciseGrader.grade(lowerCase, ExerciseAnswer.Text("m")).correct)
+        assertEquals(originalResult, repository.run(completed.session.id))
     }
 
     private suspend fun submitAnswer(sessionId: String, exercise: Exercise, answer: ExerciseAnswer) {

@@ -39,6 +39,19 @@ class ContentEngineTest {
         assertEquals(66, lessons.sumOf { it.exercises.size })
         assertTrue(lessons.all { it.examples.size >= 3 && it.vocabulary.size >= 3 })
     }
+    @Test fun alphabetLowercaseActivityRejectsAnUppercaseAnswerWithoutChangingOtherFillPolicies() {
+        val pack = pack()
+        assertEquals(4, pack.version)
+        val fills = pack.units.flatMap { it.lessons }.flatMap { it.exercises }.filterIsInstance<Exercise.FillBlank>()
+        val lowercase = fills.single { it.id == "en-alpha-fill" }
+        val right = ExerciseGrader.grade(lowercase, ExerciseAnswer.Text("m"))
+        val wrong = ExerciseGrader.grade(lowercase, ExerciseAnswer.Text("M"))
+        assertTrue(right.valid && right.correct)
+        assertTrue(wrong.valid)
+        assertFalse(wrong.correct)
+        assertEquals("m", wrong.expectedAnswer)
+        assertTrue(fills.filterNot { it.id == lowercase.id }.all { it.ignoreCase })
+    }
     @Test fun packRoundTripPreservesDisplayTextAndHarakat() {
         val original = pack().let { pack -> pack.copy(track = LearningTrack.FUSHA, units = pack.units.map { unit ->
             unit.copy(lessons = unit.lessons.map { lesson -> lesson.copy(examples = listOf(
