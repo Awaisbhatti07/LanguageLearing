@@ -1,6 +1,8 @@
 # English M4 acceptance checkpoint
 
-Updated: 2026-10-23 (Asia/Karachi). Representative automated/runtime checks passed as recorded below; full M4 and qualified curriculum acceptance remain incomplete.
+Updated: 2026-10-26 (Asia/Karachi). Representative automated/runtime checks passed as recorded below; full M4 and qualified curriculum acceptance remain incomplete.
+
+2026-10-26 continuation: UI-01 Review singular-label source is now corrected, with manual source/diff inspection only. New tests/build/lint/runtime checks have not run because SDK 37/cache remain absent; downloads need separate authorization under AGENTS.md. The recorded APK/reports/screenshots below remain evidence for the preceding published source. Keep this new correction local WIP pending verification.
 
 ## Source and automated evidence
 
@@ -24,7 +26,7 @@ User approved option 1 on 2026-10-22 and standing routine project checks (“ple
 | Device TTS | Real offline engine: stop before completion and background/return kept answers locked; full completion unlocked them. Reading replay retained mode. Disabled speech service produced visible offline-voice error, reading submission still worked; service re-enabled | Back/stale-callback edge cases additionally have JVM/fake-player coverage. Audible/physical output quality was not assessed |
 | Appearance/accessibility | Dark/light plus System following device dark/light all show readable matching status/navigation icons. Theme/goal persisted after force-stop. Home/Settings/Review, keyboard, long forms and controls usable at 1.5× with scrolling; goal chips wrap | Minimum API 26, target API 37, physical/Redmi Note 12 behavior and full accessibility audit not established |
 
-An emulator establishes representative runtime/UI and engine-callback evidence. No pronunciation, volume, intelligibility, natural connected-speech or audio-quality assessment is claimed. A minor Review singular-label issue is tracked in KNOWN_ISSUES.md; functionality/counts are unaffected.
+An emulator establishes representative runtime/UI and engine-callback evidence. No pronunciation, volume, intelligibility, natural connected-speech or audio-quality assessment is claimed. The minor Review singular-label source fix is tracked as verification-pending in KNOWN_ISSUES.md; recorded screenshots/artifact still contain the earlier copy. Functionality/counts are unaffected.
 
 Final font scale restored to 1.0 and the speech service confirmed enabled, then only emulator-5580 was stopped. Temporary synthetic data is retained; persistent screenshots are committed with the checkpoint.
 

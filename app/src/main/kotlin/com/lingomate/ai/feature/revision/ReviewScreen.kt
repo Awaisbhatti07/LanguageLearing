@@ -19,7 +19,12 @@ fun ReviewScreen(learning: LearningUiState, onRetry: () -> Unit, onLearn: () -> 
                 InfoCard("Revisit what you learned", "These are completed lessons and saved practice results. Scheduled spaced revision is still being developed.")
                 learning.catalog.progress.sortedBy { it.lastStudiedAt }.forEach { progress ->
                     learning.catalog.lessons.firstOrNull { it.id == progress.lessonId }?.let { lesson ->
-                        InfoCard(lesson.title, "Best practice result: ${progress.bestCorrect}/${progress.questionCount}\n${progress.completedRuns} completed practice runs", "Practise again", { onLesson(lesson.id) })
+                        InfoCard(
+                            lesson.title,
+                            "Best practice result: ${progress.bestCorrect}/${progress.questionCount}\n${progress.completedRuns} completed practice ${if (progress.completedRuns == 1) "run" else "runs"}",
+                            "Practise again",
+                            { onLesson(lesson.id) },
+                        )
                     }
                 }
             }
