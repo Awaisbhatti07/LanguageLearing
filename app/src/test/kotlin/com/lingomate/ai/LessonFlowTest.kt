@@ -2,6 +2,9 @@ package com.lingomate.ai
 
 import android.content.Context
 import androidx.compose.ui.test.*
+import androidx.compose.ui.semantics.SemanticsActions
+import androidx.compose.ui.text.TextLayoutResult
+import androidx.compose.ui.text.style.ResolvedTextDirection
 import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.datastore.preferences.core.PreferenceDataStoreFactory
 import androidx.room.Room
@@ -19,6 +22,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.flow.first
 import org.junit.After
 import org.junit.Assert.*
 import org.junit.Before
@@ -211,6 +215,52 @@ class LessonFlowTest {
         waitFor("Activity 2 of 7")
         compose.onNodeWithText("Activity 2 of 7").assertIsDisplayed()
         compose.onNodeWithText("Which sentence introduces the main idea of a library-visit paragraph?").assertIsDisplayed()
+    }
+
+    @Test fun fushaVowelsKeepRtlTextAndCompleteAllActivityTypesWithoutEnglishProgress() {
+        click("Continue Arabic Fusha")
+        click("Open: Fatha, kasra and damma")
+        val layouts = mutableListOf<TextLayoutResult>()
+        compose.onNodeWithText("بَ بِ بُ").performScrollTo().performSemanticsAction(SemanticsActions.GetTextLayoutResult) {
+            it(layouts)
+        }
+        assertEquals(ResolvedTextDirection.Rtl, layouts.single().getParagraphDirection(0))
+        click("Start practice")
+        click("بِ")
+        click("Check answer")
+        click("Next activity")
+        waitFor("Your answer")
+        compose.onNodeWithText("Your answer").performTextInput("بَ")
+        click("Check answer")
+        click("Next activity")
+        click("بَ"); click("بِ"); click("بُ")
+        click("Check answer")
+        click("Next activity")
+        click("بَ"); click("ba")
+        click("بِ"); click("bi")
+        click("بُ"); click("bu")
+        click("Check answer")
+        click("Next activity")
+        click("بَ"); click("بُ")
+        click("Check answer")
+        click("Next activity")
+        compose.onNodeWithText("كَتَبَ.").assertDoesNotExist()
+        click("Use reading instead")
+        waitFor("كَتَبَ.")
+        compose.onNodeWithText("كَتَبَ.").performScrollTo().assertIsDisplayed()
+        click("He wrote.")
+        click("Check answer")
+        click("See results")
+        waitFor("Practice complete")
+        compose.onNodeWithText("6 of 6 activities correct. This is a practice result, not a language-proficiency score.").assertIsDisplayed()
+        runBlocking {
+            val catalog = repository.catalog.first()
+            assertEquals(1, catalog.completed(com.lingomate.learning.LearningTrack.FUSHA))
+            assertEquals(0, catalog.completed(com.lingomate.learning.LearningTrack.ENGLISH))
+            val progress = requireNotNull(database.learningDao().progress("ar-a0-short-vowels"))
+            assertEquals(6, progress.bestCorrect)
+            assertEquals(1, progress.completedRuns)
+        }
     }
 
     private fun waitFor(text: String) {

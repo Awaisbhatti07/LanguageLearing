@@ -22,6 +22,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import com.lingomate.ai.core.audio.SpeechPlayer
@@ -37,6 +38,7 @@ fun ExerciseInput(
     listeningMode: ListeningMode?,
     onListeningMode: (ListeningMode) -> Unit,
     speechPlayer: SpeechPlayer? = null,
+    languageTag: String = "en",
     onSubmit: (ExerciseAnswer) -> Unit,
 ) {
     var selected by rememberSaveable(exercise.id) { mutableStateOf(emptyList<String>()) }
@@ -92,13 +94,19 @@ fun ExerciseInput(
                     }
                 }
             }
-            is Exercise.FillBlank -> OutlinedTextField(
-                value = text, onValueChange = { if (it.length <= 1000) text = it }, enabled = !saving,
-                label = { Text("Your answer") }, modifier = Modifier.fillMaxWidth(),
-            )
+            is Exercise.FillBlank -> {
+                if (languageTag == "ar") Text("Use Arabic letters and include the vowel marks shown in the prompt.")
+                OutlinedTextField(
+                    value = text, onValueChange = { if (it.length <= 1000) text = it }, enabled = !saving,
+                    textStyle = MaterialTheme.typography.bodyLarge.copy(
+                        textDirection = if (languageTag == "ar") TextDirection.Rtl else TextDirection.Ltr),
+                    label = { Text("Your answer") }, modifier = Modifier.fillMaxWidth(),
+                )
+            }
             is Exercise.SentenceOrder -> {
-                Text("Tap words in sentence order. Use Undo or Clear to change your answer.")
-                Text(selected.joinToString(" ") { id -> exercise.tokens.first { it.id == id }.text }.ifEmpty { "Your sentence will appear here." })
+                Text("Tap items in the requested order. Use Undo or Clear to change your answer.")
+                if (selected.isEmpty()) Text("Your answer will appear here.")
+                else LearningText(selected.joinToString(" ") { id -> exercise.tokens.first { it.id == id }.text }, languageTag)
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     exercise.tokens.filter { it.id !in selected }.forEach { token ->
                         OutlinedButton(onClick = { selected = selected + token.id }, enabled = !saving) { Text(token.text) }

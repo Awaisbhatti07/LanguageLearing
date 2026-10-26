@@ -1,10 +1,10 @@
 # English M4 acceptance checkpoint
 
-Updated: 2026-10-26 (Asia/Karachi). Representative automated/runtime checks passed as recorded below; full M4 and qualified curriculum acceptance remain incomplete.
+Updated: 2026-10-26 (Asia/Karachi). Under the user-delegated sequencing decision, Fusha A0 implementation may proceed with M4 qualified-review/physical-audio release gates still pending. English A0 v4 separately fixes lowercase-M grading (61 core/17 focused app tests, APK/lint passed; original v3 results/snapshots preserved). Latest combined English/Fusha artifact/checks are in PROJECT_STATUS.md and TEST_RESULTS.md; the dated M4 evidence below remains historical. Representative automated/runtime checks passed as recorded below; full M4 and qualified curriculum acceptance remain incomplete.
 
 2026-10-26 continuation: **UI-01 verified**. Review singular-label source e93dc0e passed 56 fresh app tests, debug build/lint in 18m 4s after user-approved SDK 37/Gradle/pinned dependency restoration. Focused retained Android 36 check confirms the exact “1 completed practice run” label and preserved 6/6 result after APK update/restart; [new evidence](evidence/m4-2026-10-26/README.md). Plural branch source-inspected. SDK/cache now use ignored project-local .local directories, preserving the global SDK.
 
-Current verified APK: **13,969,405 bytes**, SHA-256 `b8582389c27e01e4c765281a8b4fc83bdcb23a06e236c4a96f9a80bc8f3eea2b`, all four source-identical packs. Fresh lint has only newer-Gradle/DataStore version advisories, no dependency upgrades. Core source/tests are unchanged (historical 60 passing tests; no rerun). The earlier APK/runtime observations below remain historical and are not represented as new regression execution.
+Review-wording checkpoint APK: **13,969,405 bytes**, SHA-256 `b8582389c27e01e4c765281a8b4fc83bdcb23a06e236c4a96f9a80bc8f3eea2b`, all four source-identical packs. Fresh lint has only newer-Gradle/DataStore version advisories, no dependency upgrades. Core source/tests are unchanged (historical 60 passing tests; no rerun). The earlier APK/runtime observations below remain historical and are not represented as new regression execution.
 
 ## Source and automated evidence
 

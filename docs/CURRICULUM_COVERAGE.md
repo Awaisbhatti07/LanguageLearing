@@ -13,7 +13,7 @@ Coverage is based on the user's specification; an authored lesson must have obje
 ## Fusha Arabic
 | Level | Planned skill coverage | Content state | Review state |
 | --- | --- | --- | --- |
-| A0 | Alphabet; joining/shapes; sounds; fatha/kasra/damma; sukoon/shaddah/tanween; madd; reading; greetings; basic nouns/verbs/sentences | TODO | Pending qualified Arabic review |
+| A0 | Alphabet; joining/shapes; sounds; fatha/kasra/damma; sukoon/shaddah/tanween; madd; reading; greetings; basic nouns/verbs/sentences | Draft v1: 12 lessons/72 activities, including 12 listening questions; 67 core/61 app tests and APK/lint passed. Focused Android 36 study/RTL/1.5×/selected-answer/feedback-restart passed; exact scope under evidence/m5-2026-10-26 | PENDING_REVIEW; qualified Fusha/phonetic and physical-audio acceptance pending |
 | A1 | Personal/demonstrative pronouns; gender; singular/plural; word classes; nominal/verbal sentences; past/present; questions/negation; prepositions; daily vocabulary/conversation | TODO | Pending |
 | A2 | Conjugation; verb forms; attached pronouns; idafah; adjective agreement; imperatives; sentence patterns; roots; reading/listening/speaking | TODO | Pending |
 | B1 | Applied Nahw/Sarf; intermediate verbs; connectors/relationships; passages; listening; descriptions/opinions; Fusha conversation; writing | TODO | Pending |
@@ -113,3 +113,24 @@ Each lesson has original Roman Urdu explanations/rules, four examples with Engli
 | en-b1-writing-messages | Context/reason/alternative/pending detail/next step; saved message first |
 
 Connected-speech practice introduces awareness and clearly states that installed voices may not demonstrate natural reductions; its listening question checks the script’s meaning. Writing, roleplay and presentation practice do not record speech or automatically assess grammar/argument/pronunciation quality. Longer reading and listening scripts, explanations and approximate pronunciation guides still need qualified review and real-device audio checks. Full independent grammar library, assessed writing/speaking, dictation, translation rubrics and SRS remain M7/later work.
+
+## Fusha A0 draft mapping
+
+Each lesson has original Roman Urdu teaching, at least three Arabic examples/vocabulary entries, marked reading, two self-speaking prompts and six scored activities (single/multiple choice, marked text, ordering, matching and listening). Typed prompts explicitly request the shown marks; missing/different harakat are not silently normalized away. This is a foundation draft, not certified proficiency or a full pronunciation/conjugation course. No Quranic dataset is included.
+
+| Stable lesson ID | Main teaching/context |
+| --- | --- |
+| ar-a0-alphabet | All 28 basic letters, names versus sounds, right-to-left letter lists |
+| ar-a0-shapes | Dot families and contextual baa shapes |
+| ar-a0-joining | Connections, six basic right-joining letters and standalone hamza |
+| ar-a0-short-vowels | Fatha/kasra/damma, short ba/bi/bu |
+| ar-a0-sukoon | No added vowel, closed syllables |
+| ar-a0-shaddah | Doubled consonants, darasa versus darrasa |
+| ar-a0-tanween | -un/-in/-an marks, introductory joined/stopping forms; case grammar deferred |
+| ar-a0-madd | Long aa/ii/uu patterns versus short vowels |
+| ar-a0-reading | Short marked phrases, word boundaries, this/what |
+| ar-a0-greetings | Hello, morning/evening, name/health, addressed gender |
+| ar-a0-nouns-verbs | Everyday nouns and three masculine-singular past verbs; full conjugation deferred |
+| ar-a0-simple-sentences | Present noun sentences, student gender and demonstratives |
+
+Roman guides are approximate; connected/stopping forms, makharij, shaddah, tanween and the full content need qualified Arabic/real-audio review. Listening fallbacks explicitly save reading-only credit. Speaking stays self-practice, without recording or a pronunciation score. Fusha keeps its own content IDs and progress; English and Quranic progress are separate.

@@ -1,0 +1,2532 @@
+{
+  "schemaVersion": 1,
+  "id": "fusha-a0-foundation",
+  "version": 1,
+  "title": "Fusha Arabic A0 foundations",
+  "track": "FUSHA",
+  "level": "A0",
+  "provenance": {
+    "author": "Original LingoMate AI project material, AI-assisted draft",
+    "rightsNotice": "Original project-authored educational material; no third-party curriculum, recording or religious dataset copied. Distribution permission follows the project owner’s decision.",
+    "reviewStatus": "PENDING_REVIEW"
+  },
+  "units": [
+    {
+      "id": "ar-a0-letters",
+      "title": "Letters, shapes and joining",
+      "lessons": [
+        {
+          "id": "ar-a0-alphabet",
+          "title": "The Arabic alphabet",
+          "objectives": [
+            "Recognize the 28 basic Arabic letters.",
+            "Read a letter list from right to left."
+          ],
+          "explanationRomanUrdu": "Fusha Arabic aam tor par daen se baen parhi jati hai. Is sabaq mein 28 bunyadi huroof ki pehchan hai. Harf ka naam aur lafz ke andar us ki awaaz alag cheezen hain. Hamza ء ki apni awaaz hai; us ki kursi aur mazeed imla ki tafseel baad mein aayegi. Roman guides sirf taqribi madad hain, Arabic makharij ka badal nahin.",
+          "rulesRomanUrdu": [
+            "ا ب ت ث ج ح خ — alif, baa, taa, thaa, jiim, haa (halq se), khaa.",
+            "د ذ ر ز س ش ص — daal, dhaal, raa, zaay, siin, shiin, saad.",
+            "ض ط ظ ع غ ف ق — daad, taa (bhari), zaa (bhari), ayn, ghayn, faa, qaaf.",
+            "ك ل م ن ه و ي — kaaf, laam, miim, nuun, haa, waaw, yaa.",
+            "Awaaz mein ث zaban ki nok danton ke qareeb rakh kar nikalta hai; س se mukhtalif hai. ح aur ه bhi alag huroof hain.",
+            "Is likhai mein English jaisi capital aur small shaklain nahin. Harf ki judi hui shakal agle sabaq mein dekhenge."
+          ],
+          "examples": [
+            {
+              "text": "ا ب ت ث",
+              "meaningRomanUrdu": "Alif, baa, taa, thaa: pehle chaar bunyadi huroof.",
+              "speech": {
+                "text": "ا ب ت ث",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "بَابٌ",
+              "meaningRomanUrdu": "Darwaza; pehla harf baa hai.",
+              "speech": {
+                "text": "بَابٌ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "قَلَمٌ",
+              "meaningRomanUrdu": "Qalam; pehla harf qaaf hai.",
+              "speech": {
+                "text": "قَلَمٌ",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a0-alphabet-word-0",
+              "word": "بَابٌ",
+              "meaningRomanUrdu": "darwaza",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "baabun; rukne par baab"
+            },
+            {
+              "id": "ar-a0-alphabet-word-1",
+              "word": "قَلَمٌ",
+              "meaningRomanUrdu": "qalam",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "qalamun; rukne par qalam"
+            },
+            {
+              "id": "ar-a0-alphabet-word-2",
+              "word": "كِتَابٌ",
+              "meaningRomanUrdu": "kitaab",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "kitaabun; rukne par kitaab"
+            }
+          ],
+          "reading": {
+            "text": "بَابٌ. قَلَمٌ. كِتَابٌ.",
+            "meaningRomanUrdu": "Darwaza. Qalam. Kitaab. Aakhir ki -un awaaz ko tanween ke sabaq mein samjhenge."
+          },
+          "speakingPrompts": [
+            "Read the 28-letter list slowly, then point to baa and qaaf.",
+            "Say the first sound of بَابٌ and قَلَمٌ. No pronunciation score is recorded."
+          ],
+          "reviewTags": [
+            "alphabet",
+            "letter-recognition",
+            "pronunciation-basics"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a0-alphabet-single-choice",
+              "prompt": "Which letter is baa?",
+              "explanationRomanUrdu": "Baa ki pehchan ب hai; is ke neeche aik nuqta hota hai.",
+              "options": [
+                {
+                  "id": "ar-a0-alphabet-choice-0",
+                  "text": "ت"
+                },
+                {
+                  "id": "ar-a0-alphabet-choice-1",
+                  "text": "ب"
+                },
+                {
+                  "id": "ar-a0-alphabet-choice-2",
+                  "text": "ث"
+                }
+              ],
+              "correctOptionId": "ar-a0-alphabet-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a0-alphabet-fill-blank",
+              "prompt": "Write only the Arabic letter baa (no vowel mark).",
+              "explanationRomanUrdu": "Baa ب likhen; taa ت aur thaa ث doosre huroof hain.",
+              "acceptedAnswers": [
+                "ب"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a0-alphabet-sentence-order",
+              "prompt": "Put the first three basic letters in alphabet order.",
+              "explanationRomanUrdu": "Pehle alif ا, phir baa ب aur phir taa ت hai.",
+              "tokens": [
+                {
+                  "id": "ar-a0-alphabet-token-1",
+                  "text": "ب"
+                },
+                {
+                  "id": "ar-a0-alphabet-token-2",
+                  "text": "ت"
+                },
+                {
+                  "id": "ar-a0-alphabet-token-0",
+                  "text": "ا"
+                }
+              ],
+              "correctOrder": [
+                "ar-a0-alphabet-token-0",
+                "ar-a0-alphabet-token-1",
+                "ar-a0-alphabet-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a0-alphabet-match-pairs",
+              "prompt": "Match each Arabic item with its meaning or reading.",
+              "explanationRomanUrdu": "Har Arabic item ko usi ke maani ya parhai se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a0-alphabet-pair-0",
+                  "left": "ب",
+                  "right": "baa"
+                },
+                {
+                  "id": "ar-a0-alphabet-pair-1",
+                  "left": "ت",
+                  "right": "taa"
+                },
+                {
+                  "id": "ar-a0-alphabet-pair-2",
+                  "left": "ث",
+                  "right": "thaa"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a0-alphabet-multi-choice",
+              "prompt": "Choose both letters that have dots.",
+              "explanationRomanUrdu": "Baa aur taa par nuqte hain; alif par nahin.",
+              "options": [
+                {
+                  "id": "ar-a0-alphabet-multi-0",
+                  "text": "ب"
+                },
+                {
+                  "id": "ar-a0-alphabet-multi-1",
+                  "text": "ت"
+                },
+                {
+                  "id": "ar-a0-alphabet-multi-2",
+                  "text": "ا"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a0-alphabet-multi-0",
+                "ar-a0-alphabet-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a0-alphabet-listening-choice",
+              "prompt": "Which letter begins the word you hear?",
+              "explanationRomanUrdu": "Audio mein بَابٌ hai; us ka pehla harf ب hai.",
+              "speech": {
+                "text": "بَابٌ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a0-alphabet-listen-0",
+                  "text": "ب"
+                },
+                {
+                  "id": "ar-a0-alphabet-listen-1",
+                  "text": "ت"
+                },
+                {
+                  "id": "ar-a0-alphabet-listen-2",
+                  "text": "ث"
+                }
+              ],
+              "correctOptionId": "ar-a0-alphabet-listen-0"
+            }
+          ]
+        },
+        {
+          "id": "ar-a0-shapes",
+          "title": "Letter families and shapes",
+          "objectives": [
+            "Distinguish similar shapes by their dots.",
+            "Notice how baa changes shape when it joins."
+          ],
+          "explanationRomanUrdu": "Arabic mein kai huroof ka bunyadi dhacha milta hai lekin nuqte un ki pehchan badalte hain. Baa ب ke neeche aik, taa ت ke upar do aur thaa ث ke upar teen nuqte hain. Judi likhai mein shakal badalne se harf ki pehchan nahin badalti.",
+          "rulesRomanUrdu": [
+            "ب ت ث ko aik jaisa na parhen: nuqton ki jagah aur tadaad dekhen.",
+            "ج ح خ mein jiim ka nuqta neeche, haa ح be-nuqta aur khaa ka nuqta upar hai.",
+            "Baa ki dikhai jane wali shaklain ب / بـ / ـبـ / ـب hain. Lambi line yahan sirf jorne ki shakal dikhati hai.",
+            "Misalon ko poore lafz ki tarah dekhen; mobile font ki shakal thori mukhtalif ho sakti hai."
+          ],
+          "examples": [
+            {
+              "text": "ب ت ث",
+              "meaningRomanUrdu": "Milte dhanche, alag nuqte aur alag huroof.",
+              "speech": {
+                "text": "ب ت ث",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "ج ح خ",
+              "meaningRomanUrdu": "Jiim, haa aur khaa alag huroof hain.",
+              "speech": {
+                "text": "ج ح خ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "بِنْتٌ",
+              "meaningRomanUrdu": "Larki; lafz baa se shuru hota hai.",
+              "speech": {
+                "text": "بِنْتٌ",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a0-shapes-word-0",
+              "word": "بِنْتٌ",
+              "meaningRomanUrdu": "larki",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "bintun; waqf bint"
+            },
+            {
+              "id": "ar-a0-shapes-word-1",
+              "word": "تَمْرٌ",
+              "meaningRomanUrdu": "khajoor",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "tamrun; waqf tamr"
+            },
+            {
+              "id": "ar-a0-shapes-word-2",
+              "word": "خُبْزٌ",
+              "meaningRomanUrdu": "roti",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "khubzun; waqf khubz"
+            }
+          ],
+          "reading": {
+            "text": "ب ت ث. ج ح خ. بِنْتٌ.",
+            "meaningRomanUrdu": "Huroof ke do khandan dekhen, phir lafz bint parhen."
+          },
+          "speakingPrompts": [
+            "Point to the dots in each letter family.",
+            "Compare the first letter of بِنْتٌ with isolated ب."
+          ],
+          "reviewTags": [
+            "letter-shapes",
+            "letter-recognition"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a0-shapes-single-choice",
+              "prompt": "Which letter has three dots above it?",
+              "explanationRomanUrdu": "Thaa ث ke upar teen nuqte hain.",
+              "options": [
+                {
+                  "id": "ar-a0-shapes-choice-0",
+                  "text": "ب"
+                },
+                {
+                  "id": "ar-a0-shapes-choice-1",
+                  "text": "ت"
+                },
+                {
+                  "id": "ar-a0-shapes-choice-2",
+                  "text": "ث"
+                }
+              ],
+              "correctOptionId": "ar-a0-shapes-choice-2"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a0-shapes-fill-blank",
+              "prompt": "Write only taa, the letter with two dots above.",
+              "explanationRomanUrdu": "Taa ت ke upar do nuqte hain.",
+              "acceptedAnswers": [
+                "ت"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a0-shapes-sentence-order",
+              "prompt": "Order this family as baa, taa, thaa.",
+              "explanationRomanUrdu": "Nuqton ke saath huroof ki pehchan ب ت ث hai.",
+              "tokens": [
+                {
+                  "id": "ar-a0-shapes-token-1",
+                  "text": "ت"
+                },
+                {
+                  "id": "ar-a0-shapes-token-2",
+                  "text": "ث"
+                },
+                {
+                  "id": "ar-a0-shapes-token-0",
+                  "text": "ب"
+                }
+              ],
+              "correctOrder": [
+                "ar-a0-shapes-token-0",
+                "ar-a0-shapes-token-1",
+                "ar-a0-shapes-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a0-shapes-match-pairs",
+              "prompt": "Match each Arabic item with its meaning or reading.",
+              "explanationRomanUrdu": "Har Arabic item ko usi ke maani ya parhai se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a0-shapes-pair-0",
+                  "left": "ج",
+                  "right": "jiim: dot below"
+                },
+                {
+                  "id": "ar-a0-shapes-pair-1",
+                  "left": "ح",
+                  "right": "haa: no dot"
+                },
+                {
+                  "id": "ar-a0-shapes-pair-2",
+                  "left": "خ",
+                  "right": "khaa: dot above"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a0-shapes-multi-choice",
+              "prompt": "Choose both letters with a dot above.",
+              "explanationRomanUrdu": "Khaa خ aur nuun ن ka nuqta upar hai; jiim ج ka neeche.",
+              "options": [
+                {
+                  "id": "ar-a0-shapes-multi-0",
+                  "text": "ج"
+                },
+                {
+                  "id": "ar-a0-shapes-multi-1",
+                  "text": "خ"
+                },
+                {
+                  "id": "ar-a0-shapes-multi-2",
+                  "text": "ن"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a0-shapes-multi-1",
+                "ar-a0-shapes-multi-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a0-shapes-listening-choice",
+              "prompt": "Which word do you hear?",
+              "explanationRomanUrdu": "Audio mein بِنْتٌ, yani larki, kaha gaya hai.",
+              "speech": {
+                "text": "بِنْتٌ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a0-shapes-listen-0",
+                  "text": "خُبْزٌ"
+                },
+                {
+                  "id": "ar-a0-shapes-listen-1",
+                  "text": "بِنْتٌ"
+                },
+                {
+                  "id": "ar-a0-shapes-listen-2",
+                  "text": "تَمْرٌ"
+                }
+              ],
+              "correctOptionId": "ar-a0-shapes-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a0-joining",
+          "title": "Joining and letter breaks",
+          "objectives": [
+            "Recognize connections inside a word.",
+            "Identify the six basic letters that do not join to the following letter."
+          ],
+          "explanationRomanUrdu": "Arabic ke aksar huroof lafz ke andar dono taraf jud sakte hain. Buniyadi chhe huroof ا د ذ ر ز و apne baad aane wale harf se nahin judte: daen se baen parhte waqt yeh apne baen taraf jor nahin banate. Yeh apne se pehle harf se jud sakte hain agar woh harf jorne ki salahiyat rakhta ho. Lafz ke andar jor tootna naya lafz ya space nahin banata.",
+          "rulesRomanUrdu": [
+            "ب + ي + ت ko lafz mein بَيْتٌ ki judi shakal mein dekhen.",
+            "ا د ذ ر ز و ke baad likhai mein break aa sakta hai; lafz ko phir bhi mila kar parhen.",
+            "Standalone hamza ء bhi nahin jurta; yeh chhe bunyadi huroof ki fehrist se alag nishan hai.",
+            "Lafz ko type karte waqt harfon ke darmiyan be-wajah spaces ya presentation-form characters na dalen."
+          ],
+          "examples": [
+            {
+              "text": "بَيْتٌ",
+              "meaningRomanUrdu": "Ghar; baa, yaa aur taa ki judi likhai.",
+              "speech": {
+                "text": "بَيْتٌ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "بَابٌ",
+              "meaningRomanUrdu": "Darwaza; alif ke baad baa se jor nahin banta.",
+              "speech": {
+                "text": "بَابٌ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "دَارٌ",
+              "meaningRomanUrdu": "Ghar; daal agle harf se nahin jurta.",
+              "speech": {
+                "text": "دَارٌ",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a0-joining-word-0",
+              "word": "بَيْتٌ",
+              "meaningRomanUrdu": "ghar",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "baytun; waqf bayt"
+            },
+            {
+              "id": "ar-a0-joining-word-1",
+              "word": "دَارٌ",
+              "meaningRomanUrdu": "ghar / makan",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "daarun; waqf daar"
+            },
+            {
+              "id": "ar-a0-joining-word-2",
+              "word": "بَابٌ",
+              "meaningRomanUrdu": "darwaza",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "baabun; waqf baab"
+            }
+          ],
+          "reading": {
+            "text": "بَيْتٌ. بَابٌ. دَارٌ.",
+            "meaningRomanUrdu": "Ghar. Darwaza. Makan. Har lafz mein jor aur break dekhen."
+          },
+          "speakingPrompts": [
+            "Point to the break after alif in بَابٌ.",
+            "Read بَيْتٌ as one word, without adding spoken spaces."
+          ],
+          "reviewTags": [
+            "letter-joining",
+            "letter-shapes",
+            "basic-reading"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a0-joining-single-choice",
+              "prompt": "Which letter does NOT join to the following letter?",
+              "explanationRomanUrdu": "Daal د apne baad wale harf se nahin jurta.",
+              "options": [
+                {
+                  "id": "ar-a0-joining-choice-0",
+                  "text": "ب"
+                },
+                {
+                  "id": "ar-a0-joining-choice-1",
+                  "text": "م"
+                },
+                {
+                  "id": "ar-a0-joining-choice-2",
+                  "text": "د"
+                }
+              ],
+              "correctOptionId": "ar-a0-joining-choice-2"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a0-joining-fill-blank",
+              "prompt": "Copy the fully marked word for house exactly: بَيْتٌ",
+              "explanationRomanUrdu": "بَيْتٌ mein huroof aur harakat dono asal misal ke mutabiq likhen.",
+              "acceptedAnswers": [
+                "بَيْتٌ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a0-joining-sentence-order",
+              "prompt": "Put these letters in the order used to write bayt.",
+              "explanationRomanUrdu": "Logical letter order baa, yaa, taa hai; display daen se baen hota hai.",
+              "tokens": [
+                {
+                  "id": "ar-a0-joining-token-1",
+                  "text": "ي"
+                },
+                {
+                  "id": "ar-a0-joining-token-2",
+                  "text": "ت"
+                },
+                {
+                  "id": "ar-a0-joining-token-0",
+                  "text": "ب"
+                }
+              ],
+              "correctOrder": [
+                "ar-a0-joining-token-0",
+                "ar-a0-joining-token-1",
+                "ar-a0-joining-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a0-joining-match-pairs",
+              "prompt": "Match each Arabic item with its meaning or reading.",
+              "explanationRomanUrdu": "Har Arabic item ko usi ke maani ya parhai se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a0-joining-pair-0",
+                  "left": "بَابٌ",
+                  "right": "darwaza"
+                },
+                {
+                  "id": "ar-a0-joining-pair-1",
+                  "left": "بَيْتٌ",
+                  "right": "ghar"
+                },
+                {
+                  "id": "ar-a0-joining-pair-2",
+                  "left": "قَلَمٌ",
+                  "right": "qalam"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a0-joining-multi-choice",
+              "prompt": "Choose both letters that do NOT join to the following letter.",
+              "explanationRomanUrdu": "Waaw و aur raa ر agle harf se nahin judte; miim م jur sakta hai.",
+              "options": [
+                {
+                  "id": "ar-a0-joining-multi-0",
+                  "text": "و"
+                },
+                {
+                  "id": "ar-a0-joining-multi-1",
+                  "text": "م"
+                },
+                {
+                  "id": "ar-a0-joining-multi-2",
+                  "text": "ر"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a0-joining-multi-0",
+                "ar-a0-joining-multi-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a0-joining-listening-choice",
+              "prompt": "Which word do you hear?",
+              "explanationRomanUrdu": "Audio mein دَارٌ kaha gaya hai.",
+              "speech": {
+                "text": "دَارٌ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a0-joining-listen-0",
+                  "text": "بَابٌ"
+                },
+                {
+                  "id": "ar-a0-joining-listen-1",
+                  "text": "دَارٌ"
+                },
+                {
+                  "id": "ar-a0-joining-listen-2",
+                  "text": "قَلَمٌ"
+                }
+              ],
+              "correctOptionId": "ar-a0-joining-listen-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar-a0-marks",
+      "title": "Vowels and clear reading",
+      "lessons": [
+        {
+          "id": "ar-a0-short-vowels",
+          "title": "Fatha, kasra and damma",
+          "objectives": [
+            "Distinguish the three short-vowel marks.",
+            "Keep vowel marks attached to the correct letter."
+          ],
+          "explanationRomanUrdu": "Fatha َ harf ke upar chhoti lakeer hai aur aam tor par chhoti a ki awaaz deti hai. Kasra ِ harf ke neeche hoti hai aur chhoti i; damma ُ upar chhota nishan hai aur chhoti u. Harakat alag harf nahin; woh jis harf par hon us ki parhai mein madad karti hain.",
+          "rulesRomanUrdu": [
+            "بَ = ba, بِ = bi, بُ = bu; yeh chhoti awaazein hain.",
+            "Fatha aur kasra ki jagah badalne se parhai badal sakti hai.",
+            "كَتَبَ ko ka-ta-ba parhen: us ne likha (mard ke liye).",
+            "Taqribi Roman guide ko Arabic text ka badal na banayen; asli harf aur mark dekhen."
+          ],
+          "examples": [
+            {
+              "text": "بَ بِ بُ",
+              "meaningRomanUrdu": "Ba, bi, bu: aik harf ke saath teen short vowels.",
+              "speech": {
+                "text": "بَ بِ بُ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "كَتَبَ",
+              "meaningRomanUrdu": "Us ne likha.",
+              "speech": {
+                "text": "كَتَبَ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "كُتُبٌ",
+              "meaningRomanUrdu": "Kitaaben; shuru mein damma hai.",
+              "speech": {
+                "text": "كُتُبٌ",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a0-short-vowels-word-0",
+              "word": "كَتَبَ",
+              "meaningRomanUrdu": "us ne likha",
+              "partOfSpeech": "verb: past, masculine singular",
+              "pronunciationGuide": "kataba"
+            },
+            {
+              "id": "ar-a0-short-vowels-word-1",
+              "word": "كُتُبٌ",
+              "meaningRomanUrdu": "kitaaben",
+              "partOfSpeech": "noun: plural",
+              "pronunciationGuide": "kutubun; waqf kutub"
+            },
+            {
+              "id": "ar-a0-short-vowels-word-2",
+              "word": "بِنْتٌ",
+              "meaningRomanUrdu": "larki",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "bintun; waqf bint"
+            }
+          ],
+          "reading": {
+            "text": "بَ بِ بُ. كَتَبَ. كُتُبٌ.",
+            "meaningRomanUrdu": "Ba, bi, bu. Us ne likha. Kitaaben."
+          },
+          "speakingPrompts": [
+            "Read بَ بِ بُ without lengthening the vowels.",
+            "Compare the first vowel of كَتَبَ and كُتُبٌ."
+          ],
+          "reviewTags": [
+            "fatha",
+            "kasra",
+            "damma",
+            "pronunciation-basics"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a0-short-vowels-single-choice",
+              "prompt": "Which form is bi, with kasra below baa?",
+              "explanationRomanUrdu": "Kasra neeche hai: بِ ko bi parhte hain.",
+              "options": [
+                {
+                  "id": "ar-a0-short-vowels-choice-0",
+                  "text": "بَ"
+                },
+                {
+                  "id": "ar-a0-short-vowels-choice-1",
+                  "text": "بِ"
+                },
+                {
+                  "id": "ar-a0-short-vowels-choice-2",
+                  "text": "بُ"
+                }
+              ],
+              "correctOptionId": "ar-a0-short-vowels-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a0-short-vowels-fill-blank",
+              "prompt": "Copy baa with fatha exactly: بَ",
+              "explanationRomanUrdu": "بَ mein baa ke upar fatha zaroori hai; sirf ب mukammal jawab nahin.",
+              "acceptedAnswers": [
+                "بَ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a0-short-vowels-sentence-order",
+              "prompt": "Order baa with fatha, then kasra, then damma.",
+              "explanationRomanUrdu": "Fatha ba, kasra bi aur damma bu hai.",
+              "tokens": [
+                {
+                  "id": "ar-a0-short-vowels-token-1",
+                  "text": "بِ"
+                },
+                {
+                  "id": "ar-a0-short-vowels-token-2",
+                  "text": "بُ"
+                },
+                {
+                  "id": "ar-a0-short-vowels-token-0",
+                  "text": "بَ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a0-short-vowels-token-0",
+                "ar-a0-short-vowels-token-1",
+                "ar-a0-short-vowels-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a0-short-vowels-match-pairs",
+              "prompt": "Match each Arabic item with its meaning or reading.",
+              "explanationRomanUrdu": "Har Arabic item ko usi ke maani ya parhai se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a0-short-vowels-pair-0",
+                  "left": "بَ",
+                  "right": "ba"
+                },
+                {
+                  "id": "ar-a0-short-vowels-pair-1",
+                  "left": "بِ",
+                  "right": "bi"
+                },
+                {
+                  "id": "ar-a0-short-vowels-pair-2",
+                  "left": "بُ",
+                  "right": "bu"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a0-short-vowels-multi-choice",
+              "prompt": "Choose both forms with a vowel mark ABOVE the letter.",
+              "explanationRomanUrdu": "Fatha aur damma upar hote hain; kasra neeche.",
+              "options": [
+                {
+                  "id": "ar-a0-short-vowels-multi-0",
+                  "text": "بَ"
+                },
+                {
+                  "id": "ar-a0-short-vowels-multi-1",
+                  "text": "بِ"
+                },
+                {
+                  "id": "ar-a0-short-vowels-multi-2",
+                  "text": "بُ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a0-short-vowels-multi-0",
+                "ar-a0-short-vowels-multi-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a0-short-vowels-listening-choice",
+              "prompt": "What does the word you hear mean?",
+              "explanationRomanUrdu": "كَتَبَ ka matlab us ne likha hai.",
+              "speech": {
+                "text": "كَتَبَ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a0-short-vowels-listen-0",
+                  "text": "He wrote."
+                },
+                {
+                  "id": "ar-a0-short-vowels-listen-1",
+                  "text": "Books."
+                },
+                {
+                  "id": "ar-a0-short-vowels-listen-2",
+                  "text": "A girl."
+                }
+              ],
+              "correctOptionId": "ar-a0-short-vowels-listen-0"
+            }
+          ]
+        },
+        {
+          "id": "ar-a0-sukoon",
+          "title": "Sukoon and closed syllables",
+          "objectives": [
+            "Recognize sukoon as no following short vowel.",
+            "Read simple closed syllables without inserting an extra vowel."
+          ],
+          "explanationRomanUrdu": "Sukoon ْ batata hai ke is harf ke baad chhoti vowel nahin parhni. بِنْتٌ mein nuun par sukoon hai: bin-tun, na ke bi-na-tun. Sukoon ko harf ko bilkul mita dena na samjhen; harf ki awaaz rehti hai, extra vowel nahin aati.",
+          "rulesRomanUrdu": [
+            "بِنْتٌ mein نْ ko pichhli short vowel ke saath band kar parhen.",
+            "كَلْبٌ mein لْ ke baad be-wajah a ya i na barhayen.",
+            "دَرْسٌ mein رْ par sukoon hai.",
+            "Aakhir ki tanween aur waqf ki parhai alag agle sabaq mein aayegi."
+          ],
+          "examples": [
+            {
+              "text": "بِنْتٌ",
+              "meaningRomanUrdu": "Larki; nuun par sukoon.",
+              "speech": {
+                "text": "بِنْتٌ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "كَلْبٌ",
+              "meaningRomanUrdu": "Kutta; laam par sukoon.",
+              "speech": {
+                "text": "كَلْبٌ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "دَرْسٌ",
+              "meaningRomanUrdu": "Sabaq; raa par sukoon.",
+              "speech": {
+                "text": "دَرْسٌ",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a0-sukoon-word-0",
+              "word": "بِنْتٌ",
+              "meaningRomanUrdu": "larki",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "bintun; waqf bint"
+            },
+            {
+              "id": "ar-a0-sukoon-word-1",
+              "word": "كَلْبٌ",
+              "meaningRomanUrdu": "kutta",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "kalbun; waqf kalb"
+            },
+            {
+              "id": "ar-a0-sukoon-word-2",
+              "word": "دَرْسٌ",
+              "meaningRomanUrdu": "sabaq",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "darsun; waqf dars"
+            }
+          ],
+          "reading": {
+            "text": "بِنْتٌ. كَلْبٌ. دَرْسٌ.",
+            "meaningRomanUrdu": "Larki. Kutta. Sabaq. Band syllable ke baad extra vowel na dalen."
+          },
+          "speakingPrompts": [
+            "Read بِنْتٌ slowly, keeping nuun without an added vowel.",
+            "Compare the marked middle letters of كَلْبٌ and دَرْسٌ."
+          ],
+          "reviewTags": [
+            "sukoon",
+            "basic-reading"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a0-sukoon-single-choice",
+              "prompt": "Which marked letter has sukoon?",
+              "explanationRomanUrdu": "نْ mein gol sukoon ka nishan hai.",
+              "options": [
+                {
+                  "id": "ar-a0-sukoon-choice-0",
+                  "text": "نَ"
+                },
+                {
+                  "id": "ar-a0-sukoon-choice-1",
+                  "text": "نْ"
+                },
+                {
+                  "id": "ar-a0-sukoon-choice-2",
+                  "text": "نُ"
+                }
+              ],
+              "correctOptionId": "ar-a0-sukoon-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a0-sukoon-fill-blank",
+              "prompt": "Copy nuun with sukoon exactly: نْ",
+              "explanationRomanUrdu": "Nuun ke saath sukoon nishan bhi likhen: نْ.",
+              "acceptedAnswers": [
+                "نْ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a0-sukoon-sentence-order",
+              "prompt": "Order the letters used to write dars.",
+              "explanationRomanUrdu": "Dars ke huroof daal, raa aur siin hain.",
+              "tokens": [
+                {
+                  "id": "ar-a0-sukoon-token-1",
+                  "text": "ر"
+                },
+                {
+                  "id": "ar-a0-sukoon-token-2",
+                  "text": "س"
+                },
+                {
+                  "id": "ar-a0-sukoon-token-0",
+                  "text": "د"
+                }
+              ],
+              "correctOrder": [
+                "ar-a0-sukoon-token-0",
+                "ar-a0-sukoon-token-1",
+                "ar-a0-sukoon-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a0-sukoon-match-pairs",
+              "prompt": "Match each Arabic item with its meaning or reading.",
+              "explanationRomanUrdu": "Har Arabic item ko usi ke maani ya parhai se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a0-sukoon-pair-0",
+                  "left": "بِنْتٌ",
+                  "right": "larki"
+                },
+                {
+                  "id": "ar-a0-sukoon-pair-1",
+                  "left": "كَلْبٌ",
+                  "right": "kutta"
+                },
+                {
+                  "id": "ar-a0-sukoon-pair-2",
+                  "left": "دَرْسٌ",
+                  "right": "sabaq"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a0-sukoon-multi-choice",
+              "prompt": "Choose both words whose middle letter has sukoon.",
+              "explanationRomanUrdu": "Bint mein nuun aur dars mein raa par sukoon hai; kataba mein short vowels hain.",
+              "options": [
+                {
+                  "id": "ar-a0-sukoon-multi-0",
+                  "text": "بِنْتٌ"
+                },
+                {
+                  "id": "ar-a0-sukoon-multi-1",
+                  "text": "كَتَبَ"
+                },
+                {
+                  "id": "ar-a0-sukoon-multi-2",
+                  "text": "دَرْسٌ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a0-sukoon-multi-0",
+                "ar-a0-sukoon-multi-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a0-sukoon-listening-choice",
+              "prompt": "Which word do you hear?",
+              "explanationRomanUrdu": "Audio mein دَرْسٌ, yani sabaq, hai.",
+              "speech": {
+                "text": "دَرْسٌ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a0-sukoon-listen-0",
+                  "text": "كَلْبٌ"
+                },
+                {
+                  "id": "ar-a0-sukoon-listen-1",
+                  "text": "بِنْتٌ"
+                },
+                {
+                  "id": "ar-a0-sukoon-listen-2",
+                  "text": "دَرْسٌ"
+                }
+              ],
+              "correctOptionId": "ar-a0-sukoon-listen-2"
+            }
+          ]
+        },
+        {
+          "id": "ar-a0-shaddah",
+          "title": "Shaddah and doubled consonants",
+          "objectives": [
+            "Recognize shaddah and its accompanying vowel.",
+            "Distinguish a single consonant from a doubled one."
+          ],
+          "explanationRomanUrdu": "Shaddah ّ harf ki dohari awaaz dikhati hai: pehla hissa sukoon jaisa aur doosra harkat ke saath hota hai. مُعَلِّمٌ mein laam ko mu-al-lim ki tarah dohra kar parhen. Sirf vowel ko lamba karna shaddah ka badal nahin.",
+          "rulesRomanUrdu": [
+            "دَرَّسَ mein raa par shaddah hai: dar-ra-sa, us ne parhaya.",
+            "دَرَسَ mein raa single hai: da-ra-sa, us ne parha.",
+            "Shaddah ke saath fatha, kasra ya damma bhi ho sakti hai. Kasra ki font placement badal sakti hai; poora mark group dekhen.",
+            "أُمٌّ mein miim ki dohari awaaz hai; rukne par bhi consonant ki doubling ko nazarandaz na karen."
+          ],
+          "examples": [
+            {
+              "text": "مُعَلِّمٌ",
+              "meaningRomanUrdu": "Ustad; laam ki dohari awaaz.",
+              "speech": {
+                "text": "مُعَلِّمٌ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "دَرَّسَ",
+              "meaningRomanUrdu": "Us ne parhaya.",
+              "speech": {
+                "text": "دَرَّسَ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "دَرَسَ",
+              "meaningRomanUrdu": "Us ne parha.",
+              "speech": {
+                "text": "دَرَسَ",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a0-shaddah-word-0",
+              "word": "مُعَلِّمٌ",
+              "meaningRomanUrdu": "ustad (mard)",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "muallimun; waqf muallim"
+            },
+            {
+              "id": "ar-a0-shaddah-word-1",
+              "word": "أُمٌّ",
+              "meaningRomanUrdu": "maan",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "ummun; waqf umm"
+            },
+            {
+              "id": "ar-a0-shaddah-word-2",
+              "word": "دَرَّسَ",
+              "meaningRomanUrdu": "us ne parhaya",
+              "partOfSpeech": "verb: past, masculine singular",
+              "pronunciationGuide": "darrasa"
+            }
+          ],
+          "reading": {
+            "text": "دَرَسَ. دَرَّسَ. مُعَلِّمٌ.",
+            "meaningRomanUrdu": "Us ne parha. Us ne parhaya. Ustad. Single aur doubled consonant ka farq sunne ki koshish karen."
+          },
+          "speakingPrompts": [
+            "Compare دَرَسَ and دَرَّسَ, holding the doubled raa.",
+            "Say مُعَلِّمٌ slowly; ask a qualified speaker to check the doubled laam."
+          ],
+          "reviewTags": [
+            "shaddah",
+            "pronunciation-basics",
+            "basic-reading"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a0-shaddah-single-choice",
+              "prompt": "Which word contains shaddah?",
+              "explanationRomanUrdu": "دَرَّسَ mein raa ke upar shaddah hai.",
+              "options": [
+                {
+                  "id": "ar-a0-shaddah-choice-0",
+                  "text": "دَرَسَ"
+                },
+                {
+                  "id": "ar-a0-shaddah-choice-1",
+                  "text": "دَرَّسَ"
+                },
+                {
+                  "id": "ar-a0-shaddah-choice-2",
+                  "text": "قَلَمٌ"
+                }
+              ],
+              "correctOptionId": "ar-a0-shaddah-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a0-shaddah-fill-blank",
+              "prompt": "Copy the marked word meaning he taught: دَرَّسَ",
+              "explanationRomanUrdu": "Raa ki shaddah aur tamam harakat ke saath دَرَّسَ likhen.",
+              "acceptedAnswers": [
+                "دَرَّسَ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a0-shaddah-sentence-order",
+              "prompt": "Arrange these words as mother, teacher, pen.",
+              "explanationRomanUrdu": "Mother أُمٌّ, teacher مُعَلِّمٌ aur pen قَلَمٌ hai.",
+              "tokens": [
+                {
+                  "id": "ar-a0-shaddah-token-1",
+                  "text": "مُعَلِّمٌ"
+                },
+                {
+                  "id": "ar-a0-shaddah-token-2",
+                  "text": "قَلَمٌ"
+                },
+                {
+                  "id": "ar-a0-shaddah-token-0",
+                  "text": "أُمٌّ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a0-shaddah-token-0",
+                "ar-a0-shaddah-token-1",
+                "ar-a0-shaddah-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a0-shaddah-match-pairs",
+              "prompt": "Match each Arabic item with its meaning or reading.",
+              "explanationRomanUrdu": "Har Arabic item ko usi ke maani ya parhai se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a0-shaddah-pair-0",
+                  "left": "أُمٌّ",
+                  "right": "maan"
+                },
+                {
+                  "id": "ar-a0-shaddah-pair-1",
+                  "left": "مُعَلِّمٌ",
+                  "right": "ustad"
+                },
+                {
+                  "id": "ar-a0-shaddah-pair-2",
+                  "left": "دَرَّسَ",
+                  "right": "us ne parhaya"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a0-shaddah-multi-choice",
+              "prompt": "Choose both words containing a doubled consonant mark.",
+              "explanationRomanUrdu": "Umm aur muallim mein shaddah hai; darasa mein nahin.",
+              "options": [
+                {
+                  "id": "ar-a0-shaddah-multi-0",
+                  "text": "أُمٌّ"
+                },
+                {
+                  "id": "ar-a0-shaddah-multi-1",
+                  "text": "دَرَسَ"
+                },
+                {
+                  "id": "ar-a0-shaddah-multi-2",
+                  "text": "مُعَلِّمٌ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a0-shaddah-multi-0",
+                "ar-a0-shaddah-multi-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a0-shaddah-listening-choice",
+              "prompt": "What does the word you hear mean?",
+              "explanationRomanUrdu": "Audio mein doubled raa wala دَرَّسَ hai: us ne parhaya. Offline voice ka phonetic farq insani review se check hoga.",
+              "speech": {
+                "text": "دَرَّسَ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a0-shaddah-listen-0",
+                  "text": "He studied."
+                },
+                {
+                  "id": "ar-a0-shaddah-listen-1",
+                  "text": "He taught."
+                },
+                {
+                  "id": "ar-a0-shaddah-listen-2",
+                  "text": "A pen."
+                }
+              ],
+              "correctOptionId": "ar-a0-shaddah-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a0-tanween",
+          "title": "Tanween and word endings",
+          "objectives": [
+            "Recognize the three tanween marks.",
+            "Distinguish joined reading from a simple stopping form."
+          ],
+          "explanationRomanUrdu": "Tanween aksar ghair-muayyan noun ke aakhir mein n ki awaaz lata hai, jab aage mila kar parha jaye. ٌ = un, ٍ = in aur ً = an. Yeh n ki awaaz alag likhe hue nuun ن ke baghair hoti hai. Kis jumle mein kaunsi ending aayegi us ki grammar baad mein seekhenge; yahan nishan aur awaaz ki pehchan hai.",
+          "rulesRomanUrdu": [
+            "كِتَابٌ ko mila kar kitaabun aur كِتَابٍ ko kitaabin parhte hain.",
+            "كِتَابًا ko mila kar kitaaban parhte hain; is misal mein fat-hatan ke saath aakhri alif bhi likha hai.",
+            "Sada waqf mein كِتَابٌ aur كِتَابٍ ka aakhri -un/-in chhor kar kitaab kehte hain. كِتَابًا par waqf ki aam parhai kitaabaa hai.",
+            "Har noun par tanween nahin aati. Ta marbuta aur mazeed waqf ki tafseel baad mein aayegi."
+          ],
+          "examples": [
+            {
+              "text": "كِتَابٌ",
+              "meaningRomanUrdu": "Kitaabun: -un ending ki misal.",
+              "speech": {
+                "text": "كِتَابٌ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "كِتَابٍ",
+              "meaningRomanUrdu": "Kitaabin: -in ending ki misal.",
+              "speech": {
+                "text": "كِتَابٍ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "كِتَابًا",
+              "meaningRomanUrdu": "Kitaaban: -an ending ki misal.",
+              "speech": {
+                "text": "كِتَابًا",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a0-tanween-word-0",
+              "word": "كِتَابٌ",
+              "meaningRomanUrdu": "kitaab",
+              "partOfSpeech": "noun: -un form",
+              "pronunciationGuide": "kitaabun"
+            },
+            {
+              "id": "ar-a0-tanween-word-1",
+              "word": "قَلَمٌ",
+              "meaningRomanUrdu": "qalam",
+              "partOfSpeech": "noun: -un form",
+              "pronunciationGuide": "qalamun"
+            },
+            {
+              "id": "ar-a0-tanween-word-2",
+              "word": "بَيْتٌ",
+              "meaningRomanUrdu": "ghar",
+              "partOfSpeech": "noun: -un form",
+              "pronunciationGuide": "baytun"
+            }
+          ],
+          "reading": {
+            "text": "كِتَابٌ. كِتَابٍ. كِتَابًا.",
+            "meaningRomanUrdu": "Aik hi noun ki mukhtalif endings pehchanen. Yeh alag standalone reading forms hain, aik jumla nahin."
+          },
+          "speakingPrompts": [
+            "Read the three forms with their -un, -in and -an endings.",
+            "Compare joined kitaabun with the simple stopping form kitaab."
+          ],
+          "reviewTags": [
+            "tanween",
+            "basic-reading"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a0-tanween-single-choice",
+              "prompt": "Which form shows the -in tanween ending?",
+              "explanationRomanUrdu": "Kasratan ٍ ki ending -in hai: كِتَابٍ.",
+              "options": [
+                {
+                  "id": "ar-a0-tanween-choice-0",
+                  "text": "كِتَابًا"
+                },
+                {
+                  "id": "ar-a0-tanween-choice-1",
+                  "text": "كِتَابٌ"
+                },
+                {
+                  "id": "ar-a0-tanween-choice-2",
+                  "text": "كِتَابٍ"
+                }
+              ],
+              "correctOptionId": "ar-a0-tanween-choice-2"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a0-tanween-fill-blank",
+              "prompt": "Copy the form ending in -un exactly: كِتَابٌ",
+              "explanationRomanUrdu": "Dammatan ٌ ke saath كِتَابٌ likhen; tanween ko chhoren nahin.",
+              "acceptedAnswers": [
+                "كِتَابٌ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a0-tanween-sentence-order",
+              "prompt": "Order the book forms as -un, then -in, then -an.",
+              "explanationRomanUrdu": "Nishanon ki parhai kitaabun, kitaabin, kitaaban hai.",
+              "tokens": [
+                {
+                  "id": "ar-a0-tanween-token-1",
+                  "text": "كِتَابٍ"
+                },
+                {
+                  "id": "ar-a0-tanween-token-2",
+                  "text": "كِتَابًا"
+                },
+                {
+                  "id": "ar-a0-tanween-token-0",
+                  "text": "كِتَابٌ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a0-tanween-token-0",
+                "ar-a0-tanween-token-1",
+                "ar-a0-tanween-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a0-tanween-match-pairs",
+              "prompt": "Match each Arabic item with its meaning or reading.",
+              "explanationRomanUrdu": "Har Arabic item ko usi ke maani ya parhai se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a0-tanween-pair-0",
+                  "left": "قَلَمٌ",
+                  "right": "qalam"
+                },
+                {
+                  "id": "ar-a0-tanween-pair-1",
+                  "left": "كِتَابٌ",
+                  "right": "kitaab"
+                },
+                {
+                  "id": "ar-a0-tanween-pair-2",
+                  "left": "بَيْتٌ",
+                  "right": "ghar"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a0-tanween-multi-choice",
+              "prompt": "Choose both forms that contain tanween.",
+              "explanationRomanUrdu": "Dohre ending marks tanween hain; single damma ُ tanween nahin.",
+              "options": [
+                {
+                  "id": "ar-a0-tanween-multi-0",
+                  "text": "قَلَمٌ"
+                },
+                {
+                  "id": "ar-a0-tanween-multi-1",
+                  "text": "قَلَمُ"
+                },
+                {
+                  "id": "ar-a0-tanween-multi-2",
+                  "text": "بَيْتٌ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a0-tanween-multi-0",
+                "ar-a0-tanween-multi-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a0-tanween-listening-choice",
+              "prompt": "Which object is named?",
+              "explanationRomanUrdu": "Audio mein kitaab ka lafz hai. Device voice waqf par ending chhor sakti hai; yeh sawal maani poochta hai.",
+              "speech": {
+                "text": "كِتَابٌ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a0-tanween-listen-0",
+                  "text": "A house."
+                },
+                {
+                  "id": "ar-a0-tanween-listen-1",
+                  "text": "A book."
+                },
+                {
+                  "id": "ar-a0-tanween-listen-2",
+                  "text": "A pen."
+                }
+              ],
+              "correctOptionId": "ar-a0-tanween-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a0-madd",
+          "title": "Long vowels and madd",
+          "objectives": [
+            "Recognize three common long-vowel patterns.",
+            "Distinguish vowel length without changing the written word."
+          ],
+          "explanationRomanUrdu": "Fusha mein chhoti aur lambi vowel ka farq maani ke liye aham ho sakta hai. Is bunyadi pattern mein fatha ke baad alif se aa, kasra ke baad saakin yaa se ii aur damma ke baad saakin waaw se uu ki lambi awaaz banti hai. Har waaw ya yaa long vowel nahin: woh consonant bhi ho sakte hain.",
+          "rulesRomanUrdu": [
+            "بَابٌ mein baa ke baad alif lambi aa ki madad karta hai.",
+            "فِيلٌ mein faa ki kasra aur yaa lambi ii banate hain.",
+            "نُورٌ mein nuun ki damma aur waaw lambi uu banate hain.",
+            "Lambi vowel ko short vowel se wazeh farq dein; sirf guide ke English huroof dekh kar makhraj tay na karen."
+          ],
+          "examples": [
+            {
+              "text": "بَابٌ",
+              "meaningRomanUrdu": "Darwaza; lambi aa.",
+              "speech": {
+                "text": "بَابٌ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "فِيلٌ",
+              "meaningRomanUrdu": "Haathi; lambi ii.",
+              "speech": {
+                "text": "فِيلٌ",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "نُورٌ",
+              "meaningRomanUrdu": "Roshni; lambi uu.",
+              "speech": {
+                "text": "نُورٌ",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a0-madd-word-0",
+              "word": "بَابٌ",
+              "meaningRomanUrdu": "darwaza",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "baabun; waqf baab"
+            },
+            {
+              "id": "ar-a0-madd-word-1",
+              "word": "فِيلٌ",
+              "meaningRomanUrdu": "haathi",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "fiilun; waqf fiil"
+            },
+            {
+              "id": "ar-a0-madd-word-2",
+              "word": "نُورٌ",
+              "meaningRomanUrdu": "roshni",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "nuurun; waqf nuur"
+            }
+          ],
+          "reading": {
+            "text": "بَابٌ. فِيلٌ. نُورٌ.",
+            "meaningRomanUrdu": "Darwaza. Haathi. Roshni. Lambi aa, ii aur uu pehchanen."
+          },
+          "speakingPrompts": [
+            "Read the three words, keeping each long vowel clear.",
+            "Contrast short بَ with the long vowel at the start of بَابٌ."
+          ],
+          "reviewTags": [
+            "madd",
+            "pronunciation-basics",
+            "basic-reading"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a0-madd-single-choice",
+              "prompt": "Which word contains the long ii pattern?",
+              "explanationRomanUrdu": "فِيلٌ mein kasra ke baad yaa lambi ii hai.",
+              "options": [
+                {
+                  "id": "ar-a0-madd-choice-0",
+                  "text": "نُورٌ"
+                },
+                {
+                  "id": "ar-a0-madd-choice-1",
+                  "text": "فِيلٌ"
+                },
+                {
+                  "id": "ar-a0-madd-choice-2",
+                  "text": "بَابٌ"
+                }
+              ],
+              "correctOptionId": "ar-a0-madd-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a0-madd-fill-blank",
+              "prompt": "Copy the fully marked word for light: نُورٌ",
+              "explanationRomanUrdu": "نُورٌ mein damma ke baad waaw se lambi uu hai.",
+              "acceptedAnswers": [
+                "نُورٌ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a0-madd-sentence-order",
+              "prompt": "Order the words by long vowel aa, then ii, then uu.",
+              "explanationRomanUrdu": "Baab, fiil, nuur mein aa, ii aur uu hain.",
+              "tokens": [
+                {
+                  "id": "ar-a0-madd-token-1",
+                  "text": "فِيلٌ"
+                },
+                {
+                  "id": "ar-a0-madd-token-2",
+                  "text": "نُورٌ"
+                },
+                {
+                  "id": "ar-a0-madd-token-0",
+                  "text": "بَابٌ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a0-madd-token-0",
+                "ar-a0-madd-token-1",
+                "ar-a0-madd-token-2"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a0-madd-match-pairs",
+              "prompt": "Match each Arabic item with its meaning or reading.",
+              "explanationRomanUrdu": "Har Arabic item ko usi ke maani ya parhai se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a0-madd-pair-0",
+                  "left": "بَابٌ",
+                  "right": "long aa"
+                },
+                {
+                  "id": "ar-a0-madd-pair-1",
+                  "left": "فِيلٌ",
+                  "right": "long ii"
+                },
+                {
+                  "id": "ar-a0-madd-pair-2",
+                  "left": "نُورٌ",
+                  "right": "long uu"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a0-madd-multi-choice",
+              "prompt": "Choose both words with a long-vowel letter.",
+              "explanationRomanUrdu": "Baab mein alif aur nuur mein waaw lambi vowel dete hain; qalam mein yeh pattern nahin.",
+              "options": [
+                {
+                  "id": "ar-a0-madd-multi-0",
+                  "text": "بَابٌ"
+                },
+                {
+                  "id": "ar-a0-madd-multi-1",
+                  "text": "قَلَمٌ"
+                },
+                {
+                  "id": "ar-a0-madd-multi-2",
+                  "text": "نُورٌ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a0-madd-multi-0",
+                "ar-a0-madd-multi-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a0-madd-listening-choice",
+              "prompt": "Which meaning matches the word?",
+              "explanationRomanUrdu": "فِيلٌ ka matlab haathi hai.",
+              "speech": {
+                "text": "فِيلٌ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a0-madd-listen-0",
+                  "text": "Light."
+                },
+                {
+                  "id": "ar-a0-madd-listen-1",
+                  "text": "An elephant."
+                },
+                {
+                  "id": "ar-a0-madd-listen-2",
+                  "text": "A door."
+                }
+              ],
+              "correctOptionId": "ar-a0-madd-listen-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ar-a0-first-words",
+      "title": "First words and sentences",
+      "lessons": [
+        {
+          "id": "ar-a0-reading",
+          "title": "Read short marked phrases",
+          "objectives": [
+            "Read short phrases with their marks intact.",
+            "Keep Arabic word order while matching Roman Urdu meanings."
+          ],
+          "explanationRomanUrdu": "Ab huroof, jor aur harakat ko mila kar chhote jumle parhen. Daen se baen lafzon ki tartib dekhen. هٰذَا ka maani yeh hai (muzakkar cheez ke liye); is ki chhoti khari alif ٰ lambi aa dikhati hai. مَا هٰذَا؟ ka matlab yeh kya hai?",
+          "rulesRomanUrdu": [
+            "هٰذَا بَابٌ = yeh darwaza hai. Arabic ke is sada noun jumle mein English is jaisa lafz alag nahin aata.",
+            "مَا هٰذَا؟ sawal hai; ؟ sawaliya nishan hai.",
+            "Har lafz ke andar huroof ko joren, aur lafzon ke darmiyan space ko pehchanen.",
+            "Yeh misaalein muzakkar nouns ke liye hain; gender ki tafseel aage aayegi."
+          ],
+          "examples": [
+            {
+              "text": "هٰذَا بَابٌ.",
+              "meaningRomanUrdu": "Yeh darwaza hai.",
+              "speech": {
+                "text": "هٰذَا بَابٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هٰذَا قَلَمٌ.",
+              "meaningRomanUrdu": "Yeh qalam hai.",
+              "speech": {
+                "text": "هٰذَا قَلَمٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "مَا هٰذَا؟",
+              "meaningRomanUrdu": "Yeh kya hai?",
+              "speech": {
+                "text": "مَا هٰذَا؟",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a0-reading-word-0",
+              "word": "هٰذَا",
+              "meaningRomanUrdu": "yeh (muzakkar)",
+              "partOfSpeech": "demonstrative",
+              "pronunciationGuide": "haadhaa"
+            },
+            {
+              "id": "ar-a0-reading-word-1",
+              "word": "مَا",
+              "meaningRomanUrdu": "kya",
+              "partOfSpeech": "question word",
+              "pronunciationGuide": "maa"
+            },
+            {
+              "id": "ar-a0-reading-word-2",
+              "word": "قَلَمٌ",
+              "meaningRomanUrdu": "qalam",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "qalamun; waqf qalam"
+            }
+          ],
+          "reading": {
+            "text": "مَا هٰذَا؟ هٰذَا قَلَمٌ. هٰذَا بَابٌ.",
+            "meaningRomanUrdu": "Yeh kya hai? Yeh qalam hai. Yeh darwaza hai."
+          },
+          "speakingPrompts": [
+            "Ask مَا هٰذَا؟ while pointing to a pen.",
+            "Answer with هٰذَا قَلَمٌ, then change the object to a door."
+          ],
+          "reviewTags": [
+            "basic-reading",
+            "word-boundaries"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a0-reading-single-choice",
+              "prompt": "What does هٰذَا قَلَمٌ mean?",
+              "explanationRomanUrdu": "Qalam قَلَمٌ hai; jumle ka matlab yeh qalam hai.",
+              "options": [
+                {
+                  "id": "ar-a0-reading-choice-0",
+                  "text": "This is a book."
+                },
+                {
+                  "id": "ar-a0-reading-choice-1",
+                  "text": "This is a pen."
+                },
+                {
+                  "id": "ar-a0-reading-choice-2",
+                  "text": "Where is the pen?"
+                }
+              ],
+              "correctOptionId": "ar-a0-reading-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a0-reading-fill-blank",
+              "prompt": "Copy the marked demonstrative exactly: هٰذَا",
+              "explanationRomanUrdu": "هٰذَا ko tamam dikhaye hue marks samet likhen.",
+              "acceptedAnswers": [
+                "هٰذَا"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a0-reading-sentence-order",
+              "prompt": "Build: This is a door.",
+              "explanationRomanUrdu": "Pehle demonstrative هٰذَا aur phir noun بَابٌ hai.",
+              "tokens": [
+                {
+                  "id": "ar-a0-reading-token-1",
+                  "text": "بَابٌ"
+                },
+                {
+                  "id": "ar-a0-reading-token-0",
+                  "text": "هٰذَا"
+                }
+              ],
+              "correctOrder": [
+                "ar-a0-reading-token-0",
+                "ar-a0-reading-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a0-reading-match-pairs",
+              "prompt": "Match each Arabic item with its meaning or reading.",
+              "explanationRomanUrdu": "Har Arabic item ko usi ke maani ya parhai se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a0-reading-pair-0",
+                  "left": "مَا",
+                  "right": "kya"
+                },
+                {
+                  "id": "ar-a0-reading-pair-1",
+                  "left": "هٰذَا",
+                  "right": "yeh (muzakkar)"
+                },
+                {
+                  "id": "ar-a0-reading-pair-2",
+                  "left": "قَلَمٌ",
+                  "right": "qalam"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a0-reading-multi-choice",
+              "prompt": "Choose both statements (not a question).",
+              "explanationRomanUrdu": "Dono هٰذَا se shuru hone wali misaalein bayan hain; مَا wali misal sawal hai.",
+              "options": [
+                {
+                  "id": "ar-a0-reading-multi-0",
+                  "text": "هٰذَا بَابٌ."
+                },
+                {
+                  "id": "ar-a0-reading-multi-1",
+                  "text": "مَا هٰذَا؟"
+                },
+                {
+                  "id": "ar-a0-reading-multi-2",
+                  "text": "هٰذَا قَلَمٌ."
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a0-reading-multi-0",
+                "ar-a0-reading-multi-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a0-reading-listening-choice",
+              "prompt": "What object is identified?",
+              "explanationRomanUrdu": "Jumle mein qalam ki pehchan ki gayi hai.",
+              "speech": {
+                "text": "هٰذَا قَلَمٌ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a0-reading-listen-0",
+                  "text": "A pen."
+                },
+                {
+                  "id": "ar-a0-reading-listen-1",
+                  "text": "A door."
+                },
+                {
+                  "id": "ar-a0-reading-listen-2",
+                  "text": "A house."
+                }
+              ],
+              "correctOptionId": "ar-a0-reading-listen-0"
+            }
+          ]
+        },
+        {
+          "id": "ar-a0-greetings",
+          "title": "Greetings and introductions",
+          "objectives": [
+            "Use common Fusha greetings.",
+            "Introduce yourself and distinguish two forms of you."
+          ],
+          "explanationRomanUrdu": "Fusha ki aam mulaqat mein مَرْحَبًا aur أَهْلًا welcome ya hello ke liye istemal ho sakte hain. Subah صَبَاحُ الْخَيْرِ aur shaam مَسَاءُ الْخَيْرِ kehte hain. اِسْمِي ka matlab mera naam hai. Yeh Fusha ki practice hai; isay kisi ilaqai dialect ki mukammal rehnumai na samjhen.",
+          "rulesRomanUrdu": [
+            "اِسْمِي عَلِيٌّ = mera naam Ali hai. Ismi ka shuru wala alif yahan hamzat al-wasl hai, neeche hamza wala إ nahin.",
+            "كَيْفَ حَالُكَ؟ aik mard se aur كَيْفَ حَالُكِ؟ aik aurat se haal poochne ki shaklain hain.",
+            "أَنَا بِخَيْرٍ = main theek hoon. بِخَيْرٍ mein -in ending bhi dekhen.",
+            "Spoken greeting ko adab aur context ke saath istemal karen; pronunciation guides taqribi hain."
+          ],
+          "examples": [
+            {
+              "text": "مَرْحَبًا.",
+              "meaningRomanUrdu": "Hello / mulaqat ki greeting.",
+              "speech": {
+                "text": "مَرْحَبًا.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "صَبَاحُ الْخَيْرِ.",
+              "meaningRomanUrdu": "Subah ki greeting.",
+              "speech": {
+                "text": "صَبَاحُ الْخَيْرِ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "اِسْمِي عَلِيٌّ.",
+              "meaningRomanUrdu": "Mera naam Ali hai.",
+              "speech": {
+                "text": "اِسْمِي عَلِيٌّ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "أَنَا بِخَيْرٍ.",
+              "meaningRomanUrdu": "Main theek hoon.",
+              "speech": {
+                "text": "أَنَا بِخَيْرٍ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a0-greetings-word-0",
+              "word": "مَرْحَبًا",
+              "meaningRomanUrdu": "hello",
+              "partOfSpeech": "greeting",
+              "pronunciationGuide": "marhaban"
+            },
+            {
+              "id": "ar-a0-greetings-word-1",
+              "word": "أَهْلًا",
+              "meaningRomanUrdu": "hello / welcome",
+              "partOfSpeech": "greeting",
+              "pronunciationGuide": "ahlan"
+            },
+            {
+              "id": "ar-a0-greetings-word-2",
+              "word": "اِسْمِي",
+              "meaningRomanUrdu": "mera naam",
+              "partOfSpeech": "expression",
+              "pronunciationGuide": "ismii"
+            },
+            {
+              "id": "ar-a0-greetings-word-3",
+              "word": "بِخَيْرٍ",
+              "meaningRomanUrdu": "theek / khairiyat se",
+              "partOfSpeech": "expression",
+              "pronunciationGuide": "bikhayrin"
+            }
+          ],
+          "reading": {
+            "text": "مَرْحَبًا. اِسْمِي عَلِيٌّ. كَيْفَ حَالُكَ؟ أَنَا بِخَيْرٍ.",
+            "meaningRomanUrdu": "Hello. Mera naam Ali hai. Aap kaise hain (mard se)? Main theek hoon."
+          },
+          "speakingPrompts": [
+            "Person A greets and says اِسْمِي plus their name; person B replies with a greeting.",
+            "Swap roles and practise كَيْفَ حَالُكَ؟ or كَيْفَ حَالُكِ؟ for the person addressed."
+          ],
+          "reviewTags": [
+            "greetings",
+            "introductions",
+            "basic-reading"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a0-greetings-single-choice",
+              "prompt": "Which expression is a morning greeting?",
+              "explanationRomanUrdu": "Sabah al-khayr subah ki greeting hai.",
+              "options": [
+                {
+                  "id": "ar-a0-greetings-choice-0",
+                  "text": "مَسَاءُ الْخَيْرِ"
+                },
+                {
+                  "id": "ar-a0-greetings-choice-1",
+                  "text": "اِسْمِي"
+                },
+                {
+                  "id": "ar-a0-greetings-choice-2",
+                  "text": "صَبَاحُ الْخَيْرِ"
+                }
+              ],
+              "correctOptionId": "ar-a0-greetings-choice-2"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a0-greetings-fill-blank",
+              "prompt": "Copy the marked word meaning hello: مَرْحَبًا",
+              "explanationRomanUrdu": "مَرْحَبًا ke huroof aur harakat asal misal ke mutabiq likhen.",
+              "acceptedAnswers": [
+                "مَرْحَبًا"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a0-greetings-sentence-order",
+              "prompt": "Build: My name is Ali.",
+              "explanationRomanUrdu": "Ismi ke baad apna naam aata hai: اِسْمِي عَلِيٌّ.",
+              "tokens": [
+                {
+                  "id": "ar-a0-greetings-token-1",
+                  "text": "عَلِيٌّ"
+                },
+                {
+                  "id": "ar-a0-greetings-token-0",
+                  "text": "اِسْمِي"
+                }
+              ],
+              "correctOrder": [
+                "ar-a0-greetings-token-0",
+                "ar-a0-greetings-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a0-greetings-match-pairs",
+              "prompt": "Match each Arabic item with its meaning or reading.",
+              "explanationRomanUrdu": "Har Arabic item ko usi ke maani ya parhai se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a0-greetings-pair-0",
+                  "left": "مَرْحَبًا",
+                  "right": "hello"
+                },
+                {
+                  "id": "ar-a0-greetings-pair-1",
+                  "left": "اِسْمِي",
+                  "right": "mera naam"
+                },
+                {
+                  "id": "ar-a0-greetings-pair-2",
+                  "left": "بِخَيْرٍ",
+                  "right": "theek / khairiyat se"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a0-greetings-multi-choice",
+              "prompt": "Choose both greeting expressions.",
+              "explanationRomanUrdu": "Marhaban aur ahlan greetings hain; qalam aik cheez ka naam hai.",
+              "options": [
+                {
+                  "id": "ar-a0-greetings-multi-0",
+                  "text": "مَرْحَبًا"
+                },
+                {
+                  "id": "ar-a0-greetings-multi-1",
+                  "text": "أَهْلًا"
+                },
+                {
+                  "id": "ar-a0-greetings-multi-2",
+                  "text": "قَلَمٌ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a0-greetings-multi-0",
+                "ar-a0-greetings-multi-1"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a0-greetings-listening-choice",
+              "prompt": "What name does the speaker give?",
+              "explanationRomanUrdu": "Speaker kehta hai mera naam Ali hai.",
+              "speech": {
+                "text": "اِسْمِي عَلِيٌّ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a0-greetings-listen-0",
+                  "text": "Ali."
+                },
+                {
+                  "id": "ar-a0-greetings-listen-1",
+                  "text": "Sara."
+                },
+                {
+                  "id": "ar-a0-greetings-listen-2",
+                  "text": "Omar."
+                }
+              ],
+              "correctOptionId": "ar-a0-greetings-listen-0"
+            }
+          ]
+        },
+        {
+          "id": "ar-a0-nouns-verbs",
+          "title": "Basic nouns and past verbs",
+          "objectives": [
+            "Distinguish a thing-name from an action.",
+            "Understand three simple past verbs without claiming a full conjugation system."
+          ],
+          "explanationRomanUrdu": "Noun kisi shakhs ya cheez ka naam ho sakta hai, jaise كِتَابٌ kitaab aur بَيْتٌ ghar. Verb amal ya haalat batata hai. Is sabaq mein كَتَبَ, قَرَأَ aur جَلَسَ past ki muzakkar wahid shaklain hain: us mard ne likha, parha, baitha. Inhein har pronoun ke saath isi shakal mein na lagayen; conjugation baad mein aayegi.",
+          "rulesRomanUrdu": [
+            "كِتَابٌ aur قَلَمٌ nouns hain; كَتَبَ aik past verb hai.",
+            "قَرَأَ mein hamza ء ki awaaz ko nazarandaz na karen.",
+            "جَلَسَ = woh baitha; yeh he sat ki bunyadi shakal hai.",
+            "Roman Urdu ke likha/parha aur English ke wrote/read ko Arabic form ke saath maani se joren."
+          ],
+          "examples": [
+            {
+              "text": "كِتَابٌ وَقَلَمٌ.",
+              "meaningRomanUrdu": "Kitaab aur qalam.",
+              "speech": {
+                "text": "كِتَابٌ وَقَلَمٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "كَتَبَ عَلِيٌّ.",
+              "meaningRomanUrdu": "Ali ne likha.",
+              "speech": {
+                "text": "كَتَبَ عَلِيٌّ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "جَلَسَ عَلِيٌّ.",
+              "meaningRomanUrdu": "Ali baitha.",
+              "speech": {
+                "text": "جَلَسَ عَلِيٌّ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a0-nouns-verbs-word-0",
+              "word": "كِتَابٌ",
+              "meaningRomanUrdu": "kitaab",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "kitaabun; waqf kitaab"
+            },
+            {
+              "id": "ar-a0-nouns-verbs-word-1",
+              "word": "كَتَبَ",
+              "meaningRomanUrdu": "us ne likha",
+              "partOfSpeech": "verb: past, masculine singular",
+              "pronunciationGuide": "kataba"
+            },
+            {
+              "id": "ar-a0-nouns-verbs-word-2",
+              "word": "قَرَأَ",
+              "meaningRomanUrdu": "us ne parha",
+              "partOfSpeech": "verb: past, masculine singular",
+              "pronunciationGuide": "qaraa; hamza ki alag awaaz"
+            },
+            {
+              "id": "ar-a0-nouns-verbs-word-3",
+              "word": "جَلَسَ",
+              "meaningRomanUrdu": "woh baitha",
+              "partOfSpeech": "verb: past, masculine singular",
+              "pronunciationGuide": "jalasa"
+            }
+          ],
+          "reading": {
+            "text": "كِتَابٌ وَقَلَمٌ. جَلَسَ عَلِيٌّ. كَتَبَ عَلِيٌّ.",
+            "meaningRomanUrdu": "Kitaab aur qalam. Ali baitha. Ali ne likha."
+          },
+          "speakingPrompts": [
+            "Point to a noun and then say the action كَتَبَ.",
+            "Say جَلَسَ عَلِيٌّ and explain in Roman Urdu who sat."
+          ],
+          "reviewTags": [
+            "basic-nouns",
+            "basic-verbs"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a0-nouns-verbs-single-choice",
+              "prompt": "Which item is a verb meaning he wrote?",
+              "explanationRomanUrdu": "كَتَبَ amal batata hai: us ne likha. Kitaab aur qalam nouns hain.",
+              "options": [
+                {
+                  "id": "ar-a0-nouns-verbs-choice-0",
+                  "text": "كِتَابٌ"
+                },
+                {
+                  "id": "ar-a0-nouns-verbs-choice-1",
+                  "text": "كَتَبَ"
+                },
+                {
+                  "id": "ar-a0-nouns-verbs-choice-2",
+                  "text": "قَلَمٌ"
+                }
+              ],
+              "correctOptionId": "ar-a0-nouns-verbs-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a0-nouns-verbs-fill-blank",
+              "prompt": "Copy the fully marked past verb meaning he sat: جَلَسَ",
+              "explanationRomanUrdu": "جَلَسَ ka matlab woh baitha hai; tamam harakat likhen.",
+              "acceptedAnswers": [
+                "جَلَسَ"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a0-nouns-verbs-sentence-order",
+              "prompt": "Build: Ali wrote. Start with the verb.",
+              "explanationRomanUrdu": "Is misal mein pehle verb كَتَبَ, phir kaam karne wale ka naam عَلِيٌّ hai.",
+              "tokens": [
+                {
+                  "id": "ar-a0-nouns-verbs-token-1",
+                  "text": "عَلِيٌّ"
+                },
+                {
+                  "id": "ar-a0-nouns-verbs-token-0",
+                  "text": "كَتَبَ"
+                }
+              ],
+              "correctOrder": [
+                "ar-a0-nouns-verbs-token-0",
+                "ar-a0-nouns-verbs-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a0-nouns-verbs-match-pairs",
+              "prompt": "Match each Arabic item with its meaning or reading.",
+              "explanationRomanUrdu": "Har Arabic item ko usi ke maani ya parhai se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a0-nouns-verbs-pair-0",
+                  "left": "كَتَبَ",
+                  "right": "us ne likha"
+                },
+                {
+                  "id": "ar-a0-nouns-verbs-pair-1",
+                  "left": "قَرَأَ",
+                  "right": "us ne parha"
+                },
+                {
+                  "id": "ar-a0-nouns-verbs-pair-2",
+                  "left": "جَلَسَ",
+                  "right": "woh baitha"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a0-nouns-verbs-multi-choice",
+              "prompt": "Choose both nouns.",
+              "explanationRomanUrdu": "Kitaab aur qalam cheezon ke naam hain; jalasa verb hai.",
+              "options": [
+                {
+                  "id": "ar-a0-nouns-verbs-multi-0",
+                  "text": "كِتَابٌ"
+                },
+                {
+                  "id": "ar-a0-nouns-verbs-multi-1",
+                  "text": "جَلَسَ"
+                },
+                {
+                  "id": "ar-a0-nouns-verbs-multi-2",
+                  "text": "قَلَمٌ"
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a0-nouns-verbs-multi-0",
+                "ar-a0-nouns-verbs-multi-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a0-nouns-verbs-listening-choice",
+              "prompt": "What did Ali do?",
+              "explanationRomanUrdu": "Jumla batata hai ke Ali baitha.",
+              "speech": {
+                "text": "جَلَسَ عَلِيٌّ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a0-nouns-verbs-listen-0",
+                  "text": "He wrote."
+                },
+                {
+                  "id": "ar-a0-nouns-verbs-listen-1",
+                  "text": "He sat."
+                },
+                {
+                  "id": "ar-a0-nouns-verbs-listen-2",
+                  "text": "He read."
+                }
+              ],
+              "correctOptionId": "ar-a0-nouns-verbs-listen-1"
+            }
+          ]
+        },
+        {
+          "id": "ar-a0-simple-sentences",
+          "title": "Simple Fusha sentences",
+          "objectives": [
+            "Build a simple present noun sentence.",
+            "Introduce a male or female student with the appropriate noun."
+          ],
+          "explanationRomanUrdu": "Arabic ke sada present noun jumle mein am/is/are ka alag lafz aam tor par nahin likhte. أَنَا طَالِبٌ = main talib-e-ilm hoon (mard), aur أَنَا طَالِبَةٌ = main talib-e-ilm hoon (aurat). Feminine noun ki aakhri ة ta marbuta hai; yeh ت se imla mein mukhtalif hai. Gender aur tamam sentence patterns ki tafseel aage ke levels mein hogi.",
+          "rulesRomanUrdu": [
+            "أَنَا ka matlab main hai. Student ka noun speaker ke gender ke mutabiq chunein.",
+            "هٰذَا قَلَمٌ mein yeh qalam hai kaha gaya hai.",
+            "هٰذِهِ حَقِيبَةٌ = yeh bag hai; is misal mein noun feminine hai aur demonstrative bhi badalta hai.",
+            "طَالِبَةٌ ko mila kar taalibatun aur aam waqf mein taalibah parhte hain. Ta marbuta ki parhai context se badalti hai."
+          ],
+          "examples": [
+            {
+              "text": "أَنَا طَالِبٌ.",
+              "meaningRomanUrdu": "Main student hoon (mard).",
+              "speech": {
+                "text": "أَنَا طَالِبٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "أَنَا طَالِبَةٌ.",
+              "meaningRomanUrdu": "Main student hoon (aurat).",
+              "speech": {
+                "text": "أَنَا طَالِبَةٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هٰذَا قَلَمٌ.",
+              "meaningRomanUrdu": "Yeh qalam hai.",
+              "speech": {
+                "text": "هٰذَا قَلَمٌ.",
+                "languageTag": "ar"
+              }
+            },
+            {
+              "text": "هٰذِهِ حَقِيبَةٌ.",
+              "meaningRomanUrdu": "Yeh bag hai.",
+              "speech": {
+                "text": "هٰذِهِ حَقِيبَةٌ.",
+                "languageTag": "ar"
+              }
+            }
+          ],
+          "vocabulary": [
+            {
+              "id": "ar-a0-simple-sentences-word-0",
+              "word": "أَنَا",
+              "meaningRomanUrdu": "main",
+              "partOfSpeech": "pronoun",
+              "pronunciationGuide": "anaa"
+            },
+            {
+              "id": "ar-a0-simple-sentences-word-1",
+              "word": "طَالِبٌ",
+              "meaningRomanUrdu": "student (mard)",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "taalibun; waqf taalib"
+            },
+            {
+              "id": "ar-a0-simple-sentences-word-2",
+              "word": "طَالِبَةٌ",
+              "meaningRomanUrdu": "student (aurat)",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "taalibatun; waqf taalibah"
+            },
+            {
+              "id": "ar-a0-simple-sentences-word-3",
+              "word": "حَقِيبَةٌ",
+              "meaningRomanUrdu": "bag",
+              "partOfSpeech": "noun",
+              "pronunciationGuide": "haqiibatun; waqf haqiibah"
+            }
+          ],
+          "reading": {
+            "text": "أَنَا طَالِبٌ. هٰذَا قَلَمٌ. هٰذِهِ حَقِيبَةٌ.",
+            "meaningRomanUrdu": "Main student hoon (mard). Yeh qalam hai. Yeh bag hai."
+          },
+          "speakingPrompts": [
+            "Introduce yourself using أَنَا طَالِبٌ or أَنَا طَالِبَةٌ as appropriate.",
+            "Person A asks مَا هٰذَا؟ about a pen; person B replies هٰذَا قَلَمٌ. Swap roles."
+          ],
+          "reviewTags": [
+            "basic-sentences",
+            "subject-pronouns",
+            "basic-reading"
+          ],
+          "exercises": [
+            {
+              "type": "single_choice",
+              "id": "ar-a0-simple-sentences-single-choice",
+              "prompt": "Which sentence means I am a female student?",
+              "explanationRomanUrdu": "Female student ke liye طَالِبَةٌ hai; أَنَا ka matlab main.",
+              "options": [
+                {
+                  "id": "ar-a0-simple-sentences-choice-0",
+                  "text": "أَنَا طَالِبٌ."
+                },
+                {
+                  "id": "ar-a0-simple-sentences-choice-1",
+                  "text": "أَنَا طَالِبَةٌ."
+                },
+                {
+                  "id": "ar-a0-simple-sentences-choice-2",
+                  "text": "هٰذَا قَلَمٌ."
+                }
+              ],
+              "correctOptionId": "ar-a0-simple-sentences-choice-1"
+            },
+            {
+              "type": "fill_blank",
+              "id": "ar-a0-simple-sentences-fill-blank",
+              "prompt": "Copy the fully marked pronoun meaning I: أَنَا",
+              "explanationRomanUrdu": "أَنَا ka matlab main hai; hamza aur harakat ko sahi jagah rakhen.",
+              "acceptedAnswers": [
+                "أَنَا"
+              ],
+              "ignoreCase": false
+            },
+            {
+              "type": "sentence_order",
+              "id": "ar-a0-simple-sentences-sentence-order",
+              "prompt": "Build: I am a male student.",
+              "explanationRomanUrdu": "Sada noun jumle mein أَنَا ke baad طَالِبٌ hai; alag am ka lafz nahin.",
+              "tokens": [
+                {
+                  "id": "ar-a0-simple-sentences-token-1",
+                  "text": "طَالِبٌ"
+                },
+                {
+                  "id": "ar-a0-simple-sentences-token-0",
+                  "text": "أَنَا"
+                }
+              ],
+              "correctOrder": [
+                "ar-a0-simple-sentences-token-0",
+                "ar-a0-simple-sentences-token-1"
+              ]
+            },
+            {
+              "type": "match_pairs",
+              "id": "ar-a0-simple-sentences-match-pairs",
+              "prompt": "Match each Arabic item with its meaning or reading.",
+              "explanationRomanUrdu": "Har Arabic item ko usi ke maani ya parhai se joren; har jawab aik baar istemal hota hai.",
+              "pairs": [
+                {
+                  "id": "ar-a0-simple-sentences-pair-0",
+                  "left": "أَنَا",
+                  "right": "main"
+                },
+                {
+                  "id": "ar-a0-simple-sentences-pair-1",
+                  "left": "طَالِبٌ",
+                  "right": "student (mard)"
+                },
+                {
+                  "id": "ar-a0-simple-sentences-pair-2",
+                  "left": "حَقِيبَةٌ",
+                  "right": "bag"
+                }
+              ]
+            },
+            {
+              "type": "multi_choice",
+              "id": "ar-a0-simple-sentences-multi-choice",
+              "prompt": "Choose both sentences that introduce a student.",
+              "explanationRomanUrdu": "Ana taalib aur ana taalibah student ka taaruf hain; teesri misal qalam ki pehchan karti hai.",
+              "options": [
+                {
+                  "id": "ar-a0-simple-sentences-multi-0",
+                  "text": "أَنَا طَالِبٌ."
+                },
+                {
+                  "id": "ar-a0-simple-sentences-multi-1",
+                  "text": "هٰذَا قَلَمٌ."
+                },
+                {
+                  "id": "ar-a0-simple-sentences-multi-2",
+                  "text": "أَنَا طَالِبَةٌ."
+                }
+              ],
+              "correctOptionIds": [
+                "ar-a0-simple-sentences-multi-0",
+                "ar-a0-simple-sentences-multi-2"
+              ]
+            },
+            {
+              "type": "listening_choice",
+              "id": "ar-a0-simple-sentences-listening-choice",
+              "prompt": "How does the speaker introduce herself?",
+              "explanationRomanUrdu": "Speaker أَنَا طَالِبَةٌ kehti hai: main female student hoon.",
+              "speech": {
+                "text": "أَنَا طَالِبَةٌ.",
+                "languageTag": "ar"
+              },
+              "options": [
+                {
+                  "id": "ar-a0-simple-sentences-listen-0",
+                  "text": "As a teacher."
+                },
+                {
+                  "id": "ar-a0-simple-sentences-listen-1",
+                  "text": "As a female student."
+                },
+                {
+                  "id": "ar-a0-simple-sentences-listen-2",
+                  "text": "As a visitor."
+                }
+              ],
+              "correctOptionId": "ar-a0-simple-sentences-listen-1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

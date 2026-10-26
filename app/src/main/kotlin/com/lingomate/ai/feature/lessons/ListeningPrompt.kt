@@ -48,7 +48,10 @@ internal fun ListeningPrompt(
     when (mode) {
         ListeningMode.AUDIO -> Text("Playback finished. You can answer or replay the audio.")
         ListeningMode.READING_ALTERNATIVE -> {
-            Text("Transcript: ${exercise.speech.text}")
+            if (exercise.speech.languageTag == "ar") {
+                Text("Transcript")
+                LearningText(exercise.speech.text, "ar")
+            } else Text("Transcript: ${exercise.speech.text}")
             Text("This answer will be saved as reading practice, including after you reopen the lesson.")
         }
         null -> Text("Answer choices unlock after playback finishes or you choose the reading alternative.")
