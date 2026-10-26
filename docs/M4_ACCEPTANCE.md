@@ -2,13 +2,15 @@
 
 Updated: 2026-10-26 (Asia/Karachi). Representative automated/runtime checks passed as recorded below; full M4 and qualified curriculum acceptance remain incomplete.
 
-2026-10-26 continuation: UI-01 Review singular-label source is now corrected, with manual source/diff inspection only. The user has now explicitly approved restoring SDK 37/cache and downloading missing pinned build dependencies. Setup and current checks are in progress; inspect results before acceptance. The recorded APK/reports/screenshots below remain evidence for the preceding published source. Keep this new correction local WIP pending verification.
+2026-10-26 continuation: **UI-01 verified**. Review singular-label source e93dc0e passed 56 fresh app tests, debug build/lint in 18m 4s after user-approved SDK 37/Gradle/pinned dependency restoration. Focused retained Android 36 check confirms the exact “1 completed practice run” label and preserved 6/6 result after APK update/restart; [new evidence](evidence/m4-2026-10-26/README.md). Plural branch source-inspected. SDK/cache now use ignored project-local .local directories, preserving the global SDK.
+
+Current verified APK: **13,969,405 bytes**, SHA-256 `b8582389c27e01e4c765281a8b4fc83bdcb23a06e236c4a96f9a80bc8f3eea2b`, all four source-identical packs. Fresh lint has only newer-Gradle/DataStore version advisories, no dependency upgrades. Core source/tests are unchanged (historical 60 passing tests; no rerun). The earlier APK/runtime observations below remain historical and are not represented as new regression execution.
 
 ## Source and automated evidence
 
 - 4672698 resets scroll only when a lesson session/step changes; saving/errors/playback retain position. Its long-writing Compose regression passed. 488446d fixes system-bar contrast when app/device themes differ. 52d6f68 fixes singular Home goal/progress labels. No content IDs/versions, grading/storage/schema, dependencies or learner records changed.
 - Initial combined core/app/build/lint command passed in 51s: **56 app tests**, 0 failures/errors/skips; unchanged **60 core tests were UP-TO-DATE**, not re-executed. Theme-fix app tests/build/lint passed in 53s; Home-fix app tests/build/lint passed in 56s, again 56 tests/0 failures/errors/skips. Lint contains only the existing newer-Gradle suggestion.
-- Verified APK: **13,969,405 bytes**, SHA-256 `001e1054ee323339766c9af546fc44c01e371e2aabedcbf7c33c01ea28dde308`. All four packaged assets match source: 74 lessons/450 activities/74 listening/six paragraphs, all `PENDING_REVIEW`. The 2026-10-23 resumption inspected/reused this artifact and existing reports; it did not rerun tests/build or install SDK/voice components.
+- Prior 2026-10-23 verified APK: **13,969,405 bytes**, SHA-256 `001e1054ee323339766c9af546fc44c01e371e2aabedcbf7c33c01ea28dde308`. All four packaged assets match source: 74 lessons/450 activities/74 listening/six paragraphs, all `PENDING_REVIEW`. The 2026-10-23 resumption inspected/reused this artifact and existing reports; it did not rerun tests/build or install SDK/voice components.
 
 ## Runtime evidence
 
@@ -26,7 +28,7 @@ User approved option 1 on 2026-10-22 and standing routine project checks (“ple
 | Device TTS | Real offline engine: stop before completion and background/return kept answers locked; full completion unlocked them. Reading replay retained mode. Disabled speech service produced visible offline-voice error, reading submission still worked; service re-enabled | Back/stale-callback edge cases additionally have JVM/fake-player coverage. Audible/physical output quality was not assessed |
 | Appearance/accessibility | Dark/light plus System following device dark/light all show readable matching status/navigation icons. Theme/goal persisted after force-stop. Home/Settings/Review, keyboard, long forms and controls usable at 1.5× with scrolling; goal chips wrap | Minimum API 26, target API 37, physical/Redmi Note 12 behavior and full accessibility audit not established |
 
-An emulator establishes representative runtime/UI and engine-callback evidence. No pronunciation, volume, intelligibility, natural connected-speech or audio-quality assessment is claimed. The minor Review singular-label source fix is tracked as verification-pending in KNOWN_ISSUES.md; recorded screenshots/artifact still contain the earlier copy. Functionality/counts are unaffected.
+An emulator establishes representative runtime/UI and engine-callback evidence. No pronunciation, volume, intelligibility, natural connected-speech or audio-quality assessment is claimed. The earlier Review singular-label defect is resolved by the separate 2026-10-26 checks above; older screenshots below retain the historical copy. Functionality/counts are unaffected.
 
 Final font scale restored to 1.0 and the speech service confirmed enabled, then only emulator-5580 was stopped. Temporary synthetic data is retained; persistent screenshots are committed with the checkpoint.
 
