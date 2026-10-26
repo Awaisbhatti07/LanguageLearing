@@ -30,6 +30,8 @@ room { schemaDirectory("$projectDir/schemas") }
 
 tasks.withType<org.gradle.api.tasks.testing.Test>().configureEach {
     systemProperty("lingomate.schemas", file("schemas").absolutePath)
+    // Prevent Android/Compose test classes from sharing process-level sandbox state.
+    forkEvery = 1
 }
 
 dependencies {

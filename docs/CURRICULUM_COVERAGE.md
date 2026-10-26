@@ -14,7 +14,7 @@ Coverage is based on the user's specification; an authored lesson must have obje
 | Level | Planned skill coverage | Content state | Review state |
 | --- | --- | --- | --- |
 | A0 | Alphabet; joining/shapes; sounds; fatha/kasra/damma; sukoon/shaddah/tanween; madd; reading; greetings; basic nouns/verbs/sentences | Draft v1: 12 lessons/72 activities, including 12 listening questions; 67 core/61 app tests and APK/lint passed. Focused Android 36 study/RTL/1.5×/selected-answer/feedback-restart passed; exact scope under evidence/m5-2026-10-26 | PENDING_REVIEW; qualified Fusha/phonetic and physical-audio acceptance pending |
-| A1 | Personal/demonstrative pronouns; gender; singular/plural; word classes; nominal/verbal sentences; past/present; questions/negation; prepositions; daily vocabulary/conversation | TODO | Pending |
+| A1 | Personal/demonstrative pronouns; gender; singular/plural; word classes; nominal/verbal sentences; past/present; questions/negation; prepositions; daily vocabulary/conversation | Draft v1: 18 lessons/108 activities in four units; 18 listening questions. Current checks running | PENDING_REVIEW; qualified Fusha/phonetic and physical-audio acceptance pending |
 | A2 | Conjugation; verb forms; attached pronouns; idafah; adjective agreement; imperatives; sentence patterns; roots; reading/listening/speaking | TODO | Pending |
 | B1 | Applied Nahw/Sarf; intermediate verbs; connectors/relationships; passages; listening; descriptions/opinions; Fusha conversation; writing | TODO | Pending |
 
@@ -134,3 +134,30 @@ Each lesson has original Roman Urdu teaching, at least three Arabic examples/voc
 | ar-a0-simple-sentences | Present noun sentences, student gender and demonstratives |
 
 Roman guides are approximate; connected/stopping forms, makharij, shaddah, tanween and the full content need qualified Arabic/real-audio review. Listening fallbacks explicitly save reading-only credit. Speaking stays self-practice, without recording or a pronunciation score. Fusha keeps its own content IDs and progress; English and Quranic progress are separate.
+
+## Fusha A1 draft mapping
+
+Each lesson has at least four Arabic examples with matching Arabic speech references, four vocabulary entries, original Roman Urdu explanations/rules, a marked reading, paired self-speaking prompts and six scored activities. Typed prompts explicitly request marked forms; person/gender/case distinctions remain significant. All material is an AI-assisted draft pending qualified review, not a certified A1 course.
+
+| Stable lesson ID | Main teaching/context |
+| --- | --- |
+| ar-a1-personal-pronouns | Speaker/listener/third person, addressed gender, plural/dual awareness |
+| ar-a1-demonstratives | Near/distant singular gender; introductory phrase versus statement |
+| ar-a1-gender | Common feminine forms and exceptions; singular adjective agreement |
+| ar-a1-plurals | Selected sound/broken plurals; introductory non-human plural agreement |
+| ar-a1-word-classes | Broad ism/fil/harf categories, common particles |
+| ar-a1-definite-phrases | Article, descriptive phrase versus predicate, sun/moon awareness |
+| ar-a1-nominal-sentences | Basic subject/predicate and location statements |
+| ar-a1-verbal-sentences | Verb-first singular doer/object, feminine past marker |
+| ar-a1-past-verbs | Regular kataba with I/you/we; significant final vowels |
+| ar-a1-present-verbs | Selected prefixes/persons, addressed feminine -iina, context |
+| ar-a1-questions | Hal yes/no, person/place/time question words |
+| ar-a1-negation | Taught la/ma/laysa patterns, limits before later mood/conjugation tables |
+| ar-a1-prepositions | Fi/min/ila/ala, marked genitive phrases, location/destination |
+| ar-a1-family | Family nouns, fixed my-family introductions; full attachments deferred |
+| ar-a1-daily-routine | Simple present actions, morning/evening/each day |
+| ar-a1-shopping | Polite requests and price questions; fictional shop context |
+| ar-a1-directions | Library/station, near/far and destination clarification |
+| ar-a1-guided-conversation | Integrated introduction/action/question/negation/repetition request |
+
+Human/physical review still needs to assess correctness, level suitability, all marked forms/keys, Roman Urdu meanings, pronunciation guides and installed Arabic voice/waqf quality. Roleplay is self-practice without recording or automatic speech assessment. Full conjugation, forms, attached-pronoun/case system and idafah remain A2/later development. No prior English/Fusha A0 asset is revised by this pack.

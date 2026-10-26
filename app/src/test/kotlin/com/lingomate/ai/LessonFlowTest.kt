@@ -263,6 +263,35 @@ class LessonFlowTest {
         }
     }
 
+    @Test fun directFushaA1AccessKeepsPastPersonEndingsAndResumesSavedFeedback() {
+        click("Continue Arabic Fusha")
+        click("Open: Past verbs with I, you and we")
+        click("Start practice")
+        click("كَتَبْتُ")
+        click("Check answer")
+        waitFor("Correct")
+        compose.onNodeWithContentDescription("Back").performClick()
+        click("Resume: Past verbs with I, you and we")
+        waitFor("Correct")
+        click("Next activity")
+        waitFor("Your answer")
+        compose.onNodeWithText("Your answer").performTextInput("كَتَبْتَ")
+        click("Check answer")
+        waitFor("Keep practising")
+        compose.onNodeWithText("كَتَبْتُ").assertIsDisplayed()
+        runBlocking {
+            val session = requireNotNull(database.learningDao().activeSession("ar-a1-past-verbs"))
+            val answers = database.learningDao().attempts(session.id)
+            assertEquals(2, answers.size)
+            assertTrue(answers.first().correct)
+            assertFalse(answers.last().correct)
+            val catalog = repository.catalog.first()
+            assertEquals(0, catalog.completed(com.lingomate.learning.LearningTrack.FUSHA))
+            assertEquals(0, catalog.completed(com.lingomate.learning.LearningTrack.ENGLISH))
+            assertNull(database.learningDao().activeSession("ar-a0-alphabet"))
+        }
+    }
+
     private fun waitFor(text: String) {
         compose.waitUntil(10_000) { compose.onAllNodesWithText(text).fetchSemanticsNodes().isNotEmpty() }
     }
