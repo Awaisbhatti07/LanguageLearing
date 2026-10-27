@@ -65,3 +65,15 @@ PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools/tests -p test_ta
 ```
 
 [Actual report/method/limits](evidence/m6-reference-2026-10-27/README.md): 13 tests and the actual 6,236-pair/114-chapter comparison passed; no missing/unexpected references. The original candidate's pending inventory state is a historical acquisition receipt and remains unchanged. The new report records this later numeric check without promoting text/opening equivalence, linguistic/religious review, meanings/morphology, redistribution or app-import gates. M4/M5 review remains pending.
+
+## Strict source Unicode difference audit
+
+Continue source-only verification with `tools/tanzil_text_audit.py`, using the same already-pinned artifacts. No download or source write is performed:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 tools/tanzil_text_audit.py .local/quranic/tanzil/20261027T062636Z-8c5aeae20363a98f --expected-manifest-sha256 8ddf2ddedd8ea8ded0c7406266a72be7c1c117e545d7ef9670d945a1fac76cd4 --reference-archive .local/quranic/references/20261027T065235Z-kfgqpc-hafs-227e6b1564d9/reference.zip
+```
+
+The command checks both pins/reference sets first, then compares decoded Unicode fields exactly. It reports the full raw-field result and a separate body comparison after validating/excluding only the reference's one U+0020 separator, U+06DD and matching Arabic-Indic ayah number suffix. No other whitespace, code points, harakat, text order or opening fields are changed. Exit 0 means exact raw equality, exit 1 means differences found, and exit 2 means an integrity/structure failure. None grants religious review or app-import approval.
+
+[Actual diagnostic report](evidence/m6-text-audit-2026-10-27/README.md): all 6,236 numbered pairs are present; raw fields all differ; trailer-excluded bodies have 64 exact matches and 6,172 differences. All 53 tooling tests passed. The report uses bounded code-point edits, offsets and hashes without full ayah strings. The 112 separate Tanzil opening fields remain uncompared. These findings need qualified source/annotation assessment; no automatic Unicode equivalence or correction rule is approved. M4/M5 review and Quranic app import stay pending.

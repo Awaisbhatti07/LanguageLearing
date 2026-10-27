@@ -65,7 +65,8 @@ def parse_inventory(data):
     return references
 
 
-def reference_inventory(archive_data, expected_sha256):
+def reference_payload(archive_data, expected_sha256):
+    """Read only the bounded pinned JSON member; callers select the checked fields."""
     source.require(source.sha256(archive_data) == expected_sha256,
                    "Independent archive does not match the published pin")
     try:
@@ -94,13 +95,18 @@ def reference_inventory(archive_data, expected_sha256):
                            "Incomplete or oversized reference member")
     except (zipfile.BadZipFile, zipfile.LargeZipFile, RuntimeError, NotImplementedError, EOFError, zlib.error) as error:
         raise source.SourceError("Invalid reference archive") from error
-    references = parse_inventory(data)
-    return references, {"publisher": PUBLISHER, "publisher_page_url": PUBLISHER_PAGE,
+    return data, {"publisher": PUBLISHER, "publisher_page_url": PUBLISHER_PAGE,
                         "archive_url": ARCHIVE_URL, "archive_sha256": expected_sha256,
                         "archive_bytes": len(archive_data), "member": JSON_MEMBER,
-                        "member_sha256": source.sha256(data), "member_bytes": len(data),
-                        "chapter_count": references[-1][0], "numbered_reference_count": len(references),
-                        "reference_inventory_sha256": inventory_digest(references)}
+                        "member_sha256": source.sha256(data), "member_bytes": len(data)}
+
+
+def reference_inventory(archive_data, expected_sha256):
+    data, receipt = reference_payload(archive_data, expected_sha256)
+    references = parse_inventory(data)
+    receipt.update(chapter_count=references[-1][0], numbered_reference_count=len(references),
+                   reference_inventory_sha256=inventory_digest(references))
+    return references, receipt
 
 
 def compare_references(bundle, expected_manifest_sha256, reference_archive):

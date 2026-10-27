@@ -1,0 +1,934 @@
+{
+  "audited_at_utc": "2026-10-27T07:35:03Z",
+  "chapter_count": 114,
+  "comparison": {
+    "body_differences_excluding_only_validated_number_trailer": 6172,
+    "body_exact_matches_excluding_only_validated_number_trailer": 64,
+    "difference_samples": [
+      {
+        "body_edit_count": 3,
+        "body_edits": [
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              3,
+              4
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              3,
+              4
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              21,
+              22
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              21,
+              22
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "delete",
+            "publisher_body_codepoint_range": [
+              24,
+              24
+            ],
+            "publisher_codepoints_prefix": [],
+            "tanzil_codepoint_range": [
+              24,
+              25
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0640"
+            ]
+          }
+        ],
+        "body_edits_truncated": false,
+        "publisher_body_codepoints": 38,
+        "publisher_body_sha256": "803dee27b5a9ddf866112eac2f8a34e5bd83ca08015ec4acaaffeba25a378352",
+        "publisher_raw_codepoints": 41,
+        "publisher_raw_sha256": "1d13d1b2903816735962c23c00cdd19ff53c463c936000d66a68eb77c28a6227",
+        "reference": [
+          1,
+          1
+        ],
+        "tanzil_codepoints": 39,
+        "tanzil_sha256": "1ad501ee473ec3953c6d669513e2ae2550ad333577aef0f156926b52f6972b61"
+      },
+      {
+        "body_edit_count": 4,
+        "body_edits": [
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              2,
+              3
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              2,
+              3
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              6,
+              7
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              6,
+              7
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              26,
+              27
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              26,
+              27
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "delete",
+            "publisher_body_codepoint_range": [
+              29,
+              29
+            ],
+            "publisher_codepoints_prefix": [],
+            "tanzil_codepoint_range": [
+              29,
+              30
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0640"
+            ]
+          }
+        ],
+        "body_edits_truncated": false,
+        "publisher_body_codepoints": 37,
+        "publisher_body_sha256": "ef2e84a7a99f9340845888a735cf6950853f9e1a13cff30f4c1e7648e56ee51b",
+        "publisher_raw_codepoints": 40,
+        "publisher_raw_sha256": "720d818217757bc5786b2ed61e2f8c3fb2eb8cd03cb1ca1f0c2b2720f1f8c159",
+        "reference": [
+          1,
+          2
+        ],
+        "tanzil_codepoints": 38,
+        "tanzil_sha256": "463f13295bc7d90e0ea221942d7b39359a137da8686420b58f63d0774eebda09"
+      },
+      {
+        "body_edit_count": 2,
+        "body_edits": [
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              6,
+              7
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              6,
+              7
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "delete",
+            "publisher_body_codepoint_range": [
+              9,
+              9
+            ],
+            "publisher_codepoints_prefix": [],
+            "tanzil_codepoint_range": [
+              9,
+              10
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0640"
+            ]
+          }
+        ],
+        "body_edits_truncated": false,
+        "publisher_body_codepoints": 23,
+        "publisher_body_sha256": "fa43107ca02d890e5115053aed9835bfbefb79ffa6846491cf7dfc67c8fd8be7",
+        "publisher_raw_codepoints": 26,
+        "publisher_raw_sha256": "6a845511588b1fcd19861dfaf017fd2e16f72964ce3f45be7bbe62ffd78b6fe8",
+        "reference": [
+          1,
+          3
+        ],
+        "tanzil_codepoints": 24,
+        "tanzil_sha256": "29fdcd850fbbaf0e4b6bb93077b4fb2c6cdbcc2d8d1826a3b8f24131bc7621c5"
+      },
+      {
+        "body_edit_count": 2,
+        "body_edits": [
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "delete",
+            "publisher_body_codepoint_range": [
+              2,
+              2
+            ],
+            "publisher_codepoints_prefix": [],
+            "tanzil_codepoint_range": [
+              2,
+              3
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0640"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              11,
+              12
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              12,
+              13
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          }
+        ],
+        "body_edits_truncated": false,
+        "publisher_body_codepoints": 23,
+        "publisher_body_sha256": "4355fb3e57b0b8b4e47545d28d30b98359fea1a18e5bfc3dc948eeab653901e5",
+        "publisher_raw_codepoints": 26,
+        "publisher_raw_sha256": "5155b5c4d3d7787151e9deadcd6449266631e45d061ef1d18b12633e731964a3",
+        "reference": [
+          1,
+          4
+        ],
+        "tanzil_codepoints": 24,
+        "tanzil_sha256": "f19e0a517a68a043e08be6066abc107fff347f785c2ec1efe8b7364663923ee2"
+      },
+      {
+        "body_edit_count": 2,
+        "body_edits": [
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              12,
+              13
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              12,
+              13
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              32,
+              33
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              32,
+              33
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          }
+        ],
+        "body_edits_truncated": false,
+        "publisher_body_codepoints": 40,
+        "publisher_body_sha256": "8fc4ad4ff4e86be9abf8b5c66fd47a316b760844456c87ec85806ac3473471e9",
+        "publisher_raw_codepoints": 43,
+        "publisher_raw_sha256": "03dcaad3e3183010cd249c5b2dd4ff58c1478a03703e26d627c0285ae3d93722",
+        "reference": [
+          1,
+          5
+        ],
+        "tanzil_codepoints": 40,
+        "tanzil_sha256": "c44ba775d0ba7689a0d97e83a27cd9b5d917cb569f98013518018b591b42c015"
+      },
+      {
+        "body_edit_count": 3,
+        "body_edits": [
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              2,
+              3
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              2,
+              3
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              22,
+              23
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              22,
+              23
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              26,
+              27
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              26,
+              27
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          }
+        ],
+        "body_edits_truncated": false,
+        "publisher_body_codepoints": 34,
+        "publisher_body_sha256": "3588b00e5f634a98aad43530808b52caa9b481dad46ddaad45eac81e32ea93c4",
+        "publisher_raw_codepoints": 37,
+        "publisher_raw_sha256": "f0e364524240b17f38324f00b8285618dc3191a50c160fe8d15f5605ef40bc2a",
+        "reference": [
+          1,
+          6
+        ],
+        "tanzil_codepoints": 34,
+        "tanzil_sha256": "e257cf2a178fab0948da4af9d74b8b6152ba03a5d8c0e7179f46203cd3864c39"
+      },
+      {
+        "body_edit_count": 9,
+        "body_edits": [
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              21,
+              22
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              21,
+              22
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              25,
+              26
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              25,
+              26
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              34,
+              35
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              34,
+              35
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              38,
+              39
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              38,
+              39
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          }
+        ],
+        "body_edits_truncated": true,
+        "publisher_body_codepoints": 90,
+        "publisher_body_sha256": "2a2c9b6be73c32c7956511168c280f11d1d7c45d8775749a630dd7ecf09213b4",
+        "publisher_raw_codepoints": 93,
+        "publisher_raw_sha256": "ccda22accc81a64b8d2d76bc75cd1af1244c4c3c936946a589c646415ee9ba1f",
+        "reference": [
+          1,
+          7
+        ],
+        "tanzil_codepoints": 90,
+        "tanzil_sha256": "4a564d7b057f073d907a3faad63bd2b01eeee4c509d505e5ecf03ec803397eea"
+      },
+      {
+        "body_edit_count": 0,
+        "body_edits": [],
+        "body_edits_truncated": false,
+        "publisher_body_codepoints": 5,
+        "publisher_body_sha256": "49c5355bd921dc0d810e3be457432004847a72d5dbe754562be895be707be6c3",
+        "publisher_raw_codepoints": 8,
+        "publisher_raw_sha256": "b0471b8441a3eb10d7f993e0fe9b4cf5549d8933837880cdd49edcb003b85445",
+        "reference": [
+          2,
+          1
+        ],
+        "tanzil_codepoints": 5,
+        "tanzil_sha256": "49c5355bd921dc0d810e3be457432004847a72d5dbe754562be895be707be6c3"
+      },
+      {
+        "body_edit_count": 7,
+        "body_edits": [
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              10,
+              11
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              10,
+              11
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "delete",
+            "publisher_body_codepoint_range": [
+              15,
+              15
+            ],
+            "publisher_codepoints_prefix": [],
+            "tanzil_codepoint_range": [
+              15,
+              16
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0640"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              26,
+              27
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              27,
+              28
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "delete",
+            "publisher_body_codepoint_range": [
+              29,
+              29
+            ],
+            "publisher_codepoints_prefix": [],
+            "tanzil_codepoint_range": [
+              30,
+              31
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0020"
+            ]
+          }
+        ],
+        "body_edits_truncated": true,
+        "publisher_body_codepoints": 59,
+        "publisher_body_sha256": "1edbbb0c17c24fc2a909e3d5c4ae18798e8ded432544159fbb732f5631c57cbf",
+        "publisher_raw_codepoints": 62,
+        "publisher_raw_sha256": "087cc538c1c427325c9cf0e113a790efc4b65d05d7b89bc5c22721a076f859f1",
+        "reference": [
+          2,
+          2
+        ],
+        "tanzil_codepoints": 62,
+        "tanzil_sha256": "5d9fdbf423d4759bfb1781fd1043209b994972c8c986d0dd124029581b18a6ce"
+      },
+      {
+        "body_edit_count": 6,
+        "body_edits": [
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              13,
+              14
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              13,
+              14
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              26,
+              27
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              26,
+              27
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              30,
+              31
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              30,
+              31
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              73,
+              74
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              73,
+              74
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          }
+        ],
+        "body_edits_truncated": true,
+        "publisher_body_codepoints": 92,
+        "publisher_body_sha256": "79b5c57358d206f971e88792aea629d7aad0e4a6682340390c833dd675e8b188",
+        "publisher_raw_codepoints": 95,
+        "publisher_raw_sha256": "cc259f2db1d30bf3aaf952332bd38ded8f8052e32732aefd108ae9b815ed54bf",
+        "reference": [
+          2,
+          3
+        ],
+        "tanzil_codepoints": 93,
+        "tanzil_sha256": "f1730c532e41b8849c57a24c1d7ae4bbd7e744d159fc4d9185bab08450063dda"
+      },
+      {
+        "body_edit_count": 5,
+        "body_edits": [
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              15,
+              16
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              15,
+              16
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              44,
+              45
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              44,
+              45
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              70,
+              71
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              70,
+              71
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              82,
+              85
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1",
+              "U+0623",
+              "U+0653"
+            ],
+            "tanzil_codepoint_range": [
+              82,
+              87
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652",
+              "U+0640",
+              "U+0654",
+              "U+064E",
+              "U+0627"
+            ]
+          }
+        ],
+        "body_edits_truncated": true,
+        "publisher_body_codepoints": 107,
+        "publisher_body_sha256": "8a133dda67cd25787ca384d36cb7af5b039e42f97c6d083a2f2fb17f12309491",
+        "publisher_raw_codepoints": 110,
+        "publisher_raw_sha256": "ea935272fc6ebf7735b1b24c5e4a72306966e08f8ce36a65860368a99c24ad59",
+        "reference": [
+          2,
+          4
+        ],
+        "tanzil_codepoints": 109,
+        "tanzil_sha256": "c7f1f857a1ff3a3e0c0418e780b04dd8b5116a09fe2604ee4659f128bcba0b0a"
+      },
+      {
+        "body_edit_count": 8,
+        "body_edits": [
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              3,
+              4
+            ],
+            "publisher_codepoints_prefix": [
+              "U+0652"
+            ],
+            "tanzil_codepoint_range": [
+              3,
+              4
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+06DF"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "delete",
+            "publisher_body_codepoint_range": [
+              6,
+              6
+            ],
+            "publisher_codepoints_prefix": [],
+            "tanzil_codepoint_range": [
+              6,
+              7
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0640"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              23,
+              24
+            ],
+            "publisher_codepoints_prefix": [
+              "U+08F0"
+            ],
+            "tanzil_codepoint_range": [
+              24,
+              25
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+064B"
+            ]
+          },
+          {
+            "codepoint_prefixes_truncated": false,
+            "operation": "replace",
+            "publisher_body_codepoint_range": [
+              40,
+              41
+            ],
+            "publisher_codepoints_prefix": [
+              "U+06E1"
+            ],
+            "tanzil_codepoint_range": [
+              41,
+              43
+            ],
+            "tanzil_codepoints_prefix": [
+              "U+0652",
+              "U+0020"
+            ]
+          }
+        ],
+        "body_edits_truncated": true,
+        "publisher_body_codepoints": 77,
+        "publisher_body_sha256": "132a41d85e83eee64442dbdac858586e6451f723eb2dad51f9421bec3e20b7db",
+        "publisher_raw_codepoints": 80,
+        "publisher_raw_sha256": "4391957baf5eda11566fd52d9e4780a14702e34c13126259929197b2e90553ee",
+        "reference": [
+          2,
+          5
+        ],
+        "tanzil_codepoints": 80,
+        "tanzil_sha256": "f0f7e8629f821fde0e7d8a4bd3fa32da61fdf71fd8a8bb5db374bcc9ac8c9dd9"
+      }
+    ],
+    "opening_comparison": "NOT_CHECKED; never merged with numbered ayat or inferred from publisher text",
+    "publisher_body_text_inventory_sha256": "b136c2ca53fd9f611d2576683d3c697e2d0dc5f81a0f006ba1ceb386847b28a0",
+    "publisher_only_body_codepoints": [
+      {
+        "codepoint": "U+0655",
+        "occurrences": 14
+      },
+      {
+        "codepoint": "U+065C",
+        "occurrences": 1
+      },
+      {
+        "codepoint": "U+06DE",
+        "occurrences": 199
+      },
+      {
+        "codepoint": "U+06E1",
+        "occurrences": 37148
+      },
+      {
+        "codepoint": "U+06E4",
+        "occurrences": 26
+      },
+      {
+        "codepoint": "U+08F0",
+        "occurrences": 2901
+      },
+      {
+        "codepoint": "U+08F1",
+        "occurrences": 1807
+      },
+      {
+        "codepoint": "U+08F2",
+        "occurrences": 1935
+      }
+    ],
+    "publisher_raw_text_inventory_sha256": "4d670c9e1a7614165d6488c515d8bc514ba61e2404bdd48f93a4b3bf15c13c11",
+    "raw_field_differences": 6236,
+    "raw_field_exact_matches": 0,
+    "sample_limit": 12,
+    "samples_truncated": true,
+    "tanzil_only_body_codepoints": [
+      {
+        "codepoint": "U+06D9",
+        "occurrences": 68
+      },
+      {
+        "codepoint": "U+06DF",
+        "occurrences": 3988
+      },
+      {
+        "codepoint": "U+06EA",
+        "occurrences": 1
+      },
+      {
+        "codepoint": "U+06EB",
+        "occurrences": 1
+      }
+    ],
+    "tanzil_separate_opening_field_count": 112,
+    "tanzil_text_inventory_sha256": "729c6d2f528a9542d962de928b94507ae6bff7394097d5e3c440afd5e8ea9c8a",
+    "text_inventory_digest_method": "ordered-u32-reference-and-utf8-length-prefixed-fields-v1",
+    "validated_reference_number_trailers": 6236
+  },
+  "diagnostic_body_scope": "Only one U+0020 separator + U+06DD + the exact expected Arabic-Indic verse number excluded",
+  "gates": {
+    "app_import": "NOT_APPROVED",
+    "m4_m5_review": "PENDING",
+    "qualified_quranic_review": "PENDING",
+    "reference_data_redistribution": "NOT_APPROVED",
+    "text_equivalence": "PENDING",
+    "unnumbered_opening_equivalence": "NOT_CHECKED",
+    "word_alignment_meanings_morphology": "NOT_CHECKED"
+  },
+  "independent_reference": {
+    "archive_bytes": 10155774,
+    "archive_sha256": "227e6b1564d980f2bd09c2c35ebfb0330ac268c79a7c247cd1ab665bc635f245",
+    "archive_url": "https://download.qurancomplex.gov.sa/resources_dev/kfgqpc_hafs_v30.zip",
+    "member": "kfgqpc_hafs_v30-data/kfgqpc_hafs_v30.json",
+    "member_bytes": 3691596,
+    "member_sha256": "d7adf8aeeef5a7b6798060706a55735dffbcdb542b290a3907bd9f70c498f4d3",
+    "publisher": "King Fahd Complex for the Printing of the Holy Quran",
+    "publisher_page_url": "https://qurancomplex.gov.sa/quran-dev/"
+  },
+  "kind": "strict-source-unicode-difference-audit",
+  "limit": "Unicode inequality does not establish source error or semantic difference; qualified assessment remains pending",
+  "normalization": "NONE; no trim, NFC, letter/harakat/symbol replacement or source rewriting",
+  "numbered_reference_count": 6236,
+  "numbered_reference_result": "MATCH",
+  "result": "DIFFERENCES_FOUND",
+  "schema_version": 1,
+  "tanzil_manifest_sha256": "8ddf2ddedd8ea8ded0c7406266a72be7c1c117e545d7ef9670d945a1fac76cd4",
+  "tanzil_xml_sha256": "8c5aeae20363a98f6963720d29fce040ca8b56a8e75f8b564c257fce7f6d0417"
+}
