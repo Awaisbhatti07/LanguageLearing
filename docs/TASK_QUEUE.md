@@ -2,7 +2,7 @@
 
 Status values: TODO / IN_PROGRESS / BLOCKED / DONE. DONE requires recorded acceptance evidence. See milestone gates in `MASTER_PLAN.md`. On 2026-10-26 the user delegated development sequencing: M5 implementation may proceed with M4 qualified-review/audio release gates still pending.
 
-Publication confirmed (2026-10-27): after the user switched authentication and authorized retry, normal push published A2/B1 verified source/tests/evidence **03e9641** plus checkpoint **8651277**. Fresh remote hash **8651277b5f0737b6a9d3962b8c3301d497b3b8be** matched clean synchronized local HEAD before this documentation-only publication record. GIT-01 resolved; historical 403 retained in TEST_RESULTS.md. Main and all history preserved.
+Publication confirmed (2026-10-27): Tanzil-only source tooling/tests/evidence **ae8abdb** are published. Exact remote **ae8abdbd4794de6f137f68ceb88bc29ce3c8478d** matched clean synchronized local HEAD before this documentation-only publication record. Raw payloads/notices were not committed; the non-text receipt preserves the separate verification pin. Prior source evaluation cfec61f and all English/Fusha history remain published; main unchanged.
 
 Historical publication checkpoint (2026-10-21): verified B1 source `c39c0db` and results checkpoint `ab008a2` are pushed to `origin/develop/lingomate`, with the remote hash confirmed at that checkpoint. All A0–A2/listening history is preserved. Publication/115 passing tests do not complete pending qualified curriculum or device acceptance gates.
 
