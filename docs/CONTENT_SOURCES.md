@@ -47,3 +47,8 @@ Test-isolation reference: [Gradle Test execution](https://docs.gradle.org/9.6.0/
 - [Al Jazeera: passive grammatical subject](https://learning.aljazeera.net/ar/node/624): distinguishing the affected nominative role from an omitted doer.
 
 Original examples and all learning passages were authored for this project. These reference checks do not license external media/text for bundling and do not establish qualified review. No Quranic content is introduced in this batch.
+
+## Independent numbered-reference source — 2026-10-27
+User approved numeric reference verification with M4/M5 review and Quranic app import pending. The [King Fahd Complex official developer page](https://qurancomplex.gov.sa/quran-dev/) publishes the Hafs archive link/checksum and its `sura_no`/`aya_no` fields. The [official archive](https://download.qurancomplex.gov.sa/resources_dev/kfgqpc_hafs_v30.zip) was acquired privately and matched published SHA-256 `227e6b1564d980f2bd09c2c35ebfb0330ac268c79a7c247cd1ab665bc635f245` before parsing. No third-party mirror, API account, font installation or app redistribution was used.
+
+The selected JSON member supplies the separate publisher's reference identities, independently of the Tanzil candidate's observed counts. The actual comparison matched all 6,236 numbered pairs/114 chapters with no missing/unexpected references; [non-text report and limits](evidence/m6-reference-2026-10-27/README.md). Raw archive/metadata stays ignored/private; only our comparison/provenance results enter Git. This source is independent as publisher/artifact, not a claim of unrelated historical textual ancestry. Letter/harakat/opening equivalence, meanings, linguistic/religious approval and third-party data-redistribution rights remain unestablished.

@@ -1,0 +1,42 @@
+{
+  "compared_at_utc": "2026-10-27T06:59:07Z",
+  "comparison": {
+    "matched_reference_count": 6236,
+    "missing_reference_count": 0,
+    "missing_references": [],
+    "unexpected_reference_count": 0,
+    "unexpected_references": []
+  },
+  "gates": {
+    "app_import": "NOT_APPROVED",
+    "m4_m5_review": "PENDING",
+    "qualified_quranic_review": "PENDING",
+    "reference_data_redistribution": "NOT_APPROVED",
+    "text_equivalence": "NOT_CHECKED",
+    "word_alignment_meanings_morphology": "NOT_CHECKED"
+  },
+  "independence_limit": "Separate publisher and artifact; shared Hafs tradition, not an independent textual lineage claim",
+  "independent_reference": {
+    "archive_bytes": 10155774,
+    "archive_sha256": "227e6b1564d980f2bd09c2c35ebfb0330ac268c79a7c247cd1ab665bc635f245",
+    "archive_url": "https://download.qurancomplex.gov.sa/resources_dev/kfgqpc_hafs_v30.zip",
+    "chapter_count": 114,
+    "member": "kfgqpc_hafs_v30-data/kfgqpc_hafs_v30.json",
+    "member_bytes": 3691596,
+    "member_sha256": "d7adf8aeeef5a7b6798060706a55735dffbcdb542b290a3907bd9f70c498f4d3",
+    "numbered_reference_count": 6236,
+    "publisher": "King Fahd Complex for the Printing of the Holy Quran",
+    "publisher_page_url": "https://qurancomplex.gov.sa/quran-dev/",
+    "reference_inventory_sha256": "0cb7c54648be4ce17587a3c20f18e083be9b3e3bc3405423208b38a24178e726"
+  },
+  "kind": "independent-publisher-numbered-reference-comparison",
+  "result": "MATCH",
+  "schema_version": 1,
+  "scope": "Numbered chapter/ayah identities only; no text or unnumbered-opening comparison",
+  "tanzil": {
+    "chapter_count": 114,
+    "manifest_sha256": "8ddf2ddedd8ea8ded0c7406266a72be7c1c117e545d7ef9670d945a1fac76cd4",
+    "numbered_reference_count": 6236,
+    "reference_inventory_sha256": "0cb7c54648be4ce17587a3c20f18e083be9b3e3bc3405423208b38a24178e726"
+  }
+}
