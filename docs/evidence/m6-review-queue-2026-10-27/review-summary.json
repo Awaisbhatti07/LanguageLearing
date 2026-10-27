@@ -1,0 +1,290 @@
+{
+  "alignment_method": "Python difflib.SequenceMatcher, autojunk=False; not linguistic or unique/minimal alignment",
+  "all_short_pattern_edit_occurrences": 60635,
+  "body_difference_count": 6172,
+  "body_exact_matches": 64,
+  "chapter_count": 114,
+  "created_at_utc": "2026-10-27T09:06:56Z",
+  "distinct_short_patterns": 92,
+  "edit_operations_by_unicode_group": {
+    "letter_involving": 10254,
+    "mark_only": 46125,
+    "other_nonletters": 4538
+  },
+  "gates": {
+    "app_import": "NOT_APPROVED",
+    "m4_m5_review": "PENDING",
+    "mapping_rules": "NOT_APPROVED",
+    "qualified_quranic_review": "PENDING",
+    "reference_data_redistribution": "NOT_APPROVED",
+    "text_equivalence": "PENDING",
+    "unnumbered_opening_equivalence": "NOT_CHECKED"
+  },
+  "kind": "private-lossless-source-edit-queue-summary",
+  "most_frequent_short_patterns": [
+    {
+      "edit_occurrences": 35833,
+      "new": [
+        {
+          "codepoint": "U+06E1",
+          "general_category": "Mn",
+          "name": "ARABIC SMALL HIGH DOTLESS HEAD OF KHAH"
+        }
+      ],
+      "old": [
+        {
+          "codepoint": "U+0652",
+          "general_category": "Mn",
+          "name": "ARABIC SUKUN"
+        }
+      ],
+      "status": "MECHANICAL_PATTERN_ONLY; NOT_AN_APPROVED_MAPPING"
+    },
+    {
+      "edit_occurrences": 5922,
+      "new": [],
+      "old": [
+        {
+          "codepoint": "U+0640",
+          "general_category": "Lm",
+          "name": "ARABIC TATWEEL"
+        }
+      ],
+      "status": "MECHANICAL_PATTERN_ONLY; NOT_AN_APPROVED_MAPPING"
+    },
+    {
+      "edit_occurrences": 3660,
+      "new": [
+        {
+          "codepoint": "U+0652",
+          "general_category": "Mn",
+          "name": "ARABIC SUKUN"
+        }
+      ],
+      "old": [
+        {
+          "codepoint": "U+06DF",
+          "general_category": "Mn",
+          "name": "ARABIC SMALL HIGH ROUNDED ZERO"
+        }
+      ],
+      "status": "MECHANICAL_PATTERN_ONLY; NOT_AN_APPROVED_MAPPING"
+    },
+    {
+      "edit_occurrences": 3367,
+      "new": [
+        {
+          "codepoint": "U+064A",
+          "general_category": "Lo",
+          "name": "ARABIC LETTER YEH"
+        }
+      ],
+      "old": [
+        {
+          "codepoint": "U+0649",
+          "general_category": "Lo",
+          "name": "ARABIC LETTER ALEF MAKSURA"
+        }
+      ],
+      "status": "MECHANICAL_PATTERN_ONLY; NOT_AN_APPROVED_MAPPING"
+    },
+    {
+      "edit_occurrences": 2928,
+      "new": [],
+      "old": [
+        {
+          "codepoint": "U+0020",
+          "general_category": "Zs",
+          "name": "SPACE"
+        }
+      ],
+      "status": "MECHANICAL_PATTERN_ONLY; NOT_AN_APPROVED_MAPPING"
+    },
+    {
+      "edit_occurrences": 2813,
+      "new": [
+        {
+          "codepoint": "U+08F0",
+          "general_category": "Mn",
+          "name": "ARABIC OPEN FATHATAN"
+        }
+      ],
+      "old": [
+        {
+          "codepoint": "U+064B",
+          "general_category": "Mn",
+          "name": "ARABIC FATHATAN"
+        }
+      ],
+      "status": "MECHANICAL_PATTERN_ONLY; NOT_AN_APPROVED_MAPPING"
+    },
+    {
+      "edit_occurrences": 1748,
+      "new": [
+        {
+          "codepoint": "U+08F2",
+          "general_category": "Mn",
+          "name": "ARABIC OPEN KASRATAN"
+        }
+      ],
+      "old": [
+        {
+          "codepoint": "U+064D",
+          "general_category": "Mn",
+          "name": "ARABIC KASRATAN"
+        }
+      ],
+      "status": "MECHANICAL_PATTERN_ONLY; NOT_AN_APPROVED_MAPPING"
+    },
+    {
+      "edit_occurrences": 1657,
+      "new": [
+        {
+          "codepoint": "U+08F1",
+          "general_category": "Mn",
+          "name": "ARABIC OPEN DAMMATAN"
+        }
+      ],
+      "old": [
+        {
+          "codepoint": "U+064C",
+          "general_category": "Mn",
+          "name": "ARABIC DAMMATAN"
+        }
+      ],
+      "status": "MECHANICAL_PATTERN_ONLY; NOT_AN_APPROVED_MAPPING"
+    },
+    {
+      "edit_occurrences": 590,
+      "new": [
+        {
+          "codepoint": "U+06E1",
+          "general_category": "Mn",
+          "name": "ARABIC SMALL HIGH DOTLESS HEAD OF KHAH"
+        }
+      ],
+      "old": [
+        {
+          "codepoint": "U+0652",
+          "general_category": "Mn",
+          "name": "ARABIC SUKUN"
+        },
+        {
+          "codepoint": "U+0020",
+          "general_category": "Zs",
+          "name": "SPACE"
+        }
+      ],
+      "status": "MECHANICAL_PATTERN_ONLY; NOT_AN_APPROVED_MAPPING"
+    },
+    {
+      "edit_occurrences": 218,
+      "new": [
+        {
+          "codepoint": "U+064A",
+          "general_category": "Lo",
+          "name": "ARABIC LETTER YEH"
+        },
+        {
+          "codepoint": "U+06E1",
+          "general_category": "Mn",
+          "name": "ARABIC SMALL HIGH DOTLESS HEAD OF KHAH"
+        }
+      ],
+      "old": [
+        {
+          "codepoint": "U+0649",
+          "general_category": "Lo",
+          "name": "ARABIC LETTER ALEF MAKSURA"
+        },
+        {
+          "codepoint": "U+0652",
+          "general_category": "Mn",
+          "name": "ARABIC SUKUN"
+        }
+      ],
+      "status": "MECHANICAL_PATTERN_ONLY; NOT_AN_APPROVED_MAPPING"
+    },
+    {
+      "edit_occurrences": 199,
+      "new": [
+        {
+          "codepoint": "U+06DE",
+          "general_category": "So",
+          "name": "ARABIC START OF RUB EL HIZB"
+        },
+        {
+          "codepoint": "U+0020",
+          "general_category": "Zs",
+          "name": "SPACE"
+        }
+      ],
+      "old": [],
+      "status": "MECHANICAL_PATTERN_ONLY; NOT_AN_APPROVED_MAPPING"
+    },
+    {
+      "edit_occurrences": 174,
+      "new": [
+        {
+          "codepoint": "U+08F2",
+          "general_category": "Mn",
+          "name": "ARABIC OPEN KASRATAN"
+        }
+      ],
+      "old": [
+        {
+          "codepoint": "U+064D",
+          "general_category": "Mn",
+          "name": "ARABIC KASRATAN"
+        },
+        {
+          "codepoint": "U+0020",
+          "general_category": "Zs",
+          "name": "SPACE"
+        }
+      ],
+      "status": "MECHANICAL_PATTERN_ONLY; NOT_AN_APPROVED_MAPPING"
+    }
+  ],
+  "numbered_reference_count": 6236,
+  "queue": {
+    "bytes": 8385610,
+    "exact_reconstructions_checked": 6172,
+    "file": "edits.jsonl",
+    "records": 6172,
+    "sha256": "2fd79315d96e2fc303be5a733f8bc5f077036465ed1cfc1f8b797af644d161ad"
+  },
+  "queue_directory": ".local/quranic/reviews/20261027-source-differences-v1",
+  "raw_field_exact_matches": 0,
+  "reference_group_counts_overlap": true,
+  "references_by_unicode_group": {
+    "letter_involving": 4344,
+    "mark_only": 6101,
+    "other_nonletters": 2706
+  },
+  "result": "COMPLETE_DIAGNOSTIC_EXPORT",
+  "runtime": {
+    "python_version": "3.15.0",
+    "unicode_data_version": "17.0.0"
+  },
+  "schema_version": 1,
+  "scope": "Exact edit alignment on trailer-excluded comparison copies only; no source normalization/repair",
+  "separate_opening_fields_uncompared": 112,
+  "source": {
+    "independent_reference": {
+      "archive_bytes": 10155774,
+      "archive_sha256": "227e6b1564d980f2bd09c2c35ebfb0330ac268c79a7c247cd1ab665bc635f245",
+      "archive_url": "https://download.qurancomplex.gov.sa/resources_dev/kfgqpc_hafs_v30.zip",
+      "member": "kfgqpc_hafs_v30-data/kfgqpc_hafs_v30.json",
+      "member_bytes": 3691596,
+      "member_sha256": "d7adf8aeeef5a7b6798060706a55735dffbcdb542b290a3907bd9f70c498f4d3",
+      "publisher": "King Fahd Complex for the Printing of the Holy Quran",
+      "publisher_page_url": "https://qurancomplex.gov.sa/quran-dev/"
+    },
+    "tanzil_manifest_sha256": "8ddf2ddedd8ea8ded0c7406266a72be7c1c117e545d7ef9670d945a1fac76cd4",
+    "tanzil_xml_sha256": "8c5aeae20363a98f6963720d29fce040ca8b56a8e75f8b564c257fce7f6d0417"
+  },
+  "top_pattern_limit": 12,
+  "total_edit_operations": 60917,
+  "unicode_group_limit": "Mark-only is not harmless; letter category includes modifier letters such as tatweel. Groups are not semantic judgments."
+}

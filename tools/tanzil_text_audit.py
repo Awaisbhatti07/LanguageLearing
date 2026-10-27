@@ -119,7 +119,8 @@ def compare_fields(originals, publisher_fields, openings):
             "samples_truncated": len(originals) - raw_equal > len(samples)}
 
 
-def audit_text(bundle, expected_manifest_sha256, reference_archive):
+def load_verified_fields(bundle, expected_manifest_sha256, reference_archive):
+    """Return immutable-source comparison inputs bound to both retained artifact pins."""
     checks = source.verify_candidate(bundle, expected_manifest_sha256)
     # Bind the exact XML read for this audit to the externally pinned old manifest.
     manifest_bytes = source.read_file(bundle / source.MANIFEST_FILE, source.JSON_LIMIT)
@@ -139,6 +140,12 @@ def audit_text(bundle, expected_manifest_sha256, reference_archive):
     records = json.loads(payload.decode('utf-8-sig'))
     publisher = {(row['sura_no'], row['aya_no']): row.get('aya_text_unicode') for row in records}
     source.require(set(originals) == set(refs), 'Numbered references differ; text audit cannot proceed')
+    return originals, publisher, openings, checks, source.sha256(original_bytes), publisher_receipt
+
+
+def audit_text(bundle, expected_manifest_sha256, reference_archive):
+    originals, publisher, openings, checks, original_sha256, publisher_receipt = load_verified_fields(
+        bundle, expected_manifest_sha256, reference_archive)
     comparison = compare_fields(originals, publisher, openings)
     return {"schema_version": 1, "kind": "strict-source-unicode-difference-audit",
             "result": "EXACT_MATCH" if comparison['raw_field_differences'] == 0 else "DIFFERENCES_FOUND",
@@ -147,7 +154,7 @@ def audit_text(bundle, expected_manifest_sha256, reference_archive):
             "numbered_reference_result": "MATCH", "numbered_reference_count": len(originals),
             "chapter_count": checks['chapter_count_observed'],
             "tanzil_manifest_sha256": expected_manifest_sha256,
-            "tanzil_xml_sha256": source.sha256(original_bytes),
+            "tanzil_xml_sha256": original_sha256,
             "independent_reference": publisher_receipt, "comparison": comparison, "gates": GATES,
             "limit": "Unicode inequality does not establish source error or semantic difference; qualified assessment remains pending"}
 

@@ -77,3 +77,13 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/tanzil_text_audit.py .local/quranic/tanz
 The command checks both pins/reference sets first, then compares decoded Unicode fields exactly. It reports the full raw-field result and a separate body comparison after validating/excluding only the reference's one U+0020 separator, U+06DD and matching Arabic-Indic ayah number suffix. No other whitespace, code points, harakat, text order or opening fields are changed. Exit 0 means exact raw equality, exit 1 means differences found, and exit 2 means an integrity/structure failure. None grants religious review or app-import approval.
 
 [Actual diagnostic report](evidence/m6-text-audit-2026-10-27/README.md): all 6,236 numbered pairs are present; raw fields all differ; trailer-excluded bodies have 64 exact matches and 6,172 differences. All 53 tooling tests passed. The report uses bounded code-point edits, offsets and hashes without full ayah strings. The 112 separate Tanzil opening fields remain uncompared. These findings need qualified source/annotation assessment; no automatic Unicode equivalence or correction rule is approved. M4/M5 review and Quranic app import stay pending.
+
+## Private complete edit queue
+
+`tools/tanzil_review_queue.py` exports complete code-point edit lists only under ignored project `.local` storage, without changing either source. Example recorded invocation:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 tools/tanzil_review_queue.py .local/quranic/tanzil/20261027T062636Z-8c5aeae20363a98f --expected-manifest-sha256 8ddf2ddedd8ea8ded0c7406266a72be7c1c117e545d7ef9670d945a1fac76cd4 --reference-archive .local/quranic/references/20261027T065235Z-kfgqpc-hafs-227e6b1564d9/reference.zip --output-directory .local/quranic/reviews/20261027-source-differences-v1
+```
+
+Existing output directories are rejected. Each edit record must exactly reconstruct its reference comparison body and match both field hashes; output bytes are hashed and re-read before the completion summary. Source-only Unicode grouping and short-pattern counts are mechanical, not approved replacements. Runtime/UCD version and alignment limits are recorded. Exit 0 means completed diagnostic export, never source equivalence or religious approval. [Actual bounded summary and limits](evidence/m6-review-queue-2026-10-27/README.md): 6,172 records/60,917 edits, 66 tests passed. Full queue stays private; app import and reviews remain pending.
